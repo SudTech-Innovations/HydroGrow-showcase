@@ -1,8 +1,8 @@
 ---
 _schema: default
-title: Features
+title: Fonctionnalités
 seo:
-  page_description:
+  page_description: Découvrez les fonctionnalités avancées d'HydroGrow pour l'automatisation et l'optimisation de vos cultures hydroponiques.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -11,80 +11,70 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/hero
-    title: Run the best campaigns
-    description: Sendit will change the way you think about email and marketing automation.
+    title: HydroGrow
+    description: La solution tout-en-un pour l'hydroponie intelligente. Automatisez, surveillez et optimisez vos cultures grâce à notre écosystème IoT et notre application mobile.
     button:
       link: /signup
-      text: Try This Free
+      text: Commencez maintenant
     image: /images/feature/feature-hero.png
-    image_alt: Charts
+    image_alt: Dashboard HydroGrow
   - _name: global/header
-    title: "Sendit "
-    title_suffix: Features
-    description: >-
-      Sendit is the most complete solution to create beautiful email designs,
-      manage mails and send them out at the best price.
+    title: "Une gestion "
+    title_suffix: Intelligente
+    description: Prenez le contrôle total de votre environnement de culture avec nos outils de pointe.
     remove_top_padding: false
   - _name: global/feature
     image: /images/feature/feature-card-one.png
-    image_alt: Message inbox
-    title: Simply click and send
+    image_alt: Application mobile de surveillance
+    title: Surveillance en Temps Réel
     description: >-
-      Make your message stand out, thanks to the guided copywriting and design
-      features, triggering a positive response from your customers.
+      Gardez un œil sur vos plantes 24/7. Nos capteurs IoT mesurent précisément le pH, l'électroconductivité (EC), la température de l'eau et de l'air, l'humidité et l'intensité lumineuse. Accédez à toutes ces données instantanément depuis votre smartphone.
     button:
       link: /signup
-      text: Try This Free
+      text: Voir la démo
     reversed: false
   - _name: global/feature
     image: /images/feature/feature-card-two.png
-    image_alt: Visitor chart
-    title: See every lead in one place
+    image_alt: Automatisation des sytèmes
+    title: Automatisation Complète
     description: >-
-      Sales analytics and automation made simple: see every sales lead in one
-      place, regardless of where it came from.
+      Libérez-vous des tâches répétitives. HydroGrow gère automatiquement l'éclairage, l'irrigation, et l'apport en nutriments en fonction des besoins spécifiques de vos plantes. Définissez vos règles ou utilisez nos pré-réglages optimisés.
     button:
       link: /signup
-      text: Try This Free
+      text: En savoir plus
     reversed: true
   - _name: global/feature
     image: /images/feature/feature-card-three.png
-    image_alt: Upload box
-    title: Free templates to get you started
+    image_alt: Analyse de données
+    title: Optimisation par l'IA
     description: >-
-      Sendit is used by everyone from small businesses to fortune 500 companies.
-      Browse our collection of email marketing templates and start sending
-      beautiful emails in minutes.
+      Maximisez vos rendements grâce à l'intelligence artificielle. Notre système analyse vos données de culture pour vous fournir des recommandations personnalisées, détecter les anomalies avant qu'elles ne deviennent critiques et optimiser vos cycles de croissance.
     button:
       link: /signup
-      text: Try This Free
+      text: Découvrir l'IA
     reversed: false
-  - _name: global/testimonial
-    title: Build relationships that
-    title_suffix: last
-    description: >-
-      Customers from around the world are building game changing email marketing
-      campaigns.
-    testimonials:
-      - image: /images/testimonial/logo-2.jpg
-        image_alt: Profile photo of Pete Fish
-        author: Pete Fish
-        designation: CMO at Clear Appeal
-        message: >-
-          Sendit has taken Clear Appeal to the next level with its beautiful
-          email campaigns.
-      - image: /images/testimonial/logo-3.jpg
-        image_alt: Profile photo of Dolly Watson
-        author: Dolly Watson
-        designation: Digital Marketer at Time Cop
-        message: >-
-          Wow, what a difference Sendit has made. My customers are more engaged
-          than ever.
-      - image: /images/testimonial/logo-4.jpg
-        image_alt: Profile photo of Simon Moriarty
-        author: Simon Moriarty
-        designation: Head of Marketing at Pinnacle Mines
-        message: >-
-          I can't imagine life without Sendit now, I have no idea how we were
-          surviving before.
+  # - _name: global/testimonial
+  #   title: Des cultivateurs
+  #   title_suffix: satisfaits
+  #   description: >-
+  #     Rejoignez la communauté des cultivateurs qui ont transformé leur production avec HydroGrow.
+  #   testimonials:
+  #     - image: /images/testimonial/logo-2.jpg
+  #       image_alt: Photo de Marc D.
+  #       author: Marc D.
+  #       designation: Maraîcher Urbain
+  #       message: >-
+  #         HydroGrow a révolutionné ma façon de cultiver en ville. Je gagne un temps précieux et mes rendements ont augmenté de 30%.
+  #     - image: /images/testimonial/logo-3.jpg
+  #       image_alt: Photo de Julie S.
+  #       author: Julie S.
+  #       designation: Passionnée d'hydroponie
+  #       message: >-
+  #         L'application est incroyablement intuitive. Avoir toutes les données de mes serres dans ma poche me rassure énormément.
+  #     - image: /images/testimonial/logo-4.jpg
+  #       image_alt: Photo de Thomas L.
+  #       author: Thomas L.
+  #       designation: Fondateur de GreenTech
+  #       message: >-
+  #         La précision des capteurs et la fiabilité de l'automatisation font d'HydroGrow un outil indispensable pour notre ferme verticale.
 ---

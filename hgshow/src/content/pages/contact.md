@@ -10,38 +10,38 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/simple-hero
-    title: Let's talk.
-    description: Have a question or suggestion? Feel free to drop us a message!
+    title: Parlons-en.
+    description: Une question sur nos capteurs ou l'application ? Une suggestion ? N'hésitez pas à nous écrire !
   - _name: global/form
     address:
-      heading: Contact Details
-      address: 123 Train St, San Francisco, CA 9107
+      heading: Ecole
+      address: Ynov Campus Montpellier
       image: /images/contact/corporate-fare.svg
-      image_alt: Work icon
-    phone:
-      heading: Phone
-      cell: (123) 456 - 7895
-      image: /images/contact/call-add.svg
-      image_alt: call-add
+      image_alt: Icône bureau
+    # phone:
+    #   heading: Téléphone
+    #   cell: +33 1 23 45 67 89
+    #   image: /images/contact/call-add.svg
+    #   image_alt: Icône téléphone
     email:
       heading: Email
-      email: info@example.com
+      email: contact@hydrogrow.fr
       image: /images/contact/directbox-send.svg
-      image_alt: send-box
+      image_alt: Icône email
     form:
-      heading: Say Hello
+      heading: Dites Bonjour
       fullname:
-        heading: Full Name
-        placeholder: Enter First Name
+        heading: Nom Complet
+        placeholder: Entrez votre nom
       phone_number:
-        heading: Phone number
-        placeholder: Enter Phone Number
+        heading: Téléphone
+        placeholder: Votre numéro
       email:
-        heading: Email Address
-        placeholder: Enter Email Address
+        heading: Adresse Email
+        placeholder: Votre email
       message:
-        heading: Your Messages
-        placeholder: Enter your message
+        heading: Votre Message
+        placeholder: Comment pouvons-nous vous aider ?
       submit_button:
-        text: Send message
+        text: Envoyer le message
 ---

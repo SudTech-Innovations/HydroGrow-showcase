@@ -1,5 +1,5 @@
 ---
-title: Login
+title: Connexion
 seo:
   page_description:
   canonical_url:
@@ -10,18 +10,18 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/login
-    title: Log In
+    title: Se connecter
     fullname:
-      heading: Full Name
-      placeholder: Your Name
+      heading: Nom complet
+      placeholder: Votre nom
     email:
-      heading: Email Address
-      placeholder: Your Email
-    checkbox_text: Remember Me
+      heading: Adresse email
+      placeholder: Votre email
+    checkbox_text: Se souvenir de moi
     log_in_button:
       link: "/login/"
-      text: "Log In"
+      text: "Se connecter"
     sign_up_button:
       link: "/signup"
-      text: "Create an Account"
+      text: "Créer un compte"
 ---

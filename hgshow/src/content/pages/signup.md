@@ -1,5 +1,5 @@
 ---
-title: Sign Up
+title: S'inscrire
 seo:
   page_description:
   canonical_url:
@@ -10,22 +10,24 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/signup
-    title: Create Account
+    title: Créer un compte
     form:
       fullname:
-        heading: Full Name
-        placeholder: Your Name
+        heading: Nom complet
+        placeholder: Votre nom
       email:
-        heading: Email Address
-        placeholder: Your Email
+        heading: Adresse email
+        placeholder: Votre email
       password:
-        heading: Password
+        heading: Mot de passe
+        placeholder: Votre mot de passe
       retype_password:
-        heading: Retype Password
-      checkbox_text: By registering, you accept our Conditions, Use Policy and
-        Privacy Notice.
-      sign_up_text: Create an Account
+        heading: Confirmer le mot de passe
+        placeholder: Retapez votre mot de passe
+      checkbox_text: En vous inscrivant, vous acceptez nos Conditions, Politique d'utilisation et
+        Notice de confidentialité.
+      sign_up_text: Créer un compte
       log_in_button:
         link: /login
-        text: Log In
+        text: Se connecter
 ---

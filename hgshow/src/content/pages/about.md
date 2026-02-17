@@ -1,100 +1,84 @@
 ---
 _schema: default
-title: About
+title: "À propos"
 seo:
-  page_description:
-  canonical_url:
-  featured_image:
-  featured_image_alt:
-  author_twitter_handle:
-  open_graph_type:
+  page_description: ""
+  canonical_url: ""
+  featured_image: ""
+  featured_image_alt: ""
+  author_twitter_handle: ""
+  open_graph_type: ""
   no_index: false
 content_blocks:
-  - _name: global/hero
-    title: On a mission to change email marketing
-    description: >-
-      We're here to breathe new air into email marketing and help grow your
-      business.
+  - _name: "global/hero"
+    title: "Notre mission : Démocratiser l'hydroponie"
+    description: "Nous sommes là pour rendre l'agriculture hors-sol accessible à tous, du débutant au professionnel, grâce à la technologie."
     hero_images:
-      - image: /images/about/aboutfeature-four.jpg
-        image_alt: Staff group photo
-        placement: back_top_left
-      - image: /images/about/aboutfeature-two.jpg
-        image_alt: People working on laptops
-        placement: front_bottom
-      - image: /images/about/aboutfeature-three.jpg
-        image_alt: Group working on a laptop
-        placement: back_top_right
+      - image: "/images/about/aboutfeature-four.jpg"
+        image_alt: "Équipe HydroGrow"
+        placement: "back_top_left"
+      - image: "/images/about/aboutfeature-two.jpg"
+        image_alt: "Ingénieurs travaillant sur des capteurs"
+        placement: "front_bottom"
+      - image: "/images/about/aboutfeature-three.jpg"
+        image_alt: "Serre connectée"
+        placement: "back_top_right"
     button:
-      text: Try This Free
-      link: /signup
-  - _name: global/counter
-    title: Built for your
-    title_suffix: Business
-    description: We've built Sendit from the ground up the help grow your business faster.
+      text: "Rejoignez l'aventure"
+      link: "/signup"
+  - _name: "global/counter"
+    title: "Conçu pour votre"
+    title_suffix: "Réussite"
+    description: "Nous avons bâti HydroGrow pour vous aider à cultiver mieux, plus vite et plus durablement."
     alternate_style: false
     numbers:
-      - prefix: $
-        number: '200'
-        suffix: m
-        text: Venture capital raised
-      - prefix:
-        number: '2016'
-        suffix:
-        text: Established in
-      - prefix:
-        number: '40'
-        suffix: +
-        text: Amazing team members
-      - prefix:
-        number: '4322'
-        suffix: +
-        text: Active users and growing
-  - _name: global/video-left-right
-    title: We love what we do
-    description: >-
-      Our team has decades of experience working with email marketing campaigns
-      and we’re passionate about helping you connect with your customers.
+      - prefix: ""
+        number: "10"
+        suffix: "M+"
+        text: "Points de données analysés"
+      - prefix: ""
+        number: "2024"
+        suffix: ""
+        text: "Fondé en"
+      - prefix: ""
+        number: "15"
+        suffix: ""
+        text: "Experts agronomes & tech"
+      - prefix: ""
+        number: "2000"
+        suffix: "+"
+        text: "Cutilvateurs actifs"
+  - _name: "global/video-left-right"
+    title: "Nous aimons ce que nous faisons"
+    description: "Notre équipe combine passion pour l'agriculture durable et expertise en IoT. Nous travaillons chaque jour pour innover et vous offrir les meilleurs outils de culture."
     button:
-      link: https://www.linkedin.com/
-      text: Follow on Linkedin
+      link: "https://www.linkedin.com/"
+      text: "Suivez-nous sur LinkedIn"
     video:
-      image: /images/works/banner.jpg
-      image_alt: Thumbnail image for video
-      video_url: https://vimeo.com/45830194
-  - _name: global/team
-    title: Our leadership team
+      image: "/images/works/banner.jpg"
+      image_alt: "Miniature vidéo équipe"
+      video_url: "https://vimeo.com/45830194"
+  - _name: "global/team"
+    title: "Notre équipe dirigeante"
     team_members:
-      - name: Nikolas Mcconnell
-        designation: Co-Founder & CEO
-        image: /images/team/1.jpg
-        image_alt: "Team member: Nikolas Mcconnell"
-      - name: Keiren Mcculloch
-        designation: CMO
-        image: /images/team/2.jpg
-        image_alt: "Team member: Keiren Mcculloch"
-      - name: Piers Reyes
-        designation: Head of Marketing
-        image: /images/team/3.jpg
-        image_alt: "Team member: Piers Reyes"
-      - name: Zachary Arias
-        designation: Co-founder & CTO
-        image: /images/team/4.jpg
-        image_alt: "Team member: Zachary Arias"
-      - name: Harmony Dunlop
-        designation: Head of Sales
-        image: /images/team/5.jpg
-        image_alt: "Team member: Harmony Dunlop"
-      - name: Elize Schwartz
-        designation: CRO
-        image: /images/team/6.jpg
-        image_alt: "Team member: Elize Schwartz"
-      - name: Coen Simmons
-        designation: Head of Design
-        image: /images/team/7.jpg
-        image_alt: "Team member: Coen Simmons"
-      - name: Fran Figureson
-        designation: Head of People
-        image: /images/team/8.jpg
-        image_alt: "Team member: Fran Figureson"
+      - name: "Nicolas V."
+        designation: "Fondateur"
+        image: "/images/team/1.jpg"
+        image_alt: "Membre: Nicolas"
+      - name: "Andréa F."
+        designation: "Développeur Fullstack & IoT"
+        image: "/images/team/1.jpg"
+        image_alt: "Membre: Andréa"
+      - name: "Jade C."
+        designation: "Développeuse mobile & UX/UI"
+        image: "/images/team/1.jpg"
+        image_alt: "Membre: Jade"
+      - name: "Pablo M."
+        designation: "Marketing"
+        image: "/images/team/1.jpg"
+        image_alt: "Membre: Pablo"
+      - name: "Adrien G."
+        designation: "Marketing"
+        image: "/images/team/1.jpg"
+        image_alt: "Membre: Adrien"
 ---

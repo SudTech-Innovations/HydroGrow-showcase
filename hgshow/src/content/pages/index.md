@@ -1,8 +1,8 @@
 ---
 _schema: default
-title: Home
+title: Accueil
 seo:
-  page_description:
+  page_description: HydroGrow est la solution ultime pour l'hydroponie connectée.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -11,110 +11,100 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/hero
-    title: Beautiful web campaigns
+    title: L'Hydroponie Intelligente
     description: >-
-      With Sendit, you can quickly create beautiful rich emails that capture a
-      reader's attention, engage them, and convert them into customers.
+      Avec HydroGrow, créez l'environnement parfait pour vos plantes. 
+      Surveillez, automatisez et optimisez vos cultures hydroponiques depuis votre smartphone, où que vous soyez.
     image: /images/hero/hero-image.avif
-    image_alt: Reports dashboard
+    image_alt: Tableau de bord HydroGrow
     button:
-      text: Try This Free
+      text: Commencer Gratuitement
       link: /signup/
   - _name: global/counter
-    title: Scale your
-    title_suffix: Business
+    title: Faites grandir votre
+    title_suffix: Culture
     description: >-
-      We have an extensive library of pre-written sales emails, proven marketing
-      templates, and more to get you started on your next project.
+      Rejoignez HydroGrow et cultivez plus intelligemment, plus vite et plus durablement.
     alternate_style: false
     numbers:
-      - prefix: $
-        number: '211'
-        suffix: m
-        text: Venture capital raised
-      - prefix:
-        number: '2016'
-        suffix:
-        text: Established in
-      - prefix:
-        number: '40'
-        suffix: +
-        text: Amazing team members
-      - prefix:
-        number: '4322'
-        suffix: +
-        text: Active users and growing
+      - prefix: "+"
+        number: "30"
+        suffix: "%"
+        text: de rendement.
+      - prefix: "+"
+        number: "40"
+        suffix: "%"
+        text: de croissance.
+      - prefix: "-"
+        number: "80"
+        suffix: "%"
+        text: de temps de gestion.
+      - prefix: "-"
+        number: "90"
+        suffix: "%"
+        text: d'eau consommée.
   - _name: global/video
     image: /images/video/video-thum.avif
-    image_alt: Thumbnail for video
+    image_alt: Présentation vidéo
     video_url: https://vimeo.com/45830194
   - _name: global/header
-    title: "Sendit "
-    title_suffix: Features
+    title: "Fonctionnalités "
+    title_suffix: HydroGrow
     description: >-
-      Our platform offers the most advanced features including automated email
-      content creation, dynamic personalization, and customer segmentation.
+      Notre plateforme offre les fonctionnalités les plus avancées, incluant la gestion automatisée des nutriments, le contrôle climatique et des alertes en temps réel.
     remove_top_padding: true
   - _name: global/feature
     image: /images/feature/feature-card-one.png
-    image_alt: Message inbox
-    title: Email Campaign in one minute
+    image_alt: Interface mobile
+    title: Contrôle total en un clic
     description: >-
-      Send an email campaign with one click, in just minutes. Automate your
-      emails and content, while keeping the human touch.
+      Gérez votre système hydroponique en quelques secondes. Ajustez le pH, l'EC et les cycles d'éclairage directement depuis l'application.
     button:
-      link: /signup
-      text: Try This Free
+      link: /features
+      text: En savoir plus
     reversed: false
   - _name: global/feature
     image: /images/feature/feature-card-two.png
-    image_alt: Visitor chart
-    title: See every Lead in one Place
+    image_alt: Graphiques de croissance
+    title: Suivez chaque plante
     description: >-
-      Sales analytics and automation made simple: see every sales lead in one
-      place, regardless of where it came from.
+      L'analyse de données simplifiée : visualisez la santé de vos plantes, l'historique des capteurs et les prévisions de récolte au même endroit.
     button:
-      link: /signup
-      text: Try This Free
+      link: /features
+      text: Voir les outils d'analyse
     reversed: true
   - _name: global/feature
     image: /images/feature/feature-card-three.png
-    image_alt: File upload
-    title: 100% free uploads
+    image_alt: Import de profils
+    title: Profils de culture prédéfinis
     description: >-
-      Sendit is used by everyone from small businesses to fortune 500 companies.
-      Browse our collection of email marketing templates and start sending
-      beautiful emails in minutes.
+      Que vous fassiez pousser des tomates, des laitues ou des orchidées, utilisez nos profils de croissance experts pour paramétrer votre système instantanément.
     button:
       link: /signup
-      text: Try This Free
+      text: Créer un compte
     reversed: false
-  - _name: global/testimonial
-    title: Build relationships that
-    title_suffix: last
-    description: >-
-      Customers from around the world are building game changing email marketing
-      campaigns.
-    testimonials:
-      - image: /images/testimonial/logo-2.jpg
-        image_alt: Profile photo of Pete Fish
-        author: Pete Fish
-        designation: CMO at Clear Appeal
-        message: >-
-          Sendit has taken Clear Appeal to the next level with its beautiful
-          email campaigns.
-      - image: /images/testimonial/logo-3.jpg
-        image_alt: Profile photo of Dolly Watson
-        author: Dolly Watson
-        designation: Digital Marketer at Time Cop
-        message: >-
-          Wow, what a difference Sendit has made. My customers are more engaged
-          than ever.
-      - image: /images/testimonial/logo-4.jpg
-        image_alt: Profile photo of Simon Moriarty
-        author: Simon Moriarty
-        designation: Head of Marketing at Pinnacle Mines
-        message: >-
-          I can't imagine life without Sendit now, I have no idea how we were
-          surviving before.
+  # - _name: global/testimonial
+  #   title: Ils nous font
+  #   title_suffix: confiance
+  #   description: >-
+  #     Des cultivateurs du monde entier transforment leur agriculture urbaine avec HydroGrow.
+  #   testimonials:
+  #     - image: /images/testimonial/logo-2.jpg
+  #       image_alt: Photo de Pierre
+  #       author: Pierre D.
+  #       designation: Agriculteur Urbain
+  #       message: >-
+  #         HydroGrow a fait passer ma production au niveau supérieur. La précision des capteurs est impressionnante.
+  #     - image: /images/testimonial/logo-3.jpg
+  #       image_alt: Photo de Sarah
+  #       author: Sarah M.
+  #       designation: Technicienne Agronome
+  #       message: >-
+  #         Wow, quelle différence ! Je passe moins de temps à surveiller et plus de temps à récolter.
+  #     - image: /images/testimonial/logo-4.jpg
+  #       image_alt: Photo de Simon
+  #       author: Simon R.
+  #       designation: Fondateur de Vertéco
+  #       message: >-
+  #         Je ne peux plus imaginer gérer mes serres sans HydroGrow. C'est le cerveau de mon installation.
 ---

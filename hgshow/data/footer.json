@@ -1,32 +1,32 @@
 {
   "logo": "/images/footer-logo.svg",
-  "logo_alt": "MyCompany Logo",
+  "logo_alt": "HydroGrow",
   "logo_url": "/",
-  "copyright": "MyCompany. All rights reserved.",
+  "copyright": "HydroGrow. All rights reserved.",
   "sections": [
     {
-      "title": "Main Pages",
+      "title": "Pages principales",
       "links": [
         {
-          "text": "Home",
+          "text": "Accueil",
           "link": "/"
         },
         {
-          "text": "Features",
+          "text": "Fonctionnalités",
           "link": "/features/"
         },
         {
-          "text": "Price",
+          "text": "Tarifs",
           "link": "/pricing/"
         },
         {
-          "text": "About",
+          "text": "À propos",
           "link": "/about/"
         }
       ]
     },
     {
-      "title": "Community",
+      "title": "Ressources",
       "links": [
         {
           "text": "Blog",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "title": "Company",
+      "title": "Entreprise",
       "links": [
         {
           "text": "Contact",

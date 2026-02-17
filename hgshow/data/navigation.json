@@ -1,25 +1,25 @@
 {
   "logo": "/images/logo.svg",
-  "logo_alt": "Company logo",
+  "logo_alt": "HydroGrow",
   "nav_items": [
     {
       "link": "/",
-      "text": "Home",
+      "text": "Accueil",
       "dropdown": []
     },
     {
       "link": "/features/",
-      "text": "Features",
+      "text": "Fonctionnalités",
       "dropdown": []
     },
     {
       "link": "/pricing/",
-      "text": "Pricing",
+      "text": "Tarifs",
       "dropdown": []
     },
     {
       "link": "/about/",
-      "text": "About",
+      "text": "À propos",
       "dropdown": []
     },
     {
@@ -27,19 +27,19 @@
       "text": "Blog",
       "dropdown": [
         {
-          "dropdown_text": "All Articles",
+          "dropdown_text": "Tous les articles",
           "dropdown_link": "/blog/"
         },
         {
-          "dropdown_text": "Blog Showcase",
-          "dropdown_link": "/blog/blog-showcase/"
+          "dropdown_text": "Vitrine du blog",
+          "dropdown_link": "/tags/showcase/"
         },
         {
           "dropdown_text": "Marketing",
           "dropdown_link": "/tags/marketing/"
         },
         {
-          "dropdown_text": "Technology",
+          "dropdown_text": "Technologie",
           "dropdown_link": "/tags/technology/"
         }
       ]
@@ -52,7 +52,7 @@
   ],
   "enable_nav_btn": true,
   "nav_btn": {
-    "text": "Get Started",
+    "text": "Commencer",
     "link": "/signup/"
   }
 }
