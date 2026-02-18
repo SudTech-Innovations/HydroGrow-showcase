@@ -112,7 +112,7 @@ content_blocks:
           - item: Dosage Automatique
             active_feature: false
         button:
-          link: /shop/essentiel
+          link: /pricing
           text: Commander
       - tier: Pack Confort
         highlight_tier: true
@@ -135,7 +135,7 @@ content_blocks:
           - item: Installation Plug & Play
             active_feature: true
         button:
-          link: /shop/confort
+          link: /pricingq
           text: Commander
       - tier: Pack Total IA
         highlight_tier: false

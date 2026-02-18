@@ -2,7 +2,7 @@
 _schema: paginated_collection
 title: Ressources & Conseils Hydroponiques
 description: "Apprenez à maîtriser l'hydroponie, découvrez nos guides de culture et restez informé des dernières innovations HydroGrow."
-page_size: 3
+page_size: 6
 seo:
   page_description: "Apprenez à maîtriser l'hydroponie, découvrez nos guides de culture et restez informé des dernières innovations HydroGrow."
   canonical_url:

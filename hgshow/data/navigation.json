@@ -31,16 +31,16 @@
           "dropdown_link": "/blog/"
         },
         {
-          "dropdown_text": "Vitrine du blog",
-          "dropdown_link": "/tags/showcase/"
-        },
-        {
-          "dropdown_text": "Marketing",
-          "dropdown_link": "/tags/marketing/"
-        },
-        {
           "dropdown_text": "Technologie",
-          "dropdown_link": "/tags/technology/"
+          "dropdown_link": "/tags/technologie/"
+        },
+        {
+          "dropdown_text": "IoT",
+          "dropdown_link": "/tags/iot/"
+        },
+        {
+          "dropdown_text": "Innovation",
+          "dropdown_link": "/tags/innovation/"
         }
       ]
     },
