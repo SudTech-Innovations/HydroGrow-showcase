@@ -44,4 +44,10 @@ content_blocks:
         placeholder: Comment pouvons-nous vous aider ?
       submit_button:
         text: Envoyer le message
+  - _name: global/faq
+    title: Questions
+    title_suffix: Fréquentes
+    description: >-
+      Avant de nous écrire, vérifiez si votre réponse n'est pas déjà ici.
+    faq_group: general
 ---

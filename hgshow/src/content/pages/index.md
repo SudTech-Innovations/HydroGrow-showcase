@@ -107,4 +107,10 @@ content_blocks:
   #       designation: Fondateur de Vertéco
   #       message: >-
   #         Je ne peux plus imaginer gérer mes serres sans HydroGrow. C'est le cerveau de mon installation.
+  - _name: global/faq
+    title: Questions
+    title_suffix: Fréquentes
+    description: >-
+      Retrouvez les réponses aux questions les plus courantes sur HydroGrow.
+    faq_group: general
 ---

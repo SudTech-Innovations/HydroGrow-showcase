@@ -2,6 +2,8 @@
 import MarkdownIt from "markdown-it";
 import Heading from "@components/shared/Heading.astro";
 import FaqItem from "./faqItem.astro";
+import faqData from "@data/faqs.json";
+
 const md = new MarkdownIt({ html: true });
 
 // Define TypeScript interfaces
@@ -14,10 +16,15 @@ interface Props {
   title: string;
   title_suffix: string;
   description: string;
-  FAQ: FaqItemData[];
+  FAQ?: FaqItemData[];
+  faq_group?: keyof typeof faqData;
 }
 
-const { title_suffix, description, FAQ, title } = Astro.props;
+const { title_suffix, description, FAQ = [], faq_group, title } = Astro.props;
+
+// Combine global FAQs with local FAQs
+const globalFaqs = (faq_group && faqData[faq_group as keyof typeof faqData]) || [];
+const finalFaqs = [...globalFaqs, ...FAQ];
 ---
 
 <section class="py-16 xl:py-24 2xl:py-32 bg-primary/10">
@@ -47,7 +54,7 @@ const { title_suffix, description, FAQ, title } = Astro.props;
       </div>
     </div>
     {
-      FAQ?.length && (
+      finalFaqs?.length && (
         <div class="flex justify-center">
           <div class="w-full">
             <div
@@ -60,7 +67,7 @@ const { title_suffix, description, FAQ, title } = Astro.props;
                   <FaqItem faq={{ title: "", description: "" }} i={0} />
                 </template>
               }
-              {FAQ?.map((q: FaqItemData, i: number) => (
+              {finalFaqs?.map((q: FaqItemData, i: number) => (
                 <FaqItem faq={q} i={i} data-editable="array-item" />
               ))}
             </div>

@@ -165,15 +165,5 @@ content_blocks:
     title_suffix: Questions ?
     description: >-
       Tout ce que vous devez savoir sur l'écosystème HydroGrow.
-    FAQ:
-      - title: Puis-je utiliser mon propre matériel (Arduino/ESP32) ?
-        description: Oui, absolument. L'abonnement "Cultivateur" vous donne accès aux identifiants MQTT pour connecter vos propres créations DIY à notre plateforme.
-      - title: Qu'est-ce que le mode Edge (Hors-ligne) ?
-        description: C'est une sécurité exclusive HydroGrow. Votre système continue de fonctionner, de réguler le pH et d'enregistrer les données localement même si votre connexion internet est coupée.
-      - title: Les packs matériel incluent-ils l'abonnement ?
-        description: Oui, tous nos packs matériel incluent 1 an d'abonnement "Cultivateur" offert (ou "Agronome" pour le Pack Total IA).
-      - title: Puis-je gérer plusieurs serres avec un seul compte ?
-        description: Oui, l'abonnement "Agronome Pro" est conçu spécifiquement pour gérer plusieurs installations ou "parcelles" depuis une interface unique.
-      - title: Mes données sont-elles privées ?
-        description: Vos données de culture vous appartiennent. Nous ne les partageons jamais. Elles sont hébergées sur des serveurs sécurisés en France.
+    faq_group: pricing
 ---

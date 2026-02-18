@@ -1,0 +1,62 @@
+{
+  "pricing": [
+    {
+      "title": "Puis-je utiliser mon propre matériel (Arduino/ESP32) ?",
+      "description": "Oui, absolument. L'abonnement \"Cultivateur\" vous donne accès aux identifiants MQTT pour connecter vos propres créations DIY à notre plateforme."
+    },
+    {
+      "title": "Qu'est-ce que le mode Edge (Hors-ligne) ?",
+      "description": "C'est une sécurité exclusive HydroGrow. Votre système continue de fonctionner, de réguler le pH et d'enregistrer les données localement même si votre connexion internet est coupée."
+    },
+    {
+      "title": "Les packs matériel incluent-ils l'abonnement ?",
+      "description": "Oui, tous nos packs matériel incluent 1 an d'abonnement \"Cultivateur\" offert (ou \"Agronome\" pour le Pack Total IA)."
+    },
+    {
+      "title": "Puis-je gérer plusieurs serres avec un seul compte ?",
+      "description": "Oui, l'abonnement \"Agronome Pro\" est conçu spécifiquement pour gérer plusieurs installations ou \"parcelles\" depuis une interface unique."
+    },
+    {
+      "title": "Mes données sont-elles privées ?",
+      "description": "Vos données de culture vous appartiennent. Nous ne les partageons jamais. Elles sont hébergées sur des serveurs sécurisés en France."
+    },
+    {
+      "title": "Le matériel des packs est-il garanti ?",
+      "description": "Oui, l'ensemble de nos capteurs, pompes et boîtiers de contrôle bénéficie d'une garantie constructeur de 2 ans. En cas de dysfonctionnement, notre support vous accompagne."
+    },
+    {
+      "title": "Puis-je changer d'abonnement en cours d'année ?",
+      "description": "Tout à fait. Vous pouvez passer d'un plan gratuit 'Germination' à un plan 'Cultivateur' ou 'Agronome Pro' à tout moment. La facturation s'ajustera automatiquement."
+    }
+  ],
+  "general": [
+    {
+      "title": "Qu'est-ce que HydroGrow ?",
+      "description": "HydroGrow est une solution complète (matériel + logiciel) pour sécuriser et automatiser vos cultures hydroponiques grâce à l'intelligence artificielle et l'IoT."
+    },
+    {
+      "title": "Dois-je être un expert en informatique ?",
+      "description": "Pas du tout ! Nos packs 'Prêt-à-pousser' sont conçus pour être installés en 15 minutes. L'interface est intuitive et pensée pour les jardiniers, pas les développeurs."
+    },
+    {
+      "title": "Quelle est la différence avec une serre classique ?",
+      "description": "Une serre classique subit les aléas climatiques. Avec HydroGrow, votre serre réagit : elle ferme les ouvrants si le vent se lève, active la brumisation si l'humidité chute, et vous alerte avant qu'une maladie ne se déclare."
+    },
+    {
+      "title": "Comment fonctionne l'IA Nexus ?",
+      "description": "Nexus analyse les données de milliers de cultures pour vous donner des conseils personnalisés. Elle détecte des anomalies invisibles à l'œil nu (carences, début de maladie) grâce à la vision par ordinateur."
+    },
+    {
+      "title": "HydroGrow est-il compatible avec mon système (DWC, NFT, Table à marée...) ?",
+      "description": "Oui ! Nos capteurs sont universels. Qu'ils soient plongés dans un simple bac DWC ou dans le réservoir principal d'un grand système NFT, HydroGrow surveillera et ajustera votre eau de la même manière."
+    },
+    {
+      "title": "Est-ce difficile de calibrer les sondes pH et EC ?",
+      "description": "C'est une étape cruciale, mais nous l'avons simplifiée. L'application HydroGrow intègre un 'Assistant de Calibration' interactif qui vous guide pas à pas lors de l'entretien de vos sondes."
+    },
+    {
+      "title": "Que se passe-t-il en cas de coupure de courant électrique ?",
+      "description": "Dès que le courant revient, le boîtier de contrôle HydroGrow redémarre instantanément. Grâce à sa mémoire locale, il reprend exactement ses cycles d'éclairage et d'arrosage là où il s'était arrêté."
+    }
+  ]
+}
