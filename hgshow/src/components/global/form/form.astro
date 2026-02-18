@@ -1,6 +1,8 @@
 ---
-import { Image } from "astro:assets";
 import Button from "../../shared/Button.astro";
+import companyData from "@data/company.json";
+
+const company = companyData as any;
 
 // Define TypeScript interfaces
 interface ContactInfo {
@@ -37,8 +39,32 @@ interface Props {
   form?: ContactForm;
 }
 
-
 const { address, phone, email, form } = Astro.props;
+
+const fallbackAddress = {
+  heading: company.address_label || "Adresse",
+  address: company.address,
+  image: "/images/contact/corporate-fare.svg",
+  image_alt: "Address icon"
+};
+
+const fallbackPhone = company.phone ? {
+  heading: company.phone_label || "Téléphone",
+  cell: company.phone,
+  image: "/images/contact/call-add.svg",
+  image_alt: "Phone icon"
+} : undefined;
+
+const fallbackEmail = {
+  heading: company.email_label || "Email",
+  email: company.contact_email_address,
+  image: "/images/contact/directbox-send.svg",
+  image_alt: "Email icon"
+};
+
+const displayAddress = address?.address ? address : (address?.heading ? { ...fallbackAddress, heading: address.heading } : fallbackAddress);
+const displayPhone = phone?.cell ? phone : (phone?.heading ? { ...fallbackPhone, heading: phone.heading } : fallbackPhone);
+const displayEmail = email?.email ? email : (email?.heading ? { ...fallbackEmail, heading: email.heading } : fallbackEmail);
 ---
 
 <section class="mb-20">
@@ -48,76 +74,81 @@ const { address, phone, email, form } = Astro.props;
       <!-- Contact Information -->
       <div class="lg:col-span-5 order-1 lg:-mt-30">
         <div class="space-y-8">
-          {address && (
+          {displayAddress && (
             <div class="space-y-2">
               <h3 class="text-xl font-semibold text-gray-900">
-                <editable-text data-prop="address.heading">{address.heading}</editable-text>
+                <editable-text data-prop="address.heading">{displayAddress.heading}</editable-text>
               </h3>
-              <p 
-                class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
+              <div 
+                class="flex items-start gap-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
-                <Image
+                <img
                   data-editable="image"
                   data-prop-src="address.image"
                   data-prop-alt="address.image_alt"
-                  src={address.image || "/images/default-address.png"}
-                  alt={address.image_alt || "Address icon"}
+                  src={displayAddress.image || "/images/default-address.png"}
+                  alt={displayAddress.image_alt || "Address icon"}
                   loading="lazy"
-                  width={24}
-                  height={24}
-                  class="w-6 h-6"
+                  width="24"
+                  height="24"
+                  class="w-6 h-6 shrink-0 mt-0.5"
                 />
-                <editable-text data-prop="address.address">{address.address}</editable-text>
-              </p>
+                <div>
+                  <editable-text data-prop="address.address">{displayAddress.address}</editable-text>
+                  {displayAddress.address === company.address && company.postal_address && (
+                    <div class="block text-gray-500">{company.postal_address}</div>
+                  )}
+                </div>
+              </div>
             </div>
           )}
           
-          {phone && (
+          {displayPhone && (
             <div class="space-y-2">
               <h3 class="text-xl font-semibold text-gray-900">
-                <editable-text data-prop="phone.heading">{phone.heading}</editable-text>
+                <editable-text data-prop="phone.heading">{displayPhone.heading}</editable-text>
               </h3>
               <a 
-                href={`tel:${phone.cell}`}
+                href={`tel:${displayPhone.cell}`}
                 class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
-                <Image
+                <img
                   data-editable="image"
                   data-prop-src="phone.image"
                   data-prop-alt="phone.image_alt"
-                  src={phone.image || "/images/default-phone.png"}
-                  alt={phone.image_alt || "Phone icon"}
+                  src={displayPhone.image || "/images/default-phone.png"}
+                  alt={displayPhone.image_alt || "Phone icon"}
                   loading="lazy"
-                  width={24}
-                  height={24}
+                  width="24"
+                  height="24"
                   class="w-6 h-6"
                 />
-                <editable-text data-prop="phone.cell">{phone.cell}</editable-text>
+                <editable-text data-prop="phone.cell">{displayPhone.cell}</editable-text>
               </a>
             </div>
           )}
           
-          {email && (
+          {displayEmail && (
             <div class="space-y-2">
               <h3 class="text-xl font-semibold text-gray-900">
-                <editable-text data-prop="email.heading">{email.heading}</editable-text>
+                <editable-text data-prop="email.heading">{displayEmail.heading}</editable-text>
               </h3>
               <a 
-                href={`mailto:${email.email}`}
+                href={`mailto:${displayEmail.email}`}
                 class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
-                <Image
+                <img
                   data-editable="image"
                   data-prop-src="email.image"
                   data-prop-alt="email.image_alt"
-                  src={email.image || "/images/default-email.png"}
-                  alt={email.image_alt || "Email icon"}
+                  src={displayEmail.image || "/images/default-email.png"}
+                  alt={displayEmail.image_alt || "Email icon"}
                   loading="lazy"
-                  width={24}
-                  height={24}
+                  width="24"
+                  height="24"
                   class="w-6 h-6"
                 />
-                <editable-text data-prop="email.email">{email.email}</editable-text>
+                <editable-text data-prop="email.email">{displayEmail.email}</editable-text>
               </a>
             </div>
           )}

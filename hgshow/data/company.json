@@ -1,8 +1,11 @@
 {
   "site_title": "HydroGrow",
   "description": "HydroGrow is a website template for Hydroponic systems.",
-  "contact_email_address": "[EMAIL_ADDRESS]",
+  "address_label": "Bureau",
+  "address": "494 avenue du bois couchant",
+  "postal_address": "34280, La Grande Motte",
+  "phone_label": "Téléphone",
   "phone": "(03) 123 4567",
-  "address": "123 Example Street, Gooseburb, 9876, Ducktown, New Zealand",
-  "postal_address": "PO Box 123, Ducktown, New Zealand"
+  "email_label": "Mail",
+  "contact_email_address": "contact@hydrogrow.fr"
 }

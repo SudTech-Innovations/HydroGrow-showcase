@@ -1,5 +1,8 @@
 ---
 import footer from "../../../data/footer.json";
+import companyData from "@data/company.json";
+
+const company = companyData as any;
 
 // Define TypeScript interfaces
 interface SocialLink {
@@ -44,10 +47,26 @@ const footerData = footer as FooterData;
                 class="max-h-26 max-w-full"
               />
             </a>
-            <p class="text-gray-300 text-sm font-semibold mb-6 sm:mb-8">
+            <p class="text-gray-300 text-sm font-semibold mb-2">
               © Copyright <span>{new Date().getFullYear()}</span>{" "}
               <editable-text data-prop="@data[footer].copyright">{footerData.copyright}</editable-text>
             </p>
+            <div class="text-gray-400 text-xs space-y-1 mb-6 sm:mb-8 font-medium">
+              <p>{company.address}</p>
+              {company.postal_address && <p>{company.postal_address}</p>}
+              {company.phone && (
+              <p>
+                <a href={`tel:${company.phone}`} class="hover:text-primary transition-colors">
+                  {company.phone}
+                </a>
+              </p>
+              )}
+              <p>
+                <a href={`mailto:${company.contact_email_address}`} class="hover:text-primary transition-colors">
+                  {company.contact_email_address}
+                </a>
+              </p>
+            </div>
           </div>
         </div>
 
