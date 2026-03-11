@@ -2,10 +2,10 @@
   "site_title": "HydroGrow",
   "description": "HydroGrow is a website template for Hydroponic systems.",
   "address_label": "Bureau",
-  "address": "494 avenue du bois couchant",
-  "postal_address": "34280, La Grande Motte",
+  "address": "",
+  "postal_address": "La Grande Motte",
   "phone_label": "Téléphone",
-  "phone": "(03) 123 4567",
+  "phone": "",
   "email_label": "Mail",
   "contact_email_address": "contact@hydrogrow.fr"
 }

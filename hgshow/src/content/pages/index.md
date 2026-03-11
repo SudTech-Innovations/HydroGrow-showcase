@@ -28,7 +28,7 @@ content_blocks:
     alternate_style: false
     numbers:
       - prefix: "+"
-        number: "30"
+        number: "50"
         suffix: "%"
         text: de rendement.
       - prefix: "+"

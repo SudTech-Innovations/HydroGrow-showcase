@@ -142,6 +142,7 @@ const { title, form } = Astro.props;
             />
           </div>
 
+          <!-- 
           <div class="relative my-6">
             <div class="absolute inset-0 flex items-center">
               <div class="w-full border-t border-gray-300"></div>
@@ -194,19 +195,23 @@ const { title, form } = Astro.props;
               </svg>
               Sign In with Facebook
             </button>
-          </div>
+          </div> 
+          -->
 
+          
           <div class="border-t border-gray-200 pt-6 mt-9">
             <div class="text-center">
-              <a data-astro-prefetch href={form.log_in_button.link} class="text-primary/40 hover:text-primary font-medium transition-colors">
-                <editable-text data-prop="form.log_in_button.text">{form.log_in_button.text}</editable-text>
-              </a>
-            </div>
+              <a data-astro-prefetch href={form.log_in_button.link} class="text-blue-600 hover:text-blue-800 font-medium transition-colors">
+              <editable-text data-prop="form.log_in_button.text">{form.log_in_button.text}</editable-text>
+            </a>
           </div>
-        </form>
-      </div>
+
+          
+        </div>
+      </form>
     </div>
   </div>
+</div>
 </section>
 
 <script>

@@ -13,8 +13,8 @@ content_blocks:
     title: Créer un compte
     form:
       fullname:
-        heading: Nom complet
-        placeholder: Votre nom
+        heading: Nom d'utilisateur
+        placeholder: Pseudo
       email:
         heading: Adresse email
         placeholder: Votre email
@@ -24,10 +24,11 @@ content_blocks:
       retype_password:
         heading: Confirmer le mot de passe
         placeholder: Retapez votre mot de passe
-      checkbox_text: En vous inscrivant, vous acceptez nos Conditions, Politique d'utilisation et
+      checkbox_text:
+        En vous inscrivant, vous acceptez nos Conditions, Politique d'utilisation et
         Notice de confidentialité.
       sign_up_text: Créer un compte
       log_in_button:
         link: /login
-        text: Se connecter
+        text: Vous avez déjà un compte ? Connectez-vous
 ---
