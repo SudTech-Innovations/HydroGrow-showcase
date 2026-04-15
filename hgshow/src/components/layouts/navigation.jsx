@@ -61,6 +61,16 @@ export default function Navigation({ pageUrl }) {
     setOpenDropdown(openDropdown === index ? null : index);
   };
 
+  const normalizePath = (path) => {
+    if (!path) return "";
+    return path.endsWith("/") ? path : `${path}/`;
+  };
+
+  const isPageActive = (link) => {
+    if (!pageUrl?.pathname || !link) return false;
+    return normalizePath(pageUrl.pathname) === normalizePath(link);
+  };
+
   return (
     <>
       {/* Skip to content link for accessibility */}
@@ -249,7 +259,7 @@ export default function Navigation({ pageUrl }) {
                           <button
                             ref={getDropdownButtonRef(i)}
                             id={`dropdown-button-${i}`}
-                            className={`block w-full whitespace-nowrap text-left px-10 lg:px-5 py-3 text-2xl lg:text-xl font-normal lg:rounded-lg transition-colors duration-200 hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset ${pageUrl?.pathname === item.link || item.dropdown?.some((dropdownItem) => pageUrl?.pathname === dropdownItem.dropdown_link) ? "text-primary" : "text-gray-700"} flex items-center lg:justify-start`}
+                            className={`block w-full whitespace-nowrap text-left px-10 lg:px-5 py-3 text-2xl lg:text-xl font-normal lg:rounded-lg transition-colors duration-200 hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset ${isPageActive(item.link) || item.dropdown?.some((dropdownItem) => isPageActive(dropdownItem.dropdown_link)) ? "text-primary" : "text-gray-700"} flex items-center lg:justify-start`}
                             onClick={(e) => {
                               handleDropdownClick(e, i);
                               // Close mobile menu if it's a regular link (not dropdown)
@@ -325,7 +335,7 @@ export default function Navigation({ pageUrl }) {
                                   >
                                     <a
                                       data-astro-prefetch
-                                      className={`block px-12 lg:px-5 py-2 text-xl font-normal lg:font-medium hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset transition-all duration-200 border-b border-gray-100 last:border-b-0 ${pageUrl?.pathname === dropdown_item.dropdown_link ? "text-primary" : "text-gray-700"}`}
+                                      className={`block px-12 lg:px-5 py-2 text-xl font-normal lg:font-medium hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset transition-all duration-200 border-b border-gray-100 last:border-b-0 ${isPageActive(dropdown_item.dropdown_link) ? "text-primary" : "text-gray-700"}`}
                                       href={dropdown_item.dropdown_link}
                                       onClick={closeMobileMenu}
                                       onKeyDown={(e) => {
@@ -377,7 +387,7 @@ export default function Navigation({ pageUrl }) {
                         <a
                           data-astro-prefetch
                           href={`${item.link}`}
-                          className={`block whitespace-nowrap px-10 lg:px-5 py-3 text-2xl lg:text-xl font-normal lg:rounded-lg transition-colors duration-200 hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset ${pageUrl?.pathname === item.link ? "text-primary" : "text-gray-700"}`}
+                          className={`block whitespace-nowrap px-10 lg:px-5 py-3 text-2xl lg:text-xl font-normal lg:rounded-lg transition-colors duration-200 hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset ${isPageActive(item.link) ? "text-primary" : "text-gray-700"}`}
                           onClick={closeMobileMenu}
                           role="menuitem"
                         >
