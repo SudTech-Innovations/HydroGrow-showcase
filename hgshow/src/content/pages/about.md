@@ -57,7 +57,7 @@ content_blocks:
     video:
       image: "/images/works/banner.webp"
       image_alt: "Miniature vidéo équipe"
-      video_url: "https://vimeo.com/45830194"
+      video_url: /videos/WgOP2bW2vWqlAtyYu4Hl8J8v4TNG2UCejfL3Bf.MP4
   - _name: "global/team"
     title: "Notre équipe dirigeante"
     team_members:

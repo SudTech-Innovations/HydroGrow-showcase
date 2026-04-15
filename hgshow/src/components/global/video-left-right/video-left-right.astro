@@ -4,7 +4,7 @@ import MarkdownIt from "markdown-it";
 import Button from "../../shared/Button.astro";
 import Heading from "../../shared/Heading.astro";
 import Modal from "../../shared/Modal.astro";
-import Vimeo from "../../shared/Vimeo.astro";
+import VideoPlayer from "../../shared/VideoPlayer.astro";
 const md = new MarkdownIt({ html: true });
 
 // Define TypeScript interfaces
@@ -37,10 +37,10 @@ const { title, description, button, video } = Astro.props;
       <h3 class="text-lg font-semibold text-gray-900">Video Player</h3>
     </div>
 
-    <!-- Main content - Vimeo embed -->
-    <div class="aspect-video" data-editable="component" data-prop-videoid="video" data-component="shared/Vimeo">
+    <!-- Main content - VideoPlayer (handles Vimeo or Local) -->
+    <div class="aspect-video" data-editable="component" data-prop-url="video.video_url" data-component="shared/VideoPlayer">
       {video && (
-        <Vimeo videoid={video.video_url} title="Video Player" responsive={true} autoplay={true} class="w-full h-full" />
+        <VideoPlayer url={video.video_url} title="Video Player" autoplay={true} class="w-full h-full" />
       )}
     </div>
   </Modal>

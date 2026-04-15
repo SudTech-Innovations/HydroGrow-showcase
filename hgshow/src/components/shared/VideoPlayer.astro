@@ -1,0 +1,60 @@
+---
+import Vimeo from "./Vimeo.astro";
+
+export interface Props {
+  url: string;
+  title?: string;
+  autoplay?: boolean;
+  muted?: boolean;
+  loop?: boolean;
+  controls?: boolean;
+  class?: string;
+  poster?: string;
+}
+
+const {
+  url,
+  title = "Video Player",
+  autoplay = false,
+  muted = false,
+  loop = false,
+  controls = true,
+  class: className = "",
+  poster,
+} = Astro.props;
+
+// Determine video type
+const isVimeo = /vimeo\.com|^\d+$/.test(url);
+const isLocal = url.toLowerCase().endsWith(".mp4") || url.toLowerCase().endsWith(".webm") || url.toLowerCase().endsWith(".ogg") || url.startsWith("/");
+
+const videoClasses = `w-full h-full rounded-lg ${className}`.trim();
+---
+
+{
+  isVimeo ? (
+    <Vimeo 
+      videoid={url} 
+      title={title} 
+      autoplay={autoplay} 
+      muted={muted} 
+      loop={loop} 
+      controls={controls} 
+      class={className} 
+    />
+  ) : (
+    <div class="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg bg-black">
+      <video
+        src={url}
+        poster={poster}
+        autoplay={autoplay}
+        muted={muted}
+        loop={loop}
+        controls={controls}
+        class="absolute top-0 left-0 w-full h-full object-cover"
+        title={title}
+      >
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  )
+}

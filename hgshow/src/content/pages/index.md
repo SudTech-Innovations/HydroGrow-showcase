@@ -46,7 +46,7 @@ content_blocks:
   - _name: global/video
     image: /images/video/video-thum.webp
     image_alt: Présentation vidéo
-    video_url: https://vimeo.com/45830194
+    video_url: /videos/WgOP2bW2vWqlAtyYu4Hl8J8v4TNG2UCejfL3Bf.MP4
   - _name: global/header
     title: "Fonctionnalités "
     title_suffix: HydroGrow

@@ -38,7 +38,7 @@ import GlobalVideo from "../components/global/video/video.astro";
 import LayoutsFooter from "../components/layouts/footer.astro";
 import GlobalPricingTable from "../components/global/pricing-table/pricing-table.astro";
 import GlobalPricingItem from "../components/global/pricing-table/item.astro";
-import SharedVimeo from "../components/shared/Vimeo.astro";
+import SharedVideoPlayer from "../components/shared/VideoPlayer.astro";
 
 // Define component registrations with proper typing
 const astroComponentRegistrations = [
@@ -62,7 +62,7 @@ const astroComponentRegistrations = [
   { name: "blog/list", component: BlogList },
   { name: "blog/pagination", component: BlogPagination },
   { name: "global/faqItem", component: GlobalFaqItem },
-  { name: "shared/Vimeo", component: SharedVimeo },
+  { name: "shared/VideoPlayer", component: SharedVideoPlayer },
 ];
 
 // Register your React components with CloudCannon
