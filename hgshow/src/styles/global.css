@@ -6,6 +6,10 @@
   @apply underline decoration-link;
 }
 
+.prose img {
+  @apply rounded-3xl shadow-lg;
+}
+
 /* Global stylesheet */
 html.vt-off {
   view-transition-name: none; /* prevent automatic matching */

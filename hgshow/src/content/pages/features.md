@@ -16,7 +16,7 @@ content_blocks:
     button:
       link: /signup
       text: Commencez maintenant
-    image: /images/feature/feature-hero.png
+    image: /images/feature/feature-hero.webp
     image_alt: Dashboard HydroGrow
   - _name: global/header
     title: "Une gestion "
@@ -24,7 +24,7 @@ content_blocks:
     description: Prenez le contrôle total de votre environnement de culture avec nos outils de pointe.
     remove_top_padding: false
   - _name: global/feature
-    image: /images/feature/feature-card-one.png
+    image: /images/feature/feature-card-four.webp
     image_alt: Application mobile de surveillance
     title: Surveillance en Temps Réel
     description: >-
@@ -34,7 +34,7 @@ content_blocks:
       text: Voir la démo
     reversed: false
   - _name: global/feature
-    image: /images/feature/feature-card-two.png
+    image: /images/feature/feature-card-five.webp
     image_alt: Automatisation des sytèmes
     title: Automatisation Complète
     description: >-
@@ -44,7 +44,7 @@ content_blocks:
       text: En savoir plus
     reversed: true
   - _name: global/feature
-    image: /images/feature/feature-card-three.png
+    image: /images/feature/feature-card-six.webp
     image_alt: Analyse de données
     title: Optimisation par l'IA
     description: >-

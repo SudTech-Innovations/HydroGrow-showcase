@@ -4,6 +4,6 @@ tags: []
 
 value:
   _name: global/video
-  image: /images/video/video-thum.avif
+  image: /images/video/video-thum.webp
   image_alt: Thumbnail for video
   video_url: https://vimeo.com/45830194

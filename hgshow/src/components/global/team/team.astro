@@ -29,7 +29,8 @@ const { title, team_members } = Astro.props;
         team_members?.map((member: TeamMember, i: number) => (
           <div data-editable="array-item">
             <div class="text-center group">
-              <div class="mb-6 overflow-hidden rounded-2xl">
+              <div class="mb-6 shadow-xl rounded-3xl">
+                <div class="overflow-hidden rounded-3xl">
                 <Image
                   data-editable="image"
                   data-prop-src="image"
@@ -41,6 +42,7 @@ const { title, team_members } = Astro.props;
                   height={579}
                   class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+                </div>
               </div>
               <div class="space-y-2">
                 <h3 class="text-xl font-semibold text-gray-900" data-editable="text" data-prop="name">

@@ -6,7 +6,7 @@ value:
   _name: global/feature
   title: Text Message in One Minute
   description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
-  image: /images/feature/feature-card-one.png
+  image: /images/feature/feature-card-one.webp
   image_alt: Message inbox
   button:
     link: /signup

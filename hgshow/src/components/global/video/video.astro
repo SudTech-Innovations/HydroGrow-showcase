@@ -29,8 +29,8 @@ export interface Props {
   <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-wrap">
       <div class="w-full lg:w-5/6 mx-auto">
-        <div class="relative z-10">
-          <div class="rounded-[20px] overflow-hidden relative">
+        <div class="relative z-10 shadow-2xl rounded-3xl">
+          <div class="rounded-3xl overflow-hidden relative">
             {
               image && (
                 <Image
@@ -46,8 +46,8 @@ export interface Props {
                 />
               )
             }
-            <!-- Red overlay -->
-            <div class="absolute inset-0 bg-red-600 opacity-20 rounded-[20px]"></div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-primary opacity-20 rounded-3xl"></div>
           </div>
 
           <!-- Decorative effect one -->

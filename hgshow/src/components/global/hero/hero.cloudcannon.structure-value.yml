@@ -7,13 +7,13 @@ value:
   title: One mission to make the better marketing
   description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
   hero_images:
-    - image: /images/about/aboutfeature-two.jpg
+    - image: /images/about/aboutfeature-two.webp
       image_alt: People working
       placement: front_bottom
-    - image: /images/about/aboutfeature-three.jpg
+    - image: /images/about/aboutfeature-three.webp
       image_alt: Group of people looking at a computer
       placement: back_top_right
-    - image: /images/about/aboutfeature-four.jpg
+    - image: /images/about/aboutfeature-four.webp
       image_alt: Staff group photo
       placement: back_top_left
   button:
@@ -30,7 +30,7 @@ _inputs:
       max_items_message: This component can use a maximum of three images.
   description:
     type: markdown
-  
+
 _structures:
   hero_image:
     values:
@@ -61,7 +61,7 @@ _structures:
             - key: image
           text:
             - key: image_alt
-            - 'Hero Image'
+            - "Hero Image"
           subtext:
             - key: placement
 

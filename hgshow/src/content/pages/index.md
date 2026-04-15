@@ -15,7 +15,7 @@ content_blocks:
     description: >-
       Avec HydroGrow, créez l'environnement parfait pour vos plantes. 
       Surveillez, automatisez et optimisez vos cultures hydroponiques depuis votre smartphone, où que vous soyez.
-    image: /images/hero/hero-image.avif
+    image: /images/hero/hero-image.webp
     image_alt: Tableau de bord HydroGrow
     button:
       text: Commencer Gratuitement
@@ -44,7 +44,7 @@ content_blocks:
         suffix: "%"
         text: d'eau consommée.
   - _name: global/video
-    image: /images/video/video-thum.avif
+    image: /images/video/video-thum.webp
     image_alt: Présentation vidéo
     video_url: https://vimeo.com/45830194
   - _name: global/header
@@ -54,7 +54,7 @@ content_blocks:
       Notre plateforme offre les fonctionnalités les plus avancées, incluant la gestion automatisée des nutriments, le contrôle climatique et des alertes en temps réel.
     remove_top_padding: true
   - _name: global/feature
-    image: /images/feature/feature-card-one.png
+    image: /images/feature/feature-card-one.webp
     image_alt: Interface mobile
     title: Contrôle total en un clic
     description: >-
@@ -64,7 +64,7 @@ content_blocks:
       text: En savoir plus
     reversed: false
   - _name: global/feature
-    image: /images/feature/feature-card-two.png
+    image: /images/feature/feature-card-two.webp
     image_alt: Graphiques de croissance
     title: Suivez chaque plante
     description: >-
@@ -74,7 +74,7 @@ content_blocks:
       text: Voir les outils d'analyse
     reversed: true
   - _name: global/feature
-    image: /images/feature/feature-card-three.png
+    image: /images/feature/feature-card-three.webp
     image_alt: Import de profils
     title: Profils de culture prédéfinis
     description: >-

@@ -6,10 +6,26 @@ value:
   _name: global/team
   title: Our leadership & Team Members
   team_members:
-    - name: Cody Fisher
-      designation: Co-Founder & CEO
-      image: /images/team/1.jpg
-      image_alt: "Team member: Cody Fisher"
+    - name: Nicolas V.
+      designation: Fondateur
+      image: /images/team/nicolas.webp
+      image_alt: "Team member: Nicolas V."
+    - name: Andréa F.
+      designation: Développeur Fullstack & IoT
+      image: /images/team/andrea.webp
+      image_alt: "Team member: Andréa F."
+    - name: Jade C.
+      designation: Développeuse mobile & UX/UI
+      image: /images/team/jade.webp
+      image_alt: "Team member: Jade C."
+    - name: Pablo M.
+      designation: Chef de projet digital
+      image: /images/team/pablo.webp
+      image_alt: "Team member: Pablo M."
+    - name: Adrien G.
+      designation: Marketing & design
+      image: /images/team/adrien.webp
+      image_alt: "Team member: Adrien G."
 
 _inputs:
   image:

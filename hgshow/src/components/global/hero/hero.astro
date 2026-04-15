@@ -94,13 +94,13 @@ const hasSingleImage = image && image_alt;
                       width={600}
                       height={400}
                       fetchpriority={i === 0 ? 'high' : undefined}
-                      class="w-full h-full object-cover rounded-md bg-gray-50 shadow-xl ring-1 ring-white/10"
+                      class="w-full h-full object-cover rounded-3xl bg-gray-50 shadow-xl ring-1 ring-white/10"
                       loading="eager"
                       decoding="async"
                     />
                     <!-- Red tint overlay -->
                     <div 
-                      class="absolute inset-0 rounded-md bg-primary mix-blend-multiply opacity-30"
+                      class="absolute inset-0 rounded-3xl bg-primary mix-blend-multiply opacity-30"
                     ></div>
                   )
                 }
@@ -126,7 +126,7 @@ const hasSingleImage = image && image_alt;
             height={600}
             loading={"eager"}
             fetchpriority="high"
-            class="max-h-[600px] w-full object-cover rounded-md bg-gray-50 shadow-xl ring-1 ring-white/10"
+            class="max-h-[600px] w-full object-cover rounded-3xl bg-gray-50 shadow-xl ring-1 ring-white/10"
           />
         </div>
       ) : null}

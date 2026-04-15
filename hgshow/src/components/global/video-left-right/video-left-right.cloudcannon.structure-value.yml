@@ -10,11 +10,10 @@ value:
     link: https://www.linkedin.com/
     text: Follow on Linkedin
   video:
-    image: /images/works/banner.jpg
+    image: /images/works/banner.webp
     image_alt: Placeholder image for the video
     link: https://vimeo.com/45830194
 
 _inputs:
   description:
     type: markdown
-

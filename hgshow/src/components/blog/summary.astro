@@ -16,7 +16,8 @@ const {
 ---
 
 <article class="group bg-white overflow-hidden max-w-xl">
-  <div class="aspect-4/3 overflow-hidden rounded-2xl">
+  <div class="aspect-4/3 shadow-lg rounded-3xl mb-4">
+    <div class="overflow-hidden rounded-3xl h-full">
     <a data-astro-prefetch href={`/blog/${slug}`} class="block h-full">
       <Image
         transition:persist={`blog-image-${slug}`}
@@ -26,9 +27,10 @@ const {
         width={400}
         height={300}
         format="avif"
-        class="w-full rounded-2xl h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        class="w-full rounded-3xl h-full object-cover group-hover:scale-105 transition-transform duration-300"
       />
     </a>
+    </div>
   </div>
   <div class="p-6 space-y-4">
     <div class="flex flex-wrap gap-2">
