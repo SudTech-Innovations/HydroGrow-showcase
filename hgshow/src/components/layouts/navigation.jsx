@@ -1,11 +1,12 @@
 import navigation from "@data/navigation.json";
+import tagGroups from "@data/blog-tag-groups.json";
 import { useRef, useState } from "react";
 import { useBodyScrollLock } from "../../hooks/useBodyScrollLock";
 import { useClickOutside } from "../../hooks/useClickOutside";
 import { useKeyPress } from "../../hooks/useKeyPress";
 import { useSticky } from "../../hooks/useSticky";
 
-export default function Navigation({ pageUrl }) {
+export default function Navigation({ pageUrl, blogTags = [] }) {
   const isSticky = useSticky();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -70,6 +71,22 @@ export default function Navigation({ pageUrl }) {
     if (!pageUrl?.pathname || !link) return false;
     return normalizePath(pageUrl.pathname) === normalizePath(link);
   };
+
+  const tagLink = (tag) => `/tags/${encodeURIComponent(tag)}/`;
+  const configuredTags = new Set(tagGroups.flatMap((group) => group.tags));
+  const visibleTags = new Set(blogTags);
+  const blogDropdownGroups = [
+    ...tagGroups
+      .map((group) => ({
+        label: group.label,
+        tags: group.tags.filter((tag) => visibleTags.has(tag)),
+      }))
+      .filter((group) => group.tags.length > 0),
+    {
+      label: "Autres sujets",
+      tags: blogTags.filter((tag) => !configuredTags.has(tag)),
+    },
+  ].filter((group) => group.tags.length > 0);
 
   return (
     <>
@@ -259,7 +276,7 @@ export default function Navigation({ pageUrl }) {
                           <button
                             ref={getDropdownButtonRef(i)}
                             id={`dropdown-button-${i}`}
-                            className={`block w-full whitespace-nowrap text-left px-10 lg:px-5 py-3 text-2xl lg:text-xl font-normal lg:rounded-lg transition-colors duration-200 hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset ${isPageActive(item.link) || item.dropdown?.some((dropdownItem) => isPageActive(dropdownItem.dropdown_link)) ? "text-primary" : "text-gray-700"} flex items-center lg:justify-start`}
+                            className={`block w-full whitespace-nowrap text-left px-10 lg:px-5 py-3 text-2xl lg:text-xl font-normal lg:rounded-lg transition-colors duration-200 hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset ${isPageActive(item.link) || (item.link === "/blog/" ? blogTags.some((tag) => isPageActive(tagLink(tag))) : item.dropdown?.some((dropdownItem) => isPageActive(dropdownItem.dropdown_link))) ? "text-primary" : "text-gray-700"} flex items-center lg:justify-start`}
                             onClick={(e) => {
                               handleDropdownClick(e, i);
                               // Close mobile menu if it's a regular link (not dropdown)
@@ -315,7 +332,7 @@ export default function Navigation({ pageUrl }) {
                           <ul
                             ref={getDropdownMenuRef(i)}
                             id={`dropdown-menu-${i}`}
-                            className={`lg:absolute lg:top-full lg:left-0 lg:min-w-[200px] w-full lg:bg-white lg:shadow-lg lg:rounded-lg lg:border lg:border-gray-200 transition-all duration-250 z-50 px-0 ${
+                            className={`lg:absolute lg:top-full lg:left-0 lg:w-80 lg:max-h-[70vh] lg:overflow-y-auto w-full max-h-[calc(100vh-8rem)] overflow-y-auto lg:bg-white lg:shadow-lg lg:rounded-lg lg:border lg:border-gray-200 transition-all duration-250 z-50 px-0 ${
                               openDropdown === i
                                 ? "block lg:opacity-100 lg:visible lg:translate-y-0"
                                 : "hidden lg:block lg:opacity-0 lg:invisible lg:translate-y-1"
@@ -324,8 +341,44 @@ export default function Navigation({ pageUrl }) {
                             aria-labelledby={`dropdown-button-${i}`}
                             aria-hidden={openDropdown !== i}
                           >
-                            <div data-editable="array" data-prop="dropdown">
-                              {item.dropdown.map((dropdown_item, j) => {
+                            <ul data-editable="array" data-prop="dropdown">
+                              {item.link === "/blog/" ? (
+                                <>
+                                  <li role="none">
+                                    <a
+                                      data-astro-prefetch
+                                      className={`block px-12 lg:px-5 py-2 text-xl font-normal lg:font-medium hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset transition-all duration-200 border-b border-gray-100 ${isPageActive(item.link) ? "text-primary" : "text-gray-700"}`}
+                                      href={item.link}
+                                      onClick={closeMobileMenu}
+                                      role="menuitem"
+                                    >
+                                      Tous les articles
+                                    </a>
+                                  </li>
+                                  {blogDropdownGroups.map((group) => (
+                                    <li key={group.label} role="none" className="border-b border-gray-100 last:border-b-0">
+                                      <p className="px-12 lg:px-5 pt-4 pb-1 text-xs font-bold uppercase tracking-wider text-primary/80">
+                                        {group.label}
+                                      </p>
+                                      <ul className="pb-2" aria-label={group.label}>
+                                        {group.tags.map((tag) => (
+                                          <li key={tag} role="none">
+                                            <a
+                                              data-astro-prefetch
+                                              className={`block px-14 lg:px-7 py-1.5 text-lg font-normal hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset transition-all duration-200 ${isPageActive(tagLink(tag)) ? "text-primary" : "text-gray-700"}`}
+                                              href={tagLink(tag)}
+                                              onClick={closeMobileMenu}
+                                              role="menuitem"
+                                            >
+                                              {tag}
+                                            </a>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    </li>
+                                  ))}
+                                </>
+                              ) : item.dropdown.map((dropdown_item, j) => {
                                 return (
                                   <li
                                     key={j}
@@ -380,7 +433,7 @@ export default function Navigation({ pageUrl }) {
                                   </li>
                                 );
                               })}
-                            </div>
+                            </ul>
                           </ul>
                         </>
                       ) : (

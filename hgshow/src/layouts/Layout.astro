@@ -5,6 +5,7 @@ import Navigation from "@components/layouts/navigation";
 import { SEO } from "astro-seo";
 import site from "@data/site.json";
 import ThemeEditableWrapper from "@components/shared/ThemeEditableWrapper";
+import { getCollection } from "astro:content";
 
 export interface SEOProps {
   page_description: string | null;
@@ -28,6 +29,8 @@ const description = seo?.page_description || site.description;
 const image = seo?.featured_image || site.image;
 const image_alt = seo?.featured_image_alt || site.image_alt;
 const canonicalURL = new URL(seo?.canonical_url || Astro.url.pathname, baseUrl);
+const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.draft)).flatMap(({ data }) => data.tags))]
+  .sort((a, b) => a.localeCompare(b, "fr"));
 ---
 
 <!doctype html>
@@ -80,7 +83,7 @@ const canonicalURL = new URL(seo?.canonical_url || Astro.url.pathname, baseUrl);
       }
     </script>
     <editable-component data-component="layouts/Navigation" data-prop="@data[navigation]">
-      <Navigation client:load pageUrl={canonicalURL} />
+      <Navigation client:load pageUrl={canonicalURL} blogTags={blogTags} />
     </editable-component>
     <div class="flex-1">
       <slot />

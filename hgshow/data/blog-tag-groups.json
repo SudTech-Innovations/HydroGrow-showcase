@@ -1,0 +1,7 @@
+[
+  { "label": "Pilotage de la culture", "tags": ["capteurs", "tableau de bord", "alertes", "données", "automatisation"] },
+  { "label": "Eau & solution nutritive", "tags": ["eau", "nutriments", "racines"] },
+  { "label": "Culture & prévention", "tags": ["guide", "prévention", "maintenance", "fiabilité", "santé des plantes"] },
+  { "label": "Technologie", "tags": ["technologie", "iot", "innovation", "intelligence artificielle", "computer vision", "time-lapse"] },
+  { "label": "Découvrir l’hydroponie", "tags": ["débutant", "science", "durabilité"] }
+]
