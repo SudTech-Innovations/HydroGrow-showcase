@@ -55,7 +55,7 @@ content_blocks:
     remove_top_padding: true
   - _name: global/feature
     image: /images/feature/feature-card-one.webp
-    image_alt: Interface mobile
+    image_alt: Interface mobile HydroGrow pour le contrôle du pH, de l'EC et de l'éclairage — image générée par IA
     title: Contrôle total en un clic
     description: >-
       Gérez votre système hydroponique en quelques secondes. Ajustez le pH, l'EC et les cycles d'éclairage directement depuis l'application.
@@ -65,7 +65,7 @@ content_blocks:
     reversed: false
   - _name: global/feature
     image: /images/feature/feature-card-two.webp
-    image_alt: Graphiques de croissance
+    image_alt: Tableau de suivi d'une plante avec graphiques et prévision de récolte — image générée par IA
     title: Suivez chaque plante
     description: >-
       L'analyse de données simplifiée : visualisez la santé de vos plantes, l'historique des capteurs et les prévisions de récolte au même endroit.
@@ -75,7 +75,7 @@ content_blocks:
     reversed: true
   - _name: global/feature
     image: /images/feature/feature-card-three.webp
-    image_alt: Import de profils
+    image_alt: Sélection de profils de culture prédéfinis dans l'application HydroGrow — image générée par IA
     title: Profils de culture prédéfinis
     description: >-
       Que vous fassiez pousser des tomates, des laitues ou des orchidées, utilisez nos profils de croissance experts pour paramétrer votre système instantanément.

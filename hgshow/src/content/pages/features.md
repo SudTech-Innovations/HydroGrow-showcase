@@ -25,7 +25,7 @@ content_blocks:
     remove_top_padding: false
   - _name: global/feature
     image: /images/feature/feature-card-four.webp
-    image_alt: Application mobile de surveillance
+    image_alt: Application mobile affichant les mesures en temps réel des sondes hydroponiques — image générée par IA
     title: Surveillance en Temps Réel
     description: >-
       Gardez un œil sur vos plantes 24/7. Nos capteurs IoT mesurent précisément le pH, l'électroconductivité (EC), la température de l'eau et de l'air, l'humidité et l'intensité lumineuse. Accédez à toutes ces données instantanément depuis votre smartphone.
@@ -35,7 +35,7 @@ content_blocks:
     reversed: false
   - _name: global/feature
     image: /images/feature/feature-card-five.webp
-    image_alt: Automatisation des sytèmes
+    image_alt: Boîtier HydroGrow automatisant les pompes de dosage, l'irrigation et l'éclairage — image générée par IA
     title: Automatisation Complète
     description: >-
       Libérez-vous des tâches répétitives. HydroGrow gère automatiquement l'éclairage, l'irrigation, et l'apport en nutriments en fonction des besoins spécifiques de vos plantes. Définissez vos règles ou utilisez nos pré-réglages optimisés.
@@ -45,7 +45,7 @@ content_blocks:
     reversed: true
   - _name: global/feature
     image: /images/feature/feature-card-six.webp
-    image_alt: Analyse de données
+    image_alt: Caméra et tableau de bord IA analysant la santé et la croissance d'une laitue — image générée par IA
     title: Optimisation par l'IA
     description: >-
       Maximisez vos rendements grâce à l'intelligence artificielle. Notre système analyse vos données de culture pour vous fournir des recommandations personnalisées, détecter les anomalies avant qu'elles ne deviennent critiques et optimiser vos cycles de croissance.
