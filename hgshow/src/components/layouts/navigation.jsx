@@ -73,6 +73,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
   };
 
   const tagLink = (tag) => `/tags/${encodeURIComponent(tag)}/`;
+  const formatTag = (tag) => tag.charAt(0).toLocaleUpperCase("fr-FR") + tag.slice(1);
   const configuredTags = new Set(tagGroups.flatMap((group) => group.tags));
   const visibleTags = new Set(blogTags);
   const blogDropdownGroups = [
@@ -370,7 +371,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                                               onClick={closeMobileMenu}
                                               role="menuitem"
                                             >
-                                              {tag}
+                                              {formatTag(tag)}
                                             </a>
                                           </li>
                                         ))}

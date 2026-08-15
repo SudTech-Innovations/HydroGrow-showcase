@@ -39,7 +39,7 @@ const pagination = Astro.props.page;
 const filteredPosts = pagination.data;
 ---
 
-<Layout title={page.title} seo={page.seo}>
+<Layout title={`Blog : ${page.title}`} seo={page.seo}>
   <BlogList posts={filteredPosts} page={page} />
   <BlogPagination pagination={pagination} />
 </Layout>
