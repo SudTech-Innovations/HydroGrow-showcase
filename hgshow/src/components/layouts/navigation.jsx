@@ -6,6 +6,9 @@ import { useClickOutside } from "../../hooks/useClickOutside";
 import { useKeyPress } from "../../hooks/useKeyPress";
 import { useSticky } from "../../hooks/useSticky";
 
+/**
+ * @param {{ pageUrl?: any; blogTags?: string[] }} props
+ */
 export default function Navigation({ pageUrl, blogTags = [] }) {
   const isSticky = useSticky();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

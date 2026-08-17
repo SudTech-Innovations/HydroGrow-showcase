@@ -1,11 +1,12 @@
 ---
 import "../styles/global.css";
+import { getCollection } from "astro:content";
+import { SEO } from "astro-seo";
+import Analytics from '@vercel/analytics/astro'
 import Footer from "@components/layouts/footer.astro";
 import Navigation from "@components/layouts/navigation";
-import { SEO } from "astro-seo";
 import site from "@data/site.json";
 import ThemeEditableWrapper from "@components/shared/ThemeEditableWrapper";
-import { getCollection } from "astro:content";
 
 export interface SEOProps {
   page_description: string | null;
@@ -68,6 +69,7 @@ const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.dr
         card: "summary_large_image",
       }}
     />
+    <Analytics />
   </head>
   <body class="min-h-screen flex flex-col bg-white">
     <script>
