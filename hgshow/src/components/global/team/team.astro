@@ -11,46 +11,59 @@ interface TeamMember {
 
 interface Props {
   title: string;
+  description?: string;
+  badge?: string;
   team_members: TeamMember[];
 }
 
-const { title, team_members } = Astro.props;
+const { title, description, badge, team_members } = Astro.props;
 ---
 
-<section class="py-16 xl:py-24 2xl:py-32">
+<section class="py-16 xl:py-24 2xl:py-32 bg-slate-50/50 border-t border-gray-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl xl:max-w-3xl mx-auto mb-12 lg:mb-16">
       <div class="text-center">
+        {badge && (
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-primary/10 text-primary border border-primary/20 mb-4 shadow-xs">
+            <i class="ph-users-three text-sm" />
+            <span>{badge}</span>
+          </div>
+        )}
         <Heading level={2} text={title} data-prop="title" data-editable="text" class="mb-4" />
+        {description && (
+          <p class="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto" data-prop="description" data-editable="text">
+            {description}
+          </p>
+        )}
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6" data-editable="array" data-prop="team_members">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4" data-editable="array" data-prop="team_members">
       {
         team_members?.map((member: TeamMember, i: number) => (
           <div data-editable="array-item">
-            <div class="text-center group">
-              <div class="mb-6 shadow-xl rounded-3xl">
-                <div class="overflow-hidden rounded-3xl">
-                <Image
-                  data-editable="image"
-                  data-prop-src="image"
-                  data-prop-alt="image_alt"
-                  src={member.image}
-                  alt={member.image_alt}
-                  loading="lazy"
-                  width={516}
-                  height={579}
-                  class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+            <div class="text-center group bg-white rounded-3xl p-4 shadow-md border border-gray-100 hover:shadow-xl hover:border-primary/30 transition-all duration-300 h-full flex flex-col justify-between">
+              <div>
+                <div class="mb-4 shadow-md rounded-2xl overflow-hidden">
+                  <Image
+                    data-editable="image"
+                    data-prop-src="image"
+                    data-prop-alt="image_alt"
+                    src={member.image}
+                    alt={member.image_alt}
+                    loading="lazy"
+                    width={516}
+                    height={579}
+                    class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
                 </div>
-              </div>
-              <div class="space-y-2">
-                <h3 class="text-xl font-semibold text-gray-900" data-editable="text" data-prop="name">
-                  {member.name}
-                </h3>
-                <p class="text-gray-600" data-editable="text" data-prop="designation">
-                  {member.designation}
-                </p>
+                <div class="space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900" data-editable="text" data-prop="name">
+                    {member.name}
+                  </h3>
+                  <p class="text-sm text-gray-600 font-medium" data-editable="text" data-prop="designation">
+                    {member.designation}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -6,12 +6,25 @@ const company = companyData as any;
 
 // Define TypeScript interfaces
 interface ContactInfo {
-  heading: string;
+  heading?: string;
   address?: string;
   cell?: string;
   email?: string;
   image?: string;
   image_alt?: string;
+}
+
+interface CreatorInfo {
+  name?: string;
+  role?: string;
+  bio?: string;
+  image?: string;
+  image_alt?: string;
+  email?: string;
+  linkedin?: string;
+  github?: string;
+  phone?: string;
+  availability?: string;
 }
 
 interface FormField {
@@ -36,17 +49,18 @@ interface Props {
   address?: ContactInfo;
   phone?: ContactInfo;
   email?: ContactInfo;
+  creator?: CreatorInfo;
   form?: ContactForm;
 }
 
-const { address, phone, email, form } = Astro.props;
+const { address, phone, email, creator, form } = Astro.props;
 
-const fallbackAddress = {
+const fallbackAddress = company.address ? {
   heading: company.address_label || "Adresse",
   address: company.address,
   image: "/images/contact/corporate-fare.svg",
   image_alt: "Address icon"
-};
+} : undefined;
 
 const fallbackPhone = company.phone ? {
   heading: company.phone_label || "Téléphone",
@@ -56,108 +70,118 @@ const fallbackPhone = company.phone ? {
 } : undefined;
 
 const fallbackEmail = {
-  heading: company.email_label || "Email",
-  email: company.contact_email_address,
+  heading: company.email_label || "Email direct",
+  email: company.contact_email_address || "contact@hydrogrow.fr",
   image: "/images/contact/directbox-send.svg",
   image_alt: "Email icon"
 };
 
-const displayAddress = address?.address ? address : (address?.heading ? { ...fallbackAddress, heading: address.heading } : fallbackAddress);
-const displayPhone = phone?.cell ? phone : (phone?.heading ? { ...fallbackPhone, heading: phone.heading } : fallbackPhone);
+const displayAddress = address?.address ? address : fallbackAddress;
+const displayPhone = phone?.cell ? phone : fallbackPhone;
 const displayEmail = email?.email ? email : (email?.heading ? { ...fallbackEmail, heading: email.heading } : fallbackEmail);
+
+const defaultCreator: CreatorInfo = {
+  name: "Nicolas V.",
+  role: "Fondateur & Porteur du projet HydroGrow",
+  bio: "Passionné par l'IoT, l'automatisation et l'agriculture urbaine connectée. Je développe l'écosystème HydroGrow pour rendre le suivi et le pilotage des cultures hydroponiques simple, précis et accessible à tous.",
+  image: "/images/team/nicolas.webp",
+  image_alt: "Photo de Nicolas",
+  email: company.contact_email_address || "contact@hydrogrow.fr",
+  linkedin: "https://linkedin.com/in/votre-profil",
+  github: "https://github.com/votre-compte",
+  phone: "",
+  availability: "Disponible pour échanger"
+};
+
+const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } : defaultCreator;
 ---
 
-<section class="mb-20">
-  <div class="bg-primary/10 bg-linear-to-b from-cyan-primary/10 to-white lg:h-60 -z-30 relative "></div>
-  <div class="max-w-7xl pt-10 mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
-      <!-- Contact Information -->
-      <div class="lg:col-span-5 order-1 lg:-mt-30">
-        <div class="space-y-8">
-          {displayAddress && (
-            <div class="space-y-2">
-              <h3 class="text-xl font-semibold text-gray-900">
-                <editable-text data-prop="address.heading">{displayAddress.heading}</editable-text>
-              </h3>
-              <div 
-                class="flex items-start gap-2 text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                <img
-                  data-editable="image"
-                  data-prop-src="address.image"
-                  data-prop-alt="address.image_alt"
-                  src={displayAddress.image || "/images/default-address.png"}
-                  alt={displayAddress.image_alt || "Address icon"}
-                  loading="lazy"
-                  width="24"
-                  height="24"
-                  class="w-6 h-6 shrink-0 mt-0.5"
-                />
-                <div>
-                  <editable-text data-prop="address.address">{displayAddress.address}</editable-text>
-                  {displayAddress.address === company.address && company.postal_address && (
-                    <div class="block text-gray-500">{company.postal_address}</div>
-                  )}
+{form ? (
+  <section class="mb-20">
+    <div class="bg-primary/10 bg-linear-to-b from-cyan-primary/10 to-white lg:h-60 -z-30 relative"></div>
+    <div class="max-w-7xl pt-10 mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
+        <!-- Contact Information -->
+        <div class="lg:col-span-5 order-1 lg:-mt-30">
+          <div class="space-y-8">
+            {displayAddress && (
+              <div class="space-y-2">
+                <h3 class="text-xl font-semibold text-gray-900">
+                  <editable-text data-prop="address.heading">{displayAddress.heading}</editable-text>
+                </h3>
+                <div class="flex items-start gap-2 text-gray-600 hover:text-gray-900 transition-colors">
+                  <img
+                    data-editable="image"
+                    data-prop-src="address.image"
+                    data-prop-alt="address.image_alt"
+                    src={displayAddress.image || "/images/default-address.png"}
+                    alt={displayAddress.image_alt || "Address icon"}
+                    loading="lazy"
+                    width="24"
+                    height="24"
+                    class="w-6 h-6 shrink-0 mt-0.5"
+                  />
+                  <div>
+                    <editable-text data-prop="address.address">{displayAddress.address}</editable-text>
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
-          
-          {displayPhone && (
-            <div class="space-y-2">
-              <h3 class="text-xl font-semibold text-gray-900">
-                <editable-text data-prop="phone.heading">{displayPhone.heading}</editable-text>
-              </h3>
-              <a 
-                href={`tel:${displayPhone.cell}`}
-                class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                <img
-                  data-editable="image"
-                  data-prop-src="phone.image"
-                  data-prop-alt="phone.image_alt"
-                  src={displayPhone.image || "/images/default-phone.png"}
-                  alt={displayPhone.image_alt || "Phone icon"}
-                  loading="lazy"
-                  width="24"
-                  height="24"
-                  class="w-6 h-6"
-                />
-                <editable-text data-prop="phone.cell">{displayPhone.cell}</editable-text>
-              </a>
-            </div>
-          )}
-          
-          {displayEmail && (
-            <div class="space-y-2">
-              <h3 class="text-xl font-semibold text-gray-900">
-                <editable-text data-prop="email.heading">{displayEmail.heading}</editable-text>
-              </h3>
-              <a 
-                href={`mailto:${displayEmail.email}`}
-                class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                <img
-                  data-editable="image"
-                  data-prop-src="email.image"
-                  data-prop-alt="email.image_alt"
-                  src={displayEmail.image || "/images/default-email.png"}
-                  alt={displayEmail.image_alt || "Email icon"}
-                  loading="lazy"
-                  width="24"
-                  height="24"
-                  class="w-6 h-6"
-                />
-                <editable-text data-prop="email.email">{displayEmail.email}</editable-text>
-              </a>
-            </div>
-          )}
+            )}
+            
+            {displayPhone && (
+              <div class="space-y-2">
+                <h3 class="text-xl font-semibold text-gray-900">
+                  <editable-text data-prop="phone.heading">{displayPhone.heading}</editable-text>
+                </h3>
+                <a 
+                  href={`tel:${displayPhone.cell}`}
+                  class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  <img
+                    data-editable="image"
+                    data-prop-src="phone.image"
+                    data-prop-alt="phone.image_alt"
+                    src={displayPhone.image || "/images/default-phone.png"}
+                    alt={displayPhone.image_alt || "Phone icon"}
+                    loading="lazy"
+                    width="24"
+                    height="24"
+                    class="w-6 h-6"
+                  />
+                  <editable-text data-prop="phone.cell">{displayPhone.cell}</editable-text>
+                </a>
+              </div>
+            )}
+            
+            {displayEmail && (
+              <div class="space-y-2">
+                <h3 class="text-xl font-semibold text-gray-900">
+                  <editable-text data-prop="email.heading">{displayEmail.heading}</editable-text>
+                </h3>
+                <a 
+                  href={`mailto:${displayEmail.email}`}
+                  class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  <img
+                    data-editable="image"
+                    data-prop-src="email.image"
+                    data-prop-alt="email.image_alt"
+                    src={displayEmail.image || "/images/default-email.png"}
+                    alt={displayEmail.image_alt || "Email icon"}
+                    loading="lazy"
+                    width="24"
+                    height="24"
+                    class="w-6 h-6"
+                  />
+                  <editable-text data-prop="email.email">{displayEmail.email}</editable-text>
+                </a>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
 
-      <!-- Contact Form -->
-      <div class="lg:col-span-7 order-1 lg:order-2 lg:-mt-50">
-        {form && (
+        <!-- Contact Form -->
+        <div class="lg:col-span-7 order-1 lg:order-2 lg:-mt-50">
           <div class="relative bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <div 
               class="absolute -top-[10%] -z-10 -left-[14%] w-[115%] h-full bg-primary/30"
@@ -249,10 +273,185 @@ const displayEmail = email?.email ? email : (email?.heading ? { ...fallbackEmail
                 </div>
               )}
             </form>
-            
           </div>
-        )}
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+) : (
+  <!-- Direct Contact & Creator Showcase -->
+  <section class="mb-20">
+    <div class="bg-primary/10 bg-linear-to-b from-cyan-primary/10 to-white h-44 sm:h-52 lg:h-60 -z-30 relative"></div>
+    <div class="max-w-5xl -mt-44 sm:-mt-52 lg:-mt-60 mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Creator Profile Card -->
+      <div class="bg-white rounded-3xl p-8 sm:p-10 xl:p-12 shadow-xl border border-gray-100 mb-10 transition-all duration-300 hover:shadow-2xl">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+          
+          <!-- Avatar -->
+          <div class="relative shrink-0 text-center">
+            <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden shadow-lg ring-4 ring-primary/20 bg-primary/10 mx-auto">
+              <img
+                src={currentCreator.image || "/images/team/nicolas.webp"}
+                alt={currentCreator.image_alt || currentCreator.name || "Photo"}
+                class="w-full h-full object-cover"
+                loading="lazy"
+                data-editable="image"
+                data-prop-src="creator.image"
+                data-prop-alt="creator.image_alt"
+              />
+            </div>
+            {currentCreator.availability && (
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-xs mt-3">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <editable-text data-prop="creator.availability">{currentCreator.availability}</editable-text>
+              </span>
+            )}
+          </div>
+
+          <!-- Profile Details -->
+          <div class="flex-1 text-center md:text-left space-y-4">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-primary/10 text-primary border border-primary/20 mb-2">
+                <i class="ph-user text-sm" />
+                <span>Porteur du projet</span>
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight" data-prop="creator.name" data-editable="text">
+                {currentCreator.name}
+              </h2>
+              <p class="text-lg font-medium text-primary mt-1" data-prop="creator.role" data-editable="text">
+                {currentCreator.role}
+              </p>
+            </div>
+
+            {currentCreator.bio && (
+              <p class="text-gray-600 leading-relaxed text-base sm:text-lg" data-prop="creator.bio" data-editable="text">
+                {currentCreator.bio}
+              </p>
+            )}
+
+            <!-- Links & Action buttons -->
+            <div class="pt-3 flex flex-wrap items-center justify-center md:justify-start gap-3">
+              {currentCreator.email && (
+                <a
+                  href={`mailto:${currentCreator.email}`}
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm bg-primary text-secondary hover:bg-primary/90 transition-all duration-200 shadow-sm"
+                >
+                  <i class="ph-envelope-simple text-lg" />
+                  <span>M'écrire un e-mail</span>
+                </a>
+              )}
+              {currentCreator.linkedin && (
+                <a
+                  href={currentCreator.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm bg-gray-50 hover:bg-gray-100 text-gray-800 border border-gray-200 transition-all duration-200"
+                >
+                  <i class="ph-linkedin-logo text-lg text-primary" />
+                  <span>LinkedIn</span>
+                </a>
+              )}
+              {currentCreator.github && (
+                <a
+                  href={currentCreator.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm bg-gray-50 hover:bg-gray-100 text-gray-800 border border-gray-200 transition-all duration-200"
+                >
+                  <i class="ph-github-logo text-lg text-gray-700" />
+                  <span>GitHub</span>
+                </a>
+              )}
+              {currentCreator.phone && (
+                <a
+                  href={`tel:${currentCreator.phone}`}
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm bg-gray-50 hover:bg-gray-100 text-gray-800 border border-gray-200 transition-all duration-200"
+                >
+                  <i class="ph-phone text-lg text-primary" />
+                  <span>{currentCreator.phone}</span>
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Contact Cards -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Email Direct Card -->
+        <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:border-primary/40 transition-all duration-200 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary text-2xl">
+              <i class="ph-envelope-open" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Email Direct</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Pour toute question générale, suggestion technique ou demande d'information.
+            </p>
+          </div>
+          <div class="pt-6">
+            <a
+              href={`mailto:${currentCreator.email || displayEmail.email}`}
+              class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline"
+            >
+              <span>{currentCreator.email || displayEmail.email}</span>
+              <i class="ph-arrow-right" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Réseau & Échanges Card -->
+        <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:border-primary/40 transition-all duration-200 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary text-2xl">
+              <i class="ph-chats-circle" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Échanges & Réseau</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Discuter d'opportunités, partager vos retours d'expérience en culture hydroponique ou tester les outils.
+            </p>
+          </div>
+          <div class="pt-6">
+            <a
+              href={currentCreator.linkedin || "https://linkedin.com"}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline"
+            >
+              <span>Rejoindre sur LinkedIn</span>
+              <i class="ph-arrow-right" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Développement & IoT Card -->
+        <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:border-primary/40 transition-all duration-200 flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary text-2xl">
+              <i class="ph-code" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Projet & Code</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Suivez le développement de l'écosystème, les intégrations IoT et les composants ouverts.
+            </p>
+          </div>
+          <div class="pt-6">
+            <a
+              href={currentCreator.github || "https://github.com"}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline"
+            >
+              <span>Voir le profil GitHub</span>
+              <i class="ph-arrow-right" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+)}

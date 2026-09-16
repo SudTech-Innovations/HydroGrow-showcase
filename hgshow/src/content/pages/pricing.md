@@ -2,7 +2,7 @@
 _schema: default
 title: Tarifs
 seo:
-  page_description: Découvrez nos abonnements logiciels et nos packs matériel IoT pour l'hydroponie.
+  page_description: Découvrez un aperçu des fonctionnalités, des offres logicielles et des packs matériel IoT pour l'hydroponie. Grille tarifaire en cours de réflexion.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -11,18 +11,17 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/simple-hero
-    title: Nos Abonnements Logiciels
+    badge: Formules Logicielles & Plateforme
+    badge_icon: ph-laptop
+    title: Nos Formules & Fonctionnalités
     description: >-
-      Connectez vos systèmes existants ou vos créations DIY à l'intelligence HydroGrow. Du jardinier amateur à l'exploitation commerciale.
+      Découvrez un aperçu des fonctionnalités et services de l'écosystème HydroGrow. **Nos tarifs sont actuellement en cours de réflexion** afin de proposer les offres les plus justes et adaptées à vos projets (du jardinier amateur à l'exploitation commerciale).
   - _name: global/pricing-table
     pricing_tier:
       - tier: Germination
         highlight_tier: false
         description: Pour débuter et gérer manuellement ses cultures.
-        currency_symbol: €
-        price: "0"
-        has_discount: false
-        discount_price: "0"
+        price_status: Tarif en cours de réflexion
         features:
           - item: Carnet de culture numérique
             active_feature: true
@@ -37,15 +36,12 @@ content_blocks:
           - item: IA Prédictive Nexus
             active_feature: false
         button:
-          link: /signup/free
-          text: Créer un compte
+          link: /contact/
+          text: En savoir plus
       - tier: Cultivateur
         highlight_tier: true
         description: L'expérience connectée pour les passionnés.
-        currency_symbol: €
-        price: "9.99"
-        has_discount: true
-        discount_price: "7.99"
+        price_status: Tarif en cours de réflexion
         features:
           - item: 1 Installation Connectée
             active_feature: true
@@ -60,15 +56,12 @@ content_blocks:
           - item: Automatisation simple
             active_feature: true
         button:
-          link: /signup/pro
-          text: Essayer Gratuitement
+          link: /contact/
+          text: Être informé du lancement
       - tier: Agronome Pro
         highlight_tier: false
         description: Pour les fermes urbaines et la gestion multi-sites.
-        currency_symbol: €
-        price: "29.99"
-        has_discount: false
-        discount_price: "24.99"
+        price_status: Tarif en cours de réflexion
         features:
           - item: Installations Illimitées
             active_feature: true
@@ -83,21 +76,21 @@ content_blocks:
           - item: Support Prioritaire 24/7
             active_feature: true
         button:
-          link: /contact-pro
+          link: /contact/
           text: Contacter l'équipe
   - _name: global/simple-hero
+    is_section: true
+    badge: Équipements & Packs IoT
+    badge_icon: ph-cpu
     title: Nos Packs Matériel IoT
     description: >-
-      Des solutions clé en main, pré-assemblées et calibrées. Inclut 1 an d'abonnement Cultivateur offert.
+      Des exemples de configurations matérielles clé en main, pré-assemblées et calibrées. **Tarification matérielle en cours d'élaboration.**
   - _name: global/pricing-table
     pricing_tier:
       - tier: Pack Essentiel
         highlight_tier: false
-        description: Le kit de survie (Monitoring pH/EC/Temp).
-        currency_symbol: €
-        price: "199"
-        has_discount: false
-        discount_price: "199"
+        description: Le kit de base (Monitoring pH/EC/Temp).
+        price_status: Tarif en cours de réflexion
         features:
           - item: Sonde pH & EC Industrielle
             active_feature: true
@@ -112,15 +105,12 @@ content_blocks:
           - item: Dosage Automatique
             active_feature: false
         button:
-          link: /pricing
-          text: Commander
+          link: /contact/
+          text: Être informé
       - tier: Pack Confort
         highlight_tier: true
         description: L'autonomie totale avec gestion du pH.
-        currency_symbol: €
-        price: "449"
-        has_discount: true
-        discount_price: "399"
+        price_status: Tarif en cours de réflexion
         features:
           - item: Tout du Pack Essentiel
             active_feature: true
@@ -135,15 +125,12 @@ content_blocks:
           - item: Installation Plug & Play
             active_feature: true
         button:
-          link: /pricingq
-          text: Commander
+          link: /contact/
+          text: Être informé
       - tier: Pack Total IA
         highlight_tier: false
         description: Haute performance et vision par ordinateur.
-        currency_symbol: €
-        price: "899"
-        has_discount: false
-        discount_price: "899"
+        price_status: Tarif en cours de réflexion
         features:
           - item: Tout du Pack Confort
             active_feature: true
@@ -158,8 +145,8 @@ content_blocks:
           - item: Garantie 3 ans
             active_feature: true
         button:
-          link: /contact-business
-          text: Devis Personnalisé
+          link: /contact/
+          text: Nous contacter
   - _name: global/faq
     title: Des
     title_suffix: Questions ?

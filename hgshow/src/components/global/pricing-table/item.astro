@@ -16,22 +16,24 @@ interface Props {
   tier: string;
   highlight_tier: boolean;
   description: string;
-  currency_symbol: string;
-  price: number;
-  has_discount: boolean;
-  discount_price?: number;
+  currency_symbol?: string;
+  price?: number | string;
+  has_discount?: boolean;
+  discount_price?: number | string;
+  price_status?: string;
   features: Feature[];
   button?: Button;
 }
 
-const { tier, highlight_tier, description, currency_symbol, price, has_discount, discount_price, features, button } = Astro.props;
+const { tier, highlight_tier, description, currency_symbol, price, has_discount, discount_price, price_status, features, button } = Astro.props;
+const hasPrice = price !== undefined && price !== null && price !== "";
 ---
 
 
-<div class={`bg-white rounded-xl shadow-lg border transition-all duration-300 ease-in-out p-8 xl:p-10 mb-8 lg:mb-14 ${
+<div class={`bg-white rounded-xl shadow-lg border transition-all duration-300 ease-in-out p-8 xl:p-10 mb-8 lg:mb-14 h-full flex flex-col justify-between ${
   highlight_tier
-    ? "border-primary lg:-mt-10"
-    : "border-white"
+    ? "border-primary lg:-mt-10 shadow-primary/10 shadow-xl"
+    : "border-gray-100 hover:border-gray-200"
 }`}>
 
   <!-- Card Header -->
@@ -48,65 +50,75 @@ const { tier, highlight_tier, description, currency_symbol, price, has_discount,
   </h5>
 
   <p 
-    class="text-lg xl:text-xl leading-relaxed mb-6 pl-4 xl:pl-6 text-gray-600 font-medium tracking-tight"
+    class="text-lg xl:text-xl leading-relaxed mb-6 pl-4 xl:pl-6 text-gray-600 font-medium tracking-tight min-h-[56px]"
     data-prop="description"
     data-editable="text">
     {description}
   </p>
 
   <!-- Pricing Section -->
-  <div class="relative mb-8 flex items-center text-black border-t border-b border-red-100 py-4">
-    {has_discount ? (
-      <>
-        <!-- Discount Price Display -->
-        <p class="text-4xl xl:text-5xl font-bold pl-4 xl:pl-6 mb-0 mr-4 z-10">
-          <editable-text data-prop="currency_symbol">{currency_symbol}</editable-text>
-          <editable-text data-prop="discount_price">{discount_price}</editable-text>
-        </p>
-
-        <!-- Original Price with Strikethrough -->
-        <div class="relative flex items-center">
-          <p class="text-2xl font-semibold text-gray-500 mb-0 relative z-10">
+  <div class="relative mb-8 flex items-center text-black border-t border-b border-gray-100 py-4">
+    {hasPrice ? (
+      has_discount ? (
+        <>
+          <!-- Discount Price Display -->
+          <p class="text-4xl xl:text-5xl font-bold pl-4 xl:pl-6 mb-0 mr-4 z-10">
             <editable-text data-prop="currency_symbol">{currency_symbol}</editable-text>
-            <editable-text data-prop="price">{price}</editable-text>
+            <editable-text data-prop="discount_price">{discount_price}</editable-text>
           </p>
-          <!-- Strikethrough Vector -->
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-            <img
-              src="/images/pricing/Vector1.svg"
-              alt="Strikethrough"
-              loading="lazy"
-              class="w-auto h-auto"
-            />
+
+          <!-- Original Price with Strikethrough -->
+          <div class="relative flex items-center">
+            <p class="text-2xl font-semibold text-gray-500 mb-0 relative z-10">
+              <editable-text data-prop="currency_symbol">{currency_symbol}</editable-text>
+              <editable-text data-prop="price">{price}</editable-text>
+            </p>
+            <!-- Strikethrough Vector -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+              <img
+                src="/images/pricing/Vector1.svg"
+                alt="Strikethrough"
+                loading="lazy"
+                class="w-auto h-auto"
+              />
+            </div>
           </div>
-        </div>
 
-        <!-- Background Shape for Discount -->
-        <div
-          class="absolute top-2 left-[10%] w-[35%] h-full -z-10 bg-[#faaa8f] mask-[url(/images/pricing/shape-two.png)] [-webkit-mask-image:url(/images/pricing/shape-two.png)] mask-no-repeat [-webkit-mask-repeat:no-repeat]"
-        />
-      </>
+          <!-- Background Shape for Discount -->
+          <div
+            class="absolute top-2 left-[10%] w-[35%] h-full -z-10 bg-[#faaa8f] mask-[url(/images/pricing/shape-two.png)] [-webkit-mask-image:url(/images/pricing/shape-two.png)] mask-no-repeat [-webkit-mask-repeat:no-repeat]"
+          />
+        </>
+      ) : (
+        <>
+          <!-- Regular Price Display -->
+          <p class="text-4xl xl:text-5xl font-bold pl-4 xl:pl-6 mb-0 z-10">
+            <span>
+              <editable-text data-prop="currency_symbol">{currency_symbol}</editable-text>
+              <editable-text data-prop="price">{price}</editable-text>
+            </span>
+          </p>
+
+          <!-- Background Shape for Regular -->
+          <div
+            class="absolute top-2 left-[10%] w-[35%] h-full -z-10 bg-[#faaa8f] mask-[url(/images/pricing/shape-one.png)] [-webkit-mask-image:url(/images/pricing/shape-one.png)] mask-no-repeat [-webkit-mask-repeat:no-repeat]"
+          />
+        </>
+      )
     ) : (
-      <>
-        <!-- Regular Price Display -->
-        <p class="text-4xl xl:text-5xl font-bold pl-4 xl:pl-6 mb-0 z-10">
-          <span>
-            <editable-text data-prop="currency_symbol">{currency_symbol}</editable-text>
-            <editable-text data-prop="price">{price}</editable-text>
-          </span>
-        </p>
-
-        <!-- Background Shape for Regular -->
-        <div
-          class="absolute top-2 left-[10%] w-[35%] h-full -z-10 bg-[#faaa8f] mask-[url(/images/pricing/shape-one.png)] [-webkit-mask-image:url(/images/pricing/shape-one.png)] mask-no-repeat [-webkit-mask-repeat:no-repeat]"
-        />
-      </>
+      <div class="pl-4 xl:pl-6 py-2 flex flex-wrap items-center gap-2">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-sm font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200/80">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          {price_status || "Tarif en cours de réflexion"}
+        </span>
+        <span class="text-xs text-gray-500 font-medium">Exemple de formule</span>
+      </div>
     )}
   </div>
 
-  <!-- Features List -->
-  <div class="px-4 xl:px-6">
-      <ul class="space-y-6 mb-12" data-editable="array" data-prop="features" data-id-key="active_feature">
+  <!-- Features List & Action -->
+  <div class="px-4 xl:px-6 flex-1 flex flex-col justify-between">
+      <ul class="space-y-6 mb-12 flex-1" data-editable="array" data-prop="features" data-id-key="active_feature">
       <template data-id="true">
           <li
               data-editable="array-item"

@@ -2,7 +2,7 @@
 _schema: default
 title: "À propos"
 seo:
-  page_description: ""
+  page_description: "Découvrez la genèse du projet HydroGrow, né lors des Ydays de Master 1 pour démocratiser l'hydroponie connectée."
   canonical_url: ""
   featured_image: ""
   featured_image_alt: ""
@@ -50,7 +50,7 @@ content_blocks:
         text: "Automatisé"
   - _name: "global/video-left-right"
     title: "Nous aimons ce que nous faisons"
-    description: "Notre équipe combine passion pour l'agriculture durable et expertise en IoT. Nous travaillons chaque jour pour innover et vous offrir les meilleurs outils de culture."
+    description: "Né dans le cadre des projets Ydays en Master 1, HydroGrow combine passion pour l'agriculture durable et expertise en IoT. Nous travaillons pour innover et vous offrir les meilleurs outils de culture."
     button:
       link: "https://www.linkedin.com/"
       text: "Suivez-nous sur LinkedIn"
@@ -59,12 +59,14 @@ content_blocks:
       image_alt: "Équipe présentant un prototype HydroGrow fonctionnel dans une serre — image générée par IA"
       video_url: /videos/WgOP2bW2vWqlAtyYu4Hl8J8v4TNG2UCejfL3Bf.MP4
   - _name: "global/team"
-    title: "Notre équipe dirigeante"
+    badge: "Projet Ydays — Master 1"
+    title: "L'équipe du projet"
+    description: "Les membres présentés ci-dessous étaient les participants lors des Ydays de Master 1 qui ont contribué à la conception et au développement initial de l'écosystème HydroGrow."
     team_members:
       - name: "Nicolas V."
-        designation: "Fondateur"
+        designation: "Porteur de projet & IoT"
         image: "/images/team/nicolas.webp"
-        image_alt: "Silhouette de Nicolas, fondateur, examinant un prototype HydroGrow — image générée par IA"
+        image_alt: "Silhouette de Nicolas examinant un prototype HydroGrow — image générée par IA"
       - name: "Andréa F."
         designation: "Développeur Fullstack & IoT"
         image: "/images/team/andrea.webp"

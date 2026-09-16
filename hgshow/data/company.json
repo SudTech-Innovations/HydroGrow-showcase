@@ -1,11 +1,11 @@
 {
   "site_title": "HydroGrow",
   "description": "HydroGrow is a website template for Hydroponic systems.",
-  "address_label": "Bureau",
+  "address_label": "",
   "address": "",
-  "postal_address": "La Grande Motte",
+  "postal_address": "",
   "phone_label": "Téléphone",
   "phone": "",
-  "email_label": "Mail",
+  "email_label": "Email",
   "contact_email_address": "contact@hydrogrow.fr"
 }
