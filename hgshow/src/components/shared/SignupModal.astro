@@ -1,0 +1,52 @@
+---
+// Modale affichée à la place de l'inscription tant que l'app n'est pas disponible.
+// Quand l'app sera en ligne : renseigner APP_URL, les boutons redirigeront vers elle.
+const APP_URL = ""; // ex. "https://app.hydrogrow.fr"
+---
+
+<dialog
+  id="signup-modal"
+  data-app-url={APP_URL}
+  aria-labelledby="signup-modal-title"
+  class="m-auto w-[calc(100%-2rem)] max-w-md rounded-[36px] border border-pixel/50 bg-deep p-8 text-center text-mist shadow-2xl"
+>
+  <div class="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-[14px] bg-night text-primary">
+    <i class="ph-plant text-3xl"></i>
+  </div>
+  <h2 id="signup-modal-title" class="mb-3 text-2xl">L'application arrive bientôt</h2>
+  <p class="mb-7 leading-7 text-mist/90">
+    HydroGrow est actuellement en cours de développement. L'inscription ouvrira dès que l'application sera disponible.
+  </p>
+  <button
+    type="button"
+    data-close-modal
+    class="inline-flex items-center justify-center rounded-[14px] bg-primary px-6 py-3 text-sm font-semibold text-night transition hover:-translate-y-0.5"
+  >
+    Compris
+  </button>
+</dialog>
+
+<style>
+  #signup-modal::backdrop {
+    background: rgb(8 23 43 / 0.8);
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    var dlg = document.getElementById("signup-modal");
+    if (!dlg) return;
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href="/signup"], a[href="/signup/"]');
+      if (a) {
+        e.preventDefault();
+        var url = dlg.getAttribute("data-app-url");
+        if (url) { window.location.href = url; return; }
+        if (!dlg.open) dlg.showModal();
+        return;
+      }
+      // fermeture : bouton ou clic sur le fond
+      if (e.target === dlg || (e.target.closest && e.target.closest("[data-close-modal]"))) dlg.close();
+    });
+  })();
+</script>

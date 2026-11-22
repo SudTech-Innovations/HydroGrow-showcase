@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import { SEO } from "astro-seo";
 import Analytics from '@vercel/analytics/astro'
 import Footer from "@components/layouts/footer.astro";
+import SignupModal from "@components/shared/SignupModal.astro";
 import Navigation from "@components/layouts/navigation";
 import site from "@data/site.json";
 import ThemeEditableWrapper from "@components/shared/ThemeEditableWrapper";
@@ -101,6 +102,7 @@ const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.dr
       <slot />
     </div>
     <Footer />
+    <SignupModal />
 
     <ThemeEditableWrapper client:only="react" />
     <script is:inline>

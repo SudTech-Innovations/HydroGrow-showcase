@@ -31,7 +31,6 @@ import GlobalFeature from "../components/global/feature/feature.astro";
 import GlobalHeader from "../components/global/header/header.astro";
 import GlobalHero from "../components/global/hero/hero.astro";
 import GlobalLogin from "../components/global/login/login.astro";
-import GlobalSignup from "../components/global/signup/signup.astro";
 import GlobalSimpleHero from "../components/global/simple-hero/simple-hero.astro";
 import GlobalTestimonial from "../components/global/testimonial/testimonial.astro";
 import GlobalVideo from "../components/global/video/video.astro";
@@ -52,7 +51,6 @@ const astroComponentRegistrations = [
   { name: "global/feature", component: GlobalFeature },
   { name: "global/header", component: GlobalHeader },
   { name: "global/login", component: GlobalLogin },
-  { name: "global/signup", component: GlobalSignup },
   { name: "global/simple-hero", component: GlobalSimpleHero },
   { name: "global/testimonial", component: GlobalTestimonial },
   { name: "layouts/footer", component: LayoutsFooter },
