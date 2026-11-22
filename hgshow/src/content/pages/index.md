@@ -18,13 +18,13 @@ content_blocks:
     image: /images/hero/hero-image.webp
     image_alt: Application HydroGrow, parcelle de basilic, état optimal, pH, eau et température
     button:
-      text: Commencer
-      link: /signup/
+      text: Être informé du lancement
+      link: /contact/
   - _name: global/counter
     title: Faites grandir votre
-    title_suffix: Culture
+    title_suffix: culture
     description: >-
-      Des mesures claires pour cultiver plus simplement, avec moins d'eau et moins de temps passé à surveiller.
+      L'hydroponie comparée à la culture en pleine terre : de meilleurs résultats, avec moins d'eau et moins de temps passé à surveiller.
     alternate_style: false
     numbers:
       - prefix: "+"
@@ -78,10 +78,10 @@ content_blocks:
     image_alt: Jeunes plants de tomate, laitue et basilic avec une tablette affichant l'application HydroGrow
     title: Profils de culture prédéfinis
     description: >-
-      Que vous fassiez pousser des tomates, des laitues ou des orchidées, utilisez nos profils de croissance experts pour paramétrer votre système instantanément.
+      Que vous fassiez pousser des tomates, des laitues ou des aromates, choisissez le profil de culture adapté : votre système est réglé pour vous.
     button:
-      link: /signup
-      text: Rejoindre HydroGrow
+      link: /contact/
+      text: Être informé du lancement
     reversed: false
   # - _name: global/testimonial
   #   title: Ils nous font

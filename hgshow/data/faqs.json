@@ -32,31 +32,31 @@
   "general": [
     {
       "title": "Qu'est-ce que HydroGrow ?",
-      "description": "HydroGrow est une solution complète (matériel + logiciel) pour sécuriser et automatiser vos cultures hydroponiques grâce à l'intelligence artificielle et l'IoT."
+      "description": "HydroGrow réunit des capteurs, un boîtier de contrôle et une application pour cultiver des fruits, des légumes et des aromates en hydroponie, simplement et toute l'année."
     },
     {
-      "title": "Dois-je être un expert en informatique ?",
-      "description": "Pas du tout ! Nos packs 'Prêt-à-pousser' sont conçus pour être installés en 15 minutes. L'interface est intuitive et pensée pour les jardiniers, pas les développeurs."
+      "title": "Dois-je être un expert pour l'utiliser ?",
+      "description": "Non. L'application vous guide, et les packs sont prévus pour s'installer facilement. Vous suivez l'état de vos plantes, et HydroGrow vous prévient quand il faut agir."
     },
     {
-      "title": "Quelle est la différence avec une serre classique ?",
-      "description": "Une serre classique subit les aléas climatiques. Avec HydroGrow, votre serre réagit : elle ferme les ouvrants si le vent se lève, active la brumisation si l'humidité chute, et vous alerte avant qu'une maladie ne se déclare."
+      "title": "Quelle est la différence avec une culture en pleine terre ?",
+      "description": "En hydroponie, les racines baignent dans une eau enrichie en nutriments. Ce sont les mesures qui guident vos gestes, pas la météo, et la plante consomme beaucoup moins d'eau."
+    },
+    {
+      "title": "Que contiennent les packs ?",
+      "description": "Le Pack Essentiel mesure le pH, l'EC (la quantité de nutriments dans l'eau), la température et le niveau d'eau. Le Pack Confort ajoute la régulation du pH, les nutriments et l'éclairage. Le Pack Total IA ajoute la caméra et l'analyse de santé."
     },
     {
       "title": "Comment fonctionne l'IA Nexus ?",
-      "description": "Nexus analyse les données de milliers de cultures pour vous donner des conseils personnalisés. Elle détecte des anomalies invisibles à l'œil nu (carences, début de maladie) grâce à la vision par ordinateur."
+      "description": "Nexus analyse vos mesures et vous propose des conseils, par exemple quand une valeur s'éloigne de la normale. Elle est incluse dans l'offre Agronome Pro."
     },
     {
-      "title": "HydroGrow est-il compatible avec mon système (DWC, NFT, Table à marée...) ?",
-      "description": "Oui ! Nos capteurs sont universels. Qu'ils soient plongés dans un simple bac DWC ou dans le réservoir principal d'un grand système NFT, HydroGrow surveillera et ajustera votre eau de la même manière."
+      "title": "HydroGrow fonctionne-t-il avec mon système (bac, tour, goutte-à-goutte) ?",
+      "description": "Les capteurs se placent dans le bac ou le réservoir d'eau. Ils s'adaptent aux systèmes courants, dont DWC (racines dans un bac d'eau), NFT (film d'eau qui circule sur les racines) et table à marée."
     },
     {
-      "title": "Est-ce difficile de calibrer les sondes pH et EC ?",
-      "description": "C'est une étape cruciale, mais nous l'avons simplifiée. L'application HydroGrow intègre un 'Assistant de Calibration' interactif qui vous guide pas à pas lors de l'entretien de vos sondes."
-    },
-    {
-      "title": "Que se passe-t-il en cas de coupure de courant électrique ?",
-      "description": "Dès que le courant revient, le boîtier de contrôle HydroGrow redémarre instantanément. Grâce à sa mémoire locale, il reprend exactement ses cycles d'éclairage et d'arrosage là où il s'était arrêté."
+      "title": "Que se passe-t-il en cas de coupure de courant ?",
+      "description": "Le boîtier reprend ses cycles d'éclairage et d'arrosage là où il s'était arrêté. Il garde ses réglages en mémoire."
     }
   ]
 }
