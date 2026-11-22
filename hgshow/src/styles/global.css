@@ -265,8 +265,32 @@ html.vt-off * {
   /* Parallaxe douce des décors (propriété `translate`, indépendante de `transform`) */
   .dg, .rings { translate: 0 var(--py, 0px); will-change: translate; }
 
-  /* Survols : FAQ */
+  /* FAQ : survol + ouverture/fermeture fluide */
   details:hover { border-color: rgb(91 227 168 / 0.55); }
+  .js details.reveal {
+    transition:
+      opacity 0.8s var(--ease-out),
+      transform 0.8s var(--ease-out),
+      border-color 0.25s var(--ease-out);
+    transition-delay: var(--d, 0ms), var(--d, 0ms), 0ms;
+  }
+  details[open] { border-color: rgb(91 227 168 / 0.4); }
+  @supports (interpolate-size: allow-keywords) {
+    details { interpolate-size: allow-keywords; }
+    details::details-content {
+      block-size: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition:
+        block-size 0.4s var(--ease-out),
+        opacity 0.4s var(--ease-out),
+        content-visibility 0.4s allow-discrete;
+    }
+    details[open]::details-content {
+      block-size: auto;
+      opacity: 1;
+    }
+  }
 
   /* Survols : courts, sans rebond */
   a, button, summary, details {

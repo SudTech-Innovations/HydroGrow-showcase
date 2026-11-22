@@ -1,13 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a2 2 0 0 0 1.38-1.4l3.22-11.66a.5.5 0 0 1 .96 0l3.22 11.67a2 2 0 0 0 1.38 1.39l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
-  <path fill="url(#gradient)" d="M18 28a7.63 7.63 0 0 1-5-2c-1.4 2.1-.35 4.35.6 5.55.14.17.41.07.47-.15.44-1.8 2.93-1.22 2.93.6 0 2.28.87 3.4 1.72 3.81.34.16.59-.2.49-.56-.31-1.05-.29-2.46 1.29-3.25 3-1.5 3.17-4.83 2.5-6-.67.67-2.6 2-5 2Z"/>
-  <defs>
-    <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-	<style>
-    @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296 296" role="img" aria-label="HydroGrow">
+  <rect width="296" height="296" rx="67" fill="#12305A"/>
+  <circle cx="169" cy="64" r="11" fill="#2D5083"/>
+  <circle cx="214" cy="64" r="18.5" fill="#EAF3EE"/>
+  <circle cx="81" cy="108" r="18.5" fill="#EAF3EE"/>
+  <circle cx="125" cy="108" r="11" fill="#2D5083"/>
+  <circle cx="169" cy="108" r="11" fill="#2D5083"/>
+  <circle cx="214" cy="108" r="18.5" fill="#EAF3EE"/>
+  <circle cx="81" cy="153" r="18.5" fill="#EAF3EE"/>
+  <circle cx="125" cy="153" r="18.5" fill="#EAF3EE"/>
+  <circle cx="169" cy="153" r="18.5" fill="#EAF3EE"/>
+  <circle cx="214" cy="153" r="18.5" fill="#EAF3EE"/>
+  <circle cx="81" cy="197" r="18.5" fill="#EAF3EE"/>
+  <circle cx="125" cy="197" r="11" fill="#2D5083"/>
+  <circle cx="169" cy="197" r="11" fill="#2D5083"/>
+  <circle cx="214" cy="197" r="18.5" fill="#EAF3EE"/>
+  <circle cx="81" cy="241" r="18.5" fill="#EAF3EE"/>
+  <circle cx="125" cy="241" r="11" fill="#2D5083"/>
+  <circle cx="169" cy="241" r="11" fill="#2D5083"/>
+  <circle cx="214" cy="241" r="18.5" fill="#EAF3EE"/>
+  <path d="M80 84 C84 56 114 38 157 37 Z" fill="#5BE3A8"/>
+  <path d="M80 84 C88 88 150 84 157 37 Z" fill="#3DBE8A"/>
 </svg>

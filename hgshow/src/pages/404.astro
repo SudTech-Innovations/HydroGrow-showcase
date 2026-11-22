@@ -8,6 +8,7 @@ import { Image } from "astro:assets";
 
 <Layout title="404 Not Found">
   <section class="grid place-items-center pt-30">
+    <img src="/images/logo-icon.svg" alt="HydroGrow" class="w-20 h-20 mb-6" />
     <Image src={ErrorImage} alt="404 error image" width={400} height={300} />
     <Heading level={2} text="Page non trouvée" class="p-4" />
     <Button href="/" class="m-6">Retour à l'accueil</Button>
