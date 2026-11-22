@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import PostSummary from "../../components/blog/summary.astro";
+import DotGrid from "../shared/DotGrid.astro";
 import SimpleHero from "../global/simple-hero/simple-hero.astro";
 
 // Define TypeScript interfaces
@@ -13,17 +14,19 @@ interface Page {
 interface Props {
   page: Page;
   posts: CollectionEntry<"blog">[];
+  badge?: string;
 }
 
 // Receive props
-const { page, posts } = Astro.props satisfies Props;
+const { page, posts, badge } = Astro.props satisfies Props;
 ---
 
-<SimpleHero title={page.title} description={page.description || ""} />
+<SimpleHero title={page.title} description={page.description || ""} badge={badge} />
 
-<section class="py-16">
+<section class="relative isolate py-16 overflow-hidden">
+  <DotGrid variant="field" cols={12} rows={6} class="hidden lg:block absolute -z-10 -right-10 top-4 w-[420px] opacity-60" />
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 items-start">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
       {posts && posts.map((post) => <PostSummary post={post} />)}
     </div>
   </div>

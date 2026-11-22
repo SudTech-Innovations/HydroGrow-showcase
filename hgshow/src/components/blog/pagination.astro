@@ -104,11 +104,11 @@ const pageLinks = lastPage > 1 ? generatePageLinks() : [];
           <a
             data-astro-prefetch
             href={prev || "#"}
-            aria-label="Previous page"
-            class={`inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 font-semibold text-lg rounded-2xl transition-all duration-300 ${
+            aria-label="Page précédente"
+            class={`inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 font-semibold text-lg rounded-[14px] transition-all duration-300 ${
               prev
-                ? "bg-secondary text-primary border-2 border-gray-300 hover:bg-primary hover:text-secondary hover:border-primary hover:shadow-lg hover:scale-105 active:scale-95"
-                : "bg-gray-100 text-gray-400 border-2 border-gray-200 cursor-not-allowed opacity-50"
+                ? "bg-deep text-primary border border-pixel/60 hover:bg-primary hover:text-night hover:border-primary hover:scale-105 active:scale-95"
+                : "bg-deep text-mist/40 border border-pixel/40 cursor-not-allowed opacity-50"
             }`}
             aria-disabled={!prev}>
             <svg
@@ -131,19 +131,19 @@ const pageLinks = lastPage > 1 ? generatePageLinks() : [];
         {pageLinks.map((link) => (
           <li>
             {link.isEllipsis ? (
-              <span class="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 font-semibold text-lg text-gray-400" aria-hidden="true">
+              <span class="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 font-semibold text-lg text-mist/40" aria-hidden="true">
                 {link.page}
               </span>
             ) : (
               <a
                 data-astro-prefetch
                 href={link.href}
-                aria-label={`Go to page ${link.page}`}
+                aria-label={`Aller à la page ${link.page}`}
                 aria-current={link.isActive ? "page" : undefined}
-                class={`inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 font-semibold text-lg rounded-2xl transition-all duration-300 ${
+                class={`inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 font-semibold text-lg rounded-[14px] transition-all duration-300 ${
                   link.isActive
-                    ? "bg-primary text-secondary border-2 border-primary shadow-lg scale-105"
-                    : "bg-secondary text-primary border-2 border-gray-300 hover:bg-primary hover:text-secondary hover:border-primary hover:shadow-lg hover:scale-105 active:scale-95"
+                    ? "bg-primary text-night border border-primary"
+                    : "bg-deep text-primary border border-pixel/60 hover:bg-primary hover:text-night hover:border-primary hover:scale-105 active:scale-95"
                 }`}>
                 {link.page}
               </a>
@@ -156,11 +156,11 @@ const pageLinks = lastPage > 1 ? generatePageLinks() : [];
           <a
             data-astro-prefetch
             href={next || "#"}
-            aria-label="Next page"
-            class={`inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 font-semibold text-lg rounded-2xl transition-all duration-300 ${
+            aria-label="Page suivante"
+            class={`inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 font-semibold text-lg rounded-[14px] transition-all duration-300 ${
               next
-                ? "bg-secondary text-primary border-2 border-gray-300 hover:bg-primary hover:text-secondary hover:border-primary hover:shadow-lg hover:scale-105 active:scale-95"
-                : "bg-gray-100 text-gray-400 border-2 border-gray-200 cursor-not-allowed opacity-50"
+                ? "bg-deep text-primary border border-pixel/60 hover:bg-primary hover:text-night hover:border-primary hover:scale-105 active:scale-95"
+                : "bg-deep text-mist/40 border border-pixel/40 cursor-not-allowed opacity-50"
             }`}
             aria-disabled={!next}>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20.657 11.314" class="fill-current">
