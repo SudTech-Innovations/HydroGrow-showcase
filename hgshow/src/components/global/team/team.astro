@@ -40,7 +40,7 @@ const { title, description, badge, team_members } = Astro.props;
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4" data-editable="array" data-prop="team_members">
       {
         team_members?.map((member: TeamMember, i: number) => (
-          <div data-editable="array-item">
+          <div data-editable="array-item" class="team-card img-float">
             <div class="text-center group bg-deep rounded-[24px] p-4 border border-pixel/40 hover:border-primary hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col justify-between">
               <div>
                 <div class="mb-4 rounded-[14px] overflow-hidden">
@@ -69,7 +69,7 @@ const { title, description, badge, team_members } = Astro.props;
                   <h3 class="text-lg font-display text-gray-900" data-editable="text" data-prop="name">
                     {member.name}
                   </h3>
-                  <p class="text-sm text-mist/80 font-medium" data-editable="text" data-prop="designation">
+                  <p class="inline-block rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs text-primary font-semibold" data-editable="text" data-prop="designation">
                     {member.designation}
                   </p>
                 </div>

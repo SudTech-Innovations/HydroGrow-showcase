@@ -60,7 +60,7 @@ content_blocks:
       video_url: /videos/hydrogrow-presentation.mp4
   - _name: "global/team"
     badge: "Projet Ydays — Master 1"
-    title: "L'équipe du projet"
+    title: "Les fondateurs"
     description: "Les membres présentés ci-dessous étaient les participants lors des Ydays de Master 1 qui ont contribué à la conception et au développement initial de l'écosystème HydroGrow."
     team_members:
       - name: "Nicolas V."
@@ -85,7 +85,7 @@ content_blocks:
         image_alt: "Silhouette d'Adrien photographiant une culture hydroponique — image générée par IA"
   - _name: "global/team"
     badge: "Projet Ydays — Master 2"
-    title: "L'équipe du projet"
+    title: "L'équipe d'aujourd'hui"
     description: "L'équipe de Master 2 qui poursuit le développement de l'écosystème HydroGrow lors des Ydays."
     team_members:
       - name: "Nicolas V."

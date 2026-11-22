@@ -108,13 +108,15 @@ const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.dr
     <script is:inline>
       // Apparition progressive au scroll (désactivée en mode éditeur et si "réduire les animations")
       (function () {
+        // Variante de flottement par image (rythme/sens différents)
+        document.querySelectorAll(".img-float").forEach(function (el, i) { el.dataset.fv = String(i % 3); });
         var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         if (window.inEditorMode || reduce || !("IntersectionObserver" in window)) {
           document.querySelectorAll(".dg, .rings").forEach(function (el) { el.classList.add("is-visible"); });
           return;
         }
         var targets = document.querySelectorAll(
-          "main h2, section h2, section details, #counter-up .grid > div, .card-image-wrapper, article"
+          "main h2, section h2, section details, #counter-up .grid > div, .card-image-wrapper, article, .team-card"
         );
         targets.forEach(function (el, i) {
           if (el.closest("header")) return;

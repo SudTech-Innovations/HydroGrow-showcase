@@ -215,6 +215,55 @@ html.vt-off * {
     to { opacity: 1; transform: none; }
   }
 
+  /* Hero multi-images : chaque image arrive à sa manière, puis flotte à son rythme
+     (le flottement utilise `translate`, indépendant de `transform`) */
+  .js .hero-pic {
+    animation-fill-mode: both;
+    animation-timing-function: var(--ease-out);
+  }
+  .js .hero-pic-back_top_left {
+    animation: pic-from-left 1.2s var(--ease-out) 0.5s both, pic-float-a 9s ease-in-out 2s infinite;
+  }
+  .js .hero-pic-front_bottom {
+    animation: pic-from-below 1.3s var(--ease-out) 0.85s both, pic-float-b 7s ease-in-out 2.4s infinite;
+  }
+  .js .hero-pic-back_top_right {
+    animation: pic-from-right 1.2s var(--ease-out) 0.7s both, pic-float-c 11s ease-in-out 2.2s infinite;
+  }
+  @keyframes pic-from-left {
+    from { opacity: 0; transform: translateX(-56px) rotate(-3deg) scale(0.96); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes pic-from-right {
+    from { opacity: 0; transform: translateY(-36px) translateX(40px) rotate(3deg); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes pic-from-below {
+    from { opacity: 0; transform: translateY(64px) scale(0.92); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes pic-float-a { 0%, 100% { translate: 0 0; } 50% { translate: -4px 8px; } }
+  @keyframes pic-float-b { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }
+  @keyframes pic-float-c { 0%, 100% { translate: 0 0; } 50% { translate: 5px 7px; } }
+
+  /* Flottement générique des images (une fois apparues) : amplitude/rythme variés selon la position */
+  .js .img-float {
+    animation: img-float var(--dur, 9s) ease-in-out var(--dl, 0s) infinite;
+  }
+  .js .img-float[data-fv="1"] { --dur: 7.5s; --dl: -2s; --fx: -3px; --fy: -7px; }
+  .js .img-float[data-fv="2"] { --dur: 11s; --dl: -5s; --fx: 4px; --fy: 6px; }
+  .js .img-float-lg { --fx: 0px; --fy: 6px; }
+  .js .img-float-lg[data-fv="1"], .js .img-float-lg[data-fv="2"] { --fx: 0px; --fy: -6px; }
+  .js .img-float:hover { animation-play-state: paused; }
+  @keyframes img-float {
+    0%, 100% { translate: 0 0; }
+    50% { translate: var(--fx, 4px) var(--fy, 8px); }
+  }
+
+  /* Équipe : cartes en cascade, puce de rôle */
+  .js .team-card.reveal { transform: translateY(24px) scale(0.97); transition-duration: 0.9s; }
+  .js .team-card.reveal.is-visible { transform: none; }
+
   /* Images : entrée plus ample + zoom lent au survol */
   .js .reveal.card-image-wrapper {
     transform: translateY(32px) scale(0.97);

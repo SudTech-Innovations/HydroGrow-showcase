@@ -72,13 +72,13 @@ const hasSingleImage = image && image_alt;
     </div>
     
     <!-- Image Section -->
-    <div class="hero-in hero-in-img mx-auto mt-16 grid max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:ml-10 lg:max-w-none lg:flex-none xl:ml-32">
+    <div class={`${hasMultipleImages ? "" : "hero-in hero-in-img"} mx-auto mt-16 grid max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:ml-10 lg:max-w-none lg:flex-none xl:ml-32`}>
       {hasMultipleImages ? (
         <!-- Multiple Images Layout (About Page Style) -->
         <div class="grid grid-cols-[1fr_1fr_1fr_2fr] gap-5 max-w-3xl" data-editable="array" data-prop="hero_images">
           {hero_images.map((heroImage, i) => (
             <div 
-              class={getPlacementClass(heroImage.placement || "")}
+              class={`${getPlacementClass(heroImage.placement || "")} hero-pic hero-pic-${heroImage.placement || "default"}`}
               data-editable="array-item"
             >
               <div class="relative w-full h-full">
@@ -106,7 +106,7 @@ const hasSingleImage = image && image_alt;
         </div>
       ) : hasSingleImage ? (
         <!-- Single Image Layout (Original Style) -->
-        <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+        <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none img-float img-float-lg">
           <Image
             data-editable="image"
             data-prop-src="image"
