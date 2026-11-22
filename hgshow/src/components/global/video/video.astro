@@ -19,12 +19,12 @@ export interface Props {
   <!-- Video Modal -->
   <Modal id="video-modal" size={"7xl"} showCloseButton unloadOnClose>
     <div slot="header">
-      <h3 class="text-lg font-semibold text-gray-900">Video Player</h3>
+      <h3 class="text-[22px] leading-[26px] font-normal text-mist">Présentation HydroGrow</h3>
     </div>
 
     <!-- Main content - VideoPlayer (handles Vimeo or Local) -->
     <div class="aspect-video" data-editable="component" data-prop-url="video_url" data-component="shared/VideoPlayer">
-      <VideoPlayer url={video_url} title="Video Player" autoplay={true} class="w-full h-full" />
+      <VideoPlayer url={video_url} title="Présentation HydroGrow" autoplay={true} class="w-full h-full" />
     </div>
   </Modal>
 
@@ -60,7 +60,7 @@ export interface Props {
                 type="button"
                 onclick="document.getElementById('video-modal').showModal()"
                 class="relative w-[86px] h-[86px] rounded-full bg-primary z-10 outline-none flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 active:scale-95"
-                aria-label="Play video"
+                aria-label="Lire la vidéo"
                 role="button">
                 <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-0.5">
                   <path
@@ -80,7 +80,7 @@ export interface Props {
   .video-play-wrapper::before,
   .video-play-wrapper::after {
     content: "";
-    background: white;
+    background: #5BE3A8;
     border-radius: 50%;
     position: absolute;
     transform-origin: top left;

@@ -97,7 +97,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
       {/* Skip to content link for accessibility */}
       <button
         onClick={() => {
-          console.log("skip to content clicked");
+          
           const mainContent =
             document.getElementById("main-content") ||
             document.querySelector("main") ||
@@ -109,7 +109,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
           }
         }}
         onKeyDown={(e) => {
-          console.log("skip to content clicked");
+          
           if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
             const mainContent =
@@ -143,9 +143,9 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
             d="M13 7l5 5m0 0l-5 5m5-5H6"
           />
         </svg>
-        <span>Skip to main content</span>
+        <span>Aller au contenu principal</span>
         <span className="text-xs opacity-90 ml-2 px-2 py-1 bg-primary rounded border border-primary">
-          Hit Enter
+          Entrée
         </span>
       </button>
 
@@ -157,21 +157,21 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
           ref={navbarRef}
           className={`mx-auto max-w-[1500px] px-6 pt-8 pb-10 lg:flex lg:px-8 lg:pb-5`}
           role="navigation"
-          aria-label="Main navigation"
+          aria-label="Navigation principale"
         >
           <div className=" mx-auto flex items-center justify-between w-full">
             <a
               data-astro-prefetch
               className="flex items-center focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md"
               href="/"
-              aria-label="Go to homepage"
+              aria-label="Retour à l'accueil"
             >
               <img
                 data-editable="image"
                 data-prop-src="logo"
                 data-prop-alt="logo_alt"
                 src={navigation.logo}
-                alt="Company logo"
+                alt="HydroGrow"
                 className="h-12 w-auto max-w-[155px]"
               />
             </a>
@@ -183,8 +183,8 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
               aria-expanded={isMobileMenuOpen}
               aria-label={
                 isMobileMenuOpen
-                  ? "Close navigation menu"
-                  : "Open navigation menu"
+                  ? "Fermer le menu"
+                  : "Ouvrir le menu"
               }
               onClick={toggleMobileMenu}
             >
@@ -257,13 +257,13 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
               className={`${isMobileMenuOpen ? "block" : "hidden"} duration-200 transition-all lg:flex grow items-center justify-center absolute lg:relative top-full lg:top-auto left-0 lg:left-auto w-full lg:w-auto bg-night lg:bg-transparent shadow-lg lg:shadow-none`}
               id="mobile-navigation-menu"
               role="region"
-              aria-label="Navigation menu"
+              aria-label="Menu"
               aria-hidden={!isMobileMenuOpen}
             >
               <ul
                 className="lg:flex grid items-center gap-0 lg:gap-1.5 list-none lg:p-0 m-0 mb-6 lg:mb-0"
                 role="menubar"
-                aria-label="Main navigation links"
+                aria-label="Liens de navigation"
                 data-editable="array"
                 data-prop="nav_items"
               >
@@ -280,7 +280,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                           <button
                             ref={getDropdownButtonRef(i)}
                             id={`dropdown-button-${i}`}
-                            className={`block w-full whitespace-nowrap text-left px-10 lg:px-5 py-3 text-2xl lg:text-xl font-normal lg:rounded-lg transition-colors duration-200 hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset ${isPageActive(item.link) || (item.link === "/blog/" ? blogTags.some((tag) => isPageActive(tagLink(tag))) : item.dropdown?.some((dropdownItem) => isPageActive(dropdownItem.dropdown_link))) ? "text-primary" : "text-gray-700"} flex items-center lg:justify-start`}
+                            className={`block w-full whitespace-nowrap text-left px-10 lg:px-3 xl:px-5 py-3 text-2xl lg:text-base xl:text-xl font-normal lg:rounded-lg transition-colors duration-200 hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset ${isPageActive(item.link) || (item.link === "/blog/" ? blogTags.some((tag) => isPageActive(tagLink(tag))) : item.dropdown?.some((dropdownItem) => isPageActive(dropdownItem.dropdown_link))) ? "text-primary" : "text-gray-700"} flex items-center lg:justify-start`}
                             onClick={(e) => {
                               handleDropdownClick(e, i);
                               // Close mobile menu if it's a regular link (not dropdown)
@@ -444,7 +444,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                         <a
                           data-astro-prefetch
                           href={`${item.link}`}
-                          className={`block whitespace-nowrap px-10 lg:px-5 py-3 text-2xl lg:text-xl font-normal lg:rounded-lg transition-colors duration-200 hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset ${isPageActive(item.link) ? "text-primary" : "text-gray-700"}`}
+                          className={`block whitespace-nowrap px-10 lg:px-3 xl:px-5 py-3 text-2xl lg:text-base xl:text-xl font-normal lg:rounded-lg transition-colors duration-200 hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset ${isPageActive(item.link) ? "text-primary" : "text-gray-700"}`}
                           onClick={closeMobileMenu}
                           role="menuitem"
                         >
@@ -481,7 +481,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                 <a
                   data-astro-prefetch
                   href={`${navigation.nav_btn?.link}`}
-                  className="inline-flex items-center px-6 py-3 text-base font-medium text-secondary bg-primary hover:bg-transparent hover:text-primary border border-primary rounded-[14px] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  className="inline-flex items-center px-5 xl:px-6 py-3 text-base font-medium text-secondary bg-primary hover:bg-transparent hover:text-primary border border-primary rounded-[14px] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 >
                   <editable-text data-prop="nav_btn.text">
                     {navigation.nav_btn?.text}

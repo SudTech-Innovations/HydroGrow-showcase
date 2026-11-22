@@ -21,6 +21,7 @@ interface HeroImage {
 interface Props {
   title: string;
   description: string;
+  tagline?: string;
   button?: ButtonType;
   // Single image props (for backward compatibility)
   image?: string;
@@ -30,7 +31,7 @@ interface Props {
 }
 
 
-const { title, description, button, image, image_alt, hero_images } = Astro.props;
+const { title, description, tagline, button, image, image_alt, hero_images } = Astro.props;
 
 // Helper function to get placement class
 const getPlacementClass = (placement: string) => {
@@ -62,6 +63,9 @@ const hasSingleImage = image && image_alt;
     <div class="mx-auto max-w-2xl shrink-0 lg:mx-0 lg:pt-8">
       <Heading level={1} text={title} data-prop="title" data-editable="text" class="mb-6 hero-in" style="--d:100ms" />
       <Text text={description} data-prop="description" data-editable="text" size="xl" markdown={true} class="text-pretty hero-in" style="--d:260ms" />
+      {tagline && (
+        <p class="mt-6 inline-block rounded-full bg-growth px-4 py-1.5 text-[13px] leading-[18px] font-semibold text-night hero-in" style="--d:340ms" data-prop="tagline" data-editable="text">{tagline}</p>
+      )}
       <div class="mt-10 flex items-center gap-x-6 hero-in" style="--d:420ms">
         {button && <Button href={button.link} variant={"primary"} size={"lg"} text={button.text} data-prop="button.text" data-editable="text" />}
       </div>

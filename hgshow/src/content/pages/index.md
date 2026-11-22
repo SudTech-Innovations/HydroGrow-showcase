@@ -2,7 +2,7 @@
 _schema: default
 title: Accueil
 seo:
-  page_description: HydroGrow est la solution ultime pour l'hydroponie connectée.
+  page_description: HydroGrow vous aide à cultiver des fruits et légumes frais toute l'année, simplement, grâce à l'hydroponie connectée.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -11,52 +11,52 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/hero
-    title: L'Hydroponie Intelligente
+    title: L'avenir est local.
     description: >-
-      Avec HydroGrow, créez l'environnement parfait pour vos plantes. 
-      Surveillez, automatisez et optimisez vos cultures hydroponiques depuis votre smartphone, où que vous soyez.
+      Cultivez-le avec HydroGrow. Produisez des fruits et légumes frais toute l'année, sans grande connaissance ni beaucoup de temps.
+    tagline: Planter. Connecter. Savourer.
     image: /images/hero/hero-image.webp
-    image_alt: Tableau de bord HydroGrow
+    image_alt: Application HydroGrow, parcelle de basilic, état optimal, pH, eau et température
     button:
-      text: Commencer Gratuitement
+      text: Commencer
       link: /signup/
   - _name: global/counter
     title: Faites grandir votre
     title_suffix: Culture
     description: >-
-      Rejoignez HydroGrow et cultivez plus intelligemment, plus vite et plus durablement.
+      Des mesures claires pour cultiver plus simplement, avec moins d'eau et moins de temps passé à surveiller.
     alternate_style: false
     numbers:
       - prefix: "+"
         number: "50"
-        suffix: "%"
+        suffix: " %"
         text: de rendement.
       - prefix: "+"
         number: "40"
-        suffix: "%"
+        suffix: " %"
         text: de croissance.
-      - prefix: "-"
+      - prefix: "−"
         number: "80"
-        suffix: "%"
+        suffix: " %"
         text: de temps de gestion.
-      - prefix: "-"
+      - prefix: "−"
         number: "90"
-        suffix: "%"
+        suffix: " %"
         text: d'eau consommée.
   - _name: global/video
     image: /images/video/video-thum.webp
-    image_alt: Présentation vidéo
+    image_alt: Mains cueillant du basilic dans un bac hydroponique
     video_url: /videos/WgOP2bW2vWqlAtyYu4Hl8J8v4TNG2UCejfL3Bf.MP4
   - _name: global/header
     title: "Fonctionnalités "
     title_suffix: HydroGrow
     description: >-
-      Notre plateforme offre les fonctionnalités les plus avancées, incluant la gestion automatisée des nutriments, le contrôle climatique et des alertes en temps réel.
+      Gestion des nutriments, contrôle du climat et alertes en temps réel : tout ce qu'il faut pour que votre jardin se porte bien.
     remove_top_padding: true
   - _name: global/feature
     image: /images/feature/feature-card-one.webp
-    image_alt: Interface mobile HydroGrow pour le contrôle du pH, de l'EC et de l'éclairage — image générée par IA
-    title: Contrôle total en un clic
+    image_alt: Plant de basilic en hydroponie et téléphone affichant les jauges pH et EC de l'application HydroGrow
+    title: Votre jardin, en un geste
     description: >-
       Gérez votre système hydroponique en quelques secondes. Ajustez le pH, l'EC et les cycles d'éclairage directement depuis l'application.
     button:
@@ -65,7 +65,7 @@ content_blocks:
     reversed: false
   - _name: global/feature
     image: /images/feature/feature-card-two.webp
-    image_alt: Tableau de suivi d'une plante avec graphiques et prévision de récolte — image générée par IA
+    image_alt: Laitues en bac hydroponique avec capteur de pH et indicateurs de croissance
     title: Suivez chaque plante
     description: >-
       L'analyse de données simplifiée : visualisez la santé de vos plantes, l'historique des capteurs et les prévisions de récolte au même endroit.
@@ -75,13 +75,13 @@ content_blocks:
     reversed: true
   - _name: global/feature
     image: /images/feature/feature-card-three.webp
-    image_alt: Sélection de profils de culture prédéfinis dans l'application HydroGrow — image générée par IA
+    image_alt: Jeunes plants de tomate, laitue et basilic avec une tablette affichant l'application HydroGrow
     title: Profils de culture prédéfinis
     description: >-
       Que vous fassiez pousser des tomates, des laitues ou des orchidées, utilisez nos profils de croissance experts pour paramétrer votre système instantanément.
     button:
       link: /signup
-      text: Créer un compte
+      text: Rejoindre HydroGrow
     reversed: false
   # - _name: global/testimonial
   #   title: Ils nous font

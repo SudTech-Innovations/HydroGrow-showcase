@@ -24,11 +24,11 @@ const { faq, i, ...rest } = Astro.props;
   >
     <div class="flex items-center space-x-4">
       <span
-        class="shrink-0 w-8 h-8 bg-primary text-night rounded-full flex items-center justify-center text-sm font-bold"
+        class="shrink-0 w-8 h-8 bg-primary text-night rounded-full flex items-center justify-center text-sm font-semibold"
       >
         0{i + 1}
       </span>
-      <h3 class="text-xl font-normal text-mist leading-snug">
+      <h3 class="text-[22px] leading-[26px] font-normal text-mist">
         <editable-text data-prop="title">{faq.title}</editable-text>
       </h3>
     </div>
