@@ -215,6 +215,7 @@ const dialogClasses = `
           detail: { modalId: dialogElement.id },
         });
         dialogElement.dispatchEvent(beforeCloseEvent);
+        dialogElement.querySelectorAll("video").forEach((v) => v.pause());
 
         // If unloadOnClose is enabled, clear the content
         if (unloadOnClose) {
@@ -298,6 +299,11 @@ const dialogClasses = `
       dialogElement.showModal = function () {
         openModal();
         originalShowModal();
+        // Lecture déclenchée à l'ouverture seulement (jamais en arrière-plan au chargement)
+        dialogElement.querySelectorAll("video").forEach((v) => {
+          v.currentTime = 0;
+          v.play().catch(() => {});
+        });
       };
     });
   });

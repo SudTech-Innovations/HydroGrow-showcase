@@ -45,8 +45,8 @@ content_blocks:
         text: d'eau consommée.
   - _name: global/video
     image: /images/video/video-thum.webp
-    image_alt: Mains cueillant du basilic dans un bac hydroponique
-    video_url: /videos/WgOP2bW2vWqlAtyYu4Hl8J8v4TNG2UCejfL3Bf.MP4
+    image_alt: Racines blanches d’un plant de basilic dans l’eau claire d’un bac hydroponique
+    video_url: /videos/hydrogrow-presentation.mp4
   - _name: global/header
     title: "Fonctionnalités "
     title_suffix: HydroGrow

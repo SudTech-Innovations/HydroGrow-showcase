@@ -19,12 +19,12 @@ export interface Props {
   <!-- Video Modal -->
   <Modal id="video-modal" size={"7xl"} showCloseButton unloadOnClose>
     <div slot="header">
-      <h3 class="text-[22px] leading-[26px] font-normal text-mist">Présentation HydroGrow</h3>
+      <h3 class="text-[22px] leading-[26px] font-normal text-mist">L’avenir est local</h3>
     </div>
 
     <!-- Main content - VideoPlayer (handles Vimeo or Local) -->
     <div class="aspect-video" data-editable="component" data-prop-url="video_url" data-component="shared/VideoPlayer">
-      <VideoPlayer url={video_url} title="Présentation HydroGrow" autoplay={true} class="w-full h-full" />
+      <VideoPlayer url={video_url} title="L’avenir est local, du plant à l’assiette" autoplay={false} class="w-full h-full" />
     </div>
   </Modal>
 

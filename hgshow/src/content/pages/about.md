@@ -57,7 +57,7 @@ content_blocks:
     video:
       image: "/images/works/banner.webp"
       image_alt: "Équipe présentant un prototype HydroGrow fonctionnel dans une serre — image générée par IA"
-      video_url: /videos/WgOP2bW2vWqlAtyYu4Hl8J8v4TNG2UCejfL3Bf.MP4
+      video_url: /videos/hydrogrow-presentation.mp4
   - _name: "global/team"
     badge: "Projet Ydays — Master 1"
     title: "L'équipe du projet"
