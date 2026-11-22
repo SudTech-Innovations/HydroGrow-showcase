@@ -71,6 +71,9 @@ const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.dr
       }}
     />
     <!-- Icônes : traits arrondis, un seul ton (charte planche 09) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cal+Sans&display=swap" />
     <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <script is:inline>
       // Le balisage utilise `ph-xxx` seul ; Phosphor v2 exige aussi la classe `ph`.

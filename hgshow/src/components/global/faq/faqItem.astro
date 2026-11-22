@@ -28,12 +28,12 @@ const { faq, i, ...rest } = Astro.props;
       >
         0{i + 1}
       </span>
-      <h3 class="text-lg font-semibold text-gray-900 leading-tight">
+      <h3 class="text-xl font-normal text-mist leading-snug">
         <editable-text data-prop="title">{faq.title}</editable-text>
       </h3>
     </div>
     <svg
-      class="w-5 h-5 text-gray-500 transition-transform duration-200 group-open:rotate-180"
+      class="w-5 h-5 shrink-0 ml-4 text-growth transition-transform duration-200 group-open:rotate-180"
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"
@@ -46,9 +46,9 @@ const { faq, i, ...rest } = Astro.props;
     </svg>
   </summary>
 
-  <div class="px-6 pb-6 pl-18">
+  <div class="px-6 pb-7 pl-18 pr-12">
     <div
-      class="text-gray-600 leading-relaxed prose prose-sm max-w-none"
+      class="text-mist/90 text-base leading-7 prose max-w-none"
       data-editable="text"
       data-prop="description"
       set:html={md.render(faq.description || "")}

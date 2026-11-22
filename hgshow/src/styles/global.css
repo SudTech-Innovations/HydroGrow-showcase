@@ -8,9 +8,6 @@
    Vert pousse réservé à l'action (~7 %), Bleu vif pour l'information.
    ========================================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
-
 @theme {
   /* Couleurs principales */
   --color-night: #08172b; /* Nuit marine : fond principal */
