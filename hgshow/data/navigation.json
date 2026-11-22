@@ -52,7 +52,7 @@
   ],
   "enable_nav_btn": true,
   "nav_btn": {
-    "text": "Commencer",
-    "link": "/signup/"
+    "text": "Être informé",
+    "link": "/contact/"
   }
 }

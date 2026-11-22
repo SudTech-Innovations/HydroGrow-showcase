@@ -16,7 +16,7 @@ value:
         - item: 1 Site Activation
           active_feature: true
       button:
-        link: /login
+        link: /contact/
         text: Try This Free
 
 _inputs:

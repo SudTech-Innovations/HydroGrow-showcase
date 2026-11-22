@@ -11,47 +11,48 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/hero
-    title: HydroGrow
-    description: La solution tout-en-un pour l'hydroponie intelligente. Automatisez, surveillez et optimisez vos cultures grâce à notre écosystème IoT et notre application mobile.
+    title: Votre jardin, mesuré en continu.
+    description: >-
+      Des capteurs, un boîtier de contrôle et une application : HydroGrow suit vos cultures hydroponiques et vous prévient quand il faut agir.
     button:
-      link: /signup
-      text: Commencez maintenant
+      link: /contact/
+      text: Être informé du lancement
     image: /images/feature/feature-hero.webp
-    image_alt: Dashboard HydroGrow
+    image_alt: Tableau de bord de l'application HydroGrow
   - _name: global/header
-    title: "Une gestion "
-    title_suffix: Intelligente
-    description: Prenez le contrôle total de votre environnement de culture avec nos outils de pointe.
+    title: "Tout ce qu'il faut pour "
+    title_suffix: bien cultiver
+    description: Mesurer, régler et comprendre vos cultures, sans y passer vos journées.
     remove_top_padding: false
   - _name: global/feature
     image: /images/feature/feature-card-four.webp
-    image_alt: Application mobile affichant les mesures en temps réel des sondes hydroponiques — image générée par IA
-    title: Surveillance en Temps Réel
+    image_alt: Application mobile affichant les mesures en temps réel des sondes hydroponiques
+    title: Une surveillance en temps réel
     description: >-
-      Gardez un œil sur vos plantes 24/7. Nos capteurs IoT mesurent précisément le pH, l'électroconductivité (EC), la température de l'eau et de l'air, l'humidité et l'intensité lumineuse. Accédez à toutes ces données instantanément depuis votre smartphone.
+      Suivez vos plantes à toute heure. Les capteurs mesurent le pH, l'EC (la quantité de nutriments dans l'eau), la température de l'eau et de l'air, l'humidité et la lumière. Vous retrouvez ces mesures sur votre smartphone.
     button:
-      link: /signup
-      text: Voir la démo
+      link: /contact/
+      text: Être informé du lancement
     reversed: false
   - _name: global/feature
     image: /images/feature/feature-card-five.webp
-    image_alt: Boîtier HydroGrow automatisant les pompes de dosage, l'irrigation et l'éclairage — image générée par IA
-    title: Automatisation Complète
+    image_alt: Boîtier HydroGrow automatisant les pompes de dosage, l'irrigation et l'éclairage
+    title: Moins de gestes répétitifs
     description: >-
-      Libérez-vous des tâches répétitives. HydroGrow gère automatiquement l'éclairage, l'irrigation, et l'apport en nutriments en fonction des besoins spécifiques de vos plantes. Définissez vos règles ou utilisez nos pré-réglages optimisés.
+      HydroGrow gère l'éclairage, l'irrigation et l'apport en nutriments selon les besoins de vos plantes. Définissez vos propres règles ou partez des préréglages.
     button:
-      link: /signup
-      text: En savoir plus
+      link: /contact/
+      text: Être informé du lancement
     reversed: true
   - _name: global/feature
     image: /images/feature/feature-card-six.webp
-    image_alt: Caméra et tableau de bord IA analysant la santé et la croissance d'une laitue — image générée par IA
-    title: Optimisation par l'IA
+    image_alt: Caméra et tableau de bord IA analysant la santé et la croissance d'une laitue
+    title: Des conseils adaptés à vos plantes
     description: >-
-      Maximisez vos rendements grâce à l'intelligence artificielle. Notre système analyse vos données de culture pour vous fournir des recommandations personnalisées, détecter les anomalies avant qu'elles ne deviennent critiques et optimiser vos cycles de croissance.
+      Nexus, notre IA, analyse vos mesures et vous propose des conseils personnalisés. Elle repère aussi les anomalies avant qu'elles ne s'aggravent.
     button:
-      link: /signup
-      text: Découvrir l'IA
+      link: /contact/
+      text: Être informé du lancement
     reversed: false
   # - _name: global/testimonial
   #   title: Des cultivateurs
