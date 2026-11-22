@@ -55,7 +55,7 @@ const hasSingleImage = image && image_alt;
 
 <section class="relative isolate pt-24 bg-night overflow-hidden">
   <!-- Cercles concentriques : le signal qui se propage -->
-  <Rings class="absolute -z-10 -top-40 -right-56 w-[820px] h-[820px] max-w-none" />
+  <Rings class="absolute -z-10 -top-24 -right-[620px] sm:-right-[420px] lg:-top-40 lg:-right-56 w-[820px] h-[820px] max-w-none" />
   <!-- Trame de points -->
   {!hasMultipleImages && <DotGrid variant="field" cols={12} rows={6} class="hidden lg:block absolute -z-10 left-8 bottom-10 w-[420px] opacity-80" />}
 

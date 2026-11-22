@@ -36,23 +36,23 @@ export interface Props {
               {title_suffix}
             </span>
           </Heading>
-          <div class="w-3/5 lg:w-4/5 xl:w-3/5 mx-auto text-lg" data-editable="text" data-prop="description" set:html={md.render(description)} />
+          <div class="w-full sm:w-4/5 xl:w-3/5 mx-auto text-base sm:text-lg" data-editable="text" data-prop="description" set:html={md.render(description)} />
         </div>
       </div>
       <div class="w-full">
         {
           numbers && (
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 items-center justify-center text-center"
+              class="grid grid-cols-2 lg:grid-cols-4 gap-0 items-center justify-center text-center"
               data-editable="array"
               data-prop="numbers">
               {numbers.map((number: CounterNumber, i: number) => (
                 <div class="relative h-full" data-editable="array-item">
                   <div
-                    class={`pt-10 px-8 pb-0 2xl:pt-8 2xl:px-8 xl:pt-8 xl:px-4 xl:pb-7 sm:pt-8 sm:px-0 sm:pb-7`}>
+                    class={`pt-6 px-2 pb-4 2xl:pt-8 2xl:px-8 xl:pt-8 xl:px-4 xl:pb-7 sm:pt-8 sm:px-0 sm:pb-7`}>
                     <div class=" flex justify-center">
                       <span
-                        class="text-5xl lg:text-6xl font-display text-primary leading-tight"
+                        class="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight"
                         
                         data-editable="text"
                         data-prop="prefix">
@@ -63,28 +63,28 @@ export interface Props {
                           <span 
                             data-editable="text"
                             data-prop="number"
-                            class="text-5xl lg:text-6xl font-display text-primary leading-tight"
+                            class="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight"
                             >
                               {number.number}
                             </span>
                           ) : (
                           <AnimatedNumber
                             numberValue={Number(number.number)}
-                            className="text-5xl lg:text-6xl font-display text-primary leading-tight"
+                            className="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight"
                             
                             client:load
                           />
                         )
                       }
                       <span
-                        class="text-5xl lg:text-6xl font-display text-primary leading-tight"
+                        class="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight"
                         
                         data-editable="text"
                         data-prop="suffix">
                         {number.suffix || ""}
                       </span>
                     </div>
-                    <p class="text-gray-900 text-base mb-0 sm:px-8 sm:pb-0" data-editable="text" data-prop="text">
+                    <p class="text-gray-900 text-sm sm:text-base mb-0 sm:px-8 sm:pb-0" data-editable="text" data-prop="text">
                       {number.text}
                     </p>
                   </div>
