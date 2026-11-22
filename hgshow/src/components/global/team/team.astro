@@ -19,12 +19,12 @@ interface Props {
 const { title, description, badge, team_members } = Astro.props;
 ---
 
-<section class="py-16 xl:py-24 2xl:py-32 bg-slate-50/50 border-t border-gray-100">
+<section class="py-16 xl:py-24 2xl:py-32 border-t border-pixel/30">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl xl:max-w-3xl mx-auto mb-12 lg:mb-16">
       <div class="text-center">
         {badge && (
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-primary/10 text-primary border border-primary/20 mb-4 shadow-xs">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-primary text-night mb-4">
             <i class="ph-users-three text-sm" />
             <span>{badge}</span>
           </div>
@@ -41,9 +41,9 @@ const { title, description, badge, team_members } = Astro.props;
       {
         team_members?.map((member: TeamMember, i: number) => (
           <div data-editable="array-item">
-            <div class="text-center group bg-white rounded-3xl p-4 shadow-md border border-gray-100 hover:shadow-xl hover:border-primary/30 transition-all duration-300 h-full flex flex-col justify-between">
+            <div class="text-center group bg-deep rounded-[24px] p-4 border border-pixel/40 hover:border-primary hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col justify-between">
               <div>
-                <div class="mb-4 shadow-md rounded-2xl overflow-hidden">
+                <div class="mb-4 rounded-[14px] overflow-hidden">
                   <Image
                     data-editable="image"
                     data-prop-src="image"
@@ -57,7 +57,7 @@ const { title, description, badge, team_members } = Astro.props;
                   />
                 </div>
                 <div class="space-y-1">
-                  <h3 class="text-lg font-bold text-gray-900" data-editable="text" data-prop="name">
+                  <h3 class="text-lg font-display text-gray-900" data-editable="text" data-prop="name">
                     {member.name}
                   </h3>
                   <p class="text-sm text-gray-600 font-medium" data-editable="text" data-prop="designation">

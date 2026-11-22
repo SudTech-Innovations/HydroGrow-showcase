@@ -1,0 +1,32 @@
+---
+/**
+ * Cercles concentriques (charte, planche 09) :
+ * un point vert au centre, des cercles fins en bleu pixel, le signal qui se propage.
+ * Aplats et traits fins uniquement, aucun dégradé.
+ */
+interface Props {
+  rings?: number;
+  class?: string;
+  stroke?: string;
+}
+const { rings = 5, class: className = "", stroke = "#2D5083" } = Astro.props;
+const gap = 70;
+const size = (rings * gap + 20) * 2;
+const c = size / 2;
+---
+
+<svg
+  viewBox={`0 0 ${size} ${size}`}
+  width={size}
+  height={size}
+  class={`rings ${className}`}
+  aria-hidden="true"
+  focusable="false"
+>
+  {Array.from({ length: rings }).map((_, i) => (
+    <circle cx={c} cy={c} r={(i + 1) * gap} fill="none" stroke={stroke} stroke-width="1.5" class="ring" style={`--i:${i}`} />
+  ))}
+  <circle cx={c} cy={c} r={rings * gap} fill="none" stroke="#5BE3A8" stroke-width="1.5" class="pulse" />
+  <circle cx={c} cy={c} r={rings * gap} fill="none" stroke="#5BE3A8" stroke-width="1.5" class="pulse pulse-2" />
+  <circle cx={c} cy={c} r="13" fill="#5BE3A8" class="core" />
+</svg>

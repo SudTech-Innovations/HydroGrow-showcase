@@ -30,10 +30,10 @@ const hasPrice = price !== undefined && price !== null && price !== "";
 ---
 
 
-<div class={`bg-white rounded-xl shadow-lg border transition-all duration-300 ease-in-out p-8 xl:p-10 mb-8 lg:mb-14 h-full flex flex-col justify-between ${
+<div class={`bg-deep rounded-[24px] border transition-all duration-300 ease-in-out p-8 xl:p-10 mb-8 lg:mb-14 h-full flex flex-col justify-between ${
   highlight_tier
-    ? "border-primary lg:-mt-10 shadow-primary/10 shadow-xl"
-    : "border-gray-100 hover:border-gray-200"
+    ? "border-primary lg:-mt-10"
+    : "border-pixel/40 hover:border-pixel hover:-translate-y-1.5"
 }`}>
 
   <!-- Card Header -->
@@ -57,7 +57,7 @@ const hasPrice = price !== undefined && price !== null && price !== "";
   </p>
 
   <!-- Pricing Section -->
-  <div class="relative mb-8 flex items-center text-black border-t border-b border-gray-100 py-4">
+  <div class="relative mb-8 flex items-center text-mist border-t border-b border-pixel/40 py-4">
     {hasPrice ? (
       has_discount ? (
         <>
@@ -83,11 +83,6 @@ const hasPrice = price !== undefined && price !== null && price !== "";
               />
             </div>
           </div>
-
-          <!-- Background Shape for Discount -->
-          <div
-            class="absolute top-2 left-[10%] w-[35%] h-full -z-10 bg-[#faaa8f] mask-[url(/images/pricing/shape-two.png)] [-webkit-mask-image:url(/images/pricing/shape-two.png)] mask-no-repeat [-webkit-mask-repeat:no-repeat]"
-          />
         </>
       ) : (
         <>
@@ -98,17 +93,12 @@ const hasPrice = price !== undefined && price !== null && price !== "";
               <editable-text data-prop="price">{price}</editable-text>
             </span>
           </p>
-
-          <!-- Background Shape for Regular -->
-          <div
-            class="absolute top-2 left-[10%] w-[35%] h-full -z-10 bg-[#faaa8f] mask-[url(/images/pricing/shape-one.png)] [-webkit-mask-image:url(/images/pricing/shape-one.png)] mask-no-repeat [-webkit-mask-repeat:no-repeat]"
-          />
         </>
       )
     ) : (
       <div class="pl-4 xl:pl-6 py-2 flex flex-wrap items-center gap-2">
-        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-sm font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200/80">
-          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-sm font-semibold bg-primary text-night">
+          <span class="inline-block w-2 h-2 rounded-full bg-night"></span>
           {price_status || "Tarif en cours de réflexion"}
         </span>
         <span class="text-xs text-gray-500 font-medium">Exemple de formule</span>
@@ -122,7 +112,7 @@ const hasPrice = price !== undefined && price !== null && price !== "";
       <template data-id="true">
           <li
               data-editable="array-item"
-              class="flex items-center text-lg xl:text-xl leading-relaxed font-bold tracking-tight text-gray-600"
+              class="flex items-center text-lg xl:text-xl leading-relaxed font-semibold tracking-tight text-gray-600"
           >
               <i class="ph-check mr-4 xl:mr-5 text-primary"/>
               <editable-text data-prop="item"></editable-text>
@@ -131,7 +121,7 @@ const hasPrice = price !== undefined && price !== null && price !== "";
       <template data-id="false">
           <li
               data-editable="array-item"
-              class="flex items-center text-lg xl:text-xl leading-relaxed font-bold tracking-tight text-gray-400"
+              class="flex items-center text-lg xl:text-xl leading-relaxed font-semibold tracking-tight text-gray-400"
           >
               <i class="ph-check mr-4 xl:mr-5 text-gray-400"/>
               <editable-text data-prop="item"></editable-text>

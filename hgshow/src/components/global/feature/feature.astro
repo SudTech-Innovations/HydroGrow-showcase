@@ -3,6 +3,7 @@ import Button from "@components/shared/Button.astro";
 import { Image } from "astro:assets";
 import MarkdownIt from "markdown-it";
 import Heading from "../../shared/Heading.astro";
+import DotGrid from "../../shared/DotGrid.astro";
 const md = new MarkdownIt({ html: true });
 
 // Define TypeScript interfaces
@@ -28,8 +29,8 @@ const { image, image_alt, title, description, button, reversed } = Astro.props;
     <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
       <div class={`w-full lg:w-1/2 ${reversed ? 'order-1' : 'order-1 lg:order-2'}`}>
         <div class="card-image-wrapper relative mb-7 sm:mb-8 lg:mb-10 2xl:mb-16 z-10">
-          <div class="relative shadow-2xl rounded-3xl">
-            <div class="relative z-10 overflow-hidden rounded-3xl bg-gray-50 ring-1 ring-black/5">
+          <div class="relative shadow-2xl rounded-[36px]">
+            <div class="relative z-10 overflow-hidden rounded-[36px] bg-gray-50 ring-1 ring-black/5">
               <Image
                 data-editable="image"
                 data-prop-src="image"
@@ -43,13 +44,10 @@ const { image, image_alt, title, description, button, reversed } = Astro.props;
               />
             </div>
           </div>
-          {/* Background decoration */}
-          <div 
-            class={`absolute -z-10 bg-primary/40 mask-repeat mask-contain ${
-              reversed 
-                ? "-top-[8%] -left-[11%] lg:-left-[4%] w-[110%] lg:w-[102%] h-[125%] lg:h-[117%] mask-[url(/images/feature/effect-1.png)]" 
-                : "-top-[21%] sm:-top-[8%] -right-[17%] xl:-right-[9%] w-[132%] xl:w-[105%] h-[130%] mask-[url(/images/feature/effect-2.png)]"
-            }`}
+          {/* Trame de points décorative */}
+          <DotGrid
+            variant="h"
+            class={`absolute -z-10 w-40 sm:w-52 ${reversed ? "-bottom-10 -left-6 lg:-left-12" : "-top-10 -right-6 lg:-right-12"}`}
           />
         </div>
       </div>

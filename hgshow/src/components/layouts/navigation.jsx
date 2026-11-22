@@ -150,7 +150,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
       </button>
 
       <header
-        className={`fixed z-30 w-full transition-all duration-100 ${isSticky || isMobileMenuOpen ? " bg-white shadow-primary/10 shadow-xl" : ""}`}
+        className={`fixed z-30 w-full transition-all duration-100 ${isSticky || isMobileMenuOpen ? " bg-night/90 backdrop-blur border-b border-deep" : ""}`}
         role="banner"
       >
         <nav
@@ -201,7 +201,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                     y1="5.5"
                     x2="21.5"
                     y2="5.5"
-                    stroke="#292D32"
+                    stroke="#EAF3EE"
                     strokeWidth="3"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -211,7 +211,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                     y1="12.5"
                     x2="21.5"
                     y2="12.5"
-                    stroke="#292D32"
+                    stroke="#EAF3EE"
                     strokeWidth="3"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -221,7 +221,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                     y1="19.5"
                     x2="21.5"
                     y2="19.5"
-                    stroke="#292D32"
+                    stroke="#EAF3EE"
                     strokeWidth="3"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -238,14 +238,14 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                 >
                   <path
                     d="M21.5 6.5L6.5 21.5"
-                    stroke="#292D32"
+                    stroke="#EAF3EE"
                     strokeWidth="3"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M21.5 21.5L6.5 6.5"
-                    stroke="#292D32"
+                    stroke="#EAF3EE"
                     strokeWidth="3"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -254,7 +254,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
               </span>
             </button>
             <div
-              className={`${isMobileMenuOpen ? "block" : "hidden"} duration-200 transition-all lg:flex grow items-center justify-center absolute lg:relative top-full lg:top-auto left-0 lg:left-auto w-full lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none`}
+              className={`${isMobileMenuOpen ? "block" : "hidden"} duration-200 transition-all lg:flex grow items-center justify-center absolute lg:relative top-full lg:top-auto left-0 lg:left-auto w-full lg:w-auto bg-night lg:bg-transparent shadow-lg lg:shadow-none`}
               id="mobile-navigation-menu"
               role="region"
               aria-label="Navigation menu"
@@ -336,7 +336,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                           <ul
                             ref={getDropdownMenuRef(i)}
                             id={`dropdown-menu-${i}`}
-                            className={`lg:absolute lg:top-full lg:left-0 lg:w-80 lg:max-h-[70vh] lg:overflow-y-auto w-full max-h-[calc(100vh-8rem)] overflow-y-auto lg:bg-white lg:shadow-lg lg:rounded-lg lg:border lg:border-gray-200 transition-all duration-250 z-50 px-0 ${
+                            className={`lg:absolute lg:top-full lg:left-0 lg:w-80 lg:max-h-[70vh] lg:overflow-y-auto w-full max-h-[calc(100vh-8rem)] overflow-y-auto lg:bg-deep lg:shadow-lg lg:rounded-[14px] lg:border lg:border-pixel/40 transition-all duration-250 z-50 px-0 ${
                               openDropdown === i
                                 ? "block lg:opacity-100 lg:visible lg:translate-y-0"
                                 : "hidden lg:block lg:opacity-0 lg:invisible lg:translate-y-1"
@@ -481,7 +481,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                 <a
                   data-astro-prefetch
                   href={`${navigation.nav_btn?.link}`}
-                  className="inline-flex items-center px-6 py-3 text-base font-normal text-primary bg-secondary hover:bg-primary hover:text-secondary  border border-primary rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  className="inline-flex items-center px-6 py-3 text-base font-medium text-secondary bg-primary hover:bg-transparent hover:text-primary border border-primary rounded-[14px] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 >
                   <editable-text data-prop="nav_btn.text">
                     {navigation.nav_btn?.text}

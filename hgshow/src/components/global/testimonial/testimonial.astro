@@ -23,7 +23,7 @@ const { title, title_suffix, description, testimonials } = Astro.props;
 ---
 
 <section
-  class="bg-black relative border-b border-gray-800 sm:border-b-0 overflow-hidden py-16 lg:py-20"
+  class="bg-night relative border-b border-gray-800 sm:border-b-0 overflow-hidden py-16 lg:py-20"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-center">
@@ -61,7 +61,7 @@ const { title, title_suffix, description, testimonials } = Astro.props;
         >
           <template>
             <div data-editable="array-item">
-              <div class="bg-white p-6 rounded-xl">
+              <div class="bg-deep p-6 rounded-xl">
                 <div class="flex items-center gap-4 mt-4 mb-4">
                   {
                     <div class="shrink-0">
@@ -99,7 +99,7 @@ const { title, title_suffix, description, testimonials } = Astro.props;
           </template>
           {testimonials?.map((testimonial: Testimonial, i: number) => (
             <div data-editable="array-item">
-              <div class="bg-white p-6 rounded-xl">
+              <div class="bg-deep p-6 rounded-xl">
                 <div class="flex items-center gap-4 mt-4 mb-4">
                   {testimonial.image && (
                     <div class="shrink-0">
