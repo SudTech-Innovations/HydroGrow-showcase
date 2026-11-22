@@ -5,8 +5,8 @@ import Heading from "../../shared/Heading.astro";
 interface TeamMember {
   name: string;
   designation: string;
-  image: string;
-  image_alt: string;
+  image?: string;
+  image_alt?: string;
 }
 
 interface Props {
@@ -44,6 +44,7 @@ const { title, description, badge, team_members } = Astro.props;
             <div class="text-center group bg-deep rounded-[24px] p-4 border border-pixel/40 hover:border-primary hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col justify-between">
               <div>
                 <div class="mb-4 rounded-[14px] overflow-hidden">
+                  {member.image ? (
                   <Image
                     data-editable="image"
                     data-prop-src="image"
@@ -55,12 +56,20 @@ const { title, description, badge, team_members } = Astro.props;
                     height={579}
                     class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                   />
+                  ) : (
+                    <div
+                      class="w-full aspect-[516/579] bg-night flex items-center justify-center text-5xl font-display text-primary"
+                      aria-hidden="true"
+                    >
+                      {member.name.split(" ").map((w: string) => w[0]).join("").slice(0, 2).toUpperCase()}
+                    </div>
+                  )}
                 </div>
                 <div class="space-y-1">
                   <h3 class="text-lg font-display text-gray-900" data-editable="text" data-prop="name">
                     {member.name}
                   </h3>
-                  <p class="text-sm text-gray-600 font-medium" data-editable="text" data-prop="designation">
+                  <p class="text-sm text-mist/80 font-medium" data-editable="text" data-prop="designation">
                     {member.designation}
                   </p>
                 </div>
