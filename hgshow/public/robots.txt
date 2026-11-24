@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hydro-grow-showcase.vercel.app/sitemap-index.xml
+Sitemap: https://showcase.hydrogrow.fr/sitemap-index.xml

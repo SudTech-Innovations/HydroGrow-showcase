@@ -7,7 +7,7 @@ import { defineConfig } from "astro/config";
 // URL de production : utilisée pour les canonical, og:url, le sitemap et le flux RSS.
 // À remplacer par le nom de domaine définitif quand il existe.
 export default defineConfig({
-  site: "https://hydro-grow-showcase.vercel.app",
+  site: "https://showcase.hydrogrow.fr",
   integrations: [
     react(),
     editableRegions(),
