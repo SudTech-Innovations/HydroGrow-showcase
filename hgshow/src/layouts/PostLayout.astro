@@ -37,9 +37,32 @@ const wordCount = content.split(" ").length;
 const readingTime = Math.floor(wordCount / 183);
 
 const posts = await getCollection("blog");
+
+// L'image de couverture de l'article sert aussi d'aperçu de partage (Open Graph)
+const seo = {
+  ...(props.seo ?? {}),
+  page_description: props.seo?.page_description ?? null,
+  featured_image: featured_image?.image ?? props.seo?.featured_image ?? null,
+  featured_image_alt: featured_image?.image_alt ?? props.seo?.featured_image_alt ?? null,
+  open_graph_type: "article",
+} as SEOProps;
+const siteUrl = Astro.site;
+const articleUrl = new URL(Astro.url.pathname, siteUrl).toString();
+const jsonLd = {
+  "@type": "BlogPosting",
+  headline: title,
+  description: seo.page_description,
+  image: featured_image?.image ? new URL(featured_image.image, siteUrl).toString() : undefined,
+  datePublished: new Date(date).toISOString(),
+  dateModified: new Date(date).toISOString(),
+  inLanguage: "fr-FR",
+  author: { "@type": "Person", name: author },
+  publisher: { "@id": new URL("/#organization", siteUrl).toString() },
+  mainEntityOfPage: articleUrl,
+};
 ---
 
-<Layout {...props}>
+<Layout title={title} seo={seo} jsonLd={jsonLd}>
   <section class="relative pt-36 pb-16 2xl:pt-48 xl:pt-40 sm:pt-32">
     <div class="max-w-7xl mx-auto px-6 lg:px-14">
       <div class="w-full">
@@ -59,7 +82,7 @@ const posts = await getCollection("blog");
                 <li class="flex items-center">
                   <p class="mb-0 text-primary">
                     {
-                      date.toLocaleDateString(undefined, {
+                      date.toLocaleDateString("fr-FR", {
                         year: "numeric",
                         month: "long",
                         day: "numeric",
@@ -75,11 +98,11 @@ const posts = await getCollection("blog");
                 </li>
                 <li
                   class="relative pl-2 ml-5 flex items-center before:absolute before:content-[''] before:bg-gray-400 before:w-0.5 before:h-4 before:-left-3.5 before:top-1/2 before:-translate-y-1/2">
-                  <p class="mb-0 text-primary">{readingTime} <span>minutes</span></p>
+                  <p class="mb-0 text-primary">{readingTime} <span>min de lecture</span></p>
                 </li>
                 <li
                   class="relative pl-2 ml-5 flex items-center before:absolute before:content-[''] before:bg-gray-400 before:w-0.5 before:h-4 before:-left-3.5 before:top-1/2 before:-translate-y-1/2">
-                  <p class="mb-0 text-primary">{wordCount} <span>words</span></p>
+                  <p class="mb-0 text-primary">{wordCount} <span>mots</span></p>
                 </li>
               </ul>
             </div>

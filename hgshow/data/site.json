@@ -1,9 +1,10 @@
 {
   "site_title": "HydroGrow",
-  "description": "HydroGrow vous aide à cultiver des fruits et légumes frais toute l'année, simplement.",
+  "description": "HydroGrow vous aide à cultiver des fruits et légumes frais toute l'année, simplement, grâce à l'hydroponie connectée.",
   "favicon_icon": "/images/favicon.ico",
   "favicon_image": "/images/favicon.png",
   "twitter_site": "@HydroGrow",
   "image": "/images/og-banner.webp",
-  "image_alt": "HydroGrow : L'avenir est local. Cultivez-le avec HydroGrow."
+  "image_alt": "HydroGrow : L'avenir est local. Cultivez-le avec HydroGrow.",
+  "home_title": "HydroGrow : potager hydroponique connecté, cultivez toute l'année"
 }

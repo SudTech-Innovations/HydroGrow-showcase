@@ -46,7 +46,7 @@ const { page: pagination } = Astro.props;
 const posts = pagination.data;
 ---
 
-<Layout title={frontmatter.title} seo={frontmatter.seo}>
+<Layout title={frontmatter.title} seo={frontmatter.seo} noindex={pagination.currentPage > 1}>
   <BlogList posts={posts} page={page.data} />
   <BlogPagination pagination={{ ...pagination, data: posts }} />
 </Layout>

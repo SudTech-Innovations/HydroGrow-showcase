@@ -16,11 +16,11 @@ const {
 
 <article
   class="group bg-deep rounded-[20px] border border-pixel/40 overflow-hidden max-w-xl h-full flex flex-col transition-colors duration-300 hover:border-primary">
-  <a data-astro-prefetch href={`/blog/${slug}`} class="block aspect-4/3 overflow-hidden" tabindex="-1" aria-hidden="true">
+  <a data-astro-prefetch href={`/blog/${slug}`} class="block aspect-4/3 overflow-hidden" tabindex="-1">
     <Image
       transition:persist={`blog-image-${slug}`}
       src={thumb_image.image}
-      alt=""
+      alt={thumb_image.image_alt || title}
       loading="lazy"
       width={400}
       height={300}

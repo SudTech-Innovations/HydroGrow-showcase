@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hydro-grow-showcase.vercel.app/sitemap-index.xml

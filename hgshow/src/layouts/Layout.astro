@@ -22,15 +22,47 @@ export interface SEOProps {
 export interface Props {
   title: string;
   seo?: SEOProps;
+  // Exclut la page des moteurs de recherche (404, pagination, pages de mots-clés)
+  noindex?: boolean;
+  // Données structurées supplémentaires (ex. Article)
+  jsonLd?: Record<string, unknown>;
 }
 
-const { seo } = Astro.props;
+const { seo, noindex, jsonLd } = Astro.props;
 const baseUrl = Astro.site;
-const title = Astro.props.title ? `${Astro.props.title} | ${site.site_title}` : site.site_title;
+const isHome = Astro.url.pathname === "/";
+// Accueil : titre riche en mots-clés plutôt que « Accueil | HydroGrow »
+const title = isHome
+  ? site.home_title
+  : Astro.props.title
+    ? `${Astro.props.title} | ${site.site_title}`
+    : site.site_title;
 const description = seo?.page_description || site.description;
-const image = seo?.featured_image || site.image;
+// Les balises Open Graph exigent des URL absolues
+const image = new URL(seo?.featured_image || site.image, baseUrl).toString();
 const image_alt = seo?.featured_image_alt || site.image_alt;
 const canonicalURL = new URL(seo?.canonical_url || Astro.url.pathname, baseUrl);
+const graph: Record<string, unknown>[] = [
+  {
+    "@type": "Organization",
+    "@id": new URL("/#organization", baseUrl).toString(),
+    name: site.site_title,
+    url: baseUrl?.toString(),
+    logo: new URL("/images/logo-icon.svg", baseUrl).toString(),
+    email: "contact@hydrogrow.fr",
+  },
+  {
+    "@type": "WebSite",
+    "@id": new URL("/#website", baseUrl).toString(),
+    url: baseUrl?.toString(),
+    name: site.site_title,
+    description: site.description,
+    inLanguage: "fr-FR",
+    publisher: { "@id": new URL("/#organization", baseUrl).toString() },
+  },
+];
+if (jsonLd) graph.push(jsonLd);
+const structuredData = JSON.stringify({ "@context": "https://schema.org", "@graph": graph });
 const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.draft)).flatMap(({ data }) => data.tags))]
   .sort((a, b) => a.localeCompare(b, "fr"));
 ---
@@ -40,20 +72,21 @@ const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.dr
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" title="HydroGrow : blog" href="/feed.xml" />
     <link rel="icon" href="/images/favicon.ico?v=1" sizes="any" type="image/x-icon" />
     <link rel="shortcut icon" href="/images/favicon.ico?v=1" type="image/x-icon" />
     <meta name="generator" content={Astro.generator} />
     <script is:inline>document.documentElement.classList.add("js");</script>
 
     <SEO
-      noindex={seo?.no_index || false}
+      noindex={noindex || seo?.no_index || false}
       title={title}
       description={description}
       canonical={canonicalURL.toString()}
       openGraph={{
         basic: {
-          title: Astro.props.title,
-          url: baseUrl?.toString(),
+          title: isHome ? "HydroGrow : l'avenir est local" : Astro.props.title,
+          url: canonicalURL.toString(),
           type: `${seo?.open_graph_type || "website"}`,
           image: image,
         },
@@ -71,6 +104,7 @@ const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.dr
         card: "summary_large_image",
       }}
     />
+    <script type="application/ld+json" set:html={structuredData} is:inline />
     <!-- Icônes : traits arrondis, un seul ton (charte v2, planche 13) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
