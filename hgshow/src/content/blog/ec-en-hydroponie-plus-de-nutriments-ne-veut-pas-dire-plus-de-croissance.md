@@ -3,9 +3,9 @@ date: 2026-08-12
 title: "EC en hydroponie : quand plus de nutriments ne veut pas dire plus de croissance"
 tags: ["nutriments", "capteurs", "guide"]
 author: "Équipe HydroGrow"
-thumb_image: { image: /images/blog/hydroponie-ec.png, image_alt: Mesure EC dans une installation hydroponique }
-featured_image: { image: /images/blog/hydroponie-ec.png, image_alt: Conductivité de la solution nutritive }
-seo: { page_description: Comprendre l'EC, les risques de sous- et sur-fertilisation et le bon suivi de la solution nutritive., canonical_url: , featured_image: /images/blog/hydroponie-ec.png, featured_image_alt: Mesure EC, author_twitter_handle: , open_graph_type: article, no_index: false }
+thumb_image: { image: /images/blog/hydroponie-ec.webp, image_alt: Mesure EC dans une installation hydroponique }
+featured_image: { image: /images/blog/hydroponie-ec.webp, image_alt: Conductivité de la solution nutritive }
+seo: { page_description: Comprendre l'EC, les risques de sous- et sur-fertilisation et le bon suivi de la solution nutritive., canonical_url: , featured_image: /images/blog/hydroponie-ec.webp, featured_image_alt: Mesure EC, author_twitter_handle: , open_graph_type: article, no_index: false }
 draft: false
 ---
 

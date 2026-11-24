@@ -8,10 +8,10 @@ tags:
   - innovation
 author: Nicolas Vinckier
 thumb_image:
-  image: /images/blog/thum-blog1.png
+  image: /images/blog/blog1.webp
   image_alt: Visualisation réseau neuronal
 featured_image:
-  image: /images/blog/feat-blog1.png
+  image: /images/blog/blog1.webp
   image_alt: Représentation abstraite de Nexus
 seo:
   page_description: Plongée au cœur de l'architecture IA d'HydroGrow. Découvrez comment Nexus arbitre entre la survie immédiate (Pulse) et le rendement futur (Orbit).

@@ -3,9 +3,9 @@ date: 2026-08-04
 title: "Hydroponie et maladies : l’absence de terre ne signifie pas absence de risques"
 tags: ["santé des plantes", "prévention", "maintenance"]
 author: "Équipe HydroGrow"
-thumb_image: { image: /images/blog/hydroponie-maladies.png, image_alt: Inspection des racines hydroponiques }
-featured_image: { image: /images/blog/hydroponie-maladies.png, image_alt: Prévention sanitaire en hydroponie }
-seo: { page_description: Les risques sanitaires qui subsistent sans sol et les pratiques de prévention en hydroponie., canonical_url: , featured_image: /images/blog/hydroponie-maladies.png, featured_image_alt: Maladies hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
+thumb_image: { image: /images/blog/hydroponie-maladies.webp, image_alt: Inspection des racines hydroponiques }
+featured_image: { image: /images/blog/hydroponie-maladies.webp, image_alt: Prévention sanitaire en hydroponie }
+seo: { page_description: Les risques sanitaires qui subsistent sans sol et les pratiques de prévention en hydroponie., canonical_url: , featured_image: /images/blog/hydroponie-maladies.webp, featured_image_alt: Maladies hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
 draft: false
 ---
 

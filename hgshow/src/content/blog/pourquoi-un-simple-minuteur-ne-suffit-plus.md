@@ -8,10 +8,10 @@ tags:
   - guide
 author: Nicolas Vinckier
 thumb_image:
-  image: /images/blog/thum-blog4.png
+  image: /images/blog/blog4.webp
   image_alt: Système hydroponique connecté
 featured_image:
-  image: /images/blog/feat-blog4.png
+  image: /images/blog/blog4.webp
   image_alt: Dashboard HydroGrow sur tablette devant une serre
 seo:
   page_description: Découvrez comment l'IoT et le Edge Computing sécurisent vos cultures là où les minuteurs classiques échouent.

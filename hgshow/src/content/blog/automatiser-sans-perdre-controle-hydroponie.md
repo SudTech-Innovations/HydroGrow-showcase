@@ -3,9 +3,9 @@ date: 2026-08-07
 title: "Hydroponie : automatiser sans perdre le contrôle de sa culture"
 tags: ["automatisation", "capteurs", "guide"]
 author: "Équipe HydroGrow"
-thumb_image: { image: /images/blog/hydroponie-automatisation.png, image_alt: Serre hydroponique automatisée }
-featured_image: { image: /images/blog/hydroponie-automatisation.png, image_alt: Automatisation d'une culture hydroponique }
-seo: { page_description: Une approche progressive de l'automatisation hydroponique, centrée sur le contrôle et les données., canonical_url: , featured_image: /images/blog/hydroponie-automatisation.png, featured_image_alt: Automatisation hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
+thumb_image: { image: /images/blog/hydroponie-automatisation.webp, image_alt: Serre hydroponique automatisée }
+featured_image: { image: /images/blog/hydroponie-automatisation.webp, image_alt: Automatisation d'une culture hydroponique }
+seo: { page_description: Une approche progressive de l'automatisation hydroponique, centrée sur le contrôle et les données., canonical_url: , featured_image: /images/blog/hydroponie-automatisation.webp, featured_image_alt: Automatisation hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
 draft: false
 ---
 

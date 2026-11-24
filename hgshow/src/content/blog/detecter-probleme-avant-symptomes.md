@@ -3,9 +3,9 @@ date: 2026-08-06
 title: "Peut-on détecter un problème avant que la plante montre des symptômes ?"
 tags: ["alertes", "données", "prévention"]
 author: "Équipe HydroGrow"
-thumb_image: { image: /images/blog/hydroponie-detection.png, image_alt: Capteurs et plantes hydroponiques }
-featured_image: { image: /images/blog/hydroponie-detection.png, image_alt: Détection précoce dans une serre hydroponique }
-seo: { page_description: Comment les tendances de pH, EC, niveau et température permettent d'agir avant les symptômes visibles., canonical_url: , featured_image: /images/blog/hydroponie-detection.png, featured_image_alt: Détection précoce hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
+thumb_image: { image: /images/blog/hydroponie-detection.webp, image_alt: Capteurs et plantes hydroponiques }
+featured_image: { image: /images/blog/hydroponie-detection.webp, image_alt: Détection précoce dans une serre hydroponique }
+seo: { page_description: Comment les tendances de pH, EC, niveau et température permettent d'agir avant les symptômes visibles., canonical_url: , featured_image: /images/blog/hydroponie-detection.webp, featured_image_alt: Détection précoce hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
 draft: false
 ---
 

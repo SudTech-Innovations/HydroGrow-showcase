@@ -4,15 +4,15 @@ title: "Le pH en hydroponie : pourquoi quelques dixièmes peuvent tout changer"
 tags: ["eau", "capteurs", "guide"]
 author: "Équipe HydroGrow"
 thumb_image:
-  image: /images/blog/hydroponie-ph.png
+  image: /images/blog/hydroponie-ph.webp
   image_alt: Racines hydroponiques et sonde pH
 featured_image:
-  image: /images/blog/hydroponie-ph.png
+  image: /images/blog/hydroponie-ph.webp
   image_alt: Mesure du pH dans une solution nutritive
 seo:
   page_description: Comprendre le pH, sa dérive et son influence sur la disponibilité des nutriments en hydroponie.
   canonical_url:
-  featured_image: /images/blog/hydroponie-ph.png
+  featured_image: /images/blog/hydroponie-ph.webp
   featured_image_alt: Mesure du pH en hydroponie
   author_twitter_handle:
   open_graph_type: article

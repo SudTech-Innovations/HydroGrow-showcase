@@ -3,9 +3,9 @@ date: 2026-08-10
 title: "Une pompe tombe en panne : combien de temps avant que votre culture soit en danger ?"
 tags: ["maintenance", "alertes", "fiabilité"]
 author: "Équipe HydroGrow"
-thumb_image: { image: /images/blog/hydroponie-pompe.png, image_alt: Pompe et circuit hydroponique }
-featured_image: { image: /images/blog/hydroponie-pompe.png, image_alt: Équipement de pompe hydroponique }
-seo: { page_description: Pourquoi une panne de pompe demande une détection rapide en hydroponie., canonical_url: , featured_image: /images/blog/hydroponie-pompe.png, featured_image_alt: Pompe hydroponique, author_twitter_handle: , open_graph_type: article, no_index: false }
+thumb_image: { image: /images/blog/hydroponie-pompe.webp, image_alt: Pompe et circuit hydroponique }
+featured_image: { image: /images/blog/hydroponie-pompe.webp, image_alt: Équipement de pompe hydroponique }
+seo: { page_description: Pourquoi une panne de pompe demande une détection rapide en hydroponie., canonical_url: , featured_image: /images/blog/hydroponie-pompe.webp, featured_image_alt: Pompe hydroponique, author_twitter_handle: , open_graph_type: article, no_index: false }
 draft: false
 ---
 

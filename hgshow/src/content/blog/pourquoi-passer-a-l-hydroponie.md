@@ -8,10 +8,10 @@ tags:
   - science
 author: Nicolas Vinckier
 thumb_image:
-  image: /images/blog/thum-blog3.png
+  image: /images/blog/blog3.webp
   image_alt: Racines blanches saines
 featured_image:
-  image: /images/blog/feat-blog3.png
+  image: /images/blog/blog3.webp
   image_alt: Comparaison croissance terre vs eau
 seo:
   page_description: Découvrez pourquoi l'hydroponie surpasse l'agriculture traditionnelle en vitesse et en rendement, et comment démarrer simplement.

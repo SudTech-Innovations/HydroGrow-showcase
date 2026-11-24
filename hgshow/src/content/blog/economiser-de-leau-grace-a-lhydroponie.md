@@ -3,9 +3,9 @@ date: 2026-08-11
 title: "Peut-on vraiment économiser de l’eau grâce à l’hydroponie ?"
 tags: ["eau", "durabilité", "guide"]
 author: "Équipe HydroGrow"
-thumb_image: { image: /images/blog/hydroponie-eau.png, image_alt: Circuit d'eau hydroponique en serre }
-featured_image: { image: /images/blog/hydroponie-eau.png, image_alt: Système hydroponique à recirculation }
-seo: { page_description: Ce que l'hydroponie permet réellement d'économiser en eau, et ses limites., canonical_url: , featured_image: /images/blog/hydroponie-eau.png, featured_image_alt: Eau en hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
+thumb_image: { image: /images/blog/hydroponie-eau.webp, image_alt: Circuit d'eau hydroponique en serre }
+featured_image: { image: /images/blog/hydroponie-eau.webp, image_alt: Système hydroponique à recirculation }
+seo: { page_description: Ce que l'hydroponie permet réellement d'économiser en eau, et ses limites., canonical_url: , featured_image: /images/blog/hydroponie-eau.webp, featured_image_alt: Eau en hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
 draft: false
 ---
 

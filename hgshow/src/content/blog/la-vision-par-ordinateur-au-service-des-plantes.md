@@ -8,10 +8,10 @@ tags:
   - time-lapse
 author: Nicolas Vinckier
 thumb_image:
-  image: /images/blog/thum-blog2.png
+  image: /images/blog/blog2.webp
   image_alt: Oeil cybernétique sur une feuille
 featured_image:
-  image: /images/blog/feat-blog2.png
+  image: /images/blog/blog2.webp
   image_alt: Analyse visuelle d'une laitue par IA
 seo:
   page_description: Découvrez comment la vision par ordinateur et les Time-Lapses automatiques d'HydroGrow changent votre façon de cultiver.

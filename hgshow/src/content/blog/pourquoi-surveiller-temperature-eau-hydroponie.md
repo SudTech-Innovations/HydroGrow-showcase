@@ -3,9 +3,9 @@ date: 2026-08-09
 title: "Pourquoi surveiller la température de l’eau en hydroponie ?"
 tags: ["eau", "capteurs", "racines"]
 author: "Équipe HydroGrow"
-thumb_image: { image: /images/blog/hydroponie-temperature.png, image_alt: Sonde de température dans les racines }
-featured_image: { image: /images/blog/hydroponie-temperature.png, image_alt: Température de la solution nutritive }
-seo: { page_description: Le rôle de la température de l'eau sur les racines et l'oxygène dissous., canonical_url: , featured_image: /images/blog/hydroponie-temperature.png, featured_image_alt: Température eau hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
+thumb_image: { image: /images/blog/hydroponie-temperature.webp, image_alt: Sonde de température dans les racines }
+featured_image: { image: /images/blog/hydroponie-temperature.webp, image_alt: Température de la solution nutritive }
+seo: { page_description: Le rôle de la température de l'eau sur les racines et l'oxygène dissous., canonical_url: , featured_image: /images/blog/hydroponie-temperature.webp, featured_image_alt: Température eau hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
 draft: false
 ---
 

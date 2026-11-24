@@ -3,9 +3,9 @@ date: 2026-08-05
 title: "Pourquoi la qualité de votre eau peut ruiner une culture hydroponique"
 tags: ["eau", "nutriments", "guide"]
 author: "Équipe HydroGrow"
-thumb_image: { image: /images/blog/hydroponie-qualite-eau.png, image_alt: Analyse de la qualité de l'eau }
-featured_image: { image: /images/blog/hydroponie-qualite-eau.png, image_alt: Échantillon d'eau pour hydroponie }
-seo: { page_description: Les paramètres de l'eau de départ qui influencent la solution nutritive hydroponique., canonical_url: , featured_image: /images/blog/hydroponie-qualite-eau.png, featured_image_alt: Qualité de l'eau hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
+thumb_image: { image: /images/blog/hydroponie-qualite-eau.webp, image_alt: Analyse de la qualité de l'eau }
+featured_image: { image: /images/blog/hydroponie-qualite-eau.webp, image_alt: Échantillon d'eau pour hydroponie }
+seo: { page_description: Les paramètres de l'eau de départ qui influencent la solution nutritive hydroponique., canonical_url: , featured_image: /images/blog/hydroponie-qualite-eau.webp, featured_image_alt: Qualité de l'eau hydroponie, author_twitter_handle: , open_graph_type: article, no_index: false }
 draft: false
 ---
 

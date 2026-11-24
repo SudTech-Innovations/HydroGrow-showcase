@@ -3,9 +3,9 @@ date: 2026-08-08
 title: "Les 5 données à surveiller dans une installation hydroponique"
 tags: ["tableau de bord", "capteurs", "guide"]
 author: "Équipe HydroGrow"
-thumb_image: { image: /images/blog/hydroponie-donnees.png, image_alt: Tableau de bord et culture hydroponique }
-featured_image: { image: /images/blog/hydroponie-donnees.png, image_alt: Suivi des données hydroponiques }
-seo: { page_description: Les principaux paramètres pour piloter une installation hydroponique sans se noyer dans les chiffres., canonical_url: , featured_image: /images/blog/hydroponie-donnees.png, featured_image_alt: Données hydroponiques, author_twitter_handle: , open_graph_type: article, no_index: false }
+thumb_image: { image: /images/blog/hydroponie-donnees.webp, image_alt: Tableau de bord et culture hydroponique }
+featured_image: { image: /images/blog/hydroponie-donnees.webp, image_alt: Suivi des données hydroponiques }
+seo: { page_description: Les principaux paramètres pour piloter une installation hydroponique sans se noyer dans les chiffres., canonical_url: , featured_image: /images/blog/hydroponie-donnees.webp, featured_image_alt: Données hydroponiques, author_twitter_handle: , open_graph_type: article, no_index: false }
 draft: false
 ---
 
