@@ -3,7 +3,7 @@
 @plugin "@tailwindcss/typography";
 
 /* ==========================================================================
-   HydroGrow · Charte graphique v1.0
+   HydroGrow · Charte graphique v2.0
    Fond sombre dominant (Nuit 55 %), surfaces Profond, texte Brume,
    Vert pousse réservé à l'action (~7 %), Bleu vif pour l'information.
    ========================================================================== */
@@ -26,10 +26,10 @@
   --font-display: "Cal Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  /* Rayons : boutons 14, cartes 24, grands blocs 36 */
+  /* Rayons (planche 13) : boutons 14, cartes 20, grands blocs 28 */
   --radius-button: 14px;
-  --radius-card: 24px;
-  --radius-block: 36px;
+  --radius-card: 20px;
+  --radius-block: 28px;
 
   /* L'échelle de gris est réinterprétée pour le thème sombre :
      les composants existants (text-gray-900, border-gray-200…) restent lisibles. */
@@ -99,7 +99,7 @@
 }
 
 .prose img {
-  @apply rounded-3xl shadow-lg;
+  @apply rounded-[20px] shadow-lg;
 }
 
 /* Global stylesheet */

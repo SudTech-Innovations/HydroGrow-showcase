@@ -59,12 +59,12 @@ const hasSingleImage = image && image_alt;
   <!-- Trame de points -->
   {!hasMultipleImages && <DotGrid variant="field" cols={12} rows={6} class="hidden lg:block absolute -z-10 left-8 bottom-10 w-[420px] opacity-80" />}
 
-  <div class="mx-auto max-w-[1500px] px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+  <div class="mx-auto max-w-[1500px] px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:px-14 lg:py-40">
     <div class="mx-auto max-w-2xl shrink-0 lg:mx-0 lg:pt-8">
       <Heading level={1} text={title} data-prop="title" data-editable="text" class="mb-6 hero-in" style="--d:100ms" />
       <Text text={description} data-prop="description" data-editable="text" size="xl" markdown={true} class="text-pretty hero-in" style="--d:260ms" />
       {tagline && (
-        <p class="mt-6 inline-block rounded-full bg-growth px-4 py-1.5 text-[13px] leading-[18px] font-semibold text-night hero-in" style="--d:340ms" data-prop="tagline" data-editable="text">{tagline}</p>
+        <p class="mt-6 inline-block rounded-full bg-growth px-4 py-2 text-[13px] leading-[18px] font-semibold text-night hero-in" style="--d:340ms" data-prop="tagline" data-editable="text">{tagline}</p>
       )}
       <div class="mt-10 flex items-center gap-x-6 hero-in" style="--d:420ms">
         {button && <Button href={button.link} variant={"primary"} size={"lg"} text={button.text} data-prop="button.text" data-editable="text" />}
@@ -72,7 +72,7 @@ const hasSingleImage = image && image_alt;
     </div>
     
     <!-- Image Section -->
-    <div class={`${hasMultipleImages ? "" : "hero-in hero-in-img"} mx-auto mt-16 grid max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:ml-10 lg:max-w-none lg:flex-none xl:ml-32`}>
+    <div class={`${hasMultipleImages ? "" : "hero-in hero-in-img"} mx-auto mt-16 grid max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:ml-10 lg:max-w-none lg:flex-none xl:ml-16`}>
       {hasMultipleImages ? (
         <!-- Multiple Images Layout (About Page Style) -->
         <div class="grid grid-cols-[1fr_1fr_1fr_2fr] gap-5 max-w-3xl" data-editable="array" data-prop="hero_images">
@@ -93,7 +93,7 @@ const hasSingleImage = image && image_alt;
                       width={600}
                       height={400}
                       fetchpriority={i === 0 ? 'high' : undefined}
-                      class="w-full h-full object-cover rounded-[36px] bg-deep shadow-xl ring-1 ring-pixel/50"
+                      class="w-full h-full object-cover rounded-[28px] bg-deep shadow-xl ring-1 ring-pixel/50"
                       loading="eager"
                       decoding="async"
                     />
@@ -113,11 +113,11 @@ const hasSingleImage = image && image_alt;
             data-prop-alt="image_alt"
             src={image}
             alt={image_alt || ""}
-            width={1028}
-            height={600}
+            width={1400}
+            height={1159}
             loading={"eager"}
             fetchpriority="high"
-            class="max-h-[600px] w-full object-cover rounded-[36px] bg-deep shadow-xl ring-1 ring-pixel/50"
+            class="h-auto w-full max-w-full lg:w-[560px] xl:w-[680px] rounded-[28px] bg-deep shadow-xl ring-1 ring-pixel/50"
           />
         </div>
       ) : null}

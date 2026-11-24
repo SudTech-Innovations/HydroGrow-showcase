@@ -155,7 +155,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
       >
         <nav
           ref={navbarRef}
-          className={`mx-auto max-w-[1500px] px-6 pt-8 pb-10 lg:flex lg:px-8 lg:pb-5`}
+          className={`mx-auto max-w-[1500px] px-6 pt-8 pb-10 lg:flex lg:px-14 lg:pb-5`}
           role="navigation"
           aria-label="Navigation principale"
         >
@@ -177,7 +177,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
             </a>
 
             <button
-              className="p-2 lg:hidden flex items-center justify-center w-10 h-10 bg-transparent border-0 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200"
+              className="p-2 lg:hidden flex items-center justify-center w-10 h-10 bg-transparent border-0 rounded-[14px] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200"
               type="button"
               aria-controls="mobile-navigation-menu"
               aria-expanded={isMobileMenuOpen}
@@ -369,7 +369,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                                           <li key={tag} role="none">
                                             <a
                                               data-astro-prefetch
-                                              className={`block px-14 lg:px-7 py-1.5 text-lg font-normal hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset transition-all duration-200 ${isPageActive(tagLink(tag)) ? "text-primary" : "text-gray-700"}`}
+                                              className={`block px-14 lg:px-7 py-2 text-lg font-normal hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset transition-all duration-200 ${isPageActive(tagLink(tag)) ? "text-primary" : "text-gray-700"}`}
                                               href={tagLink(tag)}
                                               onClick={closeMobileMenu}
                                               role="menuitem"
@@ -463,7 +463,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                       <a
                         data-astro-prefetch
                         href={`${navigation.nav_btn?.link}`}
-                        className="inline-flex mb-2 items-center px-6 py-3 text-base bg-secondary lg:rounded-2xl font-normal text-primary hover:bg-primary hover:text-secondary border border-primary rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                        className="inline-flex mb-2 items-center min-h-12 px-6 text-base bg-secondary font-medium text-primary hover:bg-primary hover:text-secondary border border-primary rounded-[14px] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                         onClick={closeMobileMenu}
                         role="menuitem"
                       >
@@ -481,7 +481,7 @@ export default function Navigation({ pageUrl, blogTags = [] }) {
                 <a
                   data-astro-prefetch
                   href={`${navigation.nav_btn?.link}`}
-                  className="inline-flex items-center px-5 xl:px-6 py-3 text-base font-medium text-secondary bg-primary hover:bg-transparent hover:text-primary border border-primary rounded-[14px] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  className="inline-flex items-center min-h-12 px-5 xl:px-6 text-base font-medium text-secondary bg-primary hover:bg-transparent hover:text-primary border border-primary rounded-[14px] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 >
                   <editable-text data-prop="nav_btn.text">
                     {navigation.nav_btn?.text}

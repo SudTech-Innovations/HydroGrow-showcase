@@ -55,7 +55,8 @@ content_blocks:
     remove_top_padding: true
   - _name: global/feature
     image: /images/feature/feature-card-one.webp
-    image_alt: Plant de basilic en hydroponie et téléphone affichant les jauges pH et EC de l'application HydroGrow
+    image_alt: Main tenant un téléphone qui affiche les jauges pH et EC de l'application HydroGrow, à côté d'un plant de basilic en hydroponie
+    landscape: true
     title: Votre jardin, en un geste
     description: >-
       Gérez votre système hydroponique en quelques secondes. Ajustez le pH, l'EC et les cycles d'éclairage directement depuis l'application.
@@ -65,7 +66,13 @@ content_blocks:
     reversed: false
   - _name: global/feature
     image: /images/feature/feature-card-two.webp
-    image_alt: Laitues en bac hydroponique avec capteur de pH et indicateurs de croissance
+    image_alt: Laitues et aromates dans un bac hydroponique noir équipé d'un capteur
+    landscape: true
+    stats:
+      - value: 82 %
+        label: Niveau d'eau
+      - value: +12 %
+        label: Croissance · 30 jours
     title: Suivez chaque plante
     description: >-
       L'analyse de données simplifiée : visualisez la santé de vos plantes, l'historique des capteurs et les prévisions de récolte au même endroit.

@@ -16,7 +16,7 @@ const { faq, i, ...rest } = Astro.props;
 ---
 
 <details
-  class="bg-deep rounded-[24px] border border-pixel/40 overflow-hidden group"
+  class="bg-deep rounded-[20px] border border-pixel/40 overflow-hidden group"
   {...rest}
 >
   <summary
@@ -33,7 +33,7 @@ const { faq, i, ...rest } = Astro.props;
       </h3>
     </div>
     <svg
-      class="w-5 h-5 shrink-0 ml-4 text-growth transition-transform duration-200 group-open:rotate-180"
+      class="w-5 h-5 shrink-0 ml-4 text-mist group-open:text-growth transition-transform duration-200 group-open:rotate-180"
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"
@@ -41,7 +41,7 @@ const { faq, i, ...rest } = Astro.props;
       <path
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="2"
+        stroke-width="1.8"
         d="M19 9l-7 7-7-7"></path>
     </svg>
   </summary>

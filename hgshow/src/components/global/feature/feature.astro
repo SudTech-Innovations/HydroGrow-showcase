@@ -19,18 +19,20 @@ interface Props {
   description: string;
   button?: Button;
   reversed?: boolean;
+  landscape?: boolean;
+  stats?: { value: string; label: string }[];
 }
 
-const { image, image_alt, title, description, button, reversed } = Astro.props;
+const { image, image_alt, title, description, button, reversed, landscape, stats } = Astro.props;
 ---
 
 <section class="py-16 sm:py-20 overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto px-6 lg:px-14">
     <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
       <div class={`w-full lg:w-1/2 ${reversed ? 'order-1' : 'order-1 lg:order-2'}`}>
         <div class="card-image-wrapper img-float relative mb-7 sm:mb-8 lg:mb-10 2xl:mb-16 z-10">
-          <div class="relative rounded-[36px]">
-            <div class="relative z-10 overflow-hidden rounded-[36px] bg-gray-50 ring-1 ring-pixel/40">
+          <div class="relative rounded-[28px]">
+            <div class="relative z-10 overflow-hidden rounded-[28px] bg-gray-50 ring-1 ring-pixel/40">
               <Image
                 data-editable="image"
                 data-prop-src="image"
@@ -39,11 +41,25 @@ const { image, image_alt, title, description, button, reversed } = Astro.props;
                 src={image}
                 alt={image_alt}
                 loading="lazy"
-                width={696}
-                height={752}
+                width={landscape ? 1600 : 696}
+                height={landscape ? 893 : 752}
               />
             </div>
           </div>
+          {stats && stats.length > 0 && (
+            <!-- Carte de chiffres clés : Cal Sans, vert pousse, légendes en Inter 600 (charte v2, planches 12 et 15) -->
+            <div class="absolute bottom-4 left-4 right-4 z-20 flex items-end gap-6 rounded-[20px] border border-pixel/40 bg-deep p-4 sm:bottom-4 sm:left-4 sm:right-4">
+              {stats.map((s) => (
+                <div class="min-w-0">
+                  <div class="font-display text-[22px] leading-[26px] text-growth sm:text-[28px] sm:leading-[32px]">{s.value}</div>
+                  <div class="text-[13px] leading-[18px] font-semibold text-mist/80">{s.label}</div>
+                </div>
+              ))}
+              <svg viewBox="0 0 120 40" class="ml-auto hidden h-10 w-28 shrink-0 sm:block" aria-hidden="true" fill="none">
+                <path d="M2 34 C 18 32, 24 34, 40 26 S 66 20, 80 14 S 106 8, 118 4" stroke="#5BE3A8" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+          )}
           {/* Trame de points décorative */}
           <DotGrid
             variant="h"

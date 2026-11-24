@@ -20,7 +20,7 @@ const { title, description, badge, team_members } = Astro.props;
 ---
 
 <section class="py-16 xl:py-24 2xl:py-32 border-t border-pixel/30">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto px-6 lg:px-14">
     <div class="max-w-4xl xl:max-w-3xl mx-auto mb-12 lg:mb-16">
       <div class="text-center">
         {badge && (
@@ -41,7 +41,7 @@ const { title, description, badge, team_members } = Astro.props;
       {
         team_members?.map((member: TeamMember, i: number) => (
           <div data-editable="array-item" class="team-card img-float">
-            <div class="text-center group bg-deep rounded-[24px] p-4 border border-pixel/40 hover:border-primary hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col justify-between">
+            <div class="text-center group bg-deep rounded-[20px] p-4 border border-pixel/40 hover:border-primary hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col justify-between">
               <div>
                 <div class="mb-4 rounded-[14px] overflow-hidden">
                   {member.image ? (
