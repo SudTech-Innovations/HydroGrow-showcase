@@ -92,6 +92,7 @@ const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.dr
         },
         optional: {
           description: description,
+          siteName: site.site_title,
         },
         image: {
           url: image,
