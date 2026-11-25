@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296 296" role="img" aria-label="HydroGrow">
-  <rect width="296" height="296" rx="67" fill="#12305A"/>
+  <rect width="296" height="296" fill="#12305A"/>
+  <g transform="translate(148 148) scale(0.9) translate(-148 -148)">
   <circle cx="169" cy="64" r="11" fill="#2D5083"/>
   <circle cx="214" cy="64" r="18.5" fill="#EAF3EE"/>
   <circle cx="81" cy="108" r="18.5" fill="#EAF3EE"/>
@@ -20,4 +21,5 @@
   <circle cx="214" cy="241" r="18.5" fill="#EAF3EE"/>
   <path d="M80 84 C84 56 114 38 157 37 Z" fill="#5BE3A8"/>
   <path d="M80 84 C88 88 150 84 157 37 Z" fill="#3DBE8A"/>
+  </g>
 </svg>
