@@ -38,8 +38,12 @@ const { title, date, featured_image, author } = props;
 const updated = props.updated && new Date(props.updated) > new Date(date) ? new Date(props.updated) : null;
 const formatDate = (value: Date) => value.toLocaleDateString("fr-FR", { year: "numeric", month: "long", day: "numeric" });
 const content = "body" in Astro.props ? Astro.props.body : (Astro.props.rawContent() ?? "");
-const wordCount = content.split(" ").length;
-const readingTime = Math.floor(wordCount / 183);
+// Mots lus par le visiteur : sans les adresses des liens ni les signes de mise en forme
+const wordCount = content
+  .replace(/\]\([^)]*\)/g, "]")
+  .split(/\s+/)
+  .filter((word) => /[\p{L}\p{N}]/u.test(word)).length;
+const readingTime = Math.max(1, Math.round(wordCount / 183));
 
 // Articles liés (maillage interne) : mots-clés communs, les plus rares comptant davantage, puis les plus récents
 const allPosts = await getCollection("blog", ({ data }) => !data.draft);

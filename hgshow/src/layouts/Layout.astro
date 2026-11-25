@@ -157,6 +157,8 @@ const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.dr
         );
         targets.forEach(function (el, i) {
           if (el.closest("header")) return;
+          // Un bloc plus haut que l'écran (texte d'un article) n'atteindrait pas toujours le seuil et resterait invisible
+          if (el.offsetHeight > window.innerHeight) return;
           el.classList.add("reveal");
         });
         var io = new IntersectionObserver(function (entries) {
