@@ -1,6 +1,6 @@
 # Inventaire des articles de blog HydroGrow
 
-À consulter avant de créer ou de modifier un article, pour choisir son mot-clé et placer les liens internes (maillage). État au 25 novembre 2026.
+À consulter avant de créer ou de modifier un article, pour choisir son mot-clé et placer les liens internes (maillage). Pour le ton, la structure et la validation, voir les [consignes de rédaction](BLOG-CONSIGNES.md). État au 25 novembre 2026.
 
 ## Avant de publier
 
