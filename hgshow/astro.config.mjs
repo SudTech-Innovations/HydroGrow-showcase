@@ -20,9 +20,9 @@ const blogLastmod = new Map(
 );
 
 // URL de production : utilisée pour les canonical, og:url, le sitemap et le flux RSS.
-// À remplacer par le nom de domaine définitif quand il existe.
+// Garder la même URL dans public/robots.txt.
 export default defineConfig({
-  site: "https://showcase.hydrogrow.fr",
+  site: "https://hydrogrow.fr",
   integrations: [
     react(),
     editableRegions(),
