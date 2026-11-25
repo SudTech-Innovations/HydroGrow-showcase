@@ -15,7 +15,7 @@
 | Rédaction | Une IA rédige, une personne vérifie |
 | Validation | Nicolas, avant toute publication |
 
-Les articles publiés avant ces consignes sont plus courts : les allonger quand on les retouche, sans remplissage.
+Un article trop court se complète avec du concret (exemple, routine, limites), sans remplissage.
 
 ## 2. Choisir le sujet
 

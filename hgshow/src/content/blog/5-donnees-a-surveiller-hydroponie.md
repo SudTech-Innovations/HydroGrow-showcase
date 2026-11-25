@@ -10,22 +10,46 @@ seo: { page_description: "pH, EC, température de l'eau, niveau et climat : les 
 draft: false
 ---
 
-Une installation hydroponique produit beaucoup de signaux. L'enjeu n'est pas de tout mesurer immédiatement : c'est de choisir les capteurs qui éclairent réellement la santé de la zone racinaire et l'environnement de la plante.
+Une installation hydroponique produit beaucoup de signaux. Quand on choisit ses capteurs d'hydroponie, l'enjeu n'est pas de tout mesurer tout de suite : c'est de retenir les données qui éclairent la santé de la zone racinaire (l'environnement immédiat des racines) et le climat autour de la plante.
 
 ## Les cinq paramètres fondamentaux
 
-1. **pH** : l'acidité de la solution. Il influence [la disponibilité des nutriments (Penn State)](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess). Voir notre guide du [pH en hydroponie](/blog/ph-en-hydroponie-pourquoi-quelques-dixiemes-changent-tout/).
+1. **pH** : l'acidité de la solution nutritive, l'eau enrichie qui alimente les plantes. Il influence [la disponibilité des nutriments (Penn State)](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess). Voir notre guide du [pH en hydroponie](/blog/ph-en-hydroponie-pourquoi-quelques-dixiemes-changent-tout/).
 2. **EC** (conductivité électrique) : une estimation de la concentration totale en sels dissous, donc en engrais. Voir [comment interpréter l'EC](/blog/ec-en-hydroponie-plus-de-nutriments-ne-veut-pas-dire-plus-de-croissance/).
 3. **Température de l'eau** : elle agit sur les racines et sur l'oxygène dissous. Voir [pourquoi la surveiller](/blog/pourquoi-surveiller-temperature-eau-hydroponie/).
 4. **Niveau du réservoir et consommation** : suivre la [consommation d'eau en hydroponie](/blog/economiser-de-leau-grace-a-lhydroponie/) aide à repérer le manque d'eau, les fuites et le risque de [panne de pompe](/blog/panne-de-pompe-culture-en-danger/).
 5. **Climat de culture** : la température de l'air, l'humidité et la lumière replacent les valeurs de la solution dans leur contexte.
 
-Le CO₂, le débit, l'oxygène dissous ou la pression peuvent compléter cette base dans les installations plus avancées. La valeur vient surtout des relations entre mesures : une EC qui évolue pendant une forte journée lumineuse ne se lit pas comme la même évolution par temps frais.
+## Ce que chaque mesure permet de décider
 
-Pour le pH et l'EC, [Oklahoma State University conseille un contrôle quotidien](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics).
+| Mesure | Question à laquelle elle répond | Première vérification en cas d'écart |
+|---|---|---|
+| pH | Les éléments restent-ils accessibles ? | Étalonnage de la sonde, eau ajoutée |
+| EC | La solution se concentre-t-elle ou se dilue-t-elle ? | Niveau du bac, dernier dosage |
+| Température de l'eau | Les racines sont-elles exposées à la chaleur ou au froid ? | Soleil sur le réservoir, pompe, local |
+| Niveau | La culture consomme-t-elle comme d'habitude ? | Fuite, appoint, circulation |
+| Climat | Qu'est-ce qui explique les autres variations ? | Aération, éclairage, météo |
+
+La valeur vient surtout des relations entre mesures. Une EC qui monte pendant une journée très lumineuse, avec un niveau qui baisse vite, ne se lit pas comme la même hausse par temps frais.
+
+## À quelle fréquence relever
+
+Pour le pH et l'EC, [Oklahoma State University conseille un contrôle quotidien, à la même heure](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics). Une routine simple consiste à noter à chaque passage les cinq valeurs, la quantité d'eau ajoutée et toute intervention. Quelques lignes suffisent, à condition d'être tenues avec régularité.
+
+La mesure continue prend le relais entre deux visites : elle montre à quelle heure un écart a commencé et combien de temps il a duré, ce qu'un relevé unique ne dit pas.
+
+Fixez enfin, pour chaque mesure, une plage acceptable et la personne chargée de réagir. Ces plages dépendent de l'espèce et de son stade : revoyez-les à chaque nouvelle culture, et notez la source de votre repère. Un tableau affiché près du réservoir, avec la plage, l'action prévue et le contact, évite d'improviser pendant une absence.
+
+## Compléter selon l'installation
+
+Le CO₂, le débit, l'oxygène dissous ou la pression peuvent compléter cette base dans les installations plus avancées. Avant d'ajouter un capteur, demandez-vous quelle action sa mesure déclenchera. S'il n'y en a aucune, il peut attendre.
+
+Chaque capteur demande aussi de l'entretien. Les sondes de pH et d'EC s'encrassent et se dérèglent : prévoyez leur nettoyage, leur [étalonnage avec des solutions de référence](https://extension.psu.edu/a-water-quality-toolkit-for-greenhouse-and-nursery-production) et leur remplacement. Une valeur affichée n'est utile que si vous pouvez lui faire confiance.
+
+Si votre installation compte plusieurs réservoirs, suivez-les séparément : une moyenne masquerait celui qui dérive. Nommez chaque bac et chaque sonde de façon claire, pour que le relevé et l'intervention portent bien sur le même équipement.
 
 ## Du tableau de chiffres à la décision
 
-Un relevé manuel est utile, mais il devient vite fragmenté. HydroGrow, en cours de développement, est conçu pour réunir les données essentielles sur un même tableau de bord, afficher les tendances et signaler les écarts : de quoi [repérer un problème avant les symptômes](/blog/detecter-probleme-avant-symptomes/). Vous conservez la décision agronomique.
+Un relevé manuel est utile, mais il devient vite fragmenté, surtout à plusieurs. Après quelques cycles, faites le tri : gardez les mesures qui ont réellement guidé une action et revoyez l'usage des autres.
 
-Les capteurs prévus dans chaque configuration sont détaillés sur la page [formules et packs](/pricing/).
+HydroGrow, en cours de développement, est conçu pour réunir les données essentielles sur un même tableau de bord, afficher les tendances et signaler les écarts : de quoi [repérer un problème avant les symptômes](/blog/detecter-probleme-avant-symptomes/), en vous laissant la décision agronomique. Les capteurs prévus dans chaque configuration sont détaillés sur la page [formules et packs](/pricing/).

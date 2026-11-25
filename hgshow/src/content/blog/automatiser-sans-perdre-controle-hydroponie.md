@@ -10,18 +10,53 @@ seo: { page_description: "Automatisation hydroponique : une méthode progressive
 draft: false
 ---
 
-L'automatisation hydroponique ne signifie pas déléguer la culture à une boîte noire. Son bon rôle est de rendre les actions répétitives cohérentes, de conserver les mesures et d'appeler l'attention humaine lorsqu'une situation sort du cadre prévu.
+L'automatisation hydroponique ne signifie pas déléguer la culture à une boîte noire. Son bon rôle est de rendre les actions répétitives régulières, de conserver les mesures et d'appeler votre attention lorsqu'une situation sort du cadre prévu.
 
 ## Commencer par mesurer
 
-La première étape est souvent la plus simple : des [capteurs de pH, d'EC, de température et de niveau](/blog/5-donnees-a-surveiller-hydroponie/). Ils donnent un historique fiable et évitent que l'information se limite au dernier relevé noté. Viennent ensuite les alertes sur seuil ou sur dérive, puis les actionneurs, les équipements qui agissent : pompe, doseur, éclairage, ventilation ou vanne.
+La première étape est souvent la plus simple : des [capteurs de pH, d'EC, de température et de niveau](/blog/5-donnees-a-surveiller-hydroponie/). Ils donnent un historique et évitent que l'information se limite au dernier relevé noté. Automatiser avant de connaître le comportement normal de son installation revient à régler à l'aveugle.
 
-## Garder des garde-fous
+## Avancer par étapes
 
-Un seuil doit être propre à votre culture et révisable. Les actions automatiques devraient être plafonnées, enregistrées et faciles à interrompre. Une alerte sur un capteur défaillant ou une valeur improbable est aussi importante qu'une correction. À l'échelle d'une exploitation, [la gestion manuelle du pH et de l'EC prend beaucoup de temps ; un suivi automatisé économise du travail et limite les erreurs (Oklahoma State University)](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics). Cela ne dispense ni d'entretien ni de vérification.
+Viennent ensuite les alertes, puis les actionneurs, les équipements qui agissent : pompe, doseur, éclairage, ventilation ou vanne.
+
+| Étape | Qui décide | Avant de passer à la suite |
+|---|---|---|
+| 1. Mesure | Vous | Les sondes concordent avec un relevé manuel |
+| 2. Alertes | Vous, prévenu par le système | Les alertes reçues sont utiles et traitées |
+| 3. Actions simples à horaires fixes | Le programme | L'arrêt manuel est connu de tous |
+| 4. Dosage selon les mesures | Le programme, dans des limites | Les limites ont été testées |
+
+Cette progression permet de découvrir les défauts un par un. Commencez par les tâches dont l'erreur est sans gravité et facile à voir, comme l'éclairage, avant de confier le dosage.
+
+Restez à chaque étape assez longtemps pour traverser des conditions variées : journée chaude, appoint important, changement de solution. Comparez les mesures automatiques à un relevé manuel. Si un écart reste inexpliqué, corrigez-le avant d'ajouter une nouvelle action.
+
+## Poser des garde-fous
+
+Un seuil doit être propre à votre culture et révisable. Les actions automatiques devraient être plafonnées, enregistrées et faciles à interrompre. Le dosage demande une prudence particulière : pour le pH, [Oklahoma State University conseille d'ajouter le correcteur lentement et d'attendre plusieurs minutes avant d'en remettre](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics). Un automatisme doit respecter le même rythme, le temps que la solution se mélange.
+
+Quelques règles à prévoir :
+
+- une quantité maximale par dose et par jour ;
+- un délai minimal entre deux doses ;
+- aucun dosage si la mesure est absente ou invraisemblable ;
+- un arrêt si la valeur ne réagit pas après plusieurs ajouts ;
+- une alerte en cas de capteur défaillant, aussi importante qu'une correction.
+
+Pensez aussi à la position des équipements au repos. Après une coupure ou un redémarrage, une vanne ou un doseur doit revenir dans l'état le moins risqué, sans rejouer d'un coup les actions manquées. Demandez ce comportement avant l'achat, puis testez-le avec de l'eau claire.
+
+## Garder la main
+
+Chaque personne présente doit savoir couper un automatisme et reprendre à la main. Gardez à portée une procédure écrite, des appareils de mesure portatifs et les coordonnées de la personne à prévenir. Essayez ce mode manuel avant d'en avoir besoin.
+
+À l'échelle d'une exploitation, [la gestion manuelle du pH et de l'EC prend beaucoup de temps ; un suivi automatisé économise du travail et limite les erreurs (Oklahoma State University)](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics). Cela ne dispense ni d'entretien ni de vérification : un dispositif automatique répète aussi une erreur, tant que personne ne la voit.
+
+Relisez enfin le journal des actions chaque semaine. Un doseur sollicité de plus en plus souvent signale peut-être une sonde déréglée, une eau différente ou une culture dont les besoins ont changé.
 
 ## Aller plus loin
 
 Une [installation connectée dépasse le simple minuteur](/blog/pourquoi-un-simple-minuteur-ne-suffit-plus/), qui agit à heure fixe sans rien mesurer. Nous détaillons aussi les [garde-fous prévus pour notre intelligence artificielle Nexus](/blog/comprendre-architecture-ia-nexus/).
 
-HydroGrow, en cours de développement, est pensé comme ce poste de pilotage : données centralisées, règles lisibles, alertes et recommandations. Vous restez maître des objectifs. [Voir les formules prévues](/pricing/).
+Une automatisation réussie reste compréhensible : chaque règle doit pouvoir s'expliquer en une phrase à la personne qui reprend la culture. Retirez ou corrigez toute règle que plus personne ne sait justifier dans l'équipe.
+
+HydroGrow, en cours de développement, est pensé comme ce poste de pilotage : données centralisées, règles lisibles, alertes et recommandations, pendant que vous restez maître des objectifs. [Voir les formules prévues](/pricing/).
