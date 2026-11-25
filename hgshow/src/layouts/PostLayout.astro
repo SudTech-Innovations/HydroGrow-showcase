@@ -36,7 +36,16 @@ const content = "body" in Astro.props ? Astro.props.body : (Astro.props.rawConte
 const wordCount = content.split(" ").length;
 const readingTime = Math.floor(wordCount / 183);
 
-const posts = await getCollection("blog");
+// Articles liés (maillage interne) : mots-clés communs, les plus rares comptant davantage, puis les plus récents
+const allPosts = await getCollection("blog", ({ data }) => !data.draft);
+const currentSlug = "slug" in props ? props.slug : undefined;
+const currentTags = allPosts.find((p) => p.slug === currentSlug)?.data.tags ?? [];
+const tagCount = (tag: string) => allPosts.filter((p) => p.data.tags.includes(tag)).length;
+const score = (tags: string[]) => tags.filter((t) => currentTags.includes(t)).reduce((sum, t) => sum + 1 / tagCount(t), 0);
+const relatedPosts = allPosts
+  .filter((p) => p.slug !== currentSlug)
+  .sort((a, b) => score(b.data.tags) - score(a.data.tags) || b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
 
 // L'image de couverture de l'article sert aussi d'aperçu de partage (Open Graph)
 const seo = {
@@ -139,11 +148,11 @@ const jsonLd = {
     <div class="max-w-7xl mx-auto px-6 lg:px-14">
       <div class="w-full">
         <div class="mb-12">
-          <Heading level={2} size={2} class="font-semibold font-sora text-gray-800"> Recent Blog </Heading>
+          <Heading level={2} size={2} class="font-semibold font-sora text-gray-800"> À lire aussi </Heading>
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {posts.slice(0, 3).map((post, i) => <PostSummary post={post} />)}
+        {relatedPosts.map((post) => <PostSummary post={post} />)}
       </div>
     </div>
   </section>

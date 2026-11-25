@@ -1,7 +1,7 @@
 ---
 _schema: default
 date: 2025-12-02T00:00:00Z
-title: "Au-delà des chiffres : Pourquoi vos plantes ont besoin d'être vues ?"
+title: "Vision par ordinateur en hydroponie : voir les plantes"
 tags:
   - computer vision
   - innovation
@@ -14,7 +14,7 @@ featured_image:
   image: /images/blog/blog2.webp
   image_alt: Analyse visuelle d'une laitue par IA
 seo:
-  page_description: Découvrez comment la vision par ordinateur et les Time-Lapses automatiques d'HydroGrow changent votre façon de cultiver.
+  page_description: "Vision par ordinateur en hydroponie : la caméra prévue par HydroGrow pour les time-lapses et le repérage visuel du stress des plantes."
   canonical_url:
   featured_image: /images/blog/featured-camera-grow.jpg
   featured_image_alt: Analyse visuelle IA
@@ -24,39 +24,30 @@ seo:
 draft: false
 ---
 
-Les graphiques, c'est bien. Savoir que votre pH est stable à 6.0 et que votre EC est à 1.8 mS/cm est crucial. Mais soyons honnêtes : ce qui nous fait vibrer en tant que jardiniers, c'est de voir la première feuille sortir, la première fleur éclore, le fruit changer de couleur.
+Les courbes sont précieuses : savoir que le [pH reste stable à 6,0](/blog/ph-en-hydroponie-pourquoi-quelques-dixiemes-changent-tout/) et que l'[EC (concentration en nutriments)](/blog/ec-en-hydroponie-plus-de-nutriments-ne-veut-pas-dire-plus-de-croissance/) est à 1,8 mS/cm est essentiel. Mais elles ne montrent pas la plante. C'est le rôle de la vision par ordinateur : l'analyse automatique d'images.
 
-C'est pourquoi le **Pack Total IA** d'HydroGrow n'intègre pas seulement des sondes chimiques, mais aussi un œil numérique : une caméra **ESP32-CAM** haute définition. Voici pourquoi ce n'est pas un simple gadget.
+Le **Pack Total IA** d'HydroGrow prévoit ainsi, en plus des sondes, une caméra de type **ESP32-CAM** (un petit module caméra connecté). Voici à quoi elle doit servir.
 
-### 1. Le Time-Lapse Automatique : La preuve par l'image
+## Un time-lapse automatique de la culture
 
-Avez-vous déjà essayé de faire un Time-Lapse de vos plantes ? Il faut fixer une caméra, gérer le stockage, la batterie... C'est une corvée.
+Réaliser soi-même un time-lapse (une vidéo accélérée) demande de fixer une caméra et de gérer le stockage et l'alimentation. HydroGrow est conçu pour s'en charger :
 
-Avec HydroGrow, c'est natif.
+- une photo à intervalle réglable, par exemple toutes les heures ;
+- en fin de cycle, une courte vidéo générée par l'application, de la graine à la récolte ;
+- un support concret pour comparer la vitesse de croissance après un changement de recette, ou pour montrer son travail.
 
-- Le système prend une photo toutes les heures (paramétrable).
-- À la fin du cycle de culture, l'application génère automatiquement une vidéo fluide de 30 secondes montrant toute la vie de votre plante, de la graine à la récolte.
-- **L'intérêt ?** Analyser la vitesse de croissance (le "stretch") suite à un changement d'engrais, ou tout simplement partager votre réussite avec la communauté.
+## Repérer le stress sur les feuilles
 
-### 2. Le "Score de Santé Visuel" (Computer Vision)
+Les sondes immergées renseignent sur l'eau qui alimente les racines, mais qui observe les feuilles ? L'analyse d'images est conçue pour aider à repérer :
 
-Les sondes immergées voient ce qui se passe _dans_ l'eau (les racines), mais qui surveille les feuilles ?
-Notre module d'IA visuelle analyse les images capturées pour détecter ce que les sondes ne voient pas :
+- **le flétrissement :** le réservoir peut être plein alors que la plante souffre de la chaleur ou d'un problème racinaire ;
+- **les taches sur les feuilles :** carence ou ravageur, à confirmer par une inspection ;
+- **la chlorose :** un jaunissement des feuilles, parfois discret à ses débuts.
 
-- **Le flétrissement (Drooping) :** Parfois, le réservoir est plein, mais la plante "boude" à cause d'une chaleur excessive ou d'un blocage racinaire. La caméra le voit avant que la plante ne meure.
-- **Les taches foliaires :** Début de carence en Calcium ? Attaque de parasites ? L'IA compare la couleur de vos feuilles à une base de données de pathologies connues.
-- **La chlorose :** Un jaunissement subtil que l'œil humain rate au début, mais que l'analyse RVB détecte immédiatement.
+La caméra ne pose pas de diagnostic à elle seule. Elle complète la prévention des [maladies en hydroponie](/blog/hydroponie-maladies-sans-terre-risques/) et la [détection précoce par les mesures](/blog/detecter-probleme-avant-symptomes/).
 
-### 3. La Gamification de l'Agriculture
+## Un score de santé lisible
 
-L'agriculture urbaine doit être sérieuse, mais elle doit aussi être engageante.
-Nous avons introduit une notion de **"Tamagotchi Végétal"**. Votre application ne se contente pas de vous donner des alertes techniques. Grâce à la vision par ordinateur, elle vous donne un **Score de Santé (0-100%)**.
+L'application prévoit un **score de santé de 0 à 100 %**, accompagné d'animations qui signalent l'urgence d'un coup d'œil. L'[IA Nexus](/blog/comprendre-architecture-ia-nexus/) pourra croiser ces observations avec les mesures de la solution nutritive pour affiner ses conseils.
 
-Si vos plantes manquent de lumière ou s'affaissent, l'interface réagit (animations Lottie) pour vous signaler visuellement l'urgence. C'est une façon intuitive de reconnecter l'humain à la plante, à travers la technologie.
-
-### Conclusion : Des yeux pour votre IA
-
-L'IA **Nexus** prend de meilleures décisions quand elle a plus de contextes. En croisant les données du sol (pH/EC) avec les données visuelles (croissance foliaire), HydroGrow devient le système le plus complet du marché.
-
-Envie de voir ce que vos plantes ont à dire ?
-[Découvrir le Pack Total IA](/pricing)
+HydroGrow est en cours de développement. [Découvrir le Pack Total IA](/pricing/)

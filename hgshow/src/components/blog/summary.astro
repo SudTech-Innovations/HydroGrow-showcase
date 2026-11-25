@@ -16,7 +16,7 @@ const {
 
 <article
   class="group bg-deep rounded-[20px] border border-pixel/40 overflow-hidden max-w-xl h-full flex flex-col transition-colors duration-300 hover:border-primary">
-  <a data-astro-prefetch href={`/blog/${slug}`} class="block aspect-4/3 overflow-hidden" tabindex="-1">
+  <a data-astro-prefetch href={`/blog/${slug}/`} class="block aspect-4/3 overflow-hidden" tabindex="-1">
     <Image
       transition:persist={`blog-image-${slug}`}
       src={thumb_image.image}
@@ -41,7 +41,7 @@ const {
         ))
       }
     </div>
-    <a data-astro-prefetch href={`/blog/${slug}`} class="block flex-1 group/title">
+    <a data-astro-prefetch href={`/blog/${slug}/`} class="block flex-1 group/title">
       <h3 class="font-display text-[22px] leading-[26px] text-gray-900 line-clamp-3 transition-colors group-hover/title:text-primary">
         {title}
       </h3>

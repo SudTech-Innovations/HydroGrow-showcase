@@ -17,6 +17,6 @@ if (!post) {
 const { Content } = await post.render();
 ---
 
-<PostLayout {...post.data} body={post.body}>
+<PostLayout {...post.data} slug={post.slug} body={post.body}>
   <Content />
 </PostLayout>

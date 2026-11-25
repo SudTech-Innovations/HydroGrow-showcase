@@ -1,7 +1,7 @@
 ---
 _schema: default
 date: 2025-11-15T00:00:00Z
-title: "Pulse, Orbit, Nexus : Comment notre IA réfléchit pour vos plantes ?"
+title: "IA en hydroponie : comment Nexus est conçu pour décider"
 tags:
   - intelligence artificielle
   - technologie
@@ -14,7 +14,7 @@ featured_image:
   image: /images/blog/blog1.webp
   image_alt: Représentation abstraite de Nexus
 seo:
-  page_description: Plongée au cœur de l'architecture IA d'HydroGrow. Découvrez comment Nexus arbitre entre la survie immédiate (Pulse) et le rendement futur (Orbit).
+  page_description: "Intelligence artificielle en hydroponie : comment Pulse, Orbit et Nexus sont conçus pour surveiller, anticiper et arbitrer avec des garde-fous."
   canonical_url:
   featured_image: /images/blog/featured-ai-brain.jpg
   featured_image_alt: Cerveau IA HydroGrow
@@ -24,41 +24,36 @@ seo:
 draft: false
 ---
 
-Dans le monde de la tech, dire qu'un produit a de l'IA" est devenu banal. Mais en hydroponie, une erreur de calcul ne se corrige pas avec un "Ctrl+Z". Si une IA décide de doubler la dose de nutriments par erreur, la récolte est perdue en quelques heures.
+Dire qu'un produit « a de l'IA » est devenu banal. En hydroponie, pourtant, une erreur de dosage ne s'annule pas d'un clic : une solution nutritive trop concentrée peut compromettre une récolte.
 
-C'est pourquoi chez **HydroGrow**, nous n'avons pas créé une seule IA, mais **trois agents spécialisés** qui travaillent en équipe. Voici comment fonctionne notre architecture tripartite.
+C'est pourquoi **HydroGrow** ne prévoit pas une seule intelligence artificielle, mais **trois agents spécialisés** qui travaillent ensemble. Voici l'architecture sur laquelle nous travaillons.
 
-### 1. Pulse : Le Garde du Corps (Temps Réel)
+## Pulse : la surveillance en temps réel
 
-**Pulse** est l'agent de terrain. Il vit dans l'instant présent (fenêtre de 12h).
+**Pulse** est l'agent de terrain. Il regarde le présent, sur une fenêtre de 12 heures.
 
-- **Son rôle :** Surveiller les signes vitaux immédiats.
-- **Sa logique :** Si le pH chute brutalement ou si la température de l'eau dépasse 26°C, Pulse n'attend pas d'optimiser la croissance. Il déclenche l'alerte ou les mesures correctives d'urgence.
-- **Philosophie :** La survie avant tout.
+- **Son rôle :** surveiller les signaux vitaux de la culture.
+- **Sa logique :** si le [pH (acidité de l'eau)](/blog/ph-en-hydroponie-pourquoi-quelques-dixiemes-changent-tout/) chute brutalement ou si la [température de l'eau](/blog/pourquoi-surveiller-temperature-eau-hydroponie/) dépasse le seuil fixé (par exemple 26 °C), il déclenche l'alerte ou les mesures correctives sans chercher d'abord à optimiser la croissance.
+- **Sa priorité :** protéger la culture.
 
-### 2. Orbit : Le Stratège (Long Terme)
+## Orbit : la stratégie à long terme
 
-**Orbit** est l'agronome virtuel. Il analyse les cycles sur 30 jours ou plus.
+**Orbit** joue le rôle d'agronome virtuel. Il analyse les cycles sur 30 jours ou plus.
 
-- **Son rôle :** Prévoir le meilleur rendement.
-- **Sa logique :** "Si nous baissons légèrement l'azote cette semaine pour augmenter le potassium, nous aurons 15% de fleurs en plus dans un mois."
-- **Philosophie :** La patience et l'optimisation.
+- **Son rôle :** préparer le rendement.
+- **Sa logique :** proposer, par exemple, d'ajuster l'équilibre entre azote et potassium à l'approche de la floraison.
+- **Sa priorité :** optimiser dans la durée.
 
-### 3. Nexus : Le Juge (L'Arbitre Suprême)
+## Nexus : l'arbitre
 
-C'est ici que réside notre innovation majeure. Parfois, **Orbit** veut pousser la plante à ses limites pour maximiser les fruits, mais **Pulse** détecte un stress hydrique. Qui décide ?
+Orbit peut vouloir pousser la culture, alors que Pulse détecte un stress hydrique (un manque d'eau pour la plante). **Nexus** reçoit les propositions des deux agents et tranche, à l'aide d'un **score de confiance** et de **garde-fous biologiques**, des limites fixes inscrites dans le programme.
 
-C'est **Nexus**.
+_Exemple :_ Orbit suggère une [EC (concentration en nutriments)](/blog/ec-en-hydroponie-plus-de-nutriments-ne-veut-pas-dire-plus-de-croissance/) de 3,5 mS/cm, mais la limite de sécurité est réglée à 3,0 : Nexus bloque l'ordre.
 
-Nexus est le superviseur qui reçoit les propositions des deux agents. Il utilise un **Score de Confiance** et des **Garde-fous Biologiques** (Hard Limits) codés en dur.
+## Des garde-fous contre les « hallucinations »
 
-- _Exemple :_ Si Orbit suggère une concentration de nutriments (EC) de 3.5 (très élevé) pour booster la fin de floraison, mais que la limite de sécurité biologique est à 3.0, Nexus bloquera l'ordre.
+Les modèles de langage et les IA génératives peuvent inventer des faits. Pour une culture, c'est inacceptable. Notre système **Edgia** (une IA qui s'exécute sur place, appelée *Edge AI*) prévoit que, sous un score de confiance de **85 %**, la proposition de l'IA soit rejetée au profit de règles simples fondées sur des seuils.
 
-### La Sécurité "Anti-Hallucination"
+L'idée n'est pas de confier votre culture à un système opaque, mais de combiner des agents qui se contrôlent, pendant que vous gardez la main : c'est notre approche de l'[automatisation hydroponique](/blog/automatiser-sans-perdre-controle-hydroponie/). Elle s'appuie aussi, à terme, sur la [vision par ordinateur](/blog/la-vision-par-ordinateur-au-service-des-plantes/).
 
-Les modèles de langage (LLM) et les IA génératives peuvent parfois "inventer" des faits. Pour une plante, c'est inacceptable.
-Notre système **Edgia** (Edge AI) impose que si le score de confiance d'une décision est inférieur à **85%**, Nexus rejette l'IA et repasse automatiquement en "Logique Pure" (des seuils mathématiques classiques et sûrs).
-
-Avec HydroGrow, vous ne confiez pas votre jardin à un robot aveugle, mais à un comité d'experts qui se surveillent mutuellement.
-
-[Voir nos abonnements incluant l'IA Nexus](/pricing)
+[Voir les formules prévues avec l'IA Nexus](/pricing/)
