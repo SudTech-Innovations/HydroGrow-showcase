@@ -18,7 +18,7 @@ content_blocks:
     creator:
       name: Nicolas V.
       role: Fondateur & Porteur du projet HydroGrow
-      bio: Passionné par l'IoT, l'automatisation et l'agriculture urbaine connectée. Je développe l'écosystème HydroGrow pour rendre le suivi et le pilotage des cultures hydroponiques simple, précis et accessible à tous.
+      bio: Passionné par l'IoT, l'automatisation et l'agriculture urbaine connectée. Je développe HydroGrow pour rendre le suivi et le pilotage des cultures hydroponiques simples et précis, pour les professionnels d'abord.
       image: /images/team/nicolas.webp
       image_alt: Photo de Nicolas
       email: contact@hydrogrow.fr
@@ -28,7 +28,7 @@ content_blocks:
       availability: Disponible pour échanger
   - _name: global/faq
     title: Questions
-    title_suffix: Fréquentes
+    title_suffix: fréquentes
     description: >-
       Avant de nous écrire, vérifiez si votre réponse n'est pas déjà ici.
     faq_group: general

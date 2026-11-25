@@ -2,7 +2,7 @@
 _schema: default
 title: Tarifs
 seo:
-  page_description: Découvrez un aperçu des fonctionnalités, des offres logicielles et des packs matériel IoT pour l'hydroponie. Grille tarifaire en cours de réflexion.
+  page_description: Formules logicielles et packs matériel prévus par HydroGrow pour l'hydroponie professionnelle. Les tarifs seront annoncés au lancement.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -15,12 +15,12 @@ content_blocks:
     badge_icon: ph-laptop
     title: Nos formules et fonctionnalités
     description: >-
-      Un aperçu des fonctionnalités de l'écosystème HydroGrow. **Les tarifs seront annoncés au lancement**, pour proposer des offres justes, du jardinier amateur à l'exploitation commerciale.
+      HydroGrow est en cours de développement : voici les formules envisagées, pour les professionnels d'abord, puis pour les particuliers. **Les tarifs seront annoncés au lancement.**
   - _name: global/pricing-table
     pricing_tier:
       - tier: Germination
         highlight_tier: false
-        description: Pour débuter et gérer manuellement ses cultures.
+        description: Pour prendre en main l'outil et suivre ses cultures manuellement.
         price_status: Tarif annoncé au lancement
         features:
           - item: Carnet de culture numérique
@@ -40,12 +40,12 @@ content_blocks:
           text: En savoir plus
       - tier: Cultivateur
         highlight_tier: true
-        description: L'expérience connectée pour les passionnés.
+        description: Pour connecter et automatiser une première installation.
         price_status: Tarif annoncé au lancement
         features:
           - item: 1 installation connectée
             active_feature: true
-          - item: Suivi du pH et de l'EC en temps réel
+          - item: Suivi en direct de l'acidité (pH) et des nutriments (EC)
             active_feature: true
           - item: Alertes sur mobile
             active_feature: true
@@ -60,7 +60,7 @@ content_blocks:
           text: Être informé du lancement
       - tier: Agronome Pro
         highlight_tier: false
-        description: Pour les fermes urbaines et la gestion multi-sites.
+        description: Pour les producteurs, les fermes urbaines et la gestion de plusieurs sites.
         price_status: Tarif annoncé au lancement
         features:
           - item: Installations illimitées
@@ -69,7 +69,7 @@ content_blocks:
             active_feature: true
           - item: IA Nexus (conseils d'optimisation)
             active_feature: true
-          - item: Export des données (CSV, API)
+          - item: Export des données vers un tableur ou vos outils (CSV, API)
             active_feature: true
           - item: Gestion d'équipe et rôles
             active_feature: true
@@ -84,12 +84,12 @@ content_blocks:
     badge_icon: ph-cpu
     title: Nos packs matériel IoT
     description: >-
-      Des exemples de configurations matérielles clé en main, pré-assemblées et calibrées. **Tarifs annoncés au lancement.**
+      Des exemples de configurations d'objets connectés (IoT), prévues pour être livrées pré-assemblées et calibrées. **Tarifs annoncés au lancement.**
   - _name: global/pricing-table
     pricing_tier:
       - tier: Pack Essentiel
         highlight_tier: false
-        description: Le kit de base, pour suivre le pH, l'EC et la température.
+        description: Le kit de base, pour suivre l'acidité (pH), les nutriments (EC) et la température.
         price_status: Tarif annoncé au lancement
         features:
           - item: Sonde pH et EC professionnelle
@@ -100,7 +100,7 @@ content_blocks:
             active_feature: true
           - item: Contrôle de la pompe d'irrigation
             active_feature: true
-          - item: Boîtier étanche IP65
+          - item: Boîtier protégé contre l'eau et la poussière (IP65)
             active_feature: true
           - item: Dosage automatique
             active_feature: false
@@ -134,11 +134,11 @@ content_blocks:
         features:
           - item: Tout le Pack Confort
             active_feature: true
-          - item: Capteur de CO2 et débitmètre
+          - item: Capteur de CO2 et mesure du débit d'eau
             active_feature: true
           - item: Caméra IA (accéléré, suivi de santé)
             active_feature: true
-          - item: Isolation galvanique professionnelle
+          - item: Sondes isolées électriquement (isolation galvanique)
             active_feature: true
           - item: Abonnement Agronome Pro (1 an)
             active_feature: true

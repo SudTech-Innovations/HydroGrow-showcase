@@ -2,7 +2,7 @@
 _schema: default
 title: Fonctionnalités
 seo:
-  page_description: Découvrez les fonctionnalités avancées d'HydroGrow pour l'automatisation et l'optimisation de vos cultures hydroponiques.
+  page_description: Capteurs, automatisation et conseils par IA, les fonctionnalités prévues d'HydroGrow pour piloter des cultures hydroponiques professionnelles.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -11,9 +11,9 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/hero
-    title: Votre jardin, mesuré en continu.
+    title: Vos cultures hydroponiques, mesurées en continu.
     description: >-
-      Des capteurs, un boîtier de contrôle et une application : HydroGrow suit vos cultures hydroponiques et vous prévient quand il faut agir.
+      Des capteurs, un boîtier de contrôle et une application : la solution d'hydroponie connectée HydroGrow, en cours de développement, suivra vos cultures et vous préviendra quand il faudra agir.
     button:
       link: /contact/
       text: Être informé du lancement
@@ -22,14 +22,14 @@ content_blocks:
   - _name: global/header
     title: "Tout ce qu'il faut pour "
     title_suffix: bien cultiver
-    description: Mesurer, régler et comprendre vos cultures, sans y passer vos journées.
+    description: Mesurer, régler et comprendre vos cultures, sans y passer vos journées. Voici ce que HydroGrow est conçu pour faire.
     remove_top_padding: false
   - _name: global/feature
     image: /images/feature/feature-card-four.webp
     image_alt: Application mobile affichant les mesures en temps réel des sondes hydroponiques
     title: Une surveillance en temps réel
     description: >-
-      Suivez vos plantes à toute heure. Les capteurs mesurent le pH, l'EC (la quantité de nutriments dans l'eau), la température de l'eau et de l'air, l'humidité et la lumière. Vous retrouvez ces mesures sur votre smartphone.
+      Suivez vos cultures à toute heure. Les capteurs mesureront le pH (l'acidité de l'eau), l'EC (sa concentration en nutriments), la température de l'eau et de l'air, l'humidité et la lumière. Vous retrouverez ces mesures sur votre smartphone.
     button:
       link: /contact/
       text: Être informé du lancement
@@ -39,7 +39,7 @@ content_blocks:
     image_alt: Boîtier HydroGrow automatisant les pompes de dosage, l'irrigation et l'éclairage
     title: Moins de gestes répétitifs
     description: >-
-      HydroGrow gère l'éclairage, l'irrigation et l'apport en nutriments selon les besoins de vos plantes. Définissez vos propres règles ou partez des préréglages.
+      HydroGrow gérera l'éclairage, l'irrigation et l'apport en nutriments selon les besoins de vos plantes. Vous pourrez définir vos propres règles ou partir des préréglages.
     button:
       link: /contact/
       text: Être informé du lancement
@@ -49,7 +49,7 @@ content_blocks:
     image_alt: Caméra et tableau de bord IA analysant la santé et la croissance d'une laitue
     title: Des conseils adaptés à vos plantes
     description: >-
-      Nexus, notre IA, analyse vos mesures et vous propose des conseils personnalisés. Elle repère aussi les anomalies avant qu'elles ne s'aggravent.
+      Nexus, notre intelligence artificielle, analysera vos mesures et vous proposera des conseils adaptés. Il est aussi conçu pour repérer les anomalies avant qu'elles ne s'aggravent.
     button:
       link: /contact/
       text: Être informé du lancement

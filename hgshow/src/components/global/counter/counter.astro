@@ -13,6 +13,8 @@ interface CounterNumber {
   number: string;
   suffix?: string;
   text: string;
+  // Liste affichée au survol de l'astérisque
+  details?: { label: string; items: string[] }[];
 }
 
 export interface Props {
@@ -43,11 +45,11 @@ export interface Props {
         {
           numbers && (
             <div
-              class={`grid ${numbers.length === 3 ? "grid-cols-1 sm:grid-cols-3" : "grid-cols-2 lg:grid-cols-4"} gap-0 items-center justify-center text-center`}
+              class={`relative grid ${numbers.length === 3 ? "grid-cols-1 sm:grid-cols-3" : "grid-cols-2 lg:grid-cols-4"} gap-0 items-center justify-center text-center`}
               data-editable="array"
               data-prop="numbers">
               {numbers.map((number: CounterNumber, i: number) => (
-                <div class="relative h-full" data-editable="array-item">
+                <div class={number.details ? "group h-full" : "relative h-full"} data-editable="array-item">
                   <div
                     class={`pt-6 px-2 pb-4 2xl:pt-8 2xl:px-8 xl:pt-8 xl:px-4 xl:pb-7 sm:pt-8 sm:px-0 sm:pb-7`}>
                     <div class=" flex justify-center">
@@ -83,11 +85,35 @@ export interface Props {
                         data-prop="suffix">
                         {number.suffix || ""}
                       </span>
+                      {number.details && (
+                        <button
+                          type="button"
+                          class="self-start cursor-help px-2 text-3xl font-display text-primary"
+                          aria-label={`Voir la liste : ${number.text}`}
+                          aria-describedby={`counter-details-${i}`}>
+                          *
+                        </button>
+                      )}
                     </div>
                     <p class="text-gray-900 text-sm sm:text-base mb-0 sm:px-8 sm:pb-0" data-editable="text" data-prop="text">
                       {number.text}
                     </p>
                   </div>
+                  {number.details && (
+                    <div
+                      id={`counter-details-${i}`}
+                      role="tooltip"
+                      class="invisible absolute left-0 right-0 top-full z-30 mx-auto max-w-3xl rounded-[20px] border border-pixel/50 bg-deep p-6 text-left opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                      {number.details.map((group) => (
+                        <Fragment>
+                          <p class="mb-2 text-sm font-semibold text-primary">{group.label}</p>
+                          <ul class="mb-4 columns-2 gap-6 text-sm leading-6 text-mist last:mb-0 sm:columns-3">
+                            {group.items.map((item) => <li>{item}</li>)}
+                          </ul>
+                        </Fragment>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

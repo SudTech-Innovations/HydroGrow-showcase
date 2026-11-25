@@ -2,27 +2,27 @@
   "pricing": [
     {
       "title": "Puis-je utiliser mon propre matériel (Arduino, ESP32) ?",
-      "description": "Oui. L'abonnement Cultivateur donne accès aux identifiants MQTT (le langage d'échange des objets connectés) pour connecter vos propres montages à la plateforme."
+      "description": "C'est prévu : l'abonnement Cultivateur donnera accès aux identifiants MQTT (le langage d'échange des objets connectés) pour relier vos propres montages à la plateforme."
     },
     {
       "title": "Que se passe-t-il si ma connexion internet est coupée ?",
-      "description": "Avec le mode hors-ligne, votre système continue de fonctionner, de réguler le pH et d'enregistrer les mesures localement. Les données se synchronisent au retour de la connexion."
+      "description": "Avec le mode hors-ligne, le système est conçu pour continuer à fonctionner, à réguler le pH (l'acidité de l'eau) et à enregistrer les mesures sur place. Les données se synchroniseront au retour de la connexion."
     },
     {
       "title": "Les packs matériel incluent-ils un abonnement ?",
-      "description": "Le Pack Total IA inclut 1 an d'abonnement Agronome Pro. Pour les packs Essentiel et Confort, l'abonnement se choisit séparément. Les modalités seront précisées au lancement."
+      "description": "Le Pack Total IA inclura 1 an d'abonnement Agronome Pro. Pour les packs Essentiel et Confort, l'abonnement se choisira séparément. Les modalités seront précisées au lancement."
     },
     {
       "title": "Puis-je gérer plusieurs installations avec un seul compte ?",
-      "description": "Oui, c'est le rôle de l'abonnement Agronome Pro : gérer plusieurs installations, ou parcelles, depuis une seule interface."
+      "description": "Oui, ce sera le rôle de l'abonnement Agronome Pro : gérer plusieurs installations, ou parcelles, depuis une seule interface."
     },
     {
       "title": "Mes données sont-elles privées ?",
-      "description": "Vos données de culture vous appartiennent et ne sont pas partagées."
+      "description": "Vos données de culture vous appartiendront et ne seront pas partagées."
     },
     {
       "title": "Le matériel est-il garanti ?",
-      "description": "Les capteurs, pompes et boîtiers de contrôle sont garantis 2 ans, et 3 ans pour le Pack Total IA. En cas de problème, l'équipe vous accompagne."
+      "description": "Il est prévu de garantir les capteurs, pompes et boîtiers de contrôle 2 ans, et 3 ans pour le Pack Total IA. En cas de problème, l'équipe vous accompagnera."
     },
     {
       "title": "Puis-je changer d'abonnement en cours d'année ?",
