@@ -1,5 +1,6 @@
 ---
 date: 2026-08-05
+updated: 2026-11-25
 title: "Qualité de l'eau en hydroponie : les points à analyser"
 tags: ["eau", "nutriments", "guide"]
 author: "Équipe HydroGrow"

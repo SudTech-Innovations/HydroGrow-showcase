@@ -1,5 +1,6 @@
 ---
 date: 2026-08-04
+updated: 2026-11-25
 title: "Maladies en hydroponie : sans terre, mais pas sans risques"
 tags: ["santé des plantes", "prévention", "maintenance"]
 author: "Équipe HydroGrow"

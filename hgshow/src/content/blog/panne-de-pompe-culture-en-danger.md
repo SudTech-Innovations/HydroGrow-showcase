@@ -1,5 +1,6 @@
 ---
 date: 2026-08-10
+updated: 2026-11-25
 title: "Panne de pompe en hydroponie : quel délai avant le danger ?"
 tags: ["maintenance", "alertes", "fiabilité"]
 author: "Équipe HydroGrow"

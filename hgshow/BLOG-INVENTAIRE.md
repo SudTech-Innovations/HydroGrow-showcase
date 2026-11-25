@@ -10,7 +10,8 @@
 4. **Recevoir des liens** : modifier au moins 2 articles existants pour qu'ils pointent vers le nouveau.
 5. **Écrire un texte de lien descriptif** (voir « Textes de lien »), jamais « cliquez ici ».
 6. **Format des adresses** : `/blog/nom-du-fichier/`, avec la barre finale. Ne pas renommer un fichier publié : son adresse changerait.
-7. **Mettre à jour cet inventaire** : tableau, fiche du nouvel article, lignes « Pointe vers » et « Reçoit de ».
+7. **Dater** : date du jour dans `date` à la création, dans `updated` après une modification de fond ([règles](BLOG-CONSIGNES.md#9-dates)).
+8. **Mettre à jour cet inventaire** : tableau, fiche du nouvel article, lignes « Pointe vers » et « Reçoit de ».
 
 Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés `tags` communs) : il ne remplace pas les liens dans le texte.
 

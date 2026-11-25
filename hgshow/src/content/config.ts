@@ -17,6 +17,8 @@ const seoSchema = z
 const blogCollection = defineCollection({
   schema: z.object({
     date: z.date(),
+    // Dernière modification de fond (facultative ; CloudCannon peut laisser le champ vide)
+    updated: z.preprocess((value) => (value === "" ? null : value), z.date().nullish()),
     title: z.string(),
     tags: z.array(z.string()),
     author: z.string(),

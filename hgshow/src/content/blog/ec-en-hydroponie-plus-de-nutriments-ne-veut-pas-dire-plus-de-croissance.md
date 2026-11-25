@@ -1,5 +1,6 @@
 ---
 date: 2026-08-12
+updated: 2026-11-25
 title: "EC en hydroponie : plus de nutriments, pas plus de croissance"
 tags: ["nutriments", "capteurs", "guide"]
 author: "Équipe HydroGrow"

@@ -1,6 +1,7 @@
 ---
 _schema: default
 date: 2025-10-24T00:00:00Z
+updated: 2026-11-25
 title: "Hydroponie connectée : pourquoi un minuteur ne suffit plus"
 tags:
   - technologie

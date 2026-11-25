@@ -1,5 +1,6 @@
 ---
 date: 2026-08-07
+updated: 2026-11-25
 title: "Automatisation hydroponique : garder le contrôle"
 tags: ["automatisation", "capteurs", "guide"]
 author: "Équipe HydroGrow"

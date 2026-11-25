@@ -1,5 +1,6 @@
 ---
 date: 2026-08-09
+updated: 2026-11-25
 title: "Température de l'eau en hydroponie : pourquoi la surveiller ?"
 tags: ["eau", "capteurs", "racines"]
 author: "Équipe HydroGrow"

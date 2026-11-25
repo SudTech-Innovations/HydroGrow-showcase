@@ -49,6 +49,10 @@ collections_config:
         type: switch
         comment: If true, this post will not be published to the built site.
         cascade: true
+      updated:
+        type: date
+        comment: Set only after a substantial change to a published post. Leave empty otherwise.
+        cascade: true
       author:
         type: text
         options:

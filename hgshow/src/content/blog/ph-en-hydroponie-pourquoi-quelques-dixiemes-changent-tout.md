@@ -1,5 +1,6 @@
 ---
 date: 2026-08-13
+updated: 2026-11-25
 title: "pH en hydroponie : pourquoi quelques dixièmes changent tout"
 tags: ["eau", "capteurs", "guide"]
 author: "Équipe HydroGrow"

@@ -1,6 +1,7 @@
 ---
 _schema: default
 date: 2025-11-15T00:00:00Z
+updated: 2026-11-25
 title: "IA en hydroponie : comment Nexus est conçu pour décider"
 tags:
   - intelligence artificielle

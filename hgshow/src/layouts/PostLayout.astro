@@ -10,6 +10,7 @@ type Props =
   | {
       title: string;
       date: Date;
+      updated?: Date | null;
       featured_image: {
         image: string;
         image_alt: string;
@@ -22,6 +23,7 @@ type Props =
   | MarkdownLayoutProps<{
       title: string;
       date: Date;
+      updated?: Date | null;
       featured_image: {
         image: string;
         image_alt: string;
@@ -32,6 +34,9 @@ type Props =
 
 const props = "frontmatter" in Astro.props ? Astro.props.frontmatter : Astro.props;
 const { title, date, featured_image, author } = props;
+// Date de mise à jour : prise en compte seulement si elle est postérieure à la publication
+const updated = props.updated && new Date(props.updated) > new Date(date) ? new Date(props.updated) : null;
+const formatDate = (value: Date) => value.toLocaleDateString("fr-FR", { year: "numeric", month: "long", day: "numeric" });
 const content = "body" in Astro.props ? Astro.props.body : (Astro.props.rawContent() ?? "");
 const wordCount = content.split(" ").length;
 const readingTime = Math.floor(wordCount / 183);
@@ -63,7 +68,7 @@ const jsonLd = {
   description: seo.page_description,
   image: featured_image?.image ? new URL(featured_image.image, siteUrl).toString() : undefined,
   datePublished: new Date(date).toISOString(),
-  dateModified: new Date(date).toISOString(),
+  dateModified: new Date(updated ?? date).toISOString(),
   inLanguage: "fr-FR",
   author: { "@type": "Person", name: author },
   publisher: { "@id": new URL("/#organization", siteUrl).toString() },
@@ -90,15 +95,18 @@ const jsonLd = {
               <ul class="flex flex-wrap justify-center sm:justify-center gap-6 text-gray-600 font-semibold text-base">
                 <li class="flex items-center">
                   <p class="mb-0 text-primary">
-                    {
-                      date.toLocaleDateString("fr-FR", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })
-                    }
+                    <time datetime={new Date(date).toISOString()}>{formatDate(date)}</time>
                   </p>
                 </li>
+                {
+                  updated && (
+                    <li class="relative pl-2 ml-5 flex items-center before:absolute before:content-[''] before:bg-gray-400 before:w-0.5 before:h-4 before:-left-3.5 before:top-1/2 before:-translate-y-1/2">
+                      <p class="mb-0 text-primary">
+                        Mis à jour le <time datetime={updated.toISOString()}>{formatDate(updated)}</time>
+                      </p>
+                    </li>
+                  )
+                }
                 <li
                   class="relative pl-2 ml-5 flex items-center before:absolute before:content-[''] before:bg-gray-400 before:w-0.5 before:h-4 before:-left-3.5 before:top-1/2 before:-translate-y-1/2">
                   <p class="mb-0 text-primary">

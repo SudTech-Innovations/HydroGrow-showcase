@@ -76,6 +76,7 @@ Créer `src/content/blog/nom-de-l-article.md` :
 ```yaml
 ---
 date: 2027-01-15
+updated:
 title: "Titre de l'article"
 tags: ["eau", "capteurs", "guide"]
 author: "Équipe HydroGrow"
@@ -99,7 +100,7 @@ draft: true
 
 - **Guillemets** autour du titre, de la description et des textes d'image : un « : » sans guillemets fait échouer la construction du site.
 - **`draft: true`** tant que Nicolas n'a pas validé. Un brouillon n'est pas publié.
-- **Date** : celle de la publication.
+- **`date` et `updated`** : voir « Dates ».
 
 **Image** : format WebP, 1600 × 893 pixels, dans `public/images/blog/`. Plan serré, lumière naturelle, touche bleutée dans les ombres, peu de personnes, pas de banque d'images (charte, « La photographie »).
 
@@ -113,7 +114,22 @@ draft: true
 | Technologie | technologie, iot, innovation, intelligence artificielle, computer vision, time-lapse |
 | Découvrir l'hydroponie | débutant, science, durabilité |
 
-## 9. Rédiger avec une IA
+## 9. Dates
+
+| Champ | Quand le remplir |
+|---|---|
+| `date` | Date de publication. Elle ne change plus ensuite. |
+| `updated` | Date de la dernière modification de fond. Vide tant que l'article n'a pas été modifié. |
+
+- **Une IA qui crée un article met la date du jour dans `date`** et laisse `updated` vide.
+- **Une IA qui modifie un article met la date du jour dans `updated`**, sans toucher à `date`.
+- Compte comme modification de fond : un texte ajouté, retiré ou corrigé sur le sens, une information, un chiffre ou une source qui change. Une faute d'orthographe, une mise en forme ou un lien interne ajouté ne comptent pas.
+- Format : `AAAA-MM-JJ`, sans guillemets.
+- Un brouillon modifié avant sa première publication garde `updated` vide ; mettre `date` au jour de la publication.
+
+Quand `updated` est postérieur à `date`, la page affiche « Mis à jour le … », et cette date est transmise à Google (données de l'article et sitemap).
+
+## 10. Rédiger avec une IA
 
 Texte à copier, en remplaçant les crochets :
 
@@ -123,8 +139,10 @@ Mot-clé principal : [mot-clé].
 Lis d'abord BLOG-CONSIGNES.md et BLOG-INVENTAIRE.md, puis applique-les.
 Pour chaque affirmation chiffrée ou scientifique, ouvre la source et vérifie
 qu'elle le dit. N'invente aucune source, aucun chiffre, aucune fonction du produit.
-Crée l'article en brouillon (draft: true), ajoute les liens vers lui dans au moins
+Crée l'article en brouillon (draft: true) avec la date du jour dans date,
+ajoute les liens vers lui dans au moins
 deux articles existants et mets l'inventaire à jour.
+Si tu modifies le fond d'un article publié, mets la date du jour dans updated.
 Termine par la liste des sources lues, de celles que tu n'as pas pu ouvrir
 et des points à vérifier.
 ```
@@ -133,7 +151,7 @@ L'IA ne publie pas : elle ne passe jamais `draft` à `false`, ne commite et ne p
 
 Les liens ajoutés vers un brouillon mènent à une page absente tant qu'il n'est pas publié : publier l'article et les liens en même temps.
 
-## 10. Validation avant publication (Nicolas)
+## 11. Validation avant publication (Nicolas)
 
 - [ ] L'article répond à la question annoncée.
 - [ ] Le mot-clé n'entre pas en concurrence avec un autre article.
@@ -143,5 +161,6 @@ Les liens ajoutés vers un brouillon mènent à une page absente tant qu'il n'es
 - [ ] Titre, description, image et texte d'image sont remplis.
 - [ ] Les liens internes fonctionnent, dans les deux sens.
 - [ ] L'inventaire est à jour.
+- [ ] `date` correspond au jour de publication ; `updated` est rempli si le fond d'un article publié a changé.
 - [ ] `npm run build` réussit.
 - [ ] `draft` passé à `false`.

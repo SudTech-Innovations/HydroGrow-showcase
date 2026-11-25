@@ -1,5 +1,6 @@
 ---
 date: 2026-08-11
+updated: 2026-11-25
 title: "Hydroponie et eau : quelle économie peut-on vraiment attendre ?"
 tags: ["eau", "durabilité", "guide"]
 author: "Équipe HydroGrow"

@@ -1,5 +1,6 @@
 ---
 date: 2026-08-06
+updated: 2026-11-25
 title: "Surveillance hydroponique : agir avant les symptômes"
 tags: ["alertes", "données", "prévention"]
 author: "Équipe HydroGrow"

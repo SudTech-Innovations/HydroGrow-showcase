@@ -1,6 +1,7 @@
 ---
 _schema: default
 date: 2025-08-10T00:00:00Z
+updated: 2026-11-25
 title: "Hydroponie ou culture en terre : rendement, eau et énergie"
 tags:
   - débutant

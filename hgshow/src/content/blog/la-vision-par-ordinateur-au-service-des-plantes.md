@@ -1,6 +1,7 @@
 ---
 _schema: default
 date: 2025-12-02T00:00:00Z
+updated: 2026-11-25
 title: "Vision par ordinateur en hydroponie : voir les plantes"
 tags:
   - computer vision

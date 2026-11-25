@@ -1,5 +1,6 @@
 ---
 date: 2026-08-08
+updated: 2026-11-25
 title: "Capteurs en hydroponie : les 5 données à surveiller"
 tags: ["tableau de bord", "capteurs", "guide"]
 author: "Équipe HydroGrow"
