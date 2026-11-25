@@ -2,7 +2,7 @@
   "pricing": [
     {
       "title": "Puis-je utiliser mon propre matériel (Arduino, ESP32) ?",
-      "description": "Oui. L'abonnement Cultivateur donne accès aux identifiants MQTT pour connecter vos propres montages à la plateforme."
+      "description": "Oui. L'abonnement Cultivateur donne accès aux identifiants MQTT (le langage d'échange des objets connectés) pour connecter vos propres montages à la plateforme."
     },
     {
       "title": "Que se passe-t-il si ma connexion internet est coupée ?",
@@ -32,11 +32,11 @@
   "general": [
     {
       "title": "Qu'est-ce que HydroGrow ?",
-      "description": "HydroGrow réunit des capteurs, un boîtier de contrôle et une application pour cultiver des fruits, des légumes et des aromates en hydroponie, simplement et toute l'année."
+      "description": "HydroGrow est une solution en cours de développement qui réunit des capteurs, un boîtier de contrôle et une application pour cultiver en hydroponie (sans terre, dans une eau nourricière) toute l'année. Elle vise d'abord les professionnels, puis les particuliers."
     },
     {
       "title": "Dois-je être un expert pour l'utiliser ?",
-      "description": "Non. L'application vous guide, et les packs sont prévus pour s'installer facilement. Vous suivez l'état de vos plantes, et HydroGrow vous prévient quand il faut agir."
+      "description": "Non. L'application est conçue pour guider vos équipes, et les packs pour s'installer facilement. Vous suivrez l'état de vos plantes, et HydroGrow vous préviendra quand il faudra agir."
     },
     {
       "title": "Quelle est la différence avec une culture en pleine terre ?",
@@ -44,19 +44,19 @@
     },
     {
       "title": "Que contiennent les packs ?",
-      "description": "Le Pack Essentiel mesure le pH, l'EC (la quantité de nutriments dans l'eau), la température et le niveau d'eau. Le Pack Confort ajoute la régulation du pH, les nutriments et l'éclairage. Le Pack Total IA ajoute la caméra et l'analyse de santé."
+      "description": "Le Pack Essentiel mesurera le pH (l'acidité de l'eau), l'EC (sa concentration en nutriments), la température et le niveau d'eau. Le Pack Confort ajoutera la régulation du pH, les nutriments et l'éclairage. Le Pack Total IA ajoutera la caméra et l'analyse de santé des plantes."
     },
     {
-      "title": "Comment fonctionne l'IA Nexus ?",
-      "description": "Nexus analyse vos mesures et vous propose des conseils, par exemple quand une valeur s'éloigne de la normale. Elle est incluse dans l'offre Agronome Pro."
+      "title": "Comment fonctionnera Nexus, l'assistant d'HydroGrow ?",
+      "description": "Nexus est l'intelligence artificielle d'HydroGrow. Il analysera vos mesures et vous proposera des conseils, par exemple quand une valeur s'éloignera de la normale. Il sera inclus dans l'offre Agronome Pro."
     },
     {
-      "title": "HydroGrow fonctionne-t-il avec mon système (bac, tour, goutte-à-goutte) ?",
-      "description": "Les capteurs se placent dans le bac ou le réservoir d'eau. Ils s'adaptent aux systèmes courants, dont DWC (racines dans un bac d'eau), NFT (film d'eau qui circule sur les racines) et table à marée."
+      "title": "HydroGrow fonctionnera-t-il avec mon système (bac, tour, goutte-à-goutte) ?",
+      "description": "Les capteurs se placeront dans le bac ou le réservoir d'eau. Ils sont conçus pour les systèmes courants, dont le DWC (racines dans un bac d'eau), le NFT (film d'eau qui circule sur les racines) et la table à marée (bac rempli puis vidé à intervalles réguliers)."
     },
     {
       "title": "Que se passe-t-il en cas de coupure de courant ?",
-      "description": "Le boîtier reprend ses cycles d'éclairage et d'arrosage là où il s'était arrêté. Il garde ses réglages en mémoire."
+      "description": "Le boîtier est conçu pour garder ses réglages en mémoire et reprendre ses cycles d'éclairage et d'arrosage là où il s'était arrêté."
     }
   ]
 }

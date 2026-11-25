@@ -2,7 +2,7 @@
 _schema: default
 title: Accueil
 seo:
-  page_description: HydroGrow vous aide à cultiver des fruits et légumes frais toute l'année, simplement, grâce à l'hydroponie connectée.
+  page_description: "La solution d'hydroponie connectée HydroGrow, pensée pour les professionnels : des fruits et légumes frais et locaux, toute l'année."
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -13,7 +13,7 @@ content_blocks:
   - _name: global/hero
     title: L'avenir est local.
     description: >-
-      Cultivez-le avec HydroGrow. Produisez des fruits et légumes frais toute l'année, sans grande connaissance ni beaucoup de temps.
+      Cultivez-le avec HydroGrow, la solution d'hydroponie connectée pensée pour les professionnels : des fruits et légumes frais et locaux, toute l'année.
     tagline: Planter. Connecter. Savourer.
     image: /images/hero/hero-image.webp
     image_alt: Application HydroGrow, parcelle de basilic, état optimal, pH, eau et température
@@ -24,42 +24,44 @@ content_blocks:
     title: Faites grandir votre
     title_suffix: culture
     description: >-
-      L'hydroponie comparée à la culture en pleine terre : de meilleurs résultats, avec moins d'eau et moins de temps passé à surveiller.
+      L'hydroponie comparée à la culture en pleine terre, d'après des études sur la laitue ([Wang et al., 2023](https://doi.org/10.3389/fpls.2023.1165856) et [Barbosa et al., 2015](https://doi.org/10.3390/ijerph120606879)). Les résultats varient selon la culture et l'installation, et l'hydroponie demande plus d'énergie.
     alternate_style: false
     numbers:
       - prefix: "+"
-        number: "50"
-        suffix: " %"
+        number: "134"
+        suffix: " %"
         text: de rendement.
       - prefix: "+"
         number: "40"
-        suffix: " %"
-        text: de croissance.
-      - prefix: "−"
-        number: "80"
-        suffix: " %"
-        text: de temps de gestion.
+        suffix: " %"
+        text: de taille des plants.
       - prefix: "−"
         number: "90"
-        suffix: " %"
-        text: d'eau consommée.
+        suffix: " %"
+        text: d'eau par kilo récolté.
+  - _name: global/header
+    title: "Produire "
+    title_suffix: local
+    description: >-
+      Cultiver près de ceux qui consomment raccourcit le trajet entre la récolte et l'assiette. L'hydroponie permet de produire en ville, sous serre ou en intérieur, sur peu de surface et toute l'année. HydroGrow est conçu pour aider les professionnels à récolter au plus près de leurs clients.
+    remove_top_padding: false
   - _name: global/video
     image: /images/video/video-thum.webp
     image_alt: Racines blanches d’un plant de basilic dans l’eau claire d’un bac hydroponique
     video_url: /videos/hydrogrow-presentation.mp4
   - _name: global/header
-    title: "Fonctionnalités "
-    title_suffix: HydroGrow
+    title: "Pilotez vos cultures "
+    title_suffix: hydroponiques
     description: >-
-      Gestion des nutriments, contrôle du climat et alertes en temps réel : tout ce qu'il faut pour que votre jardin se porte bien.
+      HydroGrow est en cours de développement. Voici ce qu'il permettra : gérer les nutriments, contrôler le climat et recevoir des alertes en temps réel.
     remove_top_padding: true
   - _name: global/feature
     image: /images/feature/feature-card-one.webp
     image_alt: Main tenant un téléphone qui affiche les jauges pH et EC de l'application HydroGrow, à côté d'un plant de basilic en hydroponie
     landscape: true
-    title: Votre jardin, en un geste
+    title: Vos cultures, en un geste
     description: >-
-      Gérez votre système hydroponique en quelques secondes. Ajustez le pH, l'EC et les cycles d'éclairage directement depuis l'application.
+      Vous gérerez votre système en quelques secondes. Ajustez depuis l'application le pH (l'acidité de l'eau), l'EC (sa concentration en nutriments) et les cycles d'éclairage.
     button:
       link: /features
       text: En savoir plus
@@ -75,7 +77,7 @@ content_blocks:
         label: Croissance · 30 jours
     title: Suivez chaque plante
     description: >-
-      L'analyse de données simplifiée : visualisez la santé de vos plantes, l'historique des capteurs et les prévisions de récolte au même endroit.
+      L'analyse de données simplifiée : la santé de vos plantes, l'historique des capteurs et les prévisions de récolte seront réunis au même endroit.
     button:
       link: /features
       text: Voir les outils d'analyse
@@ -85,7 +87,7 @@ content_blocks:
     image_alt: Jeunes plants de tomate, laitue et basilic avec une tablette affichant l'application HydroGrow
     title: Profils de culture prédéfinis
     description: >-
-      Que vous fassiez pousser des tomates, des laitues ou des aromates, choisissez le profil de culture adapté : votre système est réglé pour vous.
+      Tomates, laitues ou aromates : vous choisirez le profil de culture adapté et le système appliquera les réglages correspondants.
     button:
       link: /contact/
       text: Être informé du lancement
@@ -116,7 +118,7 @@ content_blocks:
   #         Je ne peux plus imaginer gérer mes serres sans HydroGrow. C'est le cerveau de mon installation.
   - _name: global/faq
     title: Questions
-    title_suffix: Fréquentes
+    title_suffix: fréquentes
     description: >-
       Retrouvez les réponses aux questions les plus courantes sur HydroGrow.
     faq_group: general
