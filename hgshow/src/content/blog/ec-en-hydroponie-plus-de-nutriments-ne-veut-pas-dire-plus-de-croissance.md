@@ -57,4 +57,18 @@ Avant d'ajouter de l'engrais, demandez-vous si c'est le sel ou l'eau qui a chang
 
 Une analyse en laboratoire reste nécessaire pour connaître chaque élément. L'EC sert à suivre l'évolution entre deux analyses, pas à les remplacer.
 
-HydroGrow, en cours de développement, est conçu pour suivre l'EC dans le temps, la comparer aux seuils de votre culture et vous alerter en cas d'écart durable. L'EC fait partie des [cinq données à surveiller](/blog/5-donnees-a-surveiller-hydroponie/) ; voir aussi les [fonctionnalités prévues](/features/).
+## « Et mon EC, dans tout ça ? » La réponse HydroGrow
+
+**Puis-je la suivre dans le temps ?**\
+C'est déjà arrivé : dans notre première version, l'EC se saisissait à la main, s'affichait en courbe et déclenchait une alerte hors plage. Le carnet de culture accueillait vos observations.
+
+**Et sans saisie ?**\
+Une sonde d'EC est prévue dans les [packs matériel](/pricing/). La température de l'eau et le niveau, eux, ont déjà été mesurés par des capteurs.
+
+**Le dosage suivra-t-il ?**\
+Le dosage automatique des nutriments est prévu à partir du Pack Confort.
+
+**Qui décide de la cible ?**\
+Vous, selon votre culture. Nous voulons que sondes, boîtier de contrôle et application vous donnent les éléments, parmi les [cinq données à surveiller](/blog/5-donnees-a-surveiller-hydroponie/).
+
+Moins de devinettes, plus de repères : [Être informé du lancement](/contact/).

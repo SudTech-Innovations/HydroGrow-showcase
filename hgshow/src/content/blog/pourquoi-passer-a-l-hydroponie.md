@@ -68,4 +68,12 @@ Produire près de ceux qui consomment peut être un atout, y compris en ville, m
 
 La pleine terre garde ses atouts : le sol amortit une partie des variations d'eau et de nutriments, et l'équipement nécessaire est différent. Les deux méthodes peuvent aussi cohabiter, selon les cultures et la saison. Comparez enfin sur la même base : même culture, même période et même calcul des litres, de l'énergie et des heures de travail. Vos résultats sur un petit essai vaudront mieux qu'une moyenne trouvée ailleurs pour décider d'investir.
 
-HydroGrow, en cours de développement, est conçu pour suivre les paramètres de la solution et vous prévenir lorsqu'il faut agir. [Découvrez les fonctionnalités prévues](/features/).
+## Se lancer avec HydroGrow : l'aventure en trois temps
+
+**2023, l'étincelle.** HydroGrow naît d'un logiciel de gestion d'hydroponie, puis devient un [projet mené en équipe](/about/).
+
+**La première version, le terrain.** Elle a affiché des mesures, conservé leur historique, déclenché des alertes et tenu un carnet de culture. Des capteurs ont relevé la température de l'eau, le niveau et le climat. De quoi garder les chiffres d'un premier essai au même endroit.
+
+**La suite, l'ensemble complet.** Nous retravaillons la méthode et le code pour réunir capteurs, boîtier de contrôle et application dans un matériel que nous voulons livrer prêt à l'emploi. Les sondes de pH et d'EC et le pilotage des pompes sont prévus dans les [packs matériel](/pricing/).
+
+Les producteurs et les fermes urbaines d'abord, les particuliers ensuite. Le prochain chapitre vous tente ? [Être informé du lancement](/contact/).

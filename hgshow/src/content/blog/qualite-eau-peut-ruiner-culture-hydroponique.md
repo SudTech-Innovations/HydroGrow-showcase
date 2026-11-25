@@ -65,4 +65,17 @@ L'EC ne permet pas à elle seule d'identifier les ions présents. Une même cond
 
 Pour les légumes-feuilles consommés crus, la qualité microbiologique compte aussi : il faut [surveiller l'eau et, si nécessaire, la traiter](https://doi.org/10.3390/ijerph120707457) pour limiter les [risques sanitaires](/blog/hydroponie-maladies-sans-terre-risques/). C'est une analyse distincte, à demander explicitement.
 
-HydroGrow ne remplace pas un laboratoire. La solution, en cours de développement, est conçue pour prolonger ce diagnostic, en reliant l'analyse de départ aux mesures quotidiennes et aux appoints pour aider à interpréter les dérives. Découvrez les [fonctionnalités prévues](/features/).
+## L'analyse dit d'où vous partez, HydroGrow vise la suite
+
+Votre analyse est une photo. Votre culture, elle, est un film. HydroGrow ne remplace pas le laboratoire : il est pensé pour filmer le reste, avec capteurs, boîtier de contrôle et application réunis.
+
+| Sans suivi | L'élan HydroGrow |
+|---|---|
+| Un résultat rangé dans un tiroir | Des notes datées dans le carnet de culture, comme sur la première version |
+| Un pH et une EC griffonnés | Des valeurs saisies et tracées, déjà essayées ; des sondes prévues ensuite |
+| Une température et un niveau jugés à l'œil | Eau et niveau déjà mesurés par des capteurs |
+| Une dérive découverte tard | Des alertes hors plage, déjà expérimentées |
+
+Les sondes et le reste du matériel prévu sont à retrouver dans les [packs matériel](/pricing/).
+
+Donnez une suite à votre analyse : [Être informé du lancement](/contact/).

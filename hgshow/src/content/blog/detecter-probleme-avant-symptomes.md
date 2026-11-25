@@ -59,4 +59,15 @@ Des ravageurs ou une infection débutante peuvent ne rien changer aux mesures de
 
 Gardez donc un passage régulier dans la culture, même quand tous les indicateurs sont au vert. Revoyez aussi vos seuils après chaque incident : l'alerte est-elle arrivée assez tôt, et a-t-elle atteint la bonne personne ?
 
-HydroGrow, en cours de développement, est conçu pour transformer les séries de mesures en alertes de tendance, avec un score de risque paramétrable, c'est-à-dire une note réglable qui aide à classer les urgences. Le but est de vous donner un temps d'avance pour inspecter et corriger. [Découvrez les fonctionnalités prévues](/features/).
+## Un temps d'avance : la scène que HydroGrow prépare
+
+Mardi, tout semble normal. Les feuilles sont vertes, rien ne penche. Pourtant, une courbe s'écarte doucement de ses habitudes. C'est ce moment précis que nous voulons un jour vous signaler : [notre IA Nexus](/blog/comprendre-architecture-ia-nexus/) est prévue pour repérer l'anomalie, afin que vous alliez voir la plante avant qu'elle ne se plaigne.
+
+Les premières briques existent déjà dans notre histoire :
+
+- des capteurs ont mesuré le **niveau**, la **température de l'eau** et le **climat** ;
+- une première version a tracé les **courbes** et déclenché des **alertes** hors plage.
+
+À venir : sondes de pH et d'EC, et caméra du Pack Total IA, présentées dans les [formules et packs](/pricing/). Capteurs, boîtier de contrôle et application travailleront alors en équipe.
+
+Envie d'avoir ce temps d'avance ? [Être informé du lancement](/contact/).

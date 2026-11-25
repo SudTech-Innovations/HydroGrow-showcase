@@ -59,4 +59,14 @@ Pour des légumes consommés crus, la santé des personnes est aussi en jeu : [l
 
 Un journal sanitaire, même court, aide ensuite à relier un problème à un lot de plants, à un bac ou à une période. Après l'incident, revenez sur son origine probable et ajustez la routine : nettoyage, aération, contrôle des arrivées de plants ou gestion de l'eau. Partagez ensuite ce constat avec toutes les personnes qui interviennent sur la culture.
 
-HydroGrow, en cours de développement, est conçu pour relier les mesures à des [alertes précoces](/blog/detecter-probleme-avant-symptomes/), et une [caméra avec analyse d'images](/blog/la-vision-par-ordinateur-au-service-des-plantes/) est envisagée. Ces outils complètent l'hygiène et l'observation sans les remplacer. [Être informé du lancement](/contact/).
+## Votre œil + HydroGrow : un duo contre les mauvaises surprises
+
+**À vous le flair.** Vous repérez la feuille suspecte, vous nettoyez, vous isolez, vous faites identifier la cause. Aucune machine ne le fera à votre place.
+
+**À HydroGrow la mémoire.** Notre première version a déjà suivi les mesures dans le temps, émis des [alertes](/blog/detecter-probleme-avant-symptomes/) et tenu un carnet de culture : un journal sanitaire pour vos dates, vos lots et vos observations.
+
+**À ses capteurs la vigie.** Température de l'eau, niveau et climat, qui peuvent peser sur la santé des plantes, ont déjà été mesurés.
+
+**Bientôt, un regard de plus.** Une [caméra avec analyse d'images](/blog/la-vision-par-ordinateur-au-service-des-plantes/) est prévue dans le [Pack Total IA](/pricing/), au sein d'un ensemble réunissant capteurs, boîtier de contrôle et application.
+
+Formez le duo : [Être informé du lancement](/contact/).

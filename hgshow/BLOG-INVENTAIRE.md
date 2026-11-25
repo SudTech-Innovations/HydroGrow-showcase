@@ -11,7 +11,7 @@
 5. **Écrire un texte de lien descriptif** (voir « Textes de lien »), jamais « cliquez ici ».
 6. **Format des adresses** : `/blog/nom-du-fichier/`, avec la barre finale. Ne pas renommer un fichier publié : son adresse changerait.
 7. **Dater** : date du jour dans `date` à la création, dans `updated` après une modification de fond ([règles](BLOG-CONSIGNES.md#9-dates)).
-8. **Mettre à jour cet inventaire** : tableau, fiche du nouvel article, lignes « Pointe vers » et « Reçoit de ».
+8. **Mettre à jour cet inventaire** : tableau, fiche du nouvel article, lignes « Pointe vers » et « Reçoit de », [variante du chapitre HydroGrow](#variantes-du-chapitre-hydrogrow).
 
 Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés `tags` communs) : il ne remplace pas les liens dans le texte.
 
@@ -40,8 +40,22 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 | A10 | [surveillance hydroponique](src/content/blog/detecter-probleme-avant-symptomes.md) | Pilotage | 3 | 2 |
 | A11 | [automatisation hydroponique](src/content/blog/automatiser-sans-perdre-controle-hydroponie.md) | Pilotage | 3 | 2 |
 | A12 | [hydroponie connectée](src/content/blog/pourquoi-un-simple-minuteur-ne-suffit-plus.md) | Technologie | 2 | 1 |
-| A13 | [intelligence artificielle en hydroponie](src/content/blog/comprendre-architecture-ia-nexus.md) | Technologie | 3 | 0 |
+| A13 | [intelligence artificielle en hydroponie](src/content/blog/comprendre-architecture-ia-nexus.md) | Technologie | 5 | 0 |
 | A14 | [vision par ordinateur en hydroponie](src/content/blog/la-vision-par-ordinateur-au-service-des-plantes.md) | Technologie | 2 | 1 |
+
+## Variantes du chapitre HydroGrow
+
+Pour un nouvel article, prendre la variante la moins utilisée ([règle de choix et mode d'emploi](BLOG-CONSIGNES.md#le-chapitre-hydrogrow)), puis mettre à jour ce tableau.
+
+| Variante | Utilisations | Articles |
+|---|---|---|
+| Étapes | 2 | A11, A03 |
+| Déjà testé / au programme | 2 | A02, A07 |
+| Questions du lecteur | 2 | A13, A04 |
+| Mise en situation | 2 | A09, A10 |
+| Chronologie | 2 | A01, A12 |
+| Avant / avec | 2 | A06, A05 |
+| Duo | 2 | A08, A14 |
 
 ## Fiches
 
@@ -53,7 +67,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** culture hors-sol, rendement hydroponique, solution nutritive, DWC, NFT
 - **Faire un lien ici quand :** on définit l'hydroponie ou on la compare à la pleine terre
 - **Textes de lien :** hydroponie ou culture en terre ; la culture hors-sol
-- **Pointe vers :** A07, A03, A04, A05, A06 ; pages : `/features/`
+- **Variante HydroGrow :** Chronologie
+- **Pointe vers :** A07, A03, A04, A05, A06 ; pages : `/about/`, `/pricing/`, `/contact/`
 - **Reçoit de :** A07, A08
 - **Sources :** [l'essai comparatif de Wang et al. (2023)](https://doi.org/10.3389/fpls.2023.1165856) ; [comparaison sur la laitue (Barbosa et al., 2015)](https://doi.org/10.3390/ijerph120606879) ; [University of Minnesota juge les herbes aromatiques, les légumes-feuilles et les cultures courtes particulièrement adaptés](https://extension.umn.edu/how/small-scale-hydroponics) ; [Oregon State University souligne que les canaux conviennent surtout aux plantes à cycle court ou à petites racines](https://extension.oregonstate.edu/catalog/pub/em9457) ; [en manquer favorise leur pourriture (University of Minnesota)](https://extension.umn.edu/how/small-scale-hydroponics)
 
@@ -65,7 +80,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** paramètres à surveiller, pH, EC, température de l'eau, niveau du réservoir, climat de culture, tableau de bord
 - **Faire un lien ici quand :** on parle de capteurs ou de mesures en général
 - **Textes de lien :** les 5 données à surveiller ; les capteurs en hydroponie
-- **Pointe vers :** A03, A04, A05, A07, A09, A10 ; pages : `/pricing/`
+- **Variante HydroGrow :** Déjà testé / au programme
+- **Pointe vers :** A03, A04, A05, A07, A09, A10 ; pages : `/about/`, `/pricing/`, `/contact/`
 - **Reçoit de :** A04, A05, A11
 - **Sources :** [la disponibilité des nutriments (Penn State)](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess) ; [Oklahoma State University conseille un contrôle quotidien, à la même heure](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [étalonnage avec des solutions de référence](https://extension.psu.edu/a-water-quality-toolkit-for-greenhouse-and-nursery-production)
 
@@ -77,7 +93,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** acidité de la solution, dérive du pH, alcalinité, étalonnage de sonde
 - **Faire un lien ici quand :** on mentionne le pH ou l'acidité
 - **Textes de lien :** pH en hydroponie ; pH (acidité de l'eau)
-- **Pointe vers :** A06, A04, A11 ; pages : `/pricing/`
+- **Variante HydroGrow :** Étapes
+- **Pointe vers :** A06, A04, A11 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A01, A02, A04, A06, A10, A12, A13, A14
 - **Sources :** [logarithmique, selon Penn State](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess) ; [Oklahoma State University recommande 5 à 6, souvent 5,5](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [University of Minnesota indique 5,4 à 7](https://extension.umn.edu/how/small-scale-hydroponics) ; [University of Kentucky retient 5,5 à 6,5](https://ccd.uky.edu/sites/default/files/2025-06/ccd-ta-01_monitoring-ph-ec.pdf) ; [peu alcaline voit son pH changer facilement](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess) ; [University of Minnesota](https://extension.umn.edu/how/small-scale-hydroponics) ; [Oklahoma State University](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [Étalonnez le pH-mètre avec des solutions de référence](https://extension.psu.edu/a-water-quality-toolkit-for-greenhouse-and-nursery-production)
 
@@ -89,7 +106,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** conductivité électrique, concentration en nutriments, sur-fertilisation, stress osmotique, mS/cm, dS/m
 - **Faire un lien ici quand :** on mentionne l'EC ou le dosage des engrais
 - **Textes de lien :** EC en hydroponie ; EC (concentration en nutriments)
-- **Pointe vers :** A03, A06, A02 ; pages : `/features/`
+- **Variante HydroGrow :** Questions du lecteur
+- **Pointe vers :** A03, A06, A02 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A01, A02, A03, A06, A10, A12, A13, A14
 - **Sources :** [deux unités équivalentes](https://extension.psu.edu/a-water-quality-toolkit-for-greenhouse-and-nursery-production) ; [les différents sels n'y contribuent pas de la même façon](https://ccd.uky.edu/sites/default/files/2025-06/ccd-ta-01_monitoring-ph-ec.pdf) ; [d'une croissance ralentie ou de carences (Oklahoma State University)](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [faire flétrir les plantes alors qu'elles sont arrosées (Penn State)](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess) ; [Oklahoma State University publie des plages par culture](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [University of Kentucky indique, pour la plupart des plantes en serre](https://ccd.uky.edu/sites/default/files/2025-06/ccd-ta-01_monitoring-ph-ec.pdf)
 
@@ -101,7 +119,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** oxygène dissous, zone racinaire, sonde de température
 - **Faire un lien ici quand :** on parle de chaleur, d'oxygène ou de santé des racines
 - **Textes de lien :** température de l'eau en hydroponie ; l'oxygène dissous
-- **Pointe vers :** A08, A09, A02 ; pages : `/pricing/`
+- **Variante HydroGrow :** Avant / avec
+- **Pointe vers :** A08, A09, A02 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A01, A02, A08, A09, A10, A13
 - **Sources :** [plus l'eau se réchauffe, moins elle contient d'oxygène dissous (USGS)](https://www.usgs.gov/water-science-school/science/dissolved-oxygen-and-water) ; [Oklahoma State University situe l'optimum autour de 22 à 24 °C](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [une étude sur la laitue rouge (Levine et al., 2023)](https://doi.org/10.1093/aob/mcad127) ; [certaines pourritures des racines](https://doi.org/10.1590/S0100-54052006000400001) ; [la solution est sensible à la température ambiante (Oregon State University)](https://extension.oregonstate.edu/catalog/pub/em9457) ; [conserve mieux la chaleur que le NFT](https://extension.okstate.edu/fact-sheets/principles-of-small-scale-aquaponics)
 
@@ -113,7 +132,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** analyse d'eau, alcalinité, dureté, bicarbonates, sodium, eau de pluie
 - **Faire un lien ici quand :** on parle de l'eau de départ ou de la recette nutritive
 - **Textes de lien :** qualité de l'eau en hydroponie ; analyse de l'eau
-- **Pointe vers :** A03, A04, A08 ; pages : `/features/`
+- **Variante HydroGrow :** Avant / avec
+- **Pointe vers :** A03, A04, A08 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A01, A03, A04, A07, A08
 - **Sources :** [Penn State conseille une analyse complète dans un laboratoire accrédité](https://extension.psu.edu/a-water-quality-toolkit-for-greenhouse-and-nursery-production) ; [Oregon State University liste les éléments à faire analyser dans une eau d'irrigation](https://extension.oregonstate.edu/sites/extd8/files/catalog/auto/EM9522.pdf) ; [gêne l'absorption du potassium, du calcium et du magnésium](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess) ; [Oklahoma State University publie des valeurs acceptables dans l'eau de départ](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [surveiller l'eau et, si nécessaire, la traiter](https://doi.org/10.3390/ijerph120707457)
 
@@ -125,7 +145,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** économie d'eau, circuit fermé, recirculation, évaporation, bilan hydrique
 - **Faire un lien ici quand :** on parle d'économie d'eau, de fuites ou de vidanges
 - **Textes de lien :** consommation d'eau en hydroponie ; le circuit fermé
-- **Pointe vers :** A01, A06, A09 ; pages : `/features/`
+- **Variante HydroGrow :** Déjà testé / au programme
+- **Pointe vers :** A01, A06, A09 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A01, A02
 - **Sources :** [comparaison sur la laitue (Barbosa et al., 2015)](https://doi.org/10.3390/ijerph120606879) ; [Oklahoma State University estime les pertes à environ 1 à 5 % par jour](https://extension.okstate.edu/fact-sheets/principles-of-small-scale-aquaponics) ; [Oklahoma State University conseille un remplacement complet toutes les deux semaines](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [University of Minnesota juge qu'une culture courte comme la laitue peut s'en passer dans un petit système](https://extension.umn.edu/how/small-scale-hydroponics) ; [Oklahoma State University recommande de vérifier qu'elle convient](https://extension.okstate.edu/fact-sheets/principles-of-small-scale-aquaponics)
 
@@ -137,7 +158,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** contamination, racines brunes, hygiène, ravageurs, pathogènes
 - **Faire un lien ici quand :** on parle de santé des plantes ou d'hygiène
 - **Textes de lien :** maladies en hydroponie ; la prévention sanitaire
-- **Pointe vers :** A01, A06, A05, A10, A14 ; pages : `/contact/`
+- **Variante HydroGrow :** Duo
+- **Pointe vers :** A01, A06, A05, A10, A14 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A05, A06, A10, A14
 - **Sources :** [une revue scientifique (Sutton et al., 2006)](https://doi.org/10.1590/S0100-54052006000400001) ; [les maladies les plus courantes comprenaient l'oïdium, le mildiou et les pourritures des racines (University of Minnesota)](https://extension.umn.edu/how/small-scale-hydroponics) ; [prévention recommandée par l'University of Minnesota](https://extension.umn.edu/how/small-scale-hydroponics) ; [facteurs étudiés dans la progression de la maladie](https://doi.org/10.1590/S0100-54052006000400001) ; [la qualité microbiologique de l'eau doit être suivie](https://doi.org/10.3390/ijerph120707457)
 
@@ -149,7 +171,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** NFT, alimentation de secours, maintenance, débit, irrigation
 - **Faire un lien ici quand :** on parle de pompe, de coupure ou de fiabilité
 - **Textes de lien :** panne de pompe en hydroponie
-- **Pointe vers :** A05, A12 ; pages : `/pricing/`
+- **Variante HydroGrow :** Mise en situation
+- **Pointe vers :** A05, A12, A13 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A02, A05, A07, A12
 - **Sources :** [une coupure de courant ou une panne de pompe peut entraîner un flétrissement immédiat (Oregon State University)](https://extension.oregonstate.edu/catalog/pub/em9457) ; [les systèmes qui dépendent de pompes privent les plantes d'eau en cas de panne, et elles peuvent sécher vite (University of Minnesota)](https://extension.umn.edu/how/small-scale-hydroponics) ; [l'oxygène vient de la couche d'air laissée au-dessus de la solution (University of Minnesota)](https://extension.umn.edu/how/small-scale-hydroponics) ; [eau chaude contient moins d'oxygène dissous (USGS)](https://www.usgs.gov/water-science-school/science/dissolved-oxygen-and-water) ; [maintenir une pente d'au moins 2 %](https://extension.oregonstate.edu/catalog/pub/em9457)
 
@@ -161,7 +184,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** détection précoce, alertes, tendances, anomalie, score de risque
 - **Faire un lien ici quand :** on parle d'alertes ou d'anticipation
 - **Textes de lien :** surveillance hydroponique ; repérer un problème avant les symptômes
-- **Pointe vers :** A04, A03, A05, A08 ; pages : `/features/`
+- **Variante HydroGrow :** Mise en situation
+- **Pointe vers :** A04, A03, A05, A08, A13 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A02, A08, A14
 - **Sources :** [vérifier le pH et l'EC chaque jour](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [examiner les feuilles et les racines à la recherche de carences, de mildiou ou de pourriture](https://extension.umn.edu/how/small-scale-hydroponics)
 
@@ -173,7 +197,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** actionneurs, seuils, garde-fous, dosage, alertes
 - **Faire un lien ici quand :** on parle d'automatiser une action
 - **Textes de lien :** automatisation hydroponique ; des garde-fous
-- **Pointe vers :** A02, A12, A13 ; pages : `/pricing/`
+- **Variante HydroGrow :** Étapes
+- **Pointe vers :** A02, A12, A13 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A03, A12, A13
 - **Sources :** [Oklahoma State University conseille d'ajouter le correcteur lentement et d'attendre plusieurs minutes avant d'en remettre](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [la gestion manuelle du pH et de l'EC prend beaucoup de temps ; un suivi automatisé économise du travail et limite les erreurs (Oklahoma State University)](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics)
 
@@ -185,7 +210,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** IoT, objets connectés, edge computing, mode hors ligne, Raspberry Pi, isolation galvanique, pompes péristaltiques
 - **Faire un lien ici quand :** on parle d'objets connectés, de minuteur ou de fonctionnement hors ligne
 - **Textes de lien :** hydroponie connectée ; les limites du minuteur
-- **Pointe vers :** A09, A03, A04, A13, A11 ; pages : `/pricing/`
+- **Variante HydroGrow :** Chronologie
+- **Pointe vers :** A09, A03, A04, A13, A11 ; pages : `/about/`, `/pricing/`, `/contact/`
 - **Reçoit de :** A09, A11
 - **Sources :** [disponibilité des nutriments (Penn State)](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess)
 
@@ -197,8 +223,9 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** Nexus, Pulse, Orbit, Edgia, Edge AI, score de confiance
 - **Faire un lien ici quand :** on mentionne l'IA ou Nexus
 - **Textes de lien :** intelligence artificielle en hydroponie ; l'IA Nexus
-- **Pointe vers :** A03, A05, A04, A11, A14 ; pages : `/pricing/`
-- **Reçoit de :** A11, A12, A14
+- **Variante HydroGrow :** Questions du lecteur
+- **Pointe vers :** A03, A05, A04, A11, A14 ; pages : `/pricing/`, `/contact/`
+- **Reçoit de :** A09, A10, A11, A12, A14
 - **Sources :** aucune
 
 ### A14. Vision par ordinateur en hydroponie : voir les plantes
@@ -209,7 +236,8 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 - **Mots-clés secondaires :** caméra, ESP32-CAM, time-lapse, chlorose, flétrissement, score de santé
 - **Faire un lien ici quand :** on parle de caméra, d'images ou de l'aspect des feuilles
 - **Textes de lien :** vision par ordinateur ; la caméra de suivi
-- **Pointe vers :** A03, A04, A08, A10, A13 ; pages : `/pricing/`
+- **Variante HydroGrow :** Duo
+- **Pointe vers :** A03, A04, A08, A10, A13 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A08, A13
 - **Sources :** [une étude de référence sur la détection de maladies (Mohanty et al., 2016)](https://doi.org/10.3389/fpls.2016.01419)
 

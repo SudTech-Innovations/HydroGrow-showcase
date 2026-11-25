@@ -52,4 +52,18 @@ Si votre installation compte plusieurs réservoirs, suivez-les séparément : un
 
 Un relevé manuel est utile, mais il devient vite fragmenté, surtout à plusieurs. Après quelques cycles, faites le tri : gardez les mesures qui ont réellement guidé une action et revoyez l'usage des autres.
 
-HydroGrow, en cours de développement, est conçu pour réunir les données essentielles sur un même tableau de bord, afficher les tendances et signaler les écarts : de quoi [repérer un problème avant les symptômes](/blog/detecter-probleme-avant-symptomes/), en vous laissant la décision agronomique. Les capteurs prévus dans chaque configuration sont détaillés sur la page [formules et packs](/pricing/).
+## Cinq données, un seul écran : le pari HydroGrow
+
+HydroGrow est né en 2023 d'un logiciel de gestion d'hydroponie, devenu un [projet mené en équipe](/about/). Notre envie : des capteurs, un boîtier et une application qui parlent la même langue.
+
+| Votre donnée | Déjà testé sur la première version | Au programme |
+|---|---|---|
+| pH | Saisie à la main | Sonde dans les packs |
+| EC | Saisie à la main | Sonde dans les packs |
+| Température de l'eau | Mesure par capteur | Intégration aux packs |
+| Niveau | Mesure par capteur | Intégration aux packs |
+| Climat de l'air | Mesure par capteur | Intégration aux packs |
+
+Cette première version affichait aussi les courbes et les alertes. La suite se découvre avec les [formules et packs](/pricing/), et l'objectif reste de [voir le problème avant la plante](/blog/detecter-probleme-avant-symptomes/).
+
+Prêt à ranger vos relevés volants ? [Être informé du lancement](/contact/).

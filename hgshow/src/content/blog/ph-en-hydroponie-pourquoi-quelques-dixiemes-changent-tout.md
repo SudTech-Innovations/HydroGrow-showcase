@@ -71,4 +71,14 @@ Ce carnet devient vite précieux : il montre ce que votre eau demande réellemen
 
 Cherchez surtout une tendance. Une hausse lente et répétée renseigne sur l'eau ou sur la culture. Un saut brutal invite d'abord à contrôler la sonde, puis à rechercher ce qui a changé : appoint, nouveau bac de solution ou dosage.
 
-HydroGrow, en cours de développement, est conçu pour transformer cette routine en suivi continu, avec sonde pH, historique et alertes, afin de repérer une dérive tôt et de [garder le contrôle de l'automatisation](/blog/automatiser-sans-perdre-controle-hydroponie/). Voir les [packs avec sonde pH](/pricing/).
+## De la goutte à la courbe : le pH avec HydroGrow
+
+Un chiffre isolé dit peu. Une courbe raconte une histoire. Voici le trajet que nous construisons, avec sondes, boîtier de contrôle et application réunis.
+
+1. **Noter.** Dans notre première version, le pH se saisissait à la main.
+2. **Tracer.** La courbe montrait son évolution, à côté de vos notes de culture.
+3. **Alerter.** Une valeur hors plage était signalée.
+4. **Mesurer en continu.** Prochaine étape : la sonde de pH, prévue dès le Pack Essentiel.
+5. **Corriger.** Les pompes de régulation sont prévues à partir du Pack Confort, détaillé avec les [formules et packs](/pricing/).
+
+L'étalonnage restera votre geste, et vous garderez [la main sur l'automatisation](/blog/automatiser-sans-perdre-controle-hydroponie/). Ce pH qui grimpe en silence, autant le voir venir : [Être informé du lancement](/contact/).

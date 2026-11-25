@@ -73,4 +73,14 @@ L'application prévoit un **score de santé de 0 à 100 %**, accompagné d'anima
 
 Prévoyez aussi qui consulte les alertes et sous quel délai : une image pertinente ne sert que si quelqu'un va voir la plante. Avant de vous fier à un score, comparez-le pendant plusieurs cultures à votre propre jugement et relevez les oublis comme les fausses alertes. Refaites cette comparaison après tout changement de culture ou d'éclairage.
 
-HydroGrow est en cours de développement, et ces fonctions restent à valider. [Découvrir le Pack Total IA](/pricing/)
+## La caméra regarde, les capteurs expliquent
+
+Une feuille pâlit : que se passait-il autour d'elle ? C'est le duo que HydroGrow veut former, avec caméra, capteurs, boîtier de contrôle et application dans le même ensemble.
+
+**L'œil, à venir.** La caméra du [Pack Total IA](/pricing/), l'analyse d'images, le score de santé et le time-lapse restent à développer et à valider.
+
+**Le contexte, déjà amorcé.** Des capteurs ont mesuré la température de l'eau, le niveau et le climat, dont la lumière. Une première version du logiciel a affiché ces mesures, tracé leur historique, déclenché des alertes et tenu un carnet de culture. Les sondes de pH et d'EC sont prévues.
+
+**Le verdict, toujours vous.** Une image suspecte, les courbes du même moment, puis votre jugement.
+
+Envie de voir vos plantes autrement ? [Être informé du lancement](/contact/).

@@ -59,4 +59,14 @@ Une [installation connectée dépasse le simple minuteur](/blog/pourquoi-un-simp
 
 Une automatisation réussie reste compréhensible : chaque règle doit pouvoir s'expliquer en une phrase à la personne qui reprend la culture. Retirez ou corrigez toute règle que plus personne ne sait justifier dans l'équipe.
 
-HydroGrow, en cours de développement, est pensé comme ce poste de pilotage : données centralisées, règles lisibles, alertes et recommandations, pendant que vous restez maître des objectifs. [Voir les formules prévues](/pricing/).
+## HydroGrow : l'automatisation, marche après marche
+
+Capteurs, boîtier de contrôle, application : nous pensons les trois ensemble, pour que vous avanciez à votre rythme.
+
+1. **Voir.** Notre première version a déjà affiché les mesures, avec des capteurs de température d'eau, de niveau et de climat.
+2. **Se souvenir.** Elle a gardé leur historique et tenu un carnet de culture.
+3. **Être prévenu.** Des alertes ont signalé les valeurs hors plage.
+4. **Déléguer.** C'est la marche suivante : irrigation, éclairage et dosage pilotés sur place, tels que prévus dans les [formules et packs](/pricing/).
+5. **Optimiser.** Puis viendront les conseils de [notre IA Nexus](/blog/comprendre-architecture-ia-nexus/), que vous restez libre de suivre.
+
+Les trois premières marches ont été testées, les deux suivantes sont en préparation. Envie de monter avec nous ? [Être informé du lancement](/contact/).

@@ -75,4 +75,16 @@ Plus de mesures ne signifie pas moins d'entretien. Les sondes se nettoient et s'
 
 Commencez par la surveillance, puis automatisez ce que vous comprenez déjà bien. Chaque étape ajoutée doit répondre à un besoin que vous avez observé.
 
-L'objectif n'est pas de compliquer votre installation, mais de vous faire gagner en sérénité, pour les producteurs et les fermes urbaines d'abord, puis pour les particuliers. HydroGrow est en cours de développement : [découvrez les formules et packs prévus](/pricing/).
+L'objectif n'est pas de compliquer votre installation, mais de vous faire gagner en sérénité, pour les producteurs et les fermes urbaines d'abord, puis pour les particuliers.
+
+## Après le tic-tac, l'écoute : l'évolution HydroGrow
+
+**Le minuteur** exécute. Il ne regarde rien, n'apprend rien et ne prévient personne.
+
+**Nos débuts,** en 2023 : un logiciel de gestion d'hydroponie, devenu un [projet mené en équipe](/about/).
+
+**La première version** a commencé à écouter la culture : température de l'eau, niveau et climat mesurés par des capteurs, affichage, historique, alertes et carnet de culture.
+
+**La prochaine marche** doit boucler la boucle. Les sondes de pH et d'EC, le dosage et un pilotage local, sans dépendre d'internet, sont prévus dans les [formules et packs](/pricing/). Capteurs, boîtier de contrôle et application agiront comme un seul système.
+
+Nous y travaillons activement. Prêt à passer du tic-tac au dialogue ? [Être informé du lancement](/contact/).

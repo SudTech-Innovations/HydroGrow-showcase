@@ -10,7 +10,7 @@
 | Objectif | Être trouvé sur Google en répondant à une question précise, puis orienter vers HydroGrow |
 | Voix | « Nous » pour HydroGrow, « vous » pour le lecteur |
 | Ton | Expert, calme, rassurant (charte) |
-| Longueur | 600 à 900 mots |
+| Longueur | 600 à 900 mots, chapitre HydroGrow compris |
 | Rythme | Libre |
 | Rédaction | Une IA rédige, une personne vérifie |
 | Validation | Nicolas, avant toute publication |
@@ -44,10 +44,58 @@ Un article trop court se complète avec du concret (exemple, routine, limites), 
 ## 5. Structure d'un article
 
 1. **Introduction** (2 à 4 phrases) : la question, avec le mot-clé principal, et une première réponse.
-2. **3 à 5 intertitres** de niveau 2 (`##`), qui suivent les questions du lecteur. Pas de titre de niveau 1 dans le texte : le titre de l'article l'est déjà.
+2. **3 à 5 intertitres** (hors chapitre HydroGrow) de niveau 2 (`##`), qui suivent les questions du lecteur. Pas de titre de niveau 1 dans le texte : le titre de l'article l'est déjà.
 3. **Du concret** : un exemple, une routine ou une liste de contrôle.
 4. **Les limites** : ce qui varie selon la culture, le système ou le climat.
-5. **Conclusion** : ce que HydroGrow est conçu pour apporter sur ce point (2 ou 3 phrases, pas davantage) et un lien vers une page du site.
+5. **Chapitre HydroGrow**, toujours en dernier : voir ci-dessous.
+
+### Le chapitre HydroGrow
+
+Chaque article se termine par un chapitre qui met en avant le logiciel et le matériel, **adapté au sujet de l'article** (100 à 180 mots, texte seul).
+
+1. Un intertitre vivant, lié à l'article, qui contient « HydroGrow » ou le duo caméra et capteurs. Jamais deux fois la même tournure.
+2. L'atout principal : un **ensemble complet**, capteurs, boîtier de contrôle et application pensés ensemble (au moins évoqué).
+3. Le logiciel et le matériel, présentés selon **une des variantes ci-dessous**.
+4. Une courte invitation propre à l'article, puis le lien `[Être informé du lancement](/contact/)`.
+
+#### Les sept variantes
+
+| Variante | Comment la construire | Convient quand l'article… | Exemple d'intertitre |
+|---|---|---|---|
+| **Étapes** | Une phrase d'accroche, puis une liste numérotée de 4 ou 5 étapes, chacune ouverte par un verbe en gras. Les étapes déjà essayées viennent avant les étapes prévues, et la limite entre les deux est dite. | décrit une méthode ou une progression | « HydroGrow : l'automatisation, marche après marche » |
+| **Déjà testé / au programme** | Un tableau à 3 colonnes : la donnée ou la question du lecteur, ce que la première version a fait, ce qui est prévu. 4 ou 5 lignes courtes. | passe en revue plusieurs mesures ou questions | « Cinq données, un seul écran : le pari HydroGrow » |
+| **Questions du lecteur** | 3 ou 4 questions en gras, chacune suivie d'une réponse de 1 à 3 phrases. Terminer la ligne de la question par `\` pour passer à la ligne. | porte sur un sujet qui soulève des doutes | « Et mon EC, dans tout ça ? » La réponse HydroGrow |
+| **Mise en situation** | Une courte scène (un moment, un incident) annoncée comme imaginée ou visée, puis la liste de ce qui a déjà fonctionné et de ce qui est prévu. | traite d'un incident ou d'une alerte | « 3 h du matin, la pompe s'arrête : le scénario HydroGrow » |
+| **Chronologie** | 3 ou 4 paragraphes ouverts en gras, dans l'ordre du temps : le point de départ, la première version, la suite. | présente une évolution ou s'adresse à qui découvre | « Après le tic-tac, l'écoute : l'évolution HydroGrow » |
+| **Avant / avec** | Une phrase d'accroche, puis un tableau à 2 colonnes : la situation sans suivi (ou à la main), la démarche HydroGrow. 4 ou 5 lignes. | oppose une routine pénible à un suivi | « Moins de carnet, plus de courbe : le coup de frais HydroGrow » |
+| **Duo** | Des paragraphes ouverts en gras qui répartissent les rôles : celui du lecteur (ou de l'image), celui d'HydroGrow (ou des capteurs). Le jugement reste au lecteur. | porte sur l'observation et le jugement | « La caméra regarde, les capteurs expliquent » |
+
+Les articles existants servent de modèles : l'[inventaire](BLOG-INVENTAIRE.md#variantes-du-chapitre-hydrogrow) indique la variante de chacun.
+
+#### Choisir la variante d'un nouvel article
+
+1. Dans l'inventaire, prendre la variante **la moins utilisée**.
+2. À égalité, écarter celles des articles du même thème ou liés au nouvel article, puis préférer celle qui convient le mieux au sujet.
+3. Si aucune ne convient, en inventer une et l'ajouter au tableau ci-dessus.
+4. Noter le choix dans l'inventaire : fiche de l'article et tableau des variantes.
+
+Le ton peut être plus vif que dans le reste du texte (image, clin d'œil, question), sans promesse ni dramatisation. Dans une mise en situation, dire clairement que la scène n'est pas encore possible.
+
+#### Ce qu'on peut affirmer
+
+Dire ce qui a déjà fonctionné sur la première version, au passé, puis ce qui est prévu :
+
+| | A déjà fonctionné (première version) | Prévu, à annoncer comme tel |
+|---|---|---|
+| Logiciel | Affichage des mesures, historique et courbes, alertes hors plage, carnet de culture (plantes, dates, notes), pH et EC saisis à la main | IA Nexus (avec Pulse et Orbit), analyse d'images, score de santé, time-lapse |
+| Matériel | Capteurs de température de l'eau, de niveau et de climat (air, humidité, lumière) | Sondes de pH et d'EC, boîtier, caméra, dosage, pompes, éclairage, pilotage local sans internet |
+
+- La première version évolue : nous travaillons sur la méthode et sur le code. Ne pas écrire que ses fonctions sont disponibles aujourd'hui.
+- Ne jamais dire que des sondes de pH ou d'EC ont déjà mesuré.
+- Matériel : parler de sondes, de boîtier, de caméra et des noms des packs, sans marque de composant.
+- Une autre fonction de la page Tarifs (export, équipe, plusieurs sites…) : demander à Nicolas avant de la mettre en avant.
+- Quelques articles d'introduction peuvent rappeler l'histoire en une phrase (né en 2023 d'un logiciel de gestion d'hydroponie, devenu un projet en équipe), avec un lien vers [À propos](src/content/pages/about.md).
+- Tenir ce tableau à jour quand le produit avance.
 
 ## 6. Référencement
 
@@ -137,6 +185,8 @@ Texte à copier, en remplaçant les crochets :
 Rédige un article de blog pour HydroGrow sur : [question].
 Mot-clé principal : [mot-clé].
 Lis d'abord BLOG-CONSIGNES.md et BLOG-INVENTAIRE.md, puis applique-les.
+Pour le chapitre HydroGrow, choisis la variante la moins utilisée dans
+l'inventaire et dis laquelle tu as prise.
 Pour chaque affirmation chiffrée ou scientifique, ouvre la source et vérifie
 qu'elle le dit. N'invente aucune source, aucun chiffre, aucune fonction du produit.
 Crée l'article en brouillon (draft: true) avec la date du jour dans date,
@@ -156,7 +206,8 @@ Les liens ajoutés vers un brouillon mènent à une page absente tant qu'il n'es
 - [ ] L'article répond à la question annoncée.
 - [ ] Le mot-clé n'entre pas en concurrence avec un autre article.
 - [ ] Les sources s'ouvrent et disent ce que le texte affirme.
-- [ ] Les fonctions du produit sont exactes et présentées comme prévues.
+- [ ] Les fonctions du produit sont exactes : au passé pour ce que la première version a fait, annoncées comme prévues pour le reste.
+- [ ] Le chapitre HydroGrow suit une variante peu utilisée, notée dans l'inventaire.
 - [ ] Les termes techniques sont expliqués.
 - [ ] Titre, description, image et texte d'image sont remplis.
 - [ ] Les liens internes fonctionnent, dans les deux sens.

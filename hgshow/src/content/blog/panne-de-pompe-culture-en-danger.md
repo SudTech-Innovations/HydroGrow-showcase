@@ -60,4 +60,14 @@ Affichez près du système le schéma du circuit, l'emplacement de la pompe de r
 
 L'observation reste essentielle, mais elle n'avertit pas à distance, et un [simple minuteur](/blog/pourquoi-un-simple-minuteur-ne-suffit-plus/) ne sait pas qu'une pompe s'est arrêtée. Une alerte doit aussi pouvoir partir quand le courant ou la connexion manque.
 
-HydroGrow, en cours de développement, est conçu pour repérer une anomalie de niveau, de débit ou d'un paramètre lié, puis envoyer une alerte, en complément de la maintenance préventive. Voir les [packs avec contrôle de pompe](/pricing/).
+## 3 h du matin, la pompe s'arrête : le scénario HydroGrow
+
+Imaginez la suite, telle que nous voulons la rendre possible. L'eau cesse de circuler. Le boîtier de contrôle, sur place, le repère, et l'application vous prévient. Vous ouvrez les courbes, repérez le moment de la dérive et lancez votre solution de secours avant le petit déjeuner.
+
+Où en sommes-nous vraiment ?
+
+- Une première version a **déjà** mesuré le niveau et la température de l'eau avec des capteurs, gardé leur historique et signalé les valeurs hors plage.
+- Le contrôle de la pompe, la mesure du débit (Pack Total IA) et le pilotage local sont **prévus** dans les [formules et packs](/pricing/).
+- La détection d'anomalies par [notre IA Nexus](/blog/comprendre-architecture-ia-nexus/) viendra compléter l'ensemble.
+
+Rien de tout cela ne remplacera votre maintenance. Pour des nuits plus sereines : [Être informé du lancement](/contact/).

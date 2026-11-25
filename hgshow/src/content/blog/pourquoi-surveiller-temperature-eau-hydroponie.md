@@ -51,4 +51,18 @@ Rapprochez ensuite la courbe des événements : mise en route de l'éclairage, e
 
 Vérifiez la sonde avec un thermomètre de référence, et fixez deux niveaux d'alerte : un premier pour surveiller, un second pour intervenir. Notez qui agit et par quel geste. Après quelques semaines, comparez ces relevés à la croissance observée : ils vous diront si votre cible convient ou doit être revue avec un conseiller. Conservez ces relevés d'une saison à l'autre pour anticiper les chaleurs.
 
-HydroGrow, en cours de développement, prévoit une sonde dédiée, des seuils ajustables et des alertes, aux côtés des [autres données à surveiller](/blog/5-donnees-a-surveiller-hydroponie/). Le capteur de température de l'eau figure dans les [packs matériel prévus](/pricing/).
+## Moins de carnet, plus de courbe : le coup de frais HydroGrow
+
+Trois relevés par jour, tous les jours… La motivation fond plus vite qu'un glaçon en août. Notre réponse : une sonde, un boîtier de contrôle et une application qui suivent la courbe ensemble.
+
+| La routine à la main | Avec la démarche HydroGrow |
+|---|---|
+| Passer au réservoir | Capteur de température déjà essayé sur la première version |
+| Recopier la valeur | Affichage et historique déjà testés |
+| Surveiller le seuil de tête | Alertes hors plage déjà expérimentées |
+| Chercher la cause de mémoire | Carnet de culture pour noter les événements |
+| Comparer avec le bac et l'air | Niveau et climat également mesurés |
+
+La suite se prépare : la sonde figure dès le Pack Essentiel des [packs matériel](/pricing/), et vos seuils suivront votre culture, avec les [autres données à surveiller](/blog/5-donnees-a-surveiller-hydroponie/).
+
+Gardez la tête froide : [Être informé du lancement](/contact/).

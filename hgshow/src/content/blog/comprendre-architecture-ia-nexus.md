@@ -78,4 +78,18 @@ Commencez par comparer les conseils à vos propres décisions, sans action autom
 
 L'idée n'est pas de confier votre culture à un système opaque, mais de combiner des agents qui se contrôlent pendant que vous gardez la main : c'est notre approche de l'[automatisation hydroponique](/blog/automatiser-sans-perdre-controle-hydroponie/). Elle s'appuiera aussi, à terme, sur la [vision par ordinateur](/blog/la-vision-par-ordinateur-au-service-des-plantes/).
 
-HydroGrow est en cours de développement : cette architecture peut encore évoluer. [Voir les formules prévues avec l'IA Nexus](/pricing/)
+## HydroGrow et Nexus : vos questions sans détour
+
+**Nexus fonctionne-t-il déjà ?**\
+Pas encore. En revanche, une première version du logiciel a affiché des mesures, tracé leur historique, émis des alertes et tenu un carnet de culture.
+
+**De quoi va-t-il se nourrir ?**\
+De mesures réelles. La température de l'eau, le niveau et le climat ont déjà été relevés par des capteurs. Le pH et l'EC se saisissaient à la main, en attendant les sondes prévues.
+
+**Sera-t-il seul dans son coin ?**\
+Non : capteurs, boîtier de contrôle, application et IA sont pensés comme un même ensemble, avec une caméra et un pilotage sur place envisagés dans les [formules et packs](/pricing/).
+
+**Est-ce figé ?**\
+Pas du tout. Nous retravaillons la méthode et le code, et cette architecture peut encore évoluer.
+
+Curieux de voir Nexus prendre vie ? [Être informé du lancement](/contact/).

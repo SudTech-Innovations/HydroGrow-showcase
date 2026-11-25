@@ -55,4 +55,16 @@ Précisez toujours ce que vous comptez : l'eau de lavage, celle du refroidisseme
 
 Un niveau trop bas peut aussi exposer la pompe à une [panne](/blog/panne-de-pompe-culture-en-danger/). Gardez en tête que l'eau n'est qu'une partie de l'empreinte : l'énergie de l'éclairage, du pompage et de la climatisation doit entrer dans la comparaison.
 
-HydroGrow, en cours de développement, est conçu pour centraliser le niveau du réservoir et la consommation, afin d'alerter au bon moment et de comparer les cycles de culture. [Voir les fonctionnalités prévues](/features/).
+## Chaque litre compte : le suivre avec HydroGrow
+
+Économiser, c'est bien. Pouvoir le montrer, c'est mieux. Voilà pourquoi nous réunissons capteurs, boîtier de contrôle et application.
+
+| Votre question | Ce que la première version a déjà fait | Ce que nous préparons |
+|---|---|---|
+| Où en est mon réservoir ? | Niveau mesuré par un capteur | Suivi intégré aux packs |
+| Est-ce la chaleur ? | Température de l'eau et climat mesurés | Rapprochement avec la consommation |
+| Quand s'inquiéter ? | Alertes hors plage | Repérage plus tôt des baisses inhabituelles |
+| Quel cycle a consommé le plus ? | Historique, courbes et carnet de culture | Comparaison entre cycles |
+| Comment arroser juste ? | À régler par vous | Pilotage de l'irrigation |
+
+Le détail du matériel prévu se trouve dans les [formules et packs](/pricing/). Faites parler vos litres : [Être informé du lancement](/contact/).
