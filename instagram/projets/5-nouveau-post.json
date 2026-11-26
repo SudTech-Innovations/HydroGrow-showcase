@@ -1,0 +1,34 @@
+{
+  "slug": "5-nouveau-post",
+  "titre": "Nouveau post",
+  "format": "portrait",
+  "pied": "site",
+  "site": "hydrogrow.fr",
+  "statut": "brouillon",
+  "date": "",
+  "legende": {
+    "texte": "L'avenir est local. 🌱\n\nCultivez-le avec HydroGrow.\n\n👉 hydrogrow.fr (lien en bio)",
+    "hashtags": [
+      "hydroponie",
+      "HydroGrow"
+    ]
+  },
+  "diapos": [
+    {
+      "id": "rygfpvpk",
+      "modele": "couverture",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "haut-droite",
+        "alignement": "gauche",
+        "logoHaut": false,
+        "sur": "",
+        "titre": "L'avenir\nest *local.*",
+        "texte": "Cultivez-le avec HydroGrow.",
+        "pastille": "Planter. Connecter. Savourer."
+      },
+      "alt": "L'avenir est local.."
+    }
+  ],
+  "modifie": "2026-11-26T20:29:09.429Z"
+}

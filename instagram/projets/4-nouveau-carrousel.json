@@ -1,0 +1,62 @@
+{
+  "slug": "4-nouveau-carrousel",
+  "titre": "Nouveau carrousel",
+  "format": "portrait",
+  "pied": "pagination",
+  "site": "hydrogrow.fr",
+  "statut": "brouillon",
+  "date": "",
+  "legende": {
+    "texte": "5 données à surveiller 🌱\n\nPour garder un œil sur les racines et sur le climat autour de la plante.\n\n📌 Enregistrez ce post pour plus tard.\n\n👉 hydrogrow.fr (lien en bio)",
+    "hashtags": [
+      "hydroponie",
+      "HydroGrow"
+    ]
+  },
+  "diapos": [
+    {
+      "id": "5s9c02m9",
+      "modele": "couverture-photo",
+      "champs": {
+        "image": "/images/blog/hydroponie-donnees.webp",
+        "posX": 50,
+        "posY": 50,
+        "zoom": 100,
+        "voile": "normal",
+        "logoHaut": false,
+        "sur": "Guide hydroponie",
+        "titre": "*5 données*\nà surveiller",
+        "texte": "Pour garder un œil sur les racines et sur le climat autour de la plante.",
+        "pastille": ""
+      },
+      "alt": "Photo de culture hydroponique, avec le texte « 5 données à surveiller »."
+    },
+    {
+      "id": "xjvy1dt8",
+      "modele": "fiche",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "haut-droite",
+        "sur": "Donnée 1 sur 5",
+        "icone": "ph",
+        "titre": "Le pH",
+        "texte": "L'acidité de la solution nutritive. Il influence la disponibilité des nutriments.",
+        "cartes": "La question | Les éléments restent-ils accessibles à la plante ?\nEn cas d'écart, vérifiez | L'étalonnage de la sonde et l'eau ajoutée."
+      },
+      "alt": "Le pH."
+    },
+    {
+      "id": "mjzzxqlh",
+      "modele": "fin",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "centre",
+        "titre": "La valeur vient\ndes *liens*\nentre les mesures.",
+        "texte": "Enregistrez ce post pour votre prochain relevé.",
+        "pastille": "Le guide complet : hydrogrow.fr"
+      },
+      "alt": "La valeur vient des liens entre les mesures.."
+    }
+  ],
+  "modifie": "2026-11-26T20:29:06.857Z"
+}

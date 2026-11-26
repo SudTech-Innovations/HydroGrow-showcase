@@ -1,0 +1,96 @@
+{
+  "slug": "7-nouvelle-story",
+  "titre": "Story · nos 3 premiers posts",
+  "format": "story",
+  "pied": "logo",
+  "site": "hydrogrow.fr",
+  "statut": "brouillon",
+  "date": "",
+  "legende": {
+    "texte": "Nos 3 premiers posts sont en ligne 🌱\n\nPrésentation, guide des 5 données et coulisses du projet : retrouvez-les sur le profil.\n\n👉 hydrogrow.fr (lien en bio)",
+    "hashtags": [
+      "hydroponie",
+      "HydroGrow"
+    ]
+  },
+  "diapos": [
+    {
+      "id": "2kz2fywo",
+      "modele": "couverture",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "haut-droite",
+        "alignement": "gauche",
+        "logoHaut": false,
+        "sur": "Nouveau sur le compte",
+        "titre": "Faisons\n*connaissance*",
+        "texte": "Nos 3 premiers posts, en un coup d’œil.",
+        "pastille": "Touchez pour la suite"
+      },
+      "alt": "Titre « Faisons connaissance » sur fond nuit marine, avec les cercles HydroGrow."
+    },
+    {
+      "id": "vp57o3k4",
+      "modele": "couverture-photo",
+      "champs": {
+        "image": "/images/video/video-thum.webp",
+        "posX": 50,
+        "posY": 50,
+        "zoom": 100,
+        "voile": "normal",
+        "logoHaut": false,
+        "sur": "Post 1 · Présentation",
+        "titre": "L'avenir\nest *local.*",
+        "texte": "Qui nous sommes, et pourquoi cultiver au plus près de chez vous.",
+        "pastille": ""
+      },
+      "alt": "Photo de culture hydroponique, avec le texte « L'avenir est local. »."
+    },
+    {
+      "id": "krpw1726",
+      "modele": "couverture-photo",
+      "champs": {
+        "image": "/images/blog/hydroponie-donnees.webp",
+        "posX": 50,
+        "posY": 50,
+        "zoom": 100,
+        "voile": "normal",
+        "logoHaut": false,
+        "sur": "Post 2 · Guide",
+        "titre": "*5 données*\nà surveiller",
+        "texte": "pH, EC, eau, niveau, climat : le carrousel à garder sous la main.",
+        "pastille": ""
+      },
+      "alt": "Photo de culture hydroponique, avec le texte « 5 données à surveiller »."
+    },
+    {
+      "id": "f6o68eh1",
+      "modele": "couverture",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "haut-droite",
+        "alignement": "gauche",
+        "logoHaut": false,
+        "sur": "Post 3 · Les coulisses",
+        "titre": "Où en est\n*HydroGrow* ?",
+        "texte": "Ce qu'on a testé sur la première version, et ce qui arrive.",
+        "pastille": ""
+      },
+      "alt": "Où en est HydroGrow ?."
+    },
+    {
+      "id": "gc6hkxnz",
+      "modele": "fin",
+      "champs": {
+        "fond": "bleu",
+        "cercles": "centre",
+        "titre": "Retrouvez-les\nsur le *profil*.",
+        "texte": "Et suivez le projet pousser.",
+        "pastille": "@hydrogrow.app"
+      },
+      "alt": "Retrouvez les trois posts sur le profil @hydrogrow.app."
+    }
+  ],
+  "version": 13,
+  "modifie": "2026-11-26T20:46:51.409Z"
+}

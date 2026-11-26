@@ -1,0 +1,34 @@
+{
+  "slug": "6-nouvelle-story",
+  "titre": "Nouvelle story",
+  "format": "story",
+  "pied": "logo",
+  "site": "hydrogrow.fr",
+  "statut": "brouillon",
+  "date": "",
+  "legende": {
+    "texte": "L'avenir est local. 🌱\n\nCultivez-le avec HydroGrow.\n\n👉 hydrogrow.fr (lien en bio)",
+    "hashtags": [
+      "hydroponie",
+      "HydroGrow"
+    ]
+  },
+  "diapos": [
+    {
+      "id": "7w4rfp4v",
+      "modele": "couverture",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "centre",
+        "alignement": "centre",
+        "logoHaut": false,
+        "sur": "Les coulisses",
+        "titre": "L'avenir\nest *local.*",
+        "texte": "Cultivez-le avec HydroGrow.",
+        "pastille": "Planter. Connecter. Savourer."
+      },
+      "alt": "L'avenir est local.."
+    }
+  ],
+  "modifie": "2026-11-26T20:29:13.856Z"
+}
