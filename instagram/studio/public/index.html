@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Instagram · HydroGrow</title>
+<link rel="icon" href="/images/logo-icon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="diapo.css">
+<link rel="stylesheet" href="studio.css">
+</head>
+<body>
+<header class="barre">
+  <button class="marque" data-action="accueil" title="Tous les projets"><img src="/images/logo-icon.svg" alt=""><span>Studio <b>Instagram</b></span></button>
+  <div class="barre-projet" hidden>
+    <input id="titre" class="titre" placeholder="Titre du projet" aria-label="Titre du projet">
+    <label class="mini">Format<select id="format"></select></label>
+    <label class="mini">Pied<select id="pied">
+      <option value="pagination">Logo + pagination</option>
+      <option value="site">Logo + hydrogrow.fr</option>
+      <option value="logo">Logo seul</option>
+      <option value="aucun">Rien</option>
+    </select></label>
+    <label class="mini">Statut<select id="statut">
+      <option value="idee">Idée</option>
+      <option value="brouillon">Brouillon</option>
+      <option value="pret">Prêt</option>
+      <option value="publie">Publié</option>
+    </select></label>
+    <label class="mini">Date<input id="date" type="date"></label>
+  </div>
+  <div id="presences" class="presences" aria-live="polite"></div>
+  <span class="etat" id="etat"></span>
+  <button class="btn principal" data-action="exporter" hidden>Exporter les PNG</button>
+</header>
+
+<main id="accueil" class="accueil"></main>
+
+<main id="editeur" class="editeur" hidden>
+  <aside class="colonne diapos">
+    <div class="colonne-tete"><h2>Diapos</h2><span id="nb"></span></div>
+    <ol id="liste"></ol>
+    <button class="btn secondaire plein" data-action="ajouter">+ Ajouter une diapo</button>
+    <button class="btn lien plein" data-action="plan">Ajouter depuis un plan écrit</button>
+  </aside>
+  <section class="scene">
+    <div class="scene-outils">
+      <button class="btn icone" data-action="precedente" title="Diapo précédente (←)">←</button>
+      <span id="position"></span>
+      <button class="btn icone" data-action="suivante" title="Diapo suivante (→)">→</button>
+      <span class="sep"></span>
+      <button class="btn icone" data-action="annuler" title="Annuler (Ctrl+Z)">↶</button>
+      <button class="btn icone" data-action="retablir" title="Rétablir (Ctrl+Y)">↷</button>
+      <span class="sep"></span>
+      <label class="bascule"><input type="checkbox" id="zones"> Zones Instagram</label>
+    </div>
+    <div id="apercu" class="apercu"></div>
+  </section>
+  <aside class="colonne inspecteur">
+    <nav class="onglets" role="tablist">
+      <button role="tab" data-onglet="diapo" aria-selected="true">Diapo</button>
+      <button role="tab" data-onglet="legende">Légende</button>
+      <button role="tab" data-onglet="verifier">Vérifier <span id="nbverif" class="pastille-nb"></span></button>
+      <button role="tab" data-onglet="activite">Activité <span id="nbactivite" class="pastille-nb ok"></span></button>
+    </nav>
+    <div id="onglet-diapo" class="onglet"></div>
+    <div id="onglet-legende" class="onglet" hidden></div>
+    <div id="onglet-verifier" class="onglet" hidden></div>
+    <div id="onglet-activite" class="onglet" hidden></div>
+  </aside>
+</main>
+
+<dialog id="modale"><div class="modale-tete"><h2 id="modale-titre"></h2><button class="btn icone" data-action="fermer" title="Fermer">✕</button></div><div id="modale-corps"></div></dialog>
+<div id="toast" class="toast" hidden></div>
+<script type="module" src="studio.js"></script>
+</body>
+</html>

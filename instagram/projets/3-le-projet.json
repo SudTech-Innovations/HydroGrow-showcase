@@ -1,0 +1,33 @@
+{
+  "slug": "3-le-projet",
+  "titre": "Où en est le projet",
+  "format": "portrait",
+  "pied": "site",
+  "site": "hydrogrow.fr",
+  "statut": "publie",
+  "date": "",
+  "legende": {
+    "texte": "Où en est HydroGrow ? 🛠️\n\nTout a commencé en 2023 avec un logiciel de gestion d'hydroponie. C'est aujourd'hui un projet mené en équipe : des capteurs, un boîtier et une application qui parlent la même langue.\n\nVoici ce que nous avons testé sur la première version, et ce qui est au programme.\n\n👉 Soyez informé du lancement : hydrogrow.fr (lien en bio)",
+    "hashtags": [
+      "hydroponie",
+      "startup",
+      "innovation",
+      "IoT",
+      "HydroGrow"
+    ]
+  },
+  "diapos": [
+    {
+      "modele": "liste",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "haut-droite",
+        "sur": "Les coulisses",
+        "titre": "Où en est\n*HydroGrow* ?",
+        "texte": "Né en 2023 d'un logiciel de gestion d'hydroponie, devenu un projet mené en équipe.",
+        "blocs": "## Testé sur la première version\npH et EC | Saisie à la main\nTempérature de l'eau | Capteur\nNiveau d'eau | Capteur\nClimat de l'air | Capteur\nCourbes et alertes | Affichées\n## Au programme\nSondes pH et EC | Dans les packs\nAutres capteurs | Intégrés aux packs"
+      },
+      "alt": "Liste des fonctions testées sur la première version d'HydroGrow et de celles au programme."
+    }
+  ]
+}

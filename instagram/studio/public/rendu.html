@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Rendu</title>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:wght@400;500;600&display=block" rel="stylesheet">
+<link rel="stylesheet" href="diapo.css">
+<style>
+html,body{margin:0;background:#08172b;overflow:hidden}
+/* Planche : toutes les diapos en petit, numérotées */
+.planche{display:flex;flex-wrap:wrap;gap:16px;padding:16px;font:600 14px Inter,sans-serif;color:#eaf3ee}
+.planche figure{margin:0}
+.planche figcaption{height:20px;margin-bottom:0}
+.planche .boite{overflow:hidden;position:relative}
+.planche .boite>div{transform-origin:0 0}
+.planche .deborde{outline:4px solid #ff7a6b}
+</style>
+</head>
+<body>
+<script type="module">
+import { FORMATS, rendreDiapo } from "./modeles.js";
+import { chargerMarque } from "./marque.js";
+
+const q = new URLSearchParams(location.search);
+const [projet, marque] = await Promise.all([
+  fetch(`/api/projets/${q.get("projet")}`, { cache: "no-store" }).then((r) => r.json()),
+  chargerMarque(),
+]);
+const ctx = (i) => ({
+  ...marque,
+  format: projet.format ?? "portrait",
+  pied: projet.pied ?? "pagination",
+  site: projet.site ?? "hydrogrow.fr",
+  page: i + 1,
+  total: projet.diapos.length,
+});
+const f = FORMATS[projet.format ?? "portrait"];
+const mesure = q.has("mesure");
+const planche = Number(q.get("planche")) || (mesure ? 120 : 0);
+
+if (planche) {
+  const s = planche / f.l;
+  document.body.innerHTML = `<div class="planche">${projet.diapos
+    .map((d, i) => `<figure><figcaption>${i + 1} · ${d.modele}</figcaption><div class="boite" style="width:${planche}px;height:${Math.round(f.h * s)}px"><div style="transform:scale(${s})">${rendreDiapo(d, ctx(i))}</div></div></figure>`)
+    .join("")}</div>`;
+} else {
+  const i = Number(q.get("diapo") ?? 0);
+  document.body.innerHTML = rendreDiapo(projet.diapos[i], ctx(i));
+}
+
+// Attendre les polices et les images avant la capture
+await document.fonts.ready;
+await Promise.all([...document.images].map((im) => (im.complete ? 0 : new Promise((r) => (im.onload = im.onerror = r)))));
+const fonds = [...document.querySelectorAll(".hg-photo,.hg-portrait")].map((el) => el.style.backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1]).filter(Boolean);
+await Promise.all(fonds.map((src) => new Promise((r) => { const im = new Image(); im.onload = im.onerror = r; im.src = src; })));
+
+// Débordements : mesurés à taille réelle (la mise à l'échelle ne change pas scrollHeight)
+const deborde = [];
+document.querySelectorAll(".hg-corps").forEach((c, i) => {
+  if (c.scrollHeight > c.clientHeight + 2 || c.scrollWidth > c.clientWidth + 2) {
+    deborde.push(i);
+    c.closest(".boite")?.classList.add("deborde");
+  }
+});
+if (mesure) document.body.insertAdjacentHTML("beforeend", `<pre id="mesure">${JSON.stringify(deborde)}</pre>`);
+document.body.dataset.pret = "1";
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "studio-instagram": {
+      "command": "node",
+      "args": ["instagram/studio/mcp.mjs"],
+      "env": { "STUDIO_IA_NOM": "Claude" }
+    }
+  }
+}

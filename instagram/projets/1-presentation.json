@@ -1,0 +1,37 @@
+{
+  "slug": "1-presentation",
+  "titre": "Présentation",
+  "format": "portrait",
+  "pied": "aucun",
+  "site": "hydrogrow.fr",
+  "statut": "publie",
+  "date": "",
+  "legende": {
+    "texte": "L'avenir est local. 🌱\n\nBienvenue chez HydroGrow : une solution d'hydroponie connectée, pensée pour les professionnels, afin de cultiver des fruits et légumes frais au plus près de ceux qui les consomment.\n\nLe projet est en cours de développement. Suivez-nous pour le voir pousser.\n\n👉 hydrogrow.fr (lien en bio)",
+    "hashtags": [
+      "hydroponie",
+      "agricultureurbaine",
+      "agtech",
+      "circuitcourt",
+      "HydroGrow"
+    ]
+  },
+  "diapos": [
+    {
+      "modele": "couverture-photo",
+      "champs": {
+        "image": "/images/video/video-thum.webp",
+        "posX": 50,
+        "posY": 50,
+        "zoom": 100,
+        "voile": "normal",
+        "logoHaut": true,
+        "sur": "",
+        "titre": "L'avenir\nest *local.*",
+        "texte": "Cultivez-le avec HydroGrow, la solution d'hydroponie connectée pensée pour les professionnels.",
+        "pastille": "Planter. Connecter. Savourer."
+      },
+      "alt": "Plant de basilic aux racines dans l'eau, avec le texte « L'avenir est local »."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "slug": "2-les-5-donnees",
+  "titre": "Les 5 données à surveiller",
+  "format": "portrait",
+  "pied": "pagination",
+  "site": "hydrogrow.fr",
+  "statut": "publie",
+  "date": "",
+  "legende": {
+    "texte": "pH, EC, température de l'eau, niveau, climat : les 5 données à suivre en hydroponie 💧\n\nUne mesure seule en dit peu. C'est en les croisant qu'on comprend ce qui se passe dans le bac.\n\n📌 Enregistrez ce post pour votre prochain relevé.\n💬 Laquelle suivez-vous déjà ?\n\nGuide complet sur hydrogrow.fr (lien en bio)",
+    "hashtags": [
+      "hydroponie",
+      "hydroponique",
+      "cultureshorssol",
+      "agtech",
+      "capteurs"
+    ]
+  },
+  "diapos": [
+    {
+      "modele": "couverture-photo",
+      "champs": {
+        "image": "/images/blog/hydroponie-donnees.webp",
+        "posX": 50,
+        "posY": 50,
+        "zoom": 100,
+        "voile": "normal",
+        "logoHaut": false,
+        "sur": "Guide hydroponie",
+        "titre": "*5 données*\nà surveiller",
+        "texte": "Pour garder un œil sur les racines et sur le climat autour de la plante.",
+        "pastille": ""
+      },
+      "alt": "Culture hydroponique et capteurs, avec le titre « 5 données à surveiller »."
+    },
+    {
+      "modele": "fiche",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "haut-droite",
+        "sur": "Donnée 1 sur 5",
+        "icone": "ph",
+        "titre": "Le pH",
+        "texte": "L'acidité de la solution nutritive. Il influence la disponibilité des nutriments.",
+        "cartes": "La question | Les éléments restent-ils accessibles à la plante ?\nEn cas d'écart, vérifiez | L'étalonnage de la sonde et l'eau ajoutée."
+      },
+      "alt": "Le pH : L'acidité de la solution nutritive. Il influence la disponibilité des nutriments."
+    },
+    {
+      "modele": "fiche",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "haut-droite",
+        "sur": "Donnée 2 sur 5",
+        "icone": "ec",
+        "titre": "L'EC",
+        "texte": "La conductivité électrique : une estimation de la quantité d'engrais dissous dans l'eau.",
+        "cartes": "La question | La solution devient-elle plus ou moins concentrée ?\nEn cas d'écart, vérifiez | Le niveau du bac et le dernier dosage."
+      },
+      "alt": "L'EC : La conductivité électrique : une estimation de la quantité d'engrais dissous dans l'eau."
+    },
+    {
+      "modele": "fiche",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "haut-droite",
+        "sur": "Donnée 3 sur 5",
+        "icone": "temperature",
+        "titre": "La température\nde l'eau",
+        "texte": "Elle agit sur les racines et sur l'oxygène dissous.",
+        "cartes": "La question | Les racines sont-elles exposées au chaud ou au froid ?\nEn cas d'écart, vérifiez | Le soleil sur le réservoir, la pompe et le local."
+      },
+      "alt": "La température de l'eau : Elle agit sur les racines et sur l'oxygène dissous."
+    },
+    {
+      "modele": "fiche",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "haut-droite",
+        "sur": "Donnée 4 sur 5",
+        "icone": "niveau",
+        "titre": "Le niveau\nd'eau",
+        "texte": "Suivre le réservoir aide à repérer un manque d'eau, une fuite ou une panne de pompe.",
+        "cartes": "La question | La culture consomme-t-elle comme d'habitude ?\nEn cas d'écart, vérifiez | Les fuites, l'appoint et la circulation."
+      },
+      "alt": "Le niveau d'eau : Suivre le réservoir aide à repérer un manque d'eau, une fuite ou une panne de pompe."
+    },
+    {
+      "modele": "fiche",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "haut-droite",
+        "sur": "Donnée 5 sur 5",
+        "icone": "soleil",
+        "titre": "Le climat",
+        "texte": "Température de l'air, humidité et lumière donnent leur contexte aux autres valeurs.",
+        "cartes": "La question | Qu'est-ce qui explique les autres variations ?\nEn cas d'écart, vérifiez | L'aération, l'éclairage et la météo."
+      },
+      "alt": "Le climat : Température de l'air, humidité et lumière donnent leur contexte aux autres valeurs."
+    },
+    {
+      "modele": "fin",
+      "champs": {
+        "fond": "nuit",
+        "cercles": "centre",
+        "titre": "La valeur vient\ndes *liens*\nentre les mesures.",
+        "texte": "Enregistrez ce post pour votre prochain relevé.",
+        "pastille": "Le guide complet : hydrogrow.fr"
+      },
+      "alt": "La valeur vient des liens entre les mesures. Le guide complet est sur hydrogrow.fr."
+    }
+  ],
+  "modifie": "2026-11-26T20:21:19.960Z"
+}

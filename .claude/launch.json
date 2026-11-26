@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "hgshow", "run", "dev", "--", "--port", "4321"],
       "port": 4321
+    },
+    {
+      "name": "studio-instagram",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["instagram/studio/serveur.mjs"],
+      "port": 4400
     }
   ]
 }
