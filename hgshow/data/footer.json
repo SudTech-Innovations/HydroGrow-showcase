@@ -44,6 +44,14 @@
         {
           "text": "Contact",
           "link": "/contact/"
+        },
+        {
+          "text": "Mentions légales",
+          "link": "/mentions-legales/"
+        },
+        {
+          "text": "Confidentialité",
+          "link": "/confidentialite/"
         }
       ]
     }

@@ -1,0 +1,30 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  updated: string;
+}
+
+const { title, description, updated } = Astro.props;
+const seo = {
+  page_description: description,
+  featured_image: null,
+  featured_image_alt: null,
+  canonical_url: null,
+  no_index: false,
+  open_graph_type: null,
+  author_twitter_handle: null,
+};
+---
+
+<Layout title={title} seo={seo}>
+  <section class="pt-36 pb-24 sm:pt-32 xl:pt-40 2xl:pt-48">
+    <article class="max-w-3xl mx-auto px-6 prose lg:prose-lg wrap-break-word">
+      <h1>{title}</h1>
+      <p>Dernière mise à jour : {updated}</p>
+      <slot />
+    </article>
+  </section>
+</Layout>
