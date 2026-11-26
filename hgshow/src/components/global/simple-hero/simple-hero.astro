@@ -45,14 +45,14 @@ const { title, description, badge, badge_icon, is_section } = Astro.props;
           )}
           {is_section ? (
             <h2 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-normal leading-tight mb-6 tracking-tight">
-              <editable-text data-prop="title">{title}</editable-text>
+              {title}
             </h2>
           ) : (
             <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-normal leading-tight mb-6 tracking-tight">
-              <editable-text data-prop="title">{title}</editable-text>
+              {title}
             </h1>
           )}
-          <div class="text-lg text-gray-600 leading-relaxed" data-editable="text" data-prop="description" set:html={md.render(description)} />
+          <div class="text-lg text-gray-600 leading-relaxed" set:html={md.render(description)} />
         </div>
       </div>
     </div>

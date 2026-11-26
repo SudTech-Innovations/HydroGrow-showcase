@@ -44,8 +44,6 @@ const hasPrice = price !== undefined && price !== null && price !== "";
         ? "text-primary"
         : "text-gray-900"
     }`}
-      data-editable="text"
-      data-prop="tier"
     >
       {tier}
     </h3>
@@ -57,9 +55,7 @@ const hasPrice = price !== undefined && price !== null && price !== "";
   </div>
 
   <p
-    class="text-base xl:text-lg leading-relaxed mb-6 text-gray-600 font-medium min-h-[56px]"
-    data-prop="description"
-    data-editable="text">
+    class="text-base xl:text-lg leading-relaxed mb-6 text-gray-600 font-medium min-h-[56px]">
     {description}
   </p>
 
@@ -70,15 +66,15 @@ const hasPrice = price !== undefined && price !== null && price !== "";
         <>
           <!-- Discount Price Display -->
           <p class="text-4xl xl:text-5xl font-bold pl-4 xl:pl-6 mb-0 mr-4 z-10">
-            <editable-text data-prop="currency_symbol">{currency_symbol}</editable-text>
-            <editable-text data-prop="discount_price">{discount_price}</editable-text>
+            {currency_symbol}
+            {discount_price}
           </p>
 
           <!-- Original Price with Strikethrough -->
           <div class="relative flex items-center">
             <p class="text-2xl font-semibold text-gray-500 mb-0 relative z-10">
-              <editable-text data-prop="currency_symbol">{currency_symbol}</editable-text>
-              <editable-text data-prop="price">{price}</editable-text>
+              {currency_symbol}
+              {price}
             </p>
             <!-- Strikethrough Vector -->
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
@@ -96,8 +92,8 @@ const hasPrice = price !== undefined && price !== null && price !== "";
           <!-- Regular Price Display -->
           <p class="text-4xl xl:text-5xl font-bold pl-4 xl:pl-6 mb-0 z-10">
             <span>
-              <editable-text data-prop="currency_symbol">{currency_symbol}</editable-text>
-              <editable-text data-prop="price">{price}</editable-text>
+              {currency_symbol}
+              {price}
             </span>
           </p>
         </>
@@ -114,29 +110,9 @@ const hasPrice = price !== undefined && price !== null && price !== "";
 
   <!-- Features List & Action -->
   <div class="flex-1 flex flex-col justify-between">
-      <ul class="space-y-4 mb-10 flex-1" data-editable="array" data-prop="features" data-id-key="active_feature">
-      <template data-id="true">
-          <li
-              data-editable="array-item"
-              class="flex items-start text-base xl:text-lg leading-snug font-medium text-gray-600"
-          >
-              <i class="ph-check mr-3 mt-1 shrink-0 text-primary"/>
-              <editable-text data-prop="item"></editable-text>
-          </li>
-      </template>
-      <template data-id="false">
-          <li
-              data-editable="array-item"
-              class="flex items-start text-base xl:text-lg leading-snug font-medium text-mist/40"
-          >
-              <i class="ph-minus mr-3 mt-1 shrink-0 text-mist/40"/>
-              <editable-text data-prop="item"></editable-text>
-          </li>
-      </template>
+      <ul class="space-y-4 mb-10 flex-1">
       {features?.length && features?.map((feature) => (
         <li
-          data-editable="array-item"
-          data-id={String(feature.active_feature)}
           class={`flex items-start text-base xl:text-lg leading-snug font-medium ${
             feature.active_feature
               ? "text-gray-600"
@@ -151,7 +127,7 @@ const hasPrice = price !== undefined && price !== null && price !== "";
             }`}
           />
           <span>
-            <editable-text data-prop="item">{feature.item}</editable-text>
+            {feature.item}
             {!feature.active_feature && <span class="sr-only"> (non inclus)</span>}
           </span>
         </li>
@@ -167,8 +143,6 @@ const hasPrice = price !== undefined && price !== null && price !== "";
           size="lg"
           class="w-full justify-center text-center"
           text={button.text}
-          data-prop="button.text"
-          data-editable="text"
         />
       )}
     </div>

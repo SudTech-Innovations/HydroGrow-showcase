@@ -34,9 +34,6 @@ const { image, image_alt, title, description, button, reversed, landscape, stats
           <div class="relative rounded-[28px]">
             <div class="relative z-10 overflow-hidden rounded-[28px] bg-gray-50 ring-1 ring-pixel/40">
               <Image
-                data-editable="image"
-                data-prop-src="image"
-                data-prop-alt="image_alt"
                 class="w-full h-auto object-cover"
                 src={image}
                 alt={image_alt}
@@ -70,11 +67,11 @@ const { image, image_alt, title, description, button, reversed, landscape, stats
       
       <div class={`w-full lg:w-1/2 ${reversed ? 'order-2' : 'order-2 lg:order-1'}`}>
         <div class={`mb-7 md:mb-10 xl:mb-16 relative z-20 ${reversed ? '2xl:ps-8' : '2xl:pe-8'}`}>
-          <Heading level={2} text={title} data-prop="title" data-editable="text" class={"pb-6"} />
-          <div class="mt-4 prose prose-slate max-w-none" data-editable="text" data-prop="description" set:html={md.render(description)} />
+          <Heading level={2} text={title} class={"pb-6"} />
+          <div class="mt-4 prose prose-slate max-w-none" set:html={md.render(description)} />
           {button && (
             <div class="mt-8">
-              <Button href={button.link} data-editable="text" data-prop="button.text" variant={"link"} text={button.text} />
+              <Button href={button.link} variant={"link"} text={button.text} />
             </div>
           )}
         </div>

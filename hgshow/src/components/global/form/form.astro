@@ -107,13 +107,10 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
             {displayAddress && (
               <div class="space-y-2">
                 <h3 class="text-xl font-semibold text-gray-900">
-                  <editable-text data-prop="address.heading">{displayAddress.heading}</editable-text>
+                  {displayAddress.heading}
                 </h3>
                 <div class="flex items-start gap-2 text-gray-600 hover:text-gray-900 transition-colors">
                   <img
-                    data-editable="image"
-                    data-prop-src="address.image"
-                    data-prop-alt="address.image_alt"
                     src={displayAddress.image || "/images/default-address.png"}
                     alt={displayAddress.image_alt || "Address icon"}
                     loading="lazy"
@@ -122,7 +119,7 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
                     class="w-6 h-6 shrink-0 mt-0.5"
                   />
                   <div>
-                    <editable-text data-prop="address.address">{displayAddress.address}</editable-text>
+                    {displayAddress.address}
                   </div>
                 </div>
               </div>
@@ -131,16 +128,13 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
             {displayPhone && (
               <div class="space-y-2">
                 <h3 class="text-xl font-semibold text-gray-900">
-                  <editable-text data-prop="phone.heading">{displayPhone.heading}</editable-text>
+                  {displayPhone.heading}
                 </h3>
                 <a 
                   href={`tel:${displayPhone.cell}`}
                   class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <img
-                    data-editable="image"
-                    data-prop-src="phone.image"
-                    data-prop-alt="phone.image_alt"
                     src={displayPhone.image || "/images/default-phone.png"}
                     alt={displayPhone.image_alt || "Phone icon"}
                     loading="lazy"
@@ -148,7 +142,7 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
                     height="24"
                     class="w-6 h-6"
                   />
-                  <editable-text data-prop="phone.cell">{displayPhone.cell}</editable-text>
+                  {displayPhone.cell}
                 </a>
               </div>
             )}
@@ -156,16 +150,13 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
             {displayEmail && (
               <div class="space-y-2">
                 <h3 class="text-xl font-semibold text-gray-900">
-                  <editable-text data-prop="email.heading">{displayEmail.heading}</editable-text>
+                  {displayEmail.heading}
                 </h3>
                 <a 
                   href={`mailto:${displayEmail.email}`}
                   class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <img
-                    data-editable="image"
-                    data-prop-src="email.image"
-                    data-prop-alt="email.image_alt"
                     src={displayEmail.image || "/images/default-email.png"}
                     alt={displayEmail.image_alt || "Email icon"}
                     loading="lazy"
@@ -173,7 +164,7 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
                     height="24"
                     class="w-6 h-6"
                   />
-                  <editable-text data-prop="email.email">{displayEmail.email}</editable-text>
+                  {displayEmail.email}
                 </a>
               </div>
             )}
@@ -186,13 +177,13 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
             
             <form method="post" class="space-y-6">
               <h3 class="text-2xl font-bold text-gray-900 mb-8">
-                <editable-text data-prop="form.heading">{form.heading}</editable-text>
+                {form.heading}
               </h3>
               
               {form.fullname && (
                 <div class="space-y-2">
                   <label for="Name" class="block text-sm font-medium text-gray-700">
-                    <editable-text data-prop="form.fullname.heading">{form.fullname.heading}</editable-text>
+                    {form.fullname.heading}
                   </label>
                   <input 
                     type="text" 
@@ -208,7 +199,7 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
               {form.phone_number && (
                 <div class="space-y-2">
                   <label for="phone-number" class="block text-sm font-medium text-gray-700">
-                    <editable-text data-prop="form.phone_number.heading">{form.phone_number.heading}</editable-text>
+                    {form.phone_number.heading}
                   </label>
                   <input
                     type="tel"
@@ -224,7 +215,7 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
               {form.email && (
                 <div class="space-y-2">
                   <label for="email" class="block text-sm font-medium text-gray-700">
-                    <editable-text data-prop="form.email.heading">{form.email.heading}</editable-text>
+                    {form.email.heading}
                   </label>
                   <input 
                     type="email" 
@@ -240,7 +231,7 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
               {form.message && (
                 <div class="space-y-2">
                   <label for="message" class="block text-sm font-medium text-gray-700">
-                    <editable-text data-prop="form.message.heading">{form.message.heading}</editable-text>
+                    {form.message.heading}
                   </label>
                   <textarea
                     class="w-full min-h-12 px-4 py-3 border border-gray-300 rounded-[14px] focus:ring-2 focus:ring-primary focus:border-primary transition-colors resize-vertical"
@@ -263,8 +254,6 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
                     variant="primary"
                     size="lg"
                     text={form.submit_button.text}
-                    data-prop="form.submit_button.text"
-                    data-editable="text"
                     class="w-full sm:w-auto"
                   />
                 </div>
@@ -293,15 +282,12 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
                 alt={currentCreator.image_alt || currentCreator.name || "Photo"}
                 class="w-full h-full object-cover"
                 loading="lazy"
-                data-editable="image"
-                data-prop-src="creator.image"
-                data-prop-alt="creator.image_alt"
               />
             </div>
             {currentCreator.availability && (
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-primary text-night mt-3">
                 <span class="w-2 h-2 rounded-full bg-night"></span>
-                <editable-text data-prop="creator.availability">{currentCreator.availability}</editable-text>
+                {currentCreator.availability}
               </span>
             )}
           </div>
@@ -313,16 +299,16 @@ const currentCreator: CreatorInfo = creator ? { ...defaultCreator, ...creator } 
                 <i class="ph-user text-sm" />
                 <span>Porteur du projet</span>
               </div>
-              <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight" data-prop="creator.name" data-editable="text">
+              <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
                 {currentCreator.name}
               </h2>
-              <p class="text-lg font-medium text-primary mt-1" data-prop="creator.role" data-editable="text">
+              <p class="text-lg font-medium text-primary mt-1">
                 {currentCreator.role}
               </p>
             </div>
 
             {currentCreator.bio && (
-              <p class="text-gray-600 leading-relaxed text-base sm:text-lg" data-prop="creator.bio" data-editable="text">
+              <p class="text-gray-600 leading-relaxed text-base sm:text-lg">
                 {currentCreator.bio}
               </p>
             )}

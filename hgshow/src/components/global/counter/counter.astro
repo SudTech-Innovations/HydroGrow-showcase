@@ -5,7 +5,7 @@ import Heading from "../../shared/Heading.astro";
 
 const md = new MarkdownIt({ html: true });
 
-// Receive all props as the block for CloudCannon compatibility
+// Receive all props from the content block
 const { title, title_suffix, description, numbers, alternate_style } = Astro.props;
 
 interface CounterNumber {
@@ -33,56 +33,35 @@ export interface Props {
       <div class="w-full">
         <div class="pt-12 pb-9 text-center">
           <Heading level={2} class="mb-6 text-mist">
-            <span data-editable="text" data-prop="title">{title}</span>{" "}
-            <span class="text-primary" data-editable="text" data-prop="title_suffix">
+            <span>{title}</span>{" "}
+            <span class="text-primary">
               {title_suffix}
             </span>
           </Heading>
-          <div class="w-full sm:w-4/5 xl:w-3/5 mx-auto text-base sm:text-lg [&_a]:underline [&_a]:underline-offset-4" data-editable="text" data-prop="description" set:html={md.render(description)} />
+          <div class="w-full sm:w-4/5 xl:w-3/5 mx-auto text-base sm:text-lg [&_a]:underline [&_a]:underline-offset-4" set:html={md.render(description)} />
         </div>
       </div>
       <div class="w-full">
         {
           numbers && (
             <div
-              class={`relative grid ${numbers.length === 3 ? "grid-cols-1 sm:grid-cols-3" : "grid-cols-2 lg:grid-cols-4"} gap-0 items-center justify-center text-center`}
-              data-editable="array"
-              data-prop="numbers">
+              class={`relative grid ${numbers.length === 3 ? "grid-cols-1 sm:grid-cols-3" : "grid-cols-2 lg:grid-cols-4"} gap-0 items-center justify-center text-center`}>
               {numbers.map((number: CounterNumber, i: number) => (
-                <div class={number.details ? "group h-full" : "relative h-full"} data-editable="array-item">
+                <div class={number.details ? "group h-full" : "relative h-full"}>
                   <div
                     class={`pt-6 px-2 pb-4 2xl:pt-8 2xl:px-8 xl:pt-8 xl:px-4 xl:pb-7 sm:pt-8 sm:px-0 sm:pb-7`}>
                     <div class=" flex justify-center">
                       <span
-                        class="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight"
-                        
-                        data-editable="text"
-                        data-prop="prefix">
+                        class="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight">
                         {number.prefix || ""}
                       </span>
-                      {
-                        ENV_CLIENT ? (
-                          <span 
-                            data-editable="text"
-                            data-prop="number"
-                            class="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight"
-                            >
-                              {number.number}
-                            </span>
-                          ) : (
-                          <AnimatedNumber
-                            numberValue={Number(number.number)}
-                            className="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight"
-                            
-                            client:load
-                          />
-                        )
-                      }
+                      <AnimatedNumber
+                        numberValue={Number(number.number)}
+                        className="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight"
+                        client:load
+                      />
                       <span
-                        class="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight"
-                        
-                        data-editable="text"
-                        data-prop="suffix">
+                        class="text-4xl sm:text-5xl lg:text-6xl font-display text-primary leading-tight">
                         {number.suffix || ""}
                       </span>
                       {number.details && (
@@ -95,7 +74,7 @@ export interface Props {
                         </button>
                       )}
                     </div>
-                    <p class="text-gray-900 text-sm sm:text-base mb-0 sm:px-8 sm:pb-0" data-editable="text" data-prop="text">
+                    <p class="text-gray-900 text-sm sm:text-base mb-0 sm:px-8 sm:pb-0">
                       {number.text}
                     </p>
                   </div>

@@ -16,9 +16,6 @@ if (text && hasSlotContent) {
   throw new Error('Heading component: Cannot use both "text" prop and slot content. Use either text prop or slot, not both.');
 }
 
-// Extract CloudCannon-specific attributes for the text wrapper
-const { "data-editable": dataEditable, "data-prop": dataProp, ...elementRest } = rest;
-
 // Default heading styles based on level/size
 const levelStyles = {
   1: "text-[40px] leading-[44px] font-normal sm:text-[56px] sm:leading-[58px]",
@@ -37,16 +34,10 @@ const classes = `${levelStyles[styleLevel]} ${className}`;
 const Tag = `h${level}` as any;
 ---
 
-<Tag class={classes} {...elementRest}>
+<Tag class={classes} {...rest}>
   {
     text ? (
-      dataEditable && dataProp ? (
-        <editable-text data-editable={dataEditable} data-prop={dataProp}>
-          {text}
-        </editable-text>
-      ) : (
-        text
-      )
+      text
     ) : (
       <slot />
     )

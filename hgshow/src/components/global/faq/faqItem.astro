@@ -29,7 +29,7 @@ const { faq, i, ...rest } = Astro.props;
         0{i + 1}
       </span>
       <h3 class="text-[22px] leading-[26px] font-normal text-mist">
-        <editable-text data-prop="title">{faq.title}</editable-text>
+        {faq.title}
       </h3>
     </div>
     <svg
@@ -49,8 +49,6 @@ const { faq, i, ...rest } = Astro.props;
   <div class="px-6 pb-7 sm:pl-18 sm:pr-12">
     <div
       class="text-mist/90 text-base leading-7 prose max-w-none"
-      data-editable="text"
-      data-prop="description"
       set:html={md.render(faq.description || "")}
     />
   </div>

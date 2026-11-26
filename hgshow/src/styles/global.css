@@ -111,10 +111,6 @@ html.vt-off * {
   transition: none !important;
 }
 
-[data-hide-controls] editable-component-controls {
-  display: none !important;
-}
-
 /* ==========================================================================
    Animations : discrètes, premium. Seulement opacity + transform.
    Activées uniquement avec JS (.js) et si l'utilisateur n'a pas demandé

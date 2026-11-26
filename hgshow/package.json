@@ -13,7 +13,6 @@
     "@astrojs/check": "^0.9.5",
     "@astrojs/react": "^4.3.0",
     "@astrojs/sitemap": "^3.7.6",
-    "@cloudcannon/editable-regions": "^0.0.9",
     "@makotot/ghostui": "^2.0.0",
     "@tailwindcss/vite": "^4.1.17",
     "@types/react": "^18.0.25",
@@ -28,7 +27,6 @@
   },
   "devDependencies": {
     "@astrojs/rss": "^4.0.12",
-    "@cloudcannon/javascript-api": "^0.0.11",
     "@tailwindcss/typography": "^0.5.19",
     "@types/luxon": "^3.1.0",
     "@types/markdown-it": "^14.1.2",

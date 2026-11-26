@@ -8,7 +8,6 @@ import SignupModal from "@components/shared/SignupModal.astro";
 import Navigation from "@components/layouts/navigation";
 import site from "@data/site.json";
 import company from "@data/company.json";
-import ThemeEditableWrapper from "@components/shared/ThemeEditableWrapper";
 
 export interface SEOProps {
   page_description: string | null;
@@ -127,31 +126,22 @@ const blogTags = [...new Set((await getCollection("blog", ({ data }) => !data.dr
     <Analytics />
   </head>
   <body class="min-h-screen flex flex-col bg-night text-mist">
-    <script>
-      // Lazy load CloudCannon component registration only when in editor mode
-      if (window?.inEditorMode) {
-        import("../scripts/register-components.ts").catch((error) => {
-          console.warn("Failed to load CloudCannon component registration:", error);
-        });
-      }
-    </script>
-    <editable-component data-component="layouts/Navigation" data-prop="@data[navigation]">
+    
       <Navigation client:load pageUrl={canonicalURL} blogTags={blogTags} />
-    </editable-component>
+    
     <div class="flex-1">
       <slot />
     </div>
     <Footer />
     <SignupModal />
 
-    <ThemeEditableWrapper client:only="react" />
     <script is:inline>
-      // Apparition progressive au scroll (désactivée en mode éditeur et si "réduire les animations")
+      // Apparition progressive au scroll (désactivée si "réduire les animations")
       (function () {
         // Variante de flottement par image (rythme/sens différents)
         document.querySelectorAll(".img-float").forEach(function (el, i) { el.dataset.fv = String(i % 3); });
         var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        if (window.inEditorMode || reduce || !("IntersectionObserver" in window)) {
+        if (reduce || !("IntersectionObserver" in window)) {
           document.querySelectorAll(".dg, .rings").forEach(function (el) { el.classList.add("is-visible"); });
           return;
         }

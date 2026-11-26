@@ -17,9 +17,6 @@ if (text && hasSlotContent) {
   throw new Error("Button: Cannot use both text prop and slot children");
 }
 
-// Extract CloudCannon-specific attributes for the text wrapper
-const { "data-editable": dataEditable, "data-prop": dataProp, ...elementRest } = rest;
-
 const baseClasses = "inline-flex items-center justify-center font-medium border transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0 group";
 
 const variantClasses = {
@@ -45,15 +42,9 @@ const classes = `${baseClasses} ${variantClasses[variant]} ${variant === "link" 
 
 {
   href ? (
-    <a data-astro-prefetch href={href} class={classes} {...elementRest}>
+    <a data-astro-prefetch href={href} class={classes} {...rest}>
       {text ? (
-        dataEditable && dataProp ? (
-          <editable-text data-editable={dataEditable} data-prop={dataProp}>
-            {text}
-          </editable-text>
-        ) : (
-          text
-        )
+        text
       ) : (
         <slot />
       )}
@@ -64,15 +55,9 @@ const classes = `${baseClasses} ${variantClasses[variant]} ${variant === "link" 
       )}
     </a>
   ) : (
-    <button class={classes} {...elementRest}>
+    <button class={classes} {...rest}>
       {text ? (
-        dataEditable && dataProp ? (
-          <editable-text data-editable={dataEditable} data-prop={dataProp}>
-            {text}
-          </editable-text>
-        ) : (
-          text
-        )
+        text
       ) : (
         <slot />
       )}

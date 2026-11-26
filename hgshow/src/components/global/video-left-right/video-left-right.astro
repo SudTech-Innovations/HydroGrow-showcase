@@ -38,7 +38,7 @@ const { title, description, button, video } = Astro.props;
     </div>
 
     <!-- Main content - VideoPlayer (handles Vimeo or Local) -->
-    <div class="aspect-video" data-editable="component" data-prop-url="video.video_url" data-component="shared/VideoPlayer">
+    <div class="aspect-video">
       {video && (
         <VideoPlayer url={video.video_url} title="Video Player" autoplay={false} class="w-full h-full" />
       )}
@@ -53,14 +53,10 @@ const { title, description, button, video } = Astro.props;
           <Heading 
             level={2}
             text={title}
-            data-prop="title"
-            data-editable="text"
             class="mb-6 tracking-tight"
           />
           <div 
             class="text-lg text-gray-600 leading-relaxed mb-8 prose prose-lg max-w-none" 
-            data-editable="text" 
-            data-prop="description" 
             set:html={md.render(description)} 
           />
           {button && (
@@ -69,8 +65,6 @@ const { title, description, button, video } = Astro.props;
               variant="secondary"
               size="lg"
               text={button.text}
-              data-prop="button.text"
-              data-editable="text"
             />
           )}
         </div>

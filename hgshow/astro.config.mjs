@@ -1,6 +1,5 @@
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
-import editableRegions from "@cloudcannon/editable-regions/astro-integration";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import { readdirSync, readFileSync } from "node:fs";
@@ -25,7 +24,6 @@ export default defineConfig({
   site: "https://hydrogrow.fr",
   integrations: [
     react(),
-    editableRegions(),
     // Pages sans valeur pour la recherche : 404, pagination du blog, pages de mots-clés
     sitemap({
       filter: (page) => !/\/404\/?$/.test(page) && !/\/tags\//.test(page) && !/\/blog\/\d+\/?$/.test(page),
