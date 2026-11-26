@@ -203,7 +203,7 @@ const OUTILS = [
   },
   {
     name: "exporter_projet",
-    description: "Exporte les PNG et la légende dans instagram/<projet>/. À ne faire que si la personne le demande.",
+    description: "Exporte les PNG et la légende dans instagram/exports/<projet>/. À ne faire que si la personne le demande.",
     inputSchema: { type: "object", properties: { projet: { type: "string" } }, required: ["projet"] },
     async run({ projet }) {
       await signaler("exporte les images", projet, null);

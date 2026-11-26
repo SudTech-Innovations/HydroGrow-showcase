@@ -46,8 +46,8 @@ L'enregistrement est automatique.
 | Fichier | Contenu |
 |---|---|
 | `instagram/projets/<projet>.json` | Le projet (diapos, légende, statut, date prévue). |
-| `instagram/<projet>/1.png, 2.png…` | Les images exportées, dans l'ordre du carrousel. |
-| `instagram/<projet>/legende.md` | La légende, les hashtags et les textes alternatifs, prêts à copier. |
+| `instagram/exports/<projet>/1.png, 2.png…` | Les images exportées, dans l'ordre du carrousel. |
+| `instagram/exports/<projet>/legende.md` | La légende, les hashtags et les textes alternatifs, prêts à copier. |
 | `instagram/medias/` | Les photos importées. |
 
 ## Export sans ouvrir le studio
@@ -62,4 +62,4 @@ node instagram/studio/exporter.mjs --tous
 
 ## Les trois premiers posts
 
-Les publications 1 à 3 ont été reprises dans `instagram/projets/`. Un nouvel export les redonne à l'identique, à quelques pixels près. L'ancien script `instagram/source/generer.mjs` reste en place mais n'est plus nécessaire.
+Les publications 1 à 3 ont été reprises dans `instagram/projets/`. Un nouvel export les redonne à l'identique, à quelques pixels près. Leurs images et l'ancien fichier de légendes `legendes.md` sont rangés dans `instagram/exports/`.

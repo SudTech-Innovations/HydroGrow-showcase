@@ -1,7 +1,7 @@
 // Studio Instagram HydroGrow : serveur local, sans dépendance.
 //   node instagram/studio/serveur.mjs          → http://localhost:4400
 // Sert l'éditeur, les images du site, enregistre les projets (instagram/projets/*.json)
-// et exporte les PNG avec Chrome sans interface (instagram/<projet>/1.png, 2.png…).
+// et exporte les PNG avec Chrome sans interface (instagram/exports/<projet>/1.png, 2.png…).
 //
 // Plusieurs éditeurs peuvent travailler en même temps (vous dans le navigateur, une IA via
 // mcp.mjs ou l'API HTTP) : les modifications passent par des opérations appliquées sur la
@@ -22,12 +22,13 @@ const ici = dirname(fileURLToPath(import.meta.url));
 export const DOSSIERS = {
   public: join(ici, "public"),
   instagram: resolve(ici, ".."),
+  exports: resolve(ici, "../exports"),
   projets: resolve(ici, "../projets"),
   medias: resolve(ici, "../medias"),
   images: resolve(ici, "../../hgshow/public/images"),
   blog: resolve(ici, "../../hgshow/src/content/blog"),
 };
-for (const d of [DOSSIERS.projets, DOSSIERS.medias]) mkdirSync(d, { recursive: true });
+for (const d of [DOSSIERS.projets, DOSSIERS.medias, DOSSIERS.exports]) mkdirSync(d, { recursive: true });
 
 export const PORT = Number(process.env.PORT ?? 4400);
 let portActif = PORT;
@@ -297,7 +298,7 @@ export async function verifierProjet(slug) {
 export async function exporter(slug, { port = portActif, log = () => {} } = {}) {
   const projet = await charger(slug);
   const f = FORMATS[projet.format ?? "portrait"];
-  const sortie = join(DOSSIERS.instagram, slug);
+  const sortie = join(DOSSIERS.exports, slug);
   mkdirSync(sortie, { recursive: true });
   const fichiers = [];
   await avecProfil(async (tmp) => {
@@ -439,7 +440,7 @@ async function api(req, res, url) {
   if (route === "exporter" && param && m === "POST") {
     if (!SLUG.test(param)) return json(res, 400, { erreur: "Nom de projet invalide." });
     const fichiers = await exporter(param);
-    return json(res, 200, { dossier: join(DOSSIERS.instagram, param), fichiers });
+    return json(res, 200, { dossier: join(DOSSIERS.exports, param), fichiers });
   }
 
   if (route === "images" && m === "GET") return json(res, 200, await images());
@@ -481,7 +482,7 @@ export function demarrer(port = PORT) {
         return p ? servirFichier(res, p) : res.writeHead(403).end();
       }
       if (url.pathname.startsWith("/exports/")) {
-        const p = dans(DOSSIERS.instagram, url.pathname.slice(9));
+        const p = dans(DOSSIERS.exports, url.pathname.slice(9));
         return p && p.endsWith(".png") ? servirFichier(res, p) : res.writeHead(403).end();
       }
       const p = dans(DOSSIERS.public, url.pathname === "/" ? "index.html" : url.pathname.slice(1));
