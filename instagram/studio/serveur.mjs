@@ -391,6 +391,11 @@ async function api(req, res, url) {
   }
   if (route === "presence") {
     if (m === "POST") return json(res, 200, signaler(await corpsJson(req)));
+    if (m === "DELETE" && param) {
+      presences.delete(decodeURIComponent(param));
+      diffuser({ type: "presence", presences: presencesActives() });
+      return json(res, 200, { ok: true });
+    }
     return json(res, 200, presencesActives());
   }
   if (route === "modeles" && m === "GET") return json(res, 200, catalogue());

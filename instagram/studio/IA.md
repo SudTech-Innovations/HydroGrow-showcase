@@ -10,6 +10,10 @@ Le studio accepte plusieurs éditeurs en même temps : vous dans le navigateur, 
 
 ## Avec Claude Code (ce dépôt)
 
+Le plus simple : tapez **`/instagram-hg`** dans Claude Code. Claude lance le studio s'il ne tourne pas, s'y connecte (sa pastille verte apparaît) et attend vos demandes dans la suite de la conversation. Vous pouvez aussi donner la demande tout de suite : `/instagram-hg fais une story qui présente nos 3 premiers posts`.
+
+Sans les outils MCP, Claude passe par [`assistant.mjs`](assistant.mjs), une petite ligne de commande qui fait la même chose via l'API (`node instagram/studio/assistant.mjs` affiche son aide).
+
 Le serveur MCP est déclaré dans [`.mcp.json`](../../.mcp.json) à la racine. Ouvrez Claude Code dans le dépôt et acceptez le serveur `studio-instagram` quand il le propose. Vous pouvez ensuite demander par exemple :
 
 - « Regarde le carrousel que j'ai ouvert et propose des titres plus courts. »

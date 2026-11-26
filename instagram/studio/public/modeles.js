@@ -107,14 +107,16 @@ const logo = (ctx, fond, cls = "hg-logo") => {
   return src ? `<img class="${cls}" src="${src}" alt="">` : `<b class="${cls}">hydrogrow</b>`;
 };
 
-function pied(ctx, fond) {
+function pied(ctx, fond, avecLogo = true) {
   const mode = ctx.pied ?? "pagination";
   if (mode === "aucun") return "";
   let droite = "";
   if (mode === "pagination" && ctx.total > 1)
     droite = `${ctx.page} / ${ctx.total}${ctx.page < ctx.total ? " &nbsp;→" : ""}`;
   else if (mode !== "logo") droite = echapper(ctx.site ?? "hydrogrow.fr");
-  return `<footer class="hg-pied">${logo(ctx, fond)}<span>${droite}</span></footer>`;
+  // Logo déjà en haut de la diapo : on ne le répète pas en bas
+  if (!avecLogo && !droite) return "";
+  return `<footer class="hg-pied">${avecLogo ? logo(ctx, fond) : "<span></span>"}<span>${droite}</span></footer>`;
 }
 
 const sur = (s) => (s ? `<p class="hg-sur">${riche(s)}</p>` : "");
@@ -128,7 +130,7 @@ const pastille = (s) => (s ? `<p class="hg-pastille">${riche(s)}</p>` : "");
 
 function cadre(d, ctx, { fond, deco = "", corps, placement = "bas", entete = "", classe = "" }) {
   return `<div class="hg ${classe}" data-fond="${fond}" data-format="${ctx.format}" style="width:${ctx.f.l}px;height:${ctx.f.h}px">
-${deco}<div class="hg-cadre">${entete}<div class="hg-corps hg-${placement}">${corps}</div>${pied(ctx, fond)}</div></div>`;
+${deco}<div class="hg-cadre">${entete}<div class="hg-corps hg-${placement}">${corps}</div>${pied(ctx, fond, !entete)}</div></div>`;
 }
 
 // Champs réutilisés
