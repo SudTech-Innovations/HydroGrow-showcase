@@ -34,7 +34,7 @@ Selon l'installation, elle peut couper l'irrigation, le renouvellement de la sol
 ## Prévenir
 
 - Vérifier régulièrement la pompe, son filtre, les tuyaux, les canaux et les drains.
-- Retirer les racines et les dépôts qui freinent l'écoulement.
+- Retirer les racines, les dépôts et les [algues qui encrassent le circuit](/blog/algues-en-hydroponie/).
 - En NFT horizontal, [maintenir une pente d'au moins 2 %](https://extension.oregonstate.edu/catalog/pub/em9457) pour que le film circule.
 - Protéger l'alimentation électrique de l'eau et des surcharges.
 - Garder une pompe compatible en réserve.

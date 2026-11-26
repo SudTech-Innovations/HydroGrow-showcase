@@ -48,7 +48,7 @@ Précisez toujours ce que vous comptez : l'eau de lavage, celle du refroidisseme
 
 ## Réduire les pertes
 
-- Couvrir le réservoir pour limiter l'évaporation et la lumière, qui favorise les algues.
+- Couvrir le réservoir pour limiter l'évaporation et la lumière, qui favorise les [algues en hydroponie](/blog/algues-en-hydroponie/).
 - Contrôler les raccords, les bacs et les tuyaux.
 - Ajuster la durée et la fréquence d'irrigation au stade de la culture.
 - Chercher la cause d'une consommation inhabituelle : chaleur, fuite ou réglage.

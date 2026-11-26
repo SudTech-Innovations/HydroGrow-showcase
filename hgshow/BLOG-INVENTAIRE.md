@@ -1,6 +1,6 @@
 # Inventaire des articles de blog HydroGrow
 
-À consulter avant de créer ou de modifier un article, pour choisir son mot-clé et placer les liens internes (maillage). Pour le ton, la structure et la validation, voir les [consignes de rédaction](BLOG-CONSIGNES.md). État au 25 novembre 2026.
+À consulter avant de créer ou de modifier un article, pour choisir son mot-clé et placer les liens internes (maillage). Pour le ton, la structure et la validation, voir les [consignes de rédaction](BLOG-CONSIGNES.md). État au 26 novembre 2026.
 
 ## Avant de publier
 
@@ -30,18 +30,19 @@ Le bloc « À lire aussi » en bas de chaque article est automatique (mots-clés
 |---|---|---|---|---|
 | A01 | [hydroponie ou culture en terre](src/content/blog/pourquoi-passer-a-l-hydroponie.md) | Découvrir | 2 | 5 |
 | A02 | [capteurs hydroponie](src/content/blog/5-donnees-a-surveiller-hydroponie.md) | Pilotage | 3 | 3 |
-| A03 | [pH en hydroponie](src/content/blog/ph-en-hydroponie-pourquoi-quelques-dixiemes-changent-tout.md) | Eau et nutriments | 8 | 8 |
+| A03 | [pH en hydroponie](src/content/blog/ph-en-hydroponie-pourquoi-quelques-dixiemes-changent-tout.md) | Eau et nutriments | 9 | 8 |
 | A04 | [EC en hydroponie](src/content/blog/ec-en-hydroponie-plus-de-nutriments-ne-veut-pas-dire-plus-de-croissance.md) | Eau et nutriments | 8 | 6 |
-| A05 | [température de l'eau en hydroponie](src/content/blog/pourquoi-surveiller-temperature-eau-hydroponie.md) | Eau et nutriments | 6 | 6 |
-| A06 | [qualité de l'eau en hydroponie](src/content/blog/qualite-eau-peut-ruiner-culture-hydroponique.md) | Eau et nutriments | 5 | 5 |
+| A05 | [température de l'eau en hydroponie](src/content/blog/pourquoi-surveiller-temperature-eau-hydroponie.md) | Eau et nutriments | 7 | 6 |
+| A06 | [qualité de l'eau en hydroponie](src/content/blog/qualite-eau-peut-ruiner-culture-hydroponique.md) | Eau et nutriments | 6 | 5 |
 | A07 | [consommation d'eau en hydroponie](src/content/blog/economiser-de-leau-grace-a-lhydroponie.md) | Durabilité | 2 | 5 |
-| A08 | [maladies en hydroponie](src/content/blog/hydroponie-maladies-sans-terre-risques.md) | Prévention | 4 | 5 |
-| A09 | [panne de pompe en hydroponie](src/content/blog/panne-de-pompe-culture-en-danger.md) | Prévention | 4 | 5 |
+| A08 | [maladies en hydroponie](src/content/blog/hydroponie-maladies-sans-terre-risques.md) | Prévention | 5 | 5 |
+| A09 | [panne de pompe en hydroponie](src/content/blog/panne-de-pompe-culture-en-danger.md) | Prévention | 5 | 5 |
 | A10 | [surveillance hydroponique](src/content/blog/detecter-probleme-avant-symptomes.md) | Pilotage | 3 | 2 |
 | A11 | [automatisation hydroponique](src/content/blog/automatiser-sans-perdre-controle-hydroponie.md) | Pilotage | 3 | 2 |
 | A12 | [hydroponie connectée](src/content/blog/pourquoi-un-simple-minuteur-ne-suffit-plus.md) | Technologie | 2 | 1 |
 | A13 | [intelligence artificielle en hydroponie](src/content/blog/comprendre-architecture-ia-nexus.md) | Technologie | 5 | 0 |
 | A14 | [vision par ordinateur en hydroponie](src/content/blog/la-vision-par-ordinateur-au-service-des-plantes.md) | Technologie | 2 | 1 |
+| A15 | [algues en hydroponie](src/content/blog/algues-en-hydroponie.md) | Prévention | 2 | 5 |
 
 ## Variantes du chapitre HydroGrow
 
@@ -51,7 +52,7 @@ Pour un nouvel article, prendre la variante la moins utilisée ([règle de choix
 |---|---|---|
 | Étapes | 2 | A11, A03 |
 | Déjà testé / au programme | 2 | A02, A07 |
-| Questions du lecteur | 2 | A13, A04 |
+| Questions du lecteur | 3 | A13, A04, A15 |
 | Mise en situation | 2 | A09, A10 |
 | Chronologie | 2 | A01, A12 |
 | Avant / avec | 2 | A06, A05 |
@@ -95,7 +96,7 @@ Pour un nouvel article, prendre la variante la moins utilisée ([règle de choix
 - **Textes de lien :** pH en hydroponie ; pH (acidité de l'eau)
 - **Variante HydroGrow :** Étapes
 - **Pointe vers :** A06, A04, A11 ; pages : `/pricing/`, `/contact/`
-- **Reçoit de :** A01, A02, A04, A06, A10, A12, A13, A14
+- **Reçoit de :** A01, A02, A04, A06, A10, A12, A13, A14, A15
 - **Sources :** [logarithmique, selon Penn State](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess) ; [Oklahoma State University recommande 5 à 6, souvent 5,5](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [University of Minnesota indique 5,4 à 7](https://extension.umn.edu/how/small-scale-hydroponics) ; [University of Kentucky retient 5,5 à 6,5](https://ccd.uky.edu/sites/default/files/2025-06/ccd-ta-01_monitoring-ph-ec.pdf) ; [peu alcaline voit son pH changer facilement](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess) ; [University of Minnesota](https://extension.umn.edu/how/small-scale-hydroponics) ; [Oklahoma State University](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [Étalonnez le pH-mètre avec des solutions de référence](https://extension.psu.edu/a-water-quality-toolkit-for-greenhouse-and-nursery-production)
 
 ### A04. EC en hydroponie : plus de nutriments, pas plus de croissance
@@ -121,7 +122,7 @@ Pour un nouvel article, prendre la variante la moins utilisée ([règle de choix
 - **Textes de lien :** température de l'eau en hydroponie ; l'oxygène dissous
 - **Variante HydroGrow :** Avant / avec
 - **Pointe vers :** A08, A09, A02 ; pages : `/pricing/`, `/contact/`
-- **Reçoit de :** A01, A02, A08, A09, A10, A13
+- **Reçoit de :** A01, A02, A08, A09, A10, A13, A15
 - **Sources :** [plus l'eau se réchauffe, moins elle contient d'oxygène dissous (USGS)](https://www.usgs.gov/water-science-school/science/dissolved-oxygen-and-water) ; [Oklahoma State University situe l'optimum autour de 22 à 24 °C](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [une étude sur la laitue rouge (Levine et al., 2023)](https://doi.org/10.1093/aob/mcad127) ; [certaines pourritures des racines](https://doi.org/10.1590/S0100-54052006000400001) ; [la solution est sensible à la température ambiante (Oregon State University)](https://extension.oregonstate.edu/catalog/pub/em9457) ; [conserve mieux la chaleur que le NFT](https://extension.okstate.edu/fact-sheets/principles-of-small-scale-aquaponics)
 
 ### A06. Qualité de l'eau en hydroponie : les points à analyser
@@ -134,7 +135,7 @@ Pour un nouvel article, prendre la variante la moins utilisée ([règle de choix
 - **Textes de lien :** qualité de l'eau en hydroponie ; analyse de l'eau
 - **Variante HydroGrow :** Avant / avec
 - **Pointe vers :** A03, A04, A08 ; pages : `/pricing/`, `/contact/`
-- **Reçoit de :** A01, A03, A04, A07, A08
+- **Reçoit de :** A01, A03, A04, A07, A08, A15
 - **Sources :** [Penn State conseille une analyse complète dans un laboratoire accrédité](https://extension.psu.edu/a-water-quality-toolkit-for-greenhouse-and-nursery-production) ; [Oregon State University liste les éléments à faire analyser dans une eau d'irrigation](https://extension.oregonstate.edu/sites/extd8/files/catalog/auto/EM9522.pdf) ; [gêne l'absorption du potassium, du calcium et du magnésium](https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess) ; [Oklahoma State University publie des valeurs acceptables dans l'eau de départ](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [surveiller l'eau et, si nécessaire, la traiter](https://doi.org/10.3390/ijerph120707457)
 
 ### A07. Hydroponie et eau : quelle économie peut-on vraiment attendre ?
@@ -146,7 +147,7 @@ Pour un nouvel article, prendre la variante la moins utilisée ([règle de choix
 - **Faire un lien ici quand :** on parle d'économie d'eau, de fuites ou de vidanges
 - **Textes de lien :** consommation d'eau en hydroponie ; le circuit fermé
 - **Variante HydroGrow :** Déjà testé / au programme
-- **Pointe vers :** A01, A06, A09 ; pages : `/pricing/`, `/contact/`
+- **Pointe vers :** A01, A06, A09, A15 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A01, A02
 - **Sources :** [comparaison sur la laitue (Barbosa et al., 2015)](https://doi.org/10.3390/ijerph120606879) ; [Oklahoma State University estime les pertes à environ 1 à 5 % par jour](https://extension.okstate.edu/fact-sheets/principles-of-small-scale-aquaponics) ; [Oklahoma State University conseille un remplacement complet toutes les deux semaines](https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics) ; [University of Minnesota juge qu'une culture courte comme la laitue peut s'en passer dans un petit système](https://extension.umn.edu/how/small-scale-hydroponics) ; [Oklahoma State University recommande de vérifier qu'elle convient](https://extension.okstate.edu/fact-sheets/principles-of-small-scale-aquaponics)
 
@@ -160,7 +161,7 @@ Pour un nouvel article, prendre la variante la moins utilisée ([règle de choix
 - **Textes de lien :** maladies en hydroponie ; la prévention sanitaire
 - **Variante HydroGrow :** Duo
 - **Pointe vers :** A01, A06, A05, A10, A14 ; pages : `/pricing/`, `/contact/`
-- **Reçoit de :** A05, A06, A10, A14
+- **Reçoit de :** A05, A06, A10, A14, A15
 - **Sources :** [une revue scientifique (Sutton et al., 2006)](https://doi.org/10.1590/S0100-54052006000400001) ; [les maladies les plus courantes comprenaient l'oïdium, le mildiou et les pourritures des racines (University of Minnesota)](https://extension.umn.edu/how/small-scale-hydroponics) ; [prévention recommandée par l'University of Minnesota](https://extension.umn.edu/how/small-scale-hydroponics) ; [facteurs étudiés dans la progression de la maladie](https://doi.org/10.1590/S0100-54052006000400001) ; [la qualité microbiologique de l'eau doit être suivie](https://doi.org/10.3390/ijerph120707457)
 
 ### A09. Panne de pompe en hydroponie : quel délai avant le danger ?
@@ -172,8 +173,8 @@ Pour un nouvel article, prendre la variante la moins utilisée ([règle de choix
 - **Faire un lien ici quand :** on parle de pompe, de coupure ou de fiabilité
 - **Textes de lien :** panne de pompe en hydroponie
 - **Variante HydroGrow :** Mise en situation
-- **Pointe vers :** A05, A12, A13 ; pages : `/pricing/`, `/contact/`
-- **Reçoit de :** A02, A05, A07, A12
+- **Pointe vers :** A05, A12, A13, A15 ; pages : `/pricing/`, `/contact/`
+- **Reçoit de :** A02, A05, A07, A12, A15
 - **Sources :** [une coupure de courant ou une panne de pompe peut entraîner un flétrissement immédiat (Oregon State University)](https://extension.oregonstate.edu/catalog/pub/em9457) ; [les systèmes qui dépendent de pompes privent les plantes d'eau en cas de panne, et elles peuvent sécher vite (University of Minnesota)](https://extension.umn.edu/how/small-scale-hydroponics) ; [l'oxygène vient de la couche d'air laissée au-dessus de la solution (University of Minnesota)](https://extension.umn.edu/how/small-scale-hydroponics) ; [eau chaude contient moins d'oxygène dissous (USGS)](https://www.usgs.gov/water-science-school/science/dissolved-oxygen-and-water) ; [maintenir une pente d'au moins 2 %](https://extension.oregonstate.edu/catalog/pub/em9457)
 
 ### A10. Surveillance hydroponique : agir avant les symptômes
@@ -240,6 +241,19 @@ Pour un nouvel article, prendre la variante la moins utilisée ([règle de choix
 - **Pointe vers :** A03, A04, A08, A10, A13 ; pages : `/pricing/`, `/contact/`
 - **Reçoit de :** A08, A13
 - **Sources :** [une étude de référence sur la détection de maladies (Mohanty et al., 2016)](https://doi.org/10.3389/fpls.2016.01419)
+
+### A15. Algues en hydroponie : les comprendre et les éviter
+
+- **Adresse :** `/blog/algues-en-hydroponie/` (brouillon)
+- **Description :** Algues en hydroponie : pourquoi elles apparaissent dans le réservoir, ce qu'elles coûtent à la culture et les gestes simples pour les prévenir.
+- **Mot-clé principal :** algues en hydroponie
+- **Mots-clés secondaires :** réservoir opaque, lumière, nettoyage entre deux cultures, algicides, clarification UV
+- **Faire un lien ici quand :** on parle d'algues, de réservoir couvert, de lumière sur la solution ou de nettoyage du circuit
+- **Textes de lien :** algues en hydroponie ; les algues qui encrassent le circuit
+- **Variante HydroGrow :** Questions du lecteur
+- **Pointe vers :** A09, A05, A08, A03, A06 ; pages : `/pricing/`, `/contact/`
+- **Reçoit de :** A07, A09
+- **Sources :** [UConn rappelle que les algues ont besoin d'eau, de lumière et d'éléments minéraux pour pousser](https://ipm.cahnr.uconn.edu/managing-algae-in-the-greenhouse/) ; [Oklahoma State University note qu'une eau peu profonde et stagnante, riche en nutriments, favorise leur croissance](https://extension.okstate.edu/fact-sheets/algae-control-for-greenhouse-production) ; [UConn signale que des algues abondantes sur les allées présentent un risque de chute](https://ipm.cahnr.uconn.edu/managing-algae-in-the-greenhouse/) ; [Oklahoma State University conseille de couvrir les bacs hydroponiques d'un couvercle ou d'un plastique noir](https://extension.okstate.edu/fact-sheets/algae-control-for-greenhouse-production) ; [La bibliothèque horticole de l'Université de Washington fait de l'exclusion de la lumière la priorité](https://depts.washington.edu/hortlib/pal/eliminating-algae-in-hydroponic-systems/)
 
 ## Pages du site à cibler
 
