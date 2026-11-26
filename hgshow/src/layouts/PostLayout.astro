@@ -48,11 +48,11 @@ const readingTime = Math.max(1, Math.round(wordCount / 183));
 // Articles liés (maillage interne) : mots-clés communs, les plus rares comptant davantage, puis les plus récents
 const allPosts = await getCollection("blog", ({ data }) => !data.draft);
 const currentSlug = "slug" in props ? props.slug : undefined;
-const currentTags = allPosts.find((p) => p.slug === currentSlug)?.data.tags ?? [];
+const currentTags = allPosts.find((p) => p.id === currentSlug)?.data.tags ?? [];
 const tagCount = (tag: string) => allPosts.filter((p) => p.data.tags.includes(tag)).length;
 const score = (tags: string[]) => tags.filter((t) => currentTags.includes(t)).reduce((sum, t) => sum + 1 / tagCount(t), 0);
 const relatedPosts = allPosts
-  .filter((p) => p.slug !== currentSlug)
+  .filter((p) => p.id !== currentSlug)
   .sort((a, b) => score(b.data.tags) - score(a.data.tags) || b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3);
 

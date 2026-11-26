@@ -1,5 +1,5 @@
 import { defineCollection } from "astro:content";
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const seoSchema = z
@@ -15,6 +15,7 @@ const seoSchema = z
   .optional();
 
 const blogCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
   schema: z.object({
     date: z.date(),
     // Dernière modification de fond (facultative ; le champ peut rester vide)
@@ -39,7 +40,7 @@ const pageSchema = z.object({
   _schema: z.any().optional(),
   hidden: z.boolean().optional().default(false),
   title: z.string(),
-  description: z.undefined(),
+  description: z.undefined().optional(),
   seo: seoSchema,
   content_blocks: z.array(z.any()),
 });
@@ -70,7 +71,7 @@ const paginatedCollectionSchema = z.object({
 });
 
 const pagesCollection = defineCollection({
-  // loader: glob({ pattern: "**/*.md", base: "./src/content/pages" }),
+  loader: glob({ pattern: "**/*.md", base: "./src/content/pages" }),
   schema: z.union([paginatedCollectionSchema, pageSchema, exampleSchema]),
 });
 

@@ -74,7 +74,7 @@ const hasSingleImage = image && image_alt;
     <!-- Image Section -->
     <div class={`${hasMultipleImages ? "" : "hero-in hero-in-img"} mx-auto mt-16 grid max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:ml-10 lg:max-w-none lg:flex-none xl:ml-16`}>
       {hasMultipleImages ? (
-        <!-- Multiple Images Layout (About Page Style) -->
+        /* Multiple Images Layout (About Page Style) */
         <div class="grid grid-cols-[1fr_1fr_1fr_2fr] gap-5 max-w-3xl">
           {hero_images.map((heroImage, i) => (
             <div 
@@ -101,7 +101,7 @@ const hasSingleImage = image && image_alt;
           <DotGrid variant="h" class="absolute -z-10 bottom-0 -left-6 w-40 hidden sm:block" />
         </div>
       ) : hasSingleImage ? (
-        <!-- Single Image Layout (Original Style) -->
+        /* Single Image Layout (Original Style) */
         <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none img-float img-float-lg">
           <Image
             src={image}

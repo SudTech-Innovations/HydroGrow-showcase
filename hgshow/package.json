@@ -10,29 +10,35 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.5",
-    "@astrojs/react": "^4.3.0",
+    "@astrojs/check": "^0.9.12",
+    "@astrojs/react": "^7.1.9",
     "@astrojs/sitemap": "^3.7.6",
     "@makotot/ghostui": "^2.0.0",
-    "@tailwindcss/vite": "^4.1.17",
+    "@tailwindcss/vite": "^4.3.5",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "@vercel/analytics": "^2.0.1",
-    "astro": "^5.16.5",
+    "astro": "^7.4.13",
     "punycode": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^4.1.17",
+    "tailwindcss": "^4.3.5",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@astrojs/rss": "^4.0.12",
-    "@tailwindcss/typography": "^0.5.19",
+    "@astrojs/rss": "^4.0.19",
+    "@tailwindcss/typography": "^0.5.20",
     "@types/luxon": "^3.1.0",
     "@types/markdown-it": "^14.1.2",
     "astro-seo": "^0.6.0",
-    "markdown-it": "^13.0.1",
+    "markdown-it": "^15.0.3",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1"
+  },
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "overrides": {
+    "postcss-selector-parser": "^6.1.5"
   }
 }
