@@ -66,6 +66,13 @@ const footerData = footer as FooterData;
                   {company.contact_email_address}
                 </a>
               </p>
+              {company.instagram_url && (
+              <p>
+                <a href={company.instagram_url} target="_blank" rel="noopener me" class="hover:text-primary transition-colors">
+                  Instagram
+                </a>
+              </p>
+              )}
             </div>
           </div>
         </div>

@@ -7,6 +7,7 @@ import Footer from "@components/layouts/footer.astro";
 import SignupModal from "@components/shared/SignupModal.astro";
 import Navigation from "@components/layouts/navigation";
 import site from "@data/site.json";
+import company from "@data/company.json";
 import ThemeEditableWrapper from "@components/shared/ThemeEditableWrapper";
 
 export interface SEOProps {
@@ -50,6 +51,8 @@ const graph: Record<string, unknown>[] = [
     url: baseUrl?.toString(),
     logo: new URL("/images/logo-icon.svg", baseUrl).toString(),
     email: "contact@hydrogrow.fr",
+    // Profils officiels : aident les moteurs à rattacher les réseaux au site
+    sameAs: [company.instagram_url].filter(Boolean),
   },
   {
     "@type": "WebSite",
